@@ -1,13 +1,16 @@
 # YTSponsorSkip
 
-YTSponsorSkip is an experimental Chrome extension that will detect and skip creator-integrated promotional interruptions in YouTube videos. The current milestone evaluates timestamped transcript acquisition; sponsorship detection is not implemented yet.
+YTSponsorSkip is an experimental Chrome extension for detecting and skipping creator-integrated promotional interruptions in YouTube videos. The current milestone includes transcript acquisition and a detector-independent playback controller. Sponsorship detection is not implemented yet.
 
 ## Current components
 
 - `backend/`: Python 3.12 FastAPI service with a replaceable `TranscriptProvider`
 - `extension/`: unpacked Manifest V3 Chrome extension with packaged settings and acquisition status
+- `extension/playback-controller.js`: interval playback, seeking policy, and Undo
 - `scripts/run_acquisition_experiment.py`: repeatable local/cloud acquisition measurement
+- `scripts/import_validation_workbook.py`: repeatable manual-label normalization and validation
 - `data/acquisition_corpus.csv`: initial acquisition corpus (not a detection evaluation set)
+- `data/validation/`: normalized user-supplied manual annotations
 
 ## Local backend
 
@@ -29,6 +32,7 @@ Run tests:
 ```bash
 .venv/bin/pytest
 .venv/bin/ruff check .
+node --test extension/tests/playback-controller.test.js
 ```
 
 ## Acquisition experiment
@@ -59,9 +63,10 @@ The acquisition corpus records confirmed caption availability at the time it was
 3. Choose **Load unpacked** and select the `extension/` directory.
 4. Start the local backend and open a standard YouTube watch page.
 5. Open **Settings**, leave the backend URL as `http://127.0.0.1:8000`, and save.
-6. Use the extension popup to inspect acquisition status, or choose Conservative/Aggressive behavior in Settings.
+6. For playback testing, expand **Development**, enable **Use manual playback fixtures**, and save.
+7. Follow `docs/chrome-test-checklist.md`.
 
-The current extension retrieves transcripts but does not detect or skip promotions yet. If acquisition fails, YouTube playback continues and a short unavailable notification is shown.
+The development fixtures are user-supplied `tune` labels, disabled by default, and visibly identified as manual fixtures. They exercise skipping and Undo without claiming detector output. If acquisition fails, YouTube playback continues; fixture playback remains independently testable.
 
 ## Configuration
 
@@ -99,6 +104,8 @@ Do not warm the service before the first attempt if measuring cold-start latency
 ## Detection labeling template
 
 `data/labeling_template.xlsx` contains CSV-compatible **Videos** and **Segments** sheets. See `docs/labeling-format.md` before labeling or importing data. Acquisition outcomes are evidence about caption retrieval, not promotion labels.
+
+The imported validation set is documented in `docs/validation-import-report.md`. Held-out and partial-review rows are excluded from development playback fixtures and must remain outside detector tuning.
 
 ## API behavior
 

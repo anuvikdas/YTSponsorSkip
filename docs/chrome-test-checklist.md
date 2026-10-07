@@ -1,38 +1,41 @@
-# Chrome extension test checklist
+# Chrome playback test checklist
 
-These are manual checks until Chrome browser control is connected. Record the date, Chrome version, extension commit, and observed result; do not mark a check automated.
+These checks use manual `tune` fixtures, not detector results. The backend may still report `IP_BLOCKED`; that does not prevent fixture-based playback testing.
 
-## Load the unpacked extension
+## Start and reload
 
-1. Start the backend from the repository root:
+1. From the repository root, run:
 
    ```bash
    .venv/bin/uvicorn ytsponsorskip.main:app --host 127.0.0.1 --port 8000
    ```
 
-2. Open `chrome://extensions`, turn on **Developer mode**, and choose **Load unpacked**.
-3. Select the absolute directory `/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/extension`.
-4. Open the extension's **Details → Extension options**. Confirm **Enabled** and **Show unavailable notifications** are selected, **Conservative** is selected, and the backend URL is `http://127.0.0.1:8000`. Save.
+2. Open `chrome://extensions`. Enable **Developer mode**.
+3. If YTSponsorSkip is not loaded, choose **Load unpacked** and select `/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/extension`. Otherwise click the extension card's reload button.
+4. Open **Details → Extension options → Development**. Select **Use manual playback fixtures**, keep notifications enabled, and save.
 
-## Acquisition and playback
+## Skip and Undo
 
-1. Open `https://www.youtube.com/watch?v=dQw4w9WgXcQ` and press Play immediately.
-2. Expected: playback starts without waiting for the backend. The popup first says it is retrieving a transcript.
-3. If acquisition succeeds, expected: the popup reports the manual/generated type and snippet count. If the current IP is still blocked, expected: a six-second unavailable notice appears, the popup shows `IP_BLOCKED`, and playback continues without seeking or pausing.
-4. Open `https://www.youtube.com/watch?v=aaaaaaaaaaa`. Expected: the extension reports `VIDEO_UNAVAILABLE`; no playback-control action is attempted.
+1. Open `https://www.youtube.com/watch?v=-lErGZZgUbY`.
+2. Wait two seconds for the fixture, seek to 50 seconds, and play.
+3. Expected at 53 seconds: playback jumps to 74 seconds and a notification says it skipped a manual development fixture.
+4. Click **Undo** within six seconds. Expected: playback returns to the actual pre-skip position near 53 seconds and does not immediately skip again.
+5. Let playback pass 74 seconds, then seek back to 50 seconds and play. Expected: the interval is eligible again and skips at 53 seconds.
 
-## Pending-request navigation race
+## Explicit seeking
 
-1. In a YouTube tab, open video A: `https://www.youtube.com/watch?v=rfscVS0vtbw`.
-2. Immediately, before the popup settles, paste video B into the same tab: `https://www.youtube.com/watch?v=dQw4w9WgXcQ`.
-3. Wait for the current request to finish and open the popup. Expected: its state belongs only to video B; a result for video A must not replace it.
-4. For an exact identity check, open `chrome://extensions`, find YTSponsorSkip, choose the **service worker** inspection link, and run `chrome.storage.session.get(null, console.log)` in its console. Find the current tab's `tab-<number>` entry. Expected: `videoId` is `dQw4w9WgXcQ`; its `requestId` begins with that same ID.
-5. Expected on the page: no stale video-A unavailable notice appears after video B is current. Video B may show its own unavailable notice if acquisition fails.
+1. Seek directly to 60 seconds. Expected: the controller treats this as an explicit user choice and allows playback through the interval.
+2. Seek to 50 seconds and play normally. Expected: playback skips when it reaches 53 seconds.
+3. Seek to 80 seconds. Expected: no rewind and no skip.
 
-## Settings smoke check
+## Negative and navigation checks
 
-1. Change sensitivity to **Aggressive**, save, close, and reopen options. Expected: Aggressive remains selected.
-2. Choose **Restore defaults**. Expected: Conservative is selected again.
-3. Disable the extension in options and navigate to another video. Expected: the popup says skipping is disabled and no acquisition request is made.
+1. Open `https://www.youtube.com/watch?v=U3aXWizDbQ4`. Expected: this reviewed tune negative has an empty fixture and never auto-skips.
+2. Open `-lErGZZgUbY`, then navigate to `MRtg6A1f2Ko` within 1.5 seconds. Expected: the old delayed fixture is discarded. The second video's interval is 35–104 seconds.
+3. Seek the second video to 30 seconds and play. Expected: only the second video's interval is used.
 
-Sensitivity is stored now but does not alter behavior until a detector exists. These checks validate acquisition state and navigation safety, not skipping.
+## Late arrival and paused behavior
+
+The automated suite verifies interval arrival while already inside a playing or paused interval, including preserving the paused state and never rewinding after an interval. The 1.5-second Chrome fixture delay lets you observe late arrival during natural playback, but manually seeking inside an interval intentionally suppresses that interval under the approved user-seeking policy.
+
+After testing, turn **Use manual playback fixtures** off so labels cannot be mistaken for detector output.

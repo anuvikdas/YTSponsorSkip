@@ -1,6 +1,7 @@
 const form = document.querySelector("#settings-form");
 const enabled = document.querySelector("#enabled");
 const showNotifications = document.querySelector("#show-notifications");
+const developmentFixtures = document.querySelector("#development-fixtures");
 const backendUrl = document.querySelector("#backend-url");
 const status = document.querySelector("#status");
 
@@ -8,6 +9,7 @@ async function restoreSettings() {
   const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
   enabled.checked = settings.enabled;
   showNotifications.checked = settings.showNotifications;
+  developmentFixtures.checked = settings.developmentFixtures;
   backendUrl.value = settings.backendUrl;
   const sensitivity = document.querySelector(
     `input[name="sensitivity"][value="${settings.sensitivity}"]`
@@ -26,6 +28,7 @@ form.addEventListener("submit", async (event) => {
     enabled: enabled.checked,
     sensitivity,
     showNotifications: showNotifications.checked,
+    developmentFixtures: developmentFixtures.checked,
     backendUrl: normalizedBackendUrl()
   });
   status.textContent = "Settings saved.";
