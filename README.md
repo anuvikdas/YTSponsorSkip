@@ -9,6 +9,8 @@ YTSponsorSkip is an experimental Chrome extension for detecting and skipping cre
 - `extension/playback-controller.js`: interval playback, seeking policy, and Undo
 - `scripts/run_acquisition_experiment.py`: repeatable local/cloud acquisition measurement
 - `scripts/import_validation_workbook.py`: repeatable manual-label normalization and validation
+- `scripts/import_manual_transcripts.py`: deterministic DOCX transcript import with source/derived
+  timing separated
 - `scripts/evaluate_detector.py`: saved-transcript inventory and tune-only detector evaluation
 - `tools/transcript-acquisition-node/`: isolated, pinned Node acquisition probes (not backend code)
 - `data/acquisition_corpus.csv`: initial acquisition corpus (not a detection evaluation set)
@@ -109,12 +111,34 @@ Do not warm the service before the first attempt if measuring cold-start latency
 
 The imported validation set is documented in `docs/validation-import-report.md`. Held-out and partial-review rows are excluded from development playback fixtures and must remain outside detector tuning.
 
-The rules baseline is documented in `docs/detector-baseline.md`; current transcript coverage and unavailable tune metrics are recorded in `docs/detector-tune-report.md`. Render's bounded follow-up is in `docs/render-small-experiment.md`.
+The rules baseline is documented in `docs/detector-baseline.md`. The 14-video manual transcript
+import is documented in `docs/manual-transcript-import-report.md`; the preserved unchanged-detector
+tune result is in `docs/detector-tune-report.md`. Render's bounded follow-up is in
+`docs/render-small-experiment.md`.
 
 The bounded alternative-library investigation is in `docs/node-acquisition-experiment.md`. Neither
 Node package passed the two-video gate, so neither was added to deployment. The exact 14-video
 manual collection checklist and normalized JSON contract are in
 `docs/tune-transcript-collection.md`.
+
+The automatic-acquisition evidence, current vendor costs, weighted decision framework, and proposed
+$0 browser-context experiment are in `docs/acquisition-options-decision.md`. That experiment has
+not been implemented or run; no managed account or paid service was added.
+
+## Reproduce the manual tune baseline
+
+```bash
+.venv/bin/python scripts/import_manual_transcripts.py \
+  "/Users/anuvikdas/Downloads/SponsorSkip Manual 14 Transcript Collection.docx"
+
+.venv/bin/python scripts/evaluate_detector.py \
+  --source-dir data/transcripts/tune \
+  --detector-commit 0d065eccc10952ac3f1c2a416a0b7e4929e39026 \
+  --output data/evaluation/tune-baseline-0d065ec.json
+```
+
+The imported files preserve source starts and mark all constructed durations as derived analysis
+spans. They must not be interpreted as source-supplied caption or promotion boundaries.
 
 ## API behavior
 

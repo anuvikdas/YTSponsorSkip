@@ -1,5 +1,10 @@
 # Playback milestone review and next decision
 
+Historical note (2026-10-07): the bounded Render experiment described below was completed and
+stopped at `REQUEST_BLOCKED`; see `docs/render-small-experiment.md`. Manual tune transcripts are
+now available and the unchanged detector result is in `docs/detector-tune-report.md`. The current
+acquisition decision is `docs/acquisition-options-decision.md`.
+
 ## What this milestone establishes
 
 Playback control no longer depends on transcript acquisition or a promotion detector. The controller accepts timestamp intervals, rejects stale video/request identities, skips only forward, respects explicit user seeking, supports Undo, and clears video-specific state on navigation.

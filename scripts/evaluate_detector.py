@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import csv
+import hashlib
 import json
 import statistics
 import time
@@ -12,6 +13,14 @@ from typing import Any
 from ytsponsorskip.detector import PromotionDetector, Sensitivity
 from ytsponsorskip.domain import Transcript, TranscriptSnippet
 from ytsponsorskip.evaluation import TimeRange, calculate_video_metrics
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        for chunk in iter(lambda: source.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def response_entries(document: dict[str, Any]) -> list[dict[str, Any]]:
@@ -96,7 +105,17 @@ def inventory_sources(paths: list[Path]) -> dict[str, Any]:
             if video_id and failure_code:
                 failure_codes[video_id].add(str(failure_code))
         source_records.append(
-            {"path": str(path), "entry_count": len(entries), "usable_entry_count": usable_count}
+            {
+                "path": str(path),
+                "sha256": sha256(path),
+                "entry_count": len(entries),
+                "usable_entry_count": usable_count,
+                "video_ids": [
+                    video_id
+                    for entry in entries
+                    if (video_id := entry_video_id(entry)) is not None
+                ],
+            }
         )
 
     return {
@@ -137,19 +156,27 @@ def summarize_mode(
             continue
         started = time.perf_counter()
         detection = detector.detect(transcript, mode)
-        runtime_ms += (time.perf_counter() - started) * 1000
+        video_runtime_ms = (time.perf_counter() - started) * 1000
+        runtime_ms += video_runtime_ms
+        annotations = segments.get(video["video_id"], [])
         metrics = calculate_video_metrics(
             video_id=video["video_id"],
             promotion_status=video["promotion_status"],
             predictions=detection.intervals,
-            annotations=segments.get(video["video_id"], []),
+            annotations=annotations,
         )
         per_video.append(
             {
                 **asdict(metrics),
+                "title": video["title"],
+                "annotations": [
+                    {"start_seconds": start, "end_seconds": end}
+                    for start, end in annotations
+                ],
                 "prediction_count": len(detection.intervals),
                 "predictions": [asdict(interval) for interval in detection.intervals],
                 "window_count": detection.window_count,
+                "detection_runtime_ms": round(video_runtime_ms, 3),
             }
         )
 
@@ -199,12 +226,19 @@ def summarize_mode(
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=Path, action="append", default=[])
+    parser.add_argument("--source-dir", type=Path, action="append", default=[])
     parser.add_argument("--videos", type=Path, default=Path("data/validation/videos.csv"))
     parser.add_argument("--segments", type=Path, default=Path("data/validation/segments.csv"))
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--detector-commit", default="unknown")
     args = parser.parse_args()
 
-    inventory = inventory_sources(args.source)
+    source_paths = list(args.source)
+    for directory in args.source_dir:
+        source_paths.extend(
+            path for path in sorted(directory.glob("*.json")) if path.name != "import-report.json"
+        )
+    inventory = inventory_sources(source_paths)
     videos, segments = load_labels(args.videos, args.segments)
     tune_reviewed = [
         video
@@ -232,11 +266,25 @@ def main() -> None:
         exclusions.append({"video_id": video_id, "reason": reason})
 
     report = {
+        "detector": {
+            "baseline_commit": args.detector_commit,
+            "source_path": "backend/src/ytsponsorskip/detector.py",
+            "source_sha256": sha256(Path("backend/src/ytsponsorskip/detector.py")),
+            "classifier": "RulesWindowClassifier",
+            "window_seconds": 30.0,
+            "overlap_seconds": 15.0,
+            "conservative_join_gap_seconds": 5.0,
+            "aggressive_join_gap_seconds": 15.0,
+        },
         "scope": {
             "split": "tune",
             "held_out_used": False,
             "partial_reviews_used": False,
             "rule_development_note": "Manual segment timestamps are evaluation targets only.",
+            "timing_note": (
+                "Imported source contains starts only. duration_seconds is a derived analysis "
+                "span, not an exact caption or speech boundary."
+            ),
         },
         "inventory": inventory,
         "coverage": {
