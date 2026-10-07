@@ -62,20 +62,27 @@ class WindowClassifier(Protocol):
     def qualifies(self, score: WindowScore, sensitivity: Sensitivity) -> bool:
         """Apply a policy threshold to a score."""
 
+    def supports(self, score: WindowScore, sensitivity: Sensitivity) -> bool:
+        """Return whether a neighboring window can extend an anchored candidate."""
+
 
 EVIDENCE_WEIGHTS = {
-    "disclosure": 4,
+    "disclosure": 3,
     "affiliate": 3,
     "creator_owned": 3,
+    "membership": 2,
     "offer": 2,
     "cta": 2,
+    "url": 2,
+    "sales": 2,
     "transition": 1,
 }
 
 EVIDENCE_PATTERNS = {
     "disclosure": re.compile(
-        r"\b(?:sponsored by|sponsor(?:ed|ship) this|thanks? to .{0,60} for sponsor(?:ing|ship)|"
-        r"paid partnership|brought to you by|today'?s sponsor)\b",
+        r"\b(?:sponsor(?:ed|ing|ship)?(?:\s+(?:by|of|for|this|our|the|a)\b)?|"
+        r"thanks? to .{0,100} for sponsor(?:ing|ship)|paid partnership|brought to you by|"
+        r"today'?s sponsor|segue to (?:our|the) sponsor)\b",
         re.IGNORECASE,
     ),
     "affiliate": re.compile(
@@ -84,19 +91,41 @@ EVIDENCE_PATTERNS = {
         re.IGNORECASE,
     ),
     "creator_owned": re.compile(
-        r"\b(?:(?:my|our) (?:course|book|merch(?:andise)?|app|product|service|store|"
-        r"newsletter|membership|patreon)|(?:i|we) (?:made|launched|created) (?:a|an|my|our))\b",
+        r"\b(?:(?:my|our) (?:course|book|merch(?:andise)?|app|product|service|store|shop|"
+        r"newsletter|membership|patreon|subscription|kit|box|project)|"
+        r"(?:i|we|we'?ve) (?:made|launched|created|built|developed|are (?:finally )?launching) "
+        r"(?:a|an|my|our)?\s*(?:new )?(?:app|course|book|shop|store|product|service|"
+        r"membership|subscription|kit|box|project)|(?:working on|launching).{0,30}"
+        r"(?:app|course|book|shop|store|product|service|membership|subscription)|"
+        r"support(?:ing)? (?:these|my|our) videos? "
+        r"on patreon|(?:book.{0,100}(?:founder|head writer)|(?:founder|head writer).{0,100}"
+        r"book))\b",
+        re.IGNORECASE,
+    ),
+    "membership": re.compile(
+        r"\b(?:patreon|patrons?|channel membership|become a member|support(?:ing)? "
+        r"(?:these|my|our) videos?)\b",
         re.IGNORECASE,
     ),
     "offer": re.compile(
-        r"\b(?:promo(?:tional)? code|coupon|free trial|discount|\d{1,2}% off|save "
-        r"(?:\d{1,2}%|money)|limited[- ]time offer)\b",
+        r"\b(?:promo(?:tional)? code|coupon|free trial|discount|\d{1,2}\s*% off|save "
+        r"(?:\d{1,2}\s*%|\d{1,2}\s*percent|money)|\d{1,2}\s*percent off|"
+        r"limited[- ]time offer|"
+        r"\d+ months? free|holiday special|"
+        r"pre[- ]?order(?:ing)?|subscription)(?=\W|$)",
         re.IGNORECASE,
     ),
     "cta": re.compile(
-        r"\b(?:use (?:my |our )?code|link (?:is )?in (?:the )?description|check (?:it|them|"
-        r"us) out|sign up|shop now|order now|buy now|join (?:my|our|the)|become a member|"
-        r"visit (?:my|our|the)|head (?:to|over to))\b",
+        r"\b(?:use (?:my |our )?code|(?:that|the|my|our)?\s*link.{0,35}(?:description|below)|"
+        r"check (?:it|them|us|these) out|sign up|shop now|order now|buy now|join "
+        r"(?:me|my|our|the)|become a member|visit (?:my|our|the)|head (?:to|over to)|"
+        r"go to|learn more|pick it up|get (?:it|one|something) (?:now|from)|download|"
+        r"browse (?:my|our|the)|pre[- ]?order)\b",
+        re.IGNORECASE,
+    ),
+    "url": re.compile(
+        r"\b(?:[a-z0-9][a-z0-9-]*\s*(?:\.|dot)\s*(?:com|org|net|io)\b|"
+        r"(?:my|our|their|the) website\b)",
         re.IGNORECASE,
     ),
     "transition": re.compile(
@@ -106,35 +135,111 @@ EVIDENCE_PATTERNS = {
     ),
 }
 
-RETURN_TO_CONTENT = re.compile(
-    r"\b(?:now back to|back to (?:the|our|what)|let'?s get back to|anyway,? back to)\b",
+PRODUCT_PATTERN = re.compile(
+    r"\b(?:app|website|service|software|platform|(?:my|our|their|the|a|an|online) course|"
+    r"book|subscription|membership|"
+    r"patreon|shop|store|merch(?:andise)?|product|lineup|device|system|templates?|domain|"
+    r"kit|build box|power bank|charging station|storage|nas|wallpapers?)\b",
     re.IGNORECASE,
 )
+
+COMMERCIAL_PATTERN = re.compile(
+    r"\b(?:helps? you|lets? you|allows? you|offers?|provides?|features?|comes with|supports?|"
+    r"delivered|available|finally live|launch(?:ed|ing)?|built[- ]in|one[- ]stop shop|"
+    r"pick one|choose a template|works with|designed to|recommend|publish|register|charges?|"
+    r"get started|get your|make (?:a|your)|build (?:a|your)|run your|sell|"
+    r"split(?:ting)? profits|out now)\b",
+    re.IGNORECASE,
+)
+
+RETURN_TO_CONTENT = re.compile(
+    r"\b(?:now back to|back to (?:the|our|what)|let'?s get back to|anyway,? back to|"
+    r"that'?s been it|thanks for watching|catch you .{0,30} next one)\b",
+    re.IGNORECASE,
+)
+
+BOUNDARY_EVIDENCE = frozenset(
+    {
+        "disclosure",
+        "affiliate",
+        "creator_owned",
+        "membership",
+        "offer",
+        "url",
+        "sales",
+        "transition",
+    }
+)
+
+
+def _normalized_text(value: str) -> str:
+    return re.sub(r"\s+", " ", value.replace("’", "'").replace("–", "-")).strip()
 
 
 class RulesWindowClassifier:
     """Deterministic zero-cost baseline; scores are not calibrated probabilities."""
 
     def score(self, window: TranscriptWindow) -> WindowScore:
-        evidence = tuple(
-            label for label, pattern in EVIDENCE_PATTERNS.items() if pattern.search(window.text)
-        )
+        text = _normalized_text(window.text)
+        evidence = [
+            label for label, pattern in EVIDENCE_PATTERNS.items() if pattern.search(text)
+        ]
+        if PRODUCT_PATTERN.search(text) and COMMERCIAL_PATTERN.search(text):
+            evidence.append("sales")
+        evidence_tuple = tuple(evidence)
         return WindowScore(
-            score=sum(EVIDENCE_WEIGHTS[label] for label in evidence),
-            evidence=evidence,
+            score=sum(EVIDENCE_WEIGHTS[label] for label in evidence_tuple),
+            evidence=evidence_tuple,
         )
 
     def qualifies(self, score: WindowScore, sensitivity: Sensitivity) -> bool:
         evidence = set(score.evidence)
-        creator_pitch = "creator_owned" in evidence and bool({"cta", "offer"} & evidence)
-        affiliate_pitch = "affiliate" in evidence and bool({"cta", "offer"} & evidence)
+        disclosure_pitch = "disclosure" in evidence and bool(
+            evidence & {"url", "sales"}
+        )
+        creator_pitch = "creator_owned" in evidence and bool(
+            evidence & {"cta", "offer", "url", "membership"}
+        )
+        affiliate_pitch = "affiliate" in evidence and bool(evidence & {"cta", "offer", "url"})
+        direct_sales_pitch = (
+            "sales" in evidence and len(evidence & {"cta", "offer", "url"}) >= 2
+        ) or {"cta", "offer"} <= evidence
         if sensitivity is Sensitivity.CONSERVATIVE:
-            return score.score >= 4 and (
-                "disclosure" in evidence or creator_pitch or affiliate_pitch
+            return (
+                score.score >= 5
+                and (disclosure_pitch or creator_pitch or affiliate_pitch)
+            ) or (score.score >= 4 and direct_sales_pitch)
+        anchored_pitch = (
+            disclosure_pitch
+            or creator_pitch
+            or affiliate_pitch
+            or (
+                bool(evidence & {"disclosure", "creator_owned", "affiliate"})
+                and bool(evidence & {"cta", "offer", "url", "sales", "membership"})
             )
-        promotional_context = bool({"disclosure", "creator_owned", "affiliate"} & evidence)
-        action_or_separation = bool({"cta", "offer", "transition", "disclosure"} & evidence)
-        return score.score >= 3 and promotional_context and action_or_separation
+        )
+        return score.score >= 4 and (
+            anchored_pitch
+            or direct_sales_pitch
+            or ("sales" in evidence and bool(evidence & {"cta", "offer", "url"}))
+        )
+
+    def supports(self, score: WindowScore, sensitivity: Sensitivity) -> bool:
+        evidence = set(score.evidence)
+        minimum_score = 2
+        return score.score >= minimum_score and bool(
+            evidence
+            & {
+                "disclosure",
+                "affiliate",
+                "creator_owned",
+                "membership",
+                "offer",
+                "cta",
+                "url",
+                "sales",
+            }
+        )
 
 
 def build_windows(
@@ -189,17 +294,64 @@ def assemble_candidates(
 ) -> tuple[CandidateSegment, ...]:
     if len(windows) != len(scores):
         raise ValueError("every window must have exactly one score")
-    qualifying = [
-        (window, score)
-        for window, score in zip(windows, scores, strict=True)
+    anchor_positions = {
+        position
+        for position, score in enumerate(scores)
         if classifier.qualifies(score, sensitivity)
-    ]
-    if not qualifying:
+    }
+    if not anchor_positions:
         return ()
 
-    join_gap = 5.0 if sensitivity is Sensitivity.CONSERVATIVE else 15.0
+    selected_positions = set(anchor_positions)
+    neutral_limit = 1 if sensitivity is Sensitivity.CONSERVATIVE else 2
+    for anchor_position in anchor_positions:
+        position = anchor_position - 1
+        pending_neutral: list[int] = []
+        while position >= 0:
+            if windows[position].end_seconds < windows[position + 1].start_seconds:
+                break
+            if classifier.supports(scores[position], sensitivity):
+                if pending_neutral and not set(scores[position].evidence) & {
+                    "disclosure",
+                    "affiliate",
+                    "creator_owned",
+                    "membership",
+                }:
+                    break
+                selected_positions.update(pending_neutral)
+                selected_positions.add(position)
+                pending_neutral.clear()
+            elif len(pending_neutral) < neutral_limit:
+                pending_neutral.append(position)
+            else:
+                break
+            position -= 1
+        position = anchor_position + 1
+        pending_neutral = []
+        while position < len(windows):
+            if windows[position].start_seconds > windows[position - 1].end_seconds:
+                break
+            if classifier.supports(scores[position], sensitivity):
+                if pending_neutral and not set(scores[position].evidence) & {
+                    "disclosure",
+                    "affiliate",
+                    "creator_owned",
+                    "membership",
+                }:
+                    break
+                selected_positions.update(pending_neutral)
+                selected_positions.add(position)
+                pending_neutral.clear()
+            elif len(pending_neutral) < neutral_limit:
+                pending_neutral.append(position)
+            else:
+                break
+            position += 1
+
+    selected = [(windows[position], scores[position]) for position in sorted(selected_positions)]
+    join_gap = 20.0 if sensitivity is Sensitivity.CONSERVATIVE else 30.0
     groups: list[list[tuple[TranscriptWindow, WindowScore]]] = []
-    for window, score in qualifying:
+    for window, score in selected:
         if groups and window.start_seconds <= groups[-1][-1][0].end_seconds + join_gap:
             groups[-1].append((window, score))
         else:
@@ -230,6 +382,54 @@ def _snippet_window(snippet: TranscriptSnippet) -> TranscriptWindow:
     )
 
 
+def _span_window(snippets: Sequence[TranscriptSnippet]) -> TranscriptWindow:
+    return TranscriptWindow(
+        window_id=snippets[0].index,
+        start_seconds=snippets[0].start_seconds,
+        end_seconds=max(snippet.end_seconds for snippet in snippets),
+        snippet_indices=tuple(snippet.index for snippet in snippets),
+        text=" ".join(snippet.text for snippet in snippets),
+    )
+
+
+def _boundary_signal_positions(
+    members: Sequence[TranscriptSnippet],
+    classifier: WindowClassifier,
+    sensitivity: Sensitivity,
+) -> set[int]:
+    signal_positions: set[int] = set()
+    individual_scores = [classifier.score(_snippet_window(snippet)) for snippet in members]
+    for position, score in enumerate(individual_scores):
+        if set(score.evidence) & BOUNDARY_EVIDENCE:
+            signal_positions.add(position)
+    for position in range(len(members)):
+        for span_size in (2, 3):
+            end = position + span_size
+            if end > len(members):
+                break
+            score = classifier.score(_span_window(members[position:end]))
+            individual_evidence = set().union(
+                *(set(member_score.evidence) for member_score in individual_scores[position:end])
+            )
+            combined_only_evidence = set(score.evidence) - individual_evidence
+            if combined_only_evidence & BOUNDARY_EVIDENCE:
+                signal_positions.update(range(position, end))
+            member_qualifies = any(
+                classifier.qualifies(member_score, sensitivity)
+                for member_score in individual_scores[position:end]
+            )
+            if classifier.qualifies(score, sensitivity) and not member_qualifies:
+                positions_with_evidence = {
+                    member_position
+                    for member_position in range(position, end)
+                    if individual_scores[member_position].evidence
+                }
+                signal_positions.update(positions_with_evidence)
+                if combined_only_evidence:
+                    signal_positions.update(range(position, end))
+    return signal_positions
+
+
 def refine_boundaries(
     transcript: Transcript,
     candidates: Sequence[CandidateSegment],
@@ -242,16 +442,21 @@ def refine_boundaries(
     intervals: list[DetectedInterval] = []
 
     for candidate in candidates:
-        members = [by_index[index] for index in candidate.snippet_indices if index in by_index]
-        signal_members = [
-            snippet for snippet in members if classifier.score(_snippet_window(snippet)).evidence
-        ]
-        if not signal_members:
+        members = sorted(
+            (by_index[index] for index in candidate.snippet_indices if index in by_index),
+            key=lambda snippet: snippet.start_seconds,
+        )
+        signal_positions = _boundary_signal_positions(members, classifier, sensitivity)
+        if not signal_positions:
             continue
-        first = min(signal_members, key=lambda snippet: snippet.start_seconds)
-        last = max(signal_members, key=lambda snippet: snippet.end_seconds)
+        first = members[min(signal_positions)]
+        last = members[max(signal_positions)]
         first_position = positions[first.index]
         last_position = positions[last.index]
+
+        minimum_duration = 10.0
+        if last.end_seconds - first.start_seconds < minimum_duration:
+            continue
 
         if sensitivity is Sensitivity.AGGRESSIVE and first_position > 0:
             previous = ordered[first_position - 1]
@@ -271,7 +476,7 @@ def refine_boundaries(
                 end_seconds = snippet.start_seconds
                 break
 
-        if end_seconds > first.start_seconds:
+        if end_seconds - first.start_seconds >= minimum_duration:
             intervals.append(
                 DetectedInterval(
                     start_seconds=first.start_seconds,

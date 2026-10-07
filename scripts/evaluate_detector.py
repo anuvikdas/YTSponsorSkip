@@ -273,8 +273,8 @@ def main() -> None:
             "classifier": "RulesWindowClassifier",
             "window_seconds": 30.0,
             "overlap_seconds": 15.0,
-            "conservative_join_gap_seconds": 5.0,
-            "aggressive_join_gap_seconds": 15.0,
+            "conservative_join_gap_seconds": 20.0,
+            "aggressive_join_gap_seconds": 30.0,
         },
         "scope": {
             "split": "tune",

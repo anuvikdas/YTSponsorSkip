@@ -109,8 +109,62 @@ def test_aggressive_policy_still_requires_promotion_context() -> None:
     )
 
     assert not classifier.qualifies(affiliate_transition, Sensitivity.CONSERVATIVE)
-    assert classifier.qualifies(affiliate_transition, Sensitivity.AGGRESSIVE)
+    assert not classifier.qualifies(affiliate_transition, Sensitivity.AGGRESSIVE)
     assert not classifier.qualifies(brand_only, Sensitivity.AGGRESSIVE)
+
+
+def test_brief_disclosure_and_offer_is_not_a_skippable_pitch() -> None:
+    source = transcript(
+        ("This episode is sponsored by Example.", 20, 5),
+        ("Get 10 percent off with my link in the description.", 25, 4),
+        ("Now let us begin the lesson.", 29, 4),
+    )
+    detector = PromotionDetector()
+
+    assert detector.detect(source, Sensitivity.CONSERVATIVE).intervals == ()
+    assert detector.detect(source, Sensitivity.AGGRESSIVE).intervals == ()
+
+
+def test_combined_context_preserves_creator_relationship_during_refinement() -> None:
+    source = transcript(
+        ("The book was written by Ada,", 0, 5),
+        ("the founder and head writer of our channel.", 5, 5),
+        ("It is an illustrated guide to the subject.", 10, 5),
+        ("Please pre-order it using the link in the description.", 15, 5),
+    )
+
+    result = PromotionDetector().detect(source, Sensitivity.CONSERVATIVE)
+
+    assert len(result.intervals) == 1
+    assert result.intervals[0].start_seconds == 0
+    assert result.intervals[0].end_seconds == 20
+    assert {"creator_owned", "cta", "offer"} <= set(result.intervals[0].evidence)
+
+
+def test_less_literal_sponsor_url_and_generated_spacing_are_supported() -> None:
+    source = transcript(
+        ("Here is a segue to our sponsor Example Green.", 50, 6),
+        ("Their storage system comes with a built-in security manager.", 56, 7),
+        ("Check it out at example dot com or use the link below.", 63, 7),
+    )
+
+    result = PromotionDetector().detect(source, Sensitivity.CONSERVATIVE)
+
+    assert len(result.intervals) == 1
+    assert result.intervals[0].start_seconds == 50
+    assert {"disclosure", "sales", "cta", "url"} <= set(
+        result.intervals[0].evidence
+    )
+
+
+def test_of_course_does_not_become_a_course_sales_signal() -> None:
+    source = transcript(
+        ("Of course you can make whatever you imagine.", 0, 5),
+        ("Here is how to get started with the experiment.", 5, 5),
+        ("The next section explains the architecture.", 10, 5),
+    )
+
+    assert PromotionDetector().detect(source, Sensitivity.AGGRESSIVE).intervals == ()
 
 
 def test_validate_intervals_rejects_invalid_and_merges_overlap() -> None:
