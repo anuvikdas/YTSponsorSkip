@@ -3,6 +3,7 @@ let currentRequestId = null;
 let lastUrl = location.href;
 let notificationTimer = null;
 let developmentFixtureTimer = null;
+let browserProbeTimer = null;
 
 const playbackController = new PlaybackController({
   onSkip: showSkipNotification,
@@ -24,18 +25,59 @@ function checkForVideoChange() {
   currentVideoId = videoId;
   currentRequestId = videoId ? makeRequestId(videoId) : null;
   clearTimeout(developmentFixtureTimer);
+  clearTimeout(browserProbeTimer);
   playbackController.beginVideo(currentVideoId, currentRequestId);
   attachCurrentVideo();
   removeNotification();
   if (videoId) {
-    chrome.runtime.sendMessage({
-      type: "video-changed",
-      videoId,
-      requestId: currentRequestId
-    });
+    beginAcquisition(videoId, currentRequestId);
     scheduleDevelopmentFixture(videoId, currentRequestId);
   }
 }
+
+async function beginAcquisition(videoId, requestId) {
+  const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
+  if (videoId !== currentVideoId || requestId !== currentRequestId) return;
+  const browserProbe = settings.developmentBrowserAcquisition === true;
+  chrome.runtime.sendMessage({
+    type: "video-changed",
+    videoId,
+    requestId,
+    acquisitionMode: browserProbe ? "browser-probe" : "backend"
+  });
+  if (!browserProbe || !settings.enabled) return;
+  document.dispatchEvent(
+    new CustomEvent("ytss-browser-transcript-request", {
+      detail: { videoId, requestId }
+    })
+  );
+  browserProbeTimer = setTimeout(() => {
+    if (videoId !== currentVideoId || requestId !== currentRequestId) return;
+    chrome.runtime.sendMessage({
+      type: "browser-transcript-result",
+      videoId,
+      requestId,
+      result: { ok: false, errorCode: "PROBE_TIMEOUT" }
+    });
+  }, 8000);
+}
+
+window.addEventListener("message", (event) => {
+  if (event.source !== window || event.origin !== location.origin) return;
+  const validated = BrowserTranscriptProbe.validateEnvelope(
+    event.data,
+    currentVideoId,
+    currentRequestId
+  );
+  if (!validated.accepted) return;
+  clearTimeout(browserProbeTimer);
+  chrome.runtime.sendMessage({
+    type: "browser-transcript-result",
+    videoId: currentVideoId,
+    requestId: currentRequestId,
+    result: validated.result
+  });
+});
 
 function removeNotification() {
   clearTimeout(notificationTimer);

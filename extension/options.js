@@ -2,6 +2,9 @@ const form = document.querySelector("#settings-form");
 const enabled = document.querySelector("#enabled");
 const showNotifications = document.querySelector("#show-notifications");
 const developmentFixtures = document.querySelector("#development-fixtures");
+const developmentBrowserAcquisition = document.querySelector(
+  "#development-browser-acquisition"
+);
 const backendUrl = document.querySelector("#backend-url");
 const status = document.querySelector("#status");
 
@@ -10,6 +13,7 @@ async function restoreSettings() {
   enabled.checked = settings.enabled;
   showNotifications.checked = settings.showNotifications;
   developmentFixtures.checked = settings.developmentFixtures;
+  developmentBrowserAcquisition.checked = settings.developmentBrowserAcquisition;
   backendUrl.value = settings.backendUrl;
   const sensitivity = document.querySelector(
     `input[name="sensitivity"][value="${settings.sensitivity}"]`
@@ -29,6 +33,7 @@ form.addEventListener("submit", async (event) => {
     sensitivity,
     showNotifications: showNotifications.checked,
     developmentFixtures: developmentFixtures.checked,
+    developmentBrowserAcquisition: developmentBrowserAcquisition.checked,
     backendUrl: normalizedBackendUrl()
   });
   status.textContent = "Settings saved.";

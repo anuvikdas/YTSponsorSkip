@@ -12,7 +12,7 @@ started and no acquisition architecture was replaced.
 | Same Python provider | Render Free/server-side | One manual transcript succeeded and was demonstrably cached; the next distinct generated-caption request returned `REQUEST_BLOCKED`, so the bounded experiment stopped. Cold start was not measured. |
 | YouTube.js 18.1.0 | Local/server-side Node | Both bounded videos failed at `get_transcript` with HTTP 400. No blocking signal and no transcript. |
 | `youtube-transcript` 1.3.1 | Local/server-side Node | Both bounded videos returned the package's `Transcript is disabled`; instrumentation showed upstream responses missing the expected track metadata for one video. No transcript. |
-| Browser-side acquisition | Not tested | Unknown. Server-side Node failures neither prove nor disprove browser-context access. |
+| Browser-side acquisition | Probe implemented; contract-tested only | Actual Chrome/YouTube reliability is still unknown. Server-side Node failures neither prove nor disprove browser-context access. See `browser-acquisition-probe.md`. |
 | Transcript-panel extraction | Not tested | Unknown automatically; manual copying produced this milestone's 14 transcripts. |
 | Managed APIs / speech recognition | Not tested | Documentation and prices only, not reliability evidence. |
 
@@ -121,26 +121,28 @@ All four fit around the existing `TranscriptProvider` boundary. They cannot manu
 repair an upstream schema change, make a private/unavailable video public, or guarantee a result
 before an early promotion.
 
-## Recommended experiment—discussion checkpoint
+## Recommended experiment—implemented, Chrome run pending
 
 ### Primary: browser watch-page caption metadata
 
-Test browser-context acquisition before introducing a service account or recurring cost. This is a
-hypothesis, not a conclusion: the user's browser may receive caption-track metadata that blocked
-server egress does not, but the experiment must show that it can be accessed consistently and
-early without opening the transcript panel.
+Test browser-context acquisition before introducing a service account or recurring cost. The probe
+is now implemented behind a disabled-by-default development flag, but no actual Chrome result has
+been observed. This remains a hypothesis, not a conclusion: the user's browser may receive
+caption-track metadata that blocked server egress does not, but the experiment must show that it
+can be accessed consistently and early without opening the transcript panel. Exact manual steps
+are in `docs/browser-acquisition-probe.md`.
 
 Smallest architectural change:
 
-1. Add a development-only `BrowserTranscriptProvider` in the extension. Do not replace the Python
+1. A development-only browser provider exists in the extension. It does not replace the Python
    provider or enable predictions.
-2. Add a narrow declared `MAIN`-world script on `youtube.com` that reads only the current video's
+2. A narrow declared `MAIN`-world script on `youtube.com` reads only the current video's
    caption-track metadata/player updates and performs only a fixed YouTube timed-text request. Do
    not export cookies, credentials, or arbitrary page data.
-3. Send a schema-validated result—video ID, navigation token, language/type metadata, original cue
+3. It sends a schema-validated result—video ID, navigation token, language/type metadata, original cue
    text and timing—back to the existing isolated content script. Reject mismatched video/token
    responses exactly as the current backend path rejects stale navigation results.
-4. Normalize into the existing transcript contract so the detector, cache key, status UI, and
+4. It normalizes into the existing transcript contract so the detector, cache key, status UI, and
    offline evaluator remain reusable. Keep the FastAPI provider available as a separately selected
    path during the experiment.
 
@@ -186,5 +188,5 @@ the same coverage, timestamp, typed-negative, latency, and two-session/repeat cr
 claims are not evidence until this project measures them.
 
 No account should be created and no key requested during this milestone. The next decision is
-whether to approve implementation of the $0 browser experiment. Only if it fails should the free
+whether the manual Chrome evidence passes the existing gate. Only if it fails should the free
 managed-API probe be discussed.

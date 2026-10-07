@@ -32,3 +32,19 @@
 - Start with a deterministic, replaceable English rules classifier and no paid inference.
 - Do not evaluate held-out annotations until rules and policy thresholds are frozen.
 - Stop the bounded Render acquisition probe after `REQUEST_BLOCKED`; do not run the full corpus while blocking persists.
+
+## 2026-10-07 — Tune iteration and browser acquisition probe
+
+- Preserve the `0d065ec` baseline and iterate only on the 14 fully reviewed tune videos; keep all
+  partial and held-out labels outside tuning.
+- Keep Conservative as the default after the tune iteration: it trades 35 more missed seconds than
+  Aggressive for 82 fewer incorrect predicted seconds, while neither mode affects the 4 negatives.
+- Treat the iteration as tune feedback, not generalization evidence; do not freeze it or connect it
+  to playback.
+- Keep any future model-assisted detector behind a transcript-level `ContextClassifier` contract;
+  a network/batched full-context call should not be hidden inside the synchronous per-window
+  classifier.
+- Prefer a local semantic classifier as the next $0 comparison. Discuss hosted-model privacy,
+  latency, and costs before adding a provider dependency or key.
+- Implement the browser-context acquisition probe as disabled-by-default development code with a
+  strict page-to-extension boundary. Unit tests do not count as Chrome acquisition evidence.

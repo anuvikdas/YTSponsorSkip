@@ -3,5 +3,6 @@ const DEFAULT_SETTINGS = Object.freeze({
   sensitivity: "conservative",
   showNotifications: true,
   developmentFixtures: false,
+  developmentBrowserAcquisition: false,
   backendUrl: "http://127.0.0.1:8000"
 });

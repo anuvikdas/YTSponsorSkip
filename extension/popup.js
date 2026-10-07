@@ -18,6 +18,9 @@ async function renderStatus() {
   statusElement.textContent = state ? labels[state.status] : "Open a YouTube video to begin.";
   if (state?.status === "transcript-ready") {
     statusElement.textContent += ` ${state.snippetCount} ${state.isGenerated ? "generated" : "manual"} caption snippets.`;
+    if (state.provider === "youtube-watch-page") {
+      statusElement.textContent += ` Browser probe: ${Math.round(state.requestToReadyMs)} ms ready (${Math.round(state.metadataDiscoveryMs)} ms metadata, ${Math.round(state.timedTextFetchMs)} ms timed text).`;
+    }
   }
   if (state?.status === "unavailable" && state.reason) {
     statusElement.textContent += ` Reason: ${state.reason}.`;

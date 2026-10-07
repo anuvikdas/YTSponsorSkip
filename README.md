@@ -1,6 +1,6 @@
 # YTSponsorSkip
 
-YTSponsorSkip is an experimental Chrome extension for detecting and skipping creator-integrated promotional interruptions in YouTube videos. The current milestone includes transcript acquisition, a detector-independent playback controller, and an offline deterministic detector baseline. Detector predictions are not connected to playback yet.
+YTSponsorSkip is an experimental Chrome extension for detecting and skipping creator-integrated promotional interruptions in YouTube videos. The current milestone includes transcript acquisition, a detector-independent playback controller, an improved offline deterministic detector, and a disabled development-only browser acquisition probe. Detector predictions are not connected to playback yet.
 
 ## Current components
 
@@ -36,7 +36,7 @@ Run tests:
 ```bash
 .venv/bin/pytest
 .venv/bin/ruff check .
-node --test extension/tests/playback-controller.test.js
+node --test extension/tests/*.test.js
 ```
 
 ## Acquisition experiment
@@ -121,9 +121,16 @@ Node package passed the two-video gate, so neither was added to deployment. The 
 manual collection checklist and normalized JSON contract are in
 `docs/tune-transcript-collection.md`.
 
-The automatic-acquisition evidence, current vendor costs, weighted decision framework, and proposed
-$0 browser-context experiment are in `docs/acquisition-options-decision.md`. That experiment has
-not been implemented or run; no managed account or paid service was added.
+The automatic-acquisition evidence, current vendor costs, and weighted decision framework are in
+`docs/acquisition-options-decision.md`. The $0 browser-context probe is now implemented behind an
+off-by-default development flag; its architecture and still-unrun Chrome protocol are in
+`docs/browser-acquisition-probe.md`. No managed account or paid service was added.
+
+The tune-only detector iteration and before/after metrics are in
+`docs/detector-tune-iteration.md`. The strategy comparison and current official model/API facts are
+in `docs/detection-strategy-decision.md`. A provider-neutral, disabled model-assisted contract,
+cost model, and failure policy are in `docs/model-assisted-detector-design.md`; no model provider
+SDK or inference path is installed.
 
 ## Reproduce the manual tune baseline
 
@@ -139,6 +146,18 @@ not been implemented or run; no managed account or paid service was added.
 
 The imported files preserve source starts and mark all constructed durations as derived analysis
 spans. They must not be interpreted as source-supplied caption or promotion boundaries.
+
+## Reproduce the improved tune-only detector result
+
+```bash
+.venv/bin/python scripts/evaluate_detector.py \
+  --source-dir data/transcripts/tune \
+  --detector-commit 3c35ceb02c84d1facd025ec8d012e09d592a6e00 \
+  --output data/evaluation/tune-rules-3c35ceb.json
+```
+
+This remains tune-set development evidence. `held_out` labels have not been evaluated and the
+result is not connected to playback.
 
 ## API behavior
 
