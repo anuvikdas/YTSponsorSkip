@@ -175,6 +175,26 @@ async def test_provider_failure_uses_stable_error_contract() -> None:
 
 
 @pytest.mark.asyncio
+async def test_provider_invalid_video_id_is_a_client_error() -> None:
+    provider = FakeProvider()
+    provider.error = TranscriptAcquisitionError(
+        FailureCode.INVALID_VIDEO_ID,
+        "The supplied YouTube video ID is invalid.",
+        retryable=False,
+    )
+    app, service = make_app(provider)
+    try:
+        async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+            response = await client.get("/api/v1/transcripts/abcdefghijk")
+
+        assert response.status_code == 422
+        assert response.json()["error"]["code"] == "INVALID_VIDEO_ID"
+        assert response.json()["error"]["retryable"] is False
+    finally:
+        service.close()
+
+
+@pytest.mark.asyncio
 async def test_invalid_video_id_is_rejected_before_provider_call() -> None:
     provider = FakeProvider()
     app, service = make_app(provider)

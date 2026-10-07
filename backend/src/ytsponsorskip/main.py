@@ -129,7 +129,10 @@ def create_app(
             FailureCode.VIDEO_UNAVAILABLE,
             FailureCode.AGE_RESTRICTED,
         }
-        status_code = 404 if error.code in not_found_codes else 503
+        if error.code is FailureCode.INVALID_VIDEO_ID:
+            status_code = 422
+        else:
+            status_code = 404 if error.code in not_found_codes else 503
         return _error_response(
             request,
             status_code=status_code,
@@ -155,7 +158,11 @@ def create_app(
     @app.get(
         "/api/v1/transcripts/{video_id}",
         response_model=AcquisitionResponse,
-        responses={404: {"model": ErrorResponse}, 503: {"model": ErrorResponse}},
+        responses={
+            404: {"model": ErrorResponse},
+            422: {"model": ErrorResponse},
+            503: {"model": ErrorResponse},
+        },
     )
     async def get_transcript(
         request: Request,
