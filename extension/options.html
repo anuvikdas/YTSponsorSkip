@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YTSponsorSkip settings</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="settings-page">
+    <main class="panel">
+      <p class="eyebrow">YTSponsorSkip</p>
+      <h1>Settings</h1>
+      <p class="lede">Choose how the extension handles detected promotional interruptions.</p>
+
+      <form id="settings-form">
+        <label class="toggle-row">
+          <span>
+            <strong>Enable skipping</strong>
+            <small>Transcript failures never stop normal playback.</small>
+          </span>
+          <input id="enabled" type="checkbox">
+        </label>
+
+        <fieldset>
+          <legend>Skip policy</legend>
+          <label class="choice">
+            <input type="radio" name="sensitivity" value="conservative">
+            <span>
+              <strong>Conservative</strong>
+              <small>Automatically skip only clear, separable promotions. Recommended.</small>
+            </span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="sensitivity" value="aggressive">
+            <span>
+              <strong>Aggressive</strong>
+              <small>Also skip ambiguous likely promotions when detection supports them.</small>
+            </span>
+          </label>
+        </fieldset>
+
+        <label class="toggle-row">
+          <span>
+            <strong>Show status notifications</strong>
+            <small>Includes acquisition failures and future skip/undo messages.</small>
+          </span>
+          <input id="show-notifications" type="checkbox">
+        </label>
+
+        <details>
+          <summary>Development</summary>
+          <label class="stacked" for="backend-url">
+            <strong>Backend URL</strong>
+            <input id="backend-url" type="url" required>
+            <small>Use the local API during development. Render will be tested separately.</small>
+          </label>
+        </details>
+
+        <div class="actions">
+          <button type="submit">Save settings</button>
+          <button id="reset" type="button" class="secondary">Reset</button>
+          <output id="status" aria-live="polite"></output>
+        </div>
+      </form>
+    </main>
+    <script src="defaults.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

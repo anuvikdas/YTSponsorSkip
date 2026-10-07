@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YTSponsorSkip",
+  "version": "0.1.0",
+  "description": "Detects promotional interruptions and skips them when reliable intervals are available.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "http://localhost:8000/*",
+    "https://*.onrender.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["defaults.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YTSponsorSkip"
+  },
+  "options_page": "options.html"
+}

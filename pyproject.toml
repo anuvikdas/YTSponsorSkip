@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ytsponsorskip"
+version = "0.1.0"
+description = "Transcript acquisition backend for the YTSponsorSkip Chrome extension"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi==0.118.0",
+  "pydantic-settings==2.11.0",
+  "requests==2.32.5",
+  "uvicorn[standard]==0.37.0",
+  "youtube-transcript-api==1.2.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "httpx==0.28.1",
+  "pytest==8.4.2",
+  "pytest-asyncio==1.2.0",
+  "ruff==0.14.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "backend/src"}
+
+[tool.setuptools.packages.find]
+where = ["backend/src"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
