@@ -24,3 +24,11 @@
 - Use a single process-local TTL/LRU cache, duplicate-request coalescing, bounded provider concurrency, and a request limit for the experiment.
 - Do not add a database, managed cache, custom domain, paid proxy, or paid inference without measured need and prior discussion.
 - Keep cloud cold-start latency distinct from YouTube IP blocking in experiment reports.
+
+## 2026-10-07 — Playback verification and detector baseline
+
+- Record the manual Chrome fixture check as user-reported verification, separately from automated tests.
+- Keep detector predictions disconnected from automatic playback until tune evidence is available and reviewed.
+- Start with a deterministic, replaceable English rules classifier and no paid inference.
+- Do not evaluate held-out annotations until rules and policy thresholds are frozen.
+- Stop the bounded Render acquisition probe after `REQUEST_BLOCKED`; do not run the full corpus while blocking persists.

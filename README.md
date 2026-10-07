@@ -1,6 +1,6 @@
 # YTSponsorSkip
 
-YTSponsorSkip is an experimental Chrome extension for detecting and skipping creator-integrated promotional interruptions in YouTube videos. The current milestone includes transcript acquisition and a detector-independent playback controller. Sponsorship detection is not implemented yet.
+YTSponsorSkip is an experimental Chrome extension for detecting and skipping creator-integrated promotional interruptions in YouTube videos. The current milestone includes transcript acquisition, a detector-independent playback controller, and an offline deterministic detector baseline. Detector predictions are not connected to playback yet.
 
 ## Current components
 
@@ -9,6 +9,7 @@ YTSponsorSkip is an experimental Chrome extension for detecting and skipping cre
 - `extension/playback-controller.js`: interval playback, seeking policy, and Undo
 - `scripts/run_acquisition_experiment.py`: repeatable local/cloud acquisition measurement
 - `scripts/import_validation_workbook.py`: repeatable manual-label normalization and validation
+- `scripts/evaluate_detector.py`: saved-transcript inventory and tune-only detector evaluation
 - `data/acquisition_corpus.csv`: initial acquisition corpus (not a detection evaluation set)
 - `data/validation/`: normalized user-supplied manual annotations
 
@@ -106,6 +107,8 @@ Do not warm the service before the first attempt if measuring cold-start latency
 `data/labeling_template.xlsx` contains CSV-compatible **Videos** and **Segments** sheets. See `docs/labeling-format.md` before labeling or importing data. Acquisition outcomes are evidence about caption retrieval, not promotion labels.
 
 The imported validation set is documented in `docs/validation-import-report.md`. Held-out and partial-review rows are excluded from development playback fixtures and must remain outside detector tuning.
+
+The rules baseline is documented in `docs/detector-baseline.md`; current transcript coverage and unavailable tune metrics are recorded in `docs/detector-tune-report.md`. Render's bounded follow-up is in `docs/render-small-experiment.md`.
 
 ## API behavior
 

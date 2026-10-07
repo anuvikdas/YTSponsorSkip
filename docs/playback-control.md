@@ -50,3 +50,7 @@ node --test extension/tests/playback-controller.test.js
 ```
 
 The tests cover normal and paused playback, late arrival without rewinding, a user seek that precedes delayed interval arrival, seeks before/inside/after intervals, Undo, replay eligibility, adjacent intervals, tune-only fixture scope, and stale results after rapid navigation.
+
+## Verification record
+
+On 2026-10-07, the user reported that the manual Chrome playback-fixture checks appeared to work. This is user-reported browser verification, not an automated Chrome result. The automated controller suite remains the reproducible evidence for individual state transitions.
