@@ -45,11 +45,21 @@ def usable_transcript(entry: dict[str, Any]) -> Transcript | None:
         )
     except (KeyError, TypeError, ValueError):
         return None
+    caption_type = str(metadata.get("caption_type", entry.get("caption_type", "unknown")))
+    raw_is_generated = metadata.get("is_generated")
+    if isinstance(raw_is_generated, bool):
+        is_generated: bool | None = raw_is_generated
+    elif caption_type == "generated":
+        is_generated = True
+    elif caption_type == "manual":
+        is_generated = False
+    else:
+        is_generated = None
     return Transcript(
         video_id=video_id,
         language=str(metadata.get("language", entry.get("language", "unknown"))),
         language_code=str(metadata.get("language_code", entry.get("language_code", "unknown"))),
-        is_generated=bool(metadata.get("is_generated", entry.get("caption_type") == "generated")),
+        is_generated=is_generated,
         snippets=normalized_snippets,
         provider=str(metadata.get("provider", "saved-response")),
         provider_version=str(

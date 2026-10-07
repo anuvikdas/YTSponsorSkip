@@ -2,6 +2,10 @@
 
 Run date: 2026-10-07. Detector: deterministic rules baseline. Split: `tune` only.
 
+The follow-up Node experiment tested YouTube.js 18.1.0 and `youtube-transcript` 1.3.1 on
+`aircAruvnKk` and `U3aXWizDbQ4`. Neither returned snippets, so the coverage and metric status below
+is unchanged. See `docs/node-acquisition-experiment.md` for exact failures and latencies.
+
 ## Transcript inventory and coverage
 
 The inventory examined the ignored earlier local experiment files and both attached Render responses. Earlier successful local records predate snippet preservation and therefore contain acquisition metadata but no transcript text. The two attached files contain the same 61-snippet `dQw4w9WgXcQ` manual transcript, which is not a labeled tune video.

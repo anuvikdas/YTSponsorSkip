@@ -10,6 +10,7 @@ YTSponsorSkip is an experimental Chrome extension for detecting and skipping cre
 - `scripts/run_acquisition_experiment.py`: repeatable local/cloud acquisition measurement
 - `scripts/import_validation_workbook.py`: repeatable manual-label normalization and validation
 - `scripts/evaluate_detector.py`: saved-transcript inventory and tune-only detector evaluation
+- `tools/transcript-acquisition-node/`: isolated, pinned Node acquisition probes (not backend code)
 - `data/acquisition_corpus.csv`: initial acquisition corpus (not a detection evaluation set)
 - `data/validation/`: normalized user-supplied manual annotations
 
@@ -109,6 +110,11 @@ Do not warm the service before the first attempt if measuring cold-start latency
 The imported validation set is documented in `docs/validation-import-report.md`. Held-out and partial-review rows are excluded from development playback fixtures and must remain outside detector tuning.
 
 The rules baseline is documented in `docs/detector-baseline.md`; current transcript coverage and unavailable tune metrics are recorded in `docs/detector-tune-report.md`. Render's bounded follow-up is in `docs/render-small-experiment.md`.
+
+The bounded alternative-library investigation is in `docs/node-acquisition-experiment.md`. Neither
+Node package passed the two-video gate, so neither was added to deployment. The exact 14-video
+manual collection checklist and normalized JSON contract are in
+`docs/tune-transcript-collection.md`.
 
 ## API behavior
 

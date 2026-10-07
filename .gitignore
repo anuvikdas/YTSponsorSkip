@@ -8,3 +8,4 @@ __pycache__/
 results/*.json
 results/*.csv
 *.inspect.ndjson
+tools/transcript-acquisition-node/node_modules/

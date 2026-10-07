@@ -19,7 +19,7 @@ class Transcript:
     video_id: str
     language: str
     language_code: str
-    is_generated: bool
+    is_generated: bool | None
     snippets: tuple[TranscriptSnippet, ...]
     provider: str
     provider_version: str
