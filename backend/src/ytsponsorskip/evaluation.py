@@ -36,6 +36,22 @@ def merge_ranges(ranges: list[TimeRange]) -> list[TimeRange]:
     return merged
 
 
+def playback_eligible_intervals(
+    predictions: tuple[DetectedInterval, ...],
+) -> tuple[DetectedInterval, ...]:
+    """Mirror the extension's post-merge, strictly-over-three-second safety gate.
+
+    This is a playback policy view; it never modifies detector output or its metrics.
+    """
+    return tuple(
+        DetectedInterval(start, end, 0, (), ())
+        for start, end in merge_ranges(
+            [(interval.start_seconds, interval.end_seconds) for interval in predictions]
+        )
+        if end - start > 3.0
+    )
+
+
 def ranges_duration(ranges: list[TimeRange]) -> float:
     return sum(end - start for start, end in merge_ranges(ranges))
 

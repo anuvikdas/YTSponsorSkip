@@ -177,6 +177,36 @@ test("adjacent intervals produce one seek to the end of the group", () => {
   assert.equal(skips[0].memberCount, 2);
 });
 
+test("auto-skip requires a merged interval strictly longer than three seconds", () => {
+  const { controller, video, skips } = setup();
+  controller.setIntervals({
+    videoId: "video-a", requestId: "request-a",
+    intervals: [
+      { startSeconds: 10, endSeconds: 11.5 },
+      { startSeconds: 11.5, endSeconds: 13 },
+      { startSeconds: 20, endSeconds: 23.001 },
+      { startSeconds: 30, endSeconds: 32 }
+    ]
+  });
+  assert.equal(controller.snapshot().intervalCount, 1);
+  video.tick(10);
+  assert.equal(video.currentTime, 10);
+  video.tick(20);
+  assert.equal(video.currentTime, 23.001);
+  assert.equal(skips.length, 1);
+});
+
+test("two adjacent short intervals can become eligible after merging", () => {
+  const { controller, video, skips } = setup();
+  controller.setIntervals({
+    videoId: "video-a", requestId: "request-a",
+    intervals: [{ startSeconds: 10, endSeconds: 12 }, { startSeconds: 12, endSeconds: 14 }]
+  });
+  video.tick(10);
+  assert.equal(video.currentTime, 14);
+  assert.equal(skips[0].memberCount, 2);
+});
+
 test("navigation clears state and rejects stale interval results", () => {
   const { controller, video, skips } = setup();
   setInterval(controller);

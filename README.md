@@ -12,9 +12,24 @@ YTSponsorSkip is an experimental Chrome extension for detecting and skipping cre
 - `scripts/import_manual_transcripts.py`: deterministic DOCX transcript import with source/derived
   timing separated
 - `scripts/evaluate_detector.py`: saved-transcript inventory and tune-only detector evaluation
+- `scripts/build_error_review.py`: standalone HTML/Markdown error review from saved tune results
+- `scripts/compare_detectors.py`: reproducible local rules and recorded-output comparisons (no model calls)
 - `tools/transcript-acquisition-node/`: isolated, pinned Node acquisition probes (not backend code)
 - `data/acquisition_corpus.csv`: initial acquisition corpus (not a detection evaluation set)
 - `data/validation/`: normalized user-supplied manual annotations
+
+The bounded alternative caption acquisition probe is documented in
+[Supadata native-caption probe](docs/supadata-probe.md). It uses the project-root ignored `.env`,
+free credits, native captions only, and two prespecified videos. Supadata is not yet selected as
+the FastAPI provider; that decision depends on both live probe outcomes.
+
+## Offline detector review
+
+Open [the local review page](data/reviews/tune-2026-10-11/index.html) directly in Chrome; no backend
+is needed. It compares both modes on all 14 reviewed tune videos, with timestamped excerpts and
+annotation questions. See [findings and reproduction commands](docs/offline-error-review.md) and
+the [proposed $0 semantic experiment](docs/next-detection-experiment.md). Detector predictions remain
+disconnected from playback; the browser acquisition experiment is unchanged.
 
 ## Local backend
 
@@ -160,5 +175,12 @@ This remains tune-set development evidence. `held_out` labels have not been eval
 result is not connected to playback.
 
 ## API behavior
+
+The local preview milestone is documented in [docs/local-preview-milestone.md](docs/local-preview-milestone.md).
+The extension's disabled-by-default **Preview detected promotions** setting calls
+`GET /api/v1/detections/{video_id}?mode=conservative|aggressive&source=saved|supadata` with a
+validated `X-Request-ID`. Saved mode is the development default and does not acquire captions;
+Supadata is explicit and budgeted. Both use the same unchanged detector. Predictions are shown
+in the popup only and cannot trigger playback skips.
 
 `GET /api/v1/transcripts/{video_id}?languages=en` returns a typed transcript document. Stable error responses distinguish unavailable captions, invalid input, upstream changes, timeouts, and IP/request blocking. Original snippet `text`, `start_seconds`, and `duration_seconds` are preserved; caption duration is display timing, not a detected promotional boundary.

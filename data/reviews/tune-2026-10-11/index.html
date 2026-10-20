@@ -1,0 +1,1157 @@
+<!doctype html><html lang='en'><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta http-equiv='Content-Security-Policy' content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'">
+<title>SponsorSkip · tune error review</title>
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#193044;background:#f4f6f8}
+body{max-width:1180px;margin:0 auto;padding:32px}h1{font-size:2.2rem;margin-bottom:8px}
+a{color:#075ca0}header{margin-bottom:28px}.lede{max-width:85ch;color:#465b6b}
+.toolbar{position:sticky;top:0;background:#e7eef5;padding:14px;z-index:2;border-radius:10px;
+display:flex;gap:20px;align-items:center;flex-wrap:wrap}input,select{font:inherit;padding:7px}
+article{background:white;margin:24px 0;border:1px solid #cfdae3;border-radius:12px;padding:24px}
+h2{margin:0 0 8px;font-size:1.35rem}.meta,.note{color:#526677;font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.mode{padding:16px;background:#f7f9fc;border-left:4px solid #1e708b;border-radius:5px}
+.aggressive{border-left-color:#ae6221}.metrics{font-weight:650}.error{color:#8b283b}
+details{margin-top:20px}summary{cursor:pointer;font-weight:650}.cue{padding:10px 0;
+border-bottom:1px solid #e3e8ec;display:grid;grid-template-columns:150px 1fr;gap:14px}
+.cue p{margin:0;white-space:pre-wrap}.tag{font-size:.78rem;display:block;color:#835021}
+[hidden]{display:none!important}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%}
+td,th{text-align:left;padding:10px;border-bottom:1px solid #d5dfe7;vertical-align:top}
+@media(max-width:650px){body{padding:12px}.cue{grid-template-columns:1fr}article{padding:16px}}
+@media print{.toolbar{display:none}details{display:block}article{break-inside:avoid}}
+</style><body>
+<header><p>SPONSORSKIP / OFFLINE EVALUATION</p><h1>Where the detector loses time</h1>
+<p class='lede'>14 reviewed tune videos · unchanged rules · saved predictions. Compare intervals and inspect the original timestamped cues. Annotations are manual judgments. Cue ends (†) are derived and approximate.</p>
+<p class='note'>No model calls or acquisition. No external resources load. YouTube opens only when you click a link. Held-out and partial reviews excluded.</p>
+<div class='table-wrap'><table><tr><th>Mode</th><th>False skip</th><th>Missed</th><th>Negative videos affected</th><th>Matched</th><th>Start / end MAE</th></tr>
+<tr><td>Conservative</td><td>25 s</td><td>104 s</td><td>0/4</td><td>10</td><td>4.6 / 8.3 s</td></tr>
+<tr><td>Aggressive</td><td>107 s</td><td>69 s</td><td>0/4</td><td>10</td><td>7.8 / 9.8 s</td></tr>
+</table></div></header><div class='toolbar'>
+<label>Mode <select id='mode'><option value='conservative'>Conservative</option><option value='both'>Compare both</option><option value='aggressive'>Aggressive</option></select></label><label>Find video <input id='search' type='search' placeholder='Title or video ID'></label><label><input id='errors' type='checkbox'> Only errors</label><span id='count' role='status'></span></div><main>
+<article data-search='the simplest math problem no one can solve - collatz conjecture 094y1z2wpjg' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=094y1Z2wpJg' target='_blank' rel='noopener noreferrer'>The Simplest Math Problem No One Can Solve - Collatz Conjecture</a></h2>
+<p class='meta'>094y1Z2wpJg · generated captions · one_or_more</p>
+<p><strong>Annotated</strong> 20:48–22:07 (1248–1327 s)</p>
+<p><strong>Review interpretation:</strong> Boundary under-coverage, not an entirely missed promotion: the candidate spans 1229–1329 s but Conservative selects 1254–1326 s against 1248–1327 s. Evidence-bearing cue selection drops the lead-in and final second. Exact sub-cue edges remain uncertain.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 20:54–22:06 (1254–1326 s)</p>
+<p class='metrics'>0 s false · 7 s missed</p>
+<p class='error'>False: None<br>Missed: 20:48–20:54 (1248–1254 s); 22:06–22:07 (1326–1327 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 7 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 20:29–22:09 (1229–1329 s)</p>
+<p class='note'>Label 1: start error 6 s; end error 1 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 20:52–22:09 (1252–1329 s)</p>
+<p class='metrics'>2 s false · 4 s missed</p>
+<p class='error'>False: 22:07–22:09 (1327–1329 s)<br>Missed: 20:48–20:52 (1248–1252 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 4 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 20:29–22:09 (1229–1329 s)</p>
+<p class='note'>Label 1: start error 4 s; end error 2 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>20:40–21:02 (1240–1262 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1237' target='_blank' rel='noopener noreferrer'>20:37–20:42†</a><br><small>cue #453</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>(gentle music)</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1242' target='_blank' rel='noopener noreferrer'>20:42–20:44†</a><br><small>cue #454</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>What I love about 3x+1</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1244' target='_blank' rel='noopener noreferrer'>20:44–20:47†</a><br><small>cue #455</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>is it&#x27;s a problem almost anyone can understand</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1247' target='_blank' rel='noopener noreferrer'>20:47–20:48†</a><br><small>cue #456</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and play around with.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1248' target='_blank' rel='noopener noreferrer'>20:48–20:50†</a><br><small>cue #457</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>And actually trying to figure things out for yourself</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1250' target='_blank' rel='noopener noreferrer'>20:50–20:52†</a><br><small>cue #458</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>is the best way to learn,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1252' target='_blank' rel='noopener noreferrer'>20:52–20:54†</a><br><small>cue #459</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>which is why I subscribed to Brilliant,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1254' target='_blank' rel='noopener noreferrer'>20:54–20:56†</a><br><small>cue #460</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>the sponsor of this video.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1256' target='_blank' rel='noopener noreferrer'>20:56–20:59†</a><br><small>cue #461</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Now, recently, Brilliant have upped their interactivity.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1259' target='_blank' rel='noopener noreferrer'>20:59–21:01†</a><br><small>cue #462</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>For example, here is a great lesson</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1261' target='_blank' rel='noopener noreferrer'>21:01–21:03†</a><br><small>cue #463</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>on the Pythagorean theorem.</p></div>
+<h4>21:58–22:17 (1318–1337 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1316' target='_blank' rel='noopener noreferrer'>21:56–21:59†</a><br><small>cue #487</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and a community of 8 million other learners,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1319' target='_blank' rel='noopener noreferrer'>21:59–22:01†</a><br><small>cue #488</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>go to brilliant.org/veritasium.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1321' target='_blank' rel='noopener noreferrer'>22:01–22:04†</a><br><small>cue #489</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>I will put that link down in the description.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1324' target='_blank' rel='noopener noreferrer'>22:04–22:06†</a><br><small>cue #490</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>So I wanna thank Brilliant for sponsoring this video,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=094y1Z2wpJg&amp;t=1326' target='_blank' rel='noopener noreferrer'>22:06–22:09†</a><br><small>cue #491</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>and I wanna thank you for watching.</p></div>
+</details></article>
+<article data-search='the biggest misconception about electricity bhihgxav9ly' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=bHIhgxav9LY' target='_blank' rel='noopener noreferrer'>The Biggest Misconception About Electricity</a></h2>
+<p class='meta'>bHIhgxav9LY · manual captions · one_or_more</p>
+<p><strong>Annotated</strong> 13:33–14:42 (813–882 s)</p>
+<p><strong>Review interpretation:</strong> A detected promotion starts 6 s late and ends 3 s late. Candidate coverage includes the whole annotation; this is a refinement discrepancy, not candidate omission. Inspect the transition cues before deciding whether padding is justified.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 13:39–14:45 (819–885 s)</p>
+<p class='metrics'>3 s false · 6 s missed</p>
+<p class='error'>False: 14:42–14:45 (882–885 s)<br>Missed: 13:33–13:39 (813–819 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 6 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 13:14–14:47 (794–887 s)</p>
+<p class='note'>Label 1: start error 6 s; end error 3 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 13:37–14:47 (817–887 s)</p>
+<p class='metrics'>5 s false · 4 s missed</p>
+<p class='error'>False: 14:42–14:47 (882–887 s)<br>Missed: 13:33–13:37 (813–817 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 4 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 13:14–14:47 (794–887 s)</p>
+<p class='note'>Label 1: start error 4 s; end error 5 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>13:25–13:47 (805–827 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=803' target='_blank' rel='noopener noreferrer'>13:23–13:30†</a><br><small>cue #335</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>are really what&#x27;s delivering your power.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=810' target='_blank' rel='noopener noreferrer'>13:30–13:31†</a><br><small>cue #336</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Hey, now that you understand</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=811' target='_blank' rel='noopener noreferrer'>13:31–13:34†</a><br><small>cue #337</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>how electrical energy actually flows,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=814' target='_blank' rel='noopener noreferrer'>13:34–13:37†</a><br><small>cue #338</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>you can think about that</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=814' target='_blank' rel='noopener noreferrer'>13:34–13:37†</a><br><small>cue #339</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>every time you flick on a light switch.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=817' target='_blank' rel='noopener noreferrer'>13:37–13:39†</a><br><small>cue #340</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>And if you want to take your switches to the next level,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=819' target='_blank' rel='noopener noreferrer'>13:39–13:41†</a><br><small>cue #341</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>the sponsor of this video, Caseta by Lutron,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=821' target='_blank' rel='noopener noreferrer'>13:41–13:43†</a><br><small>cue #342</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>provides premium smart lighting control,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=823' target='_blank' rel='noopener noreferrer'>13:43–13:47†</a><br><small>cue #343</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>including switches, remotes, and plug-in smart dimmers.</p></div>
+<h4>14:34–14:55 (874–895 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=873' target='_blank' rel='noopener noreferrer'>14:33–14:35†</a><br><small>cue #367</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>they&#x27;re just a click or a call away.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=875' target='_blank' rel='noopener noreferrer'>14:35–14:37†</a><br><small>cue #368</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Learn more about Caseda at Lutron&#x27;s website,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=877' target='_blank' rel='noopener noreferrer'>14:37–14:39†</a><br><small>cue #369</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>lutron.com/veritasium.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=879' target='_blank' rel='noopener noreferrer'>14:39–14:41†</a><br><small>cue #370</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>I will put that link down in the description.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=881' target='_blank' rel='noopener noreferrer'>14:41–14:44†</a><br><small>cue #371</small>
+<span class='tag' data-mode='conservative'>Conservative: false skip</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>So, I want to thank Lutron Electronics</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=884' target='_blank' rel='noopener noreferrer'>14:44–14:45†</a><br><small>cue #372</small>
+<span class='tag' data-mode='conservative'>Conservative: false skip</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>for sponsoring this video,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=bHIhgxav9LY&amp;t=885' target='_blank' rel='noopener noreferrer'>14:45–14:47†</a><br><small>cue #373</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>and I want to thank you for watching.</p></div>
+</details></article>
+<article data-search='car thieves vs the almost final glitterbomb 5.0 iweu2dxhrdg' data-conservative='false' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=iWeu2dxHRDg' target='_blank' rel='noopener noreferrer'>Car Thieves vs the Almost Final GlitterBomb 5.0</a></h2>
+<p class='meta'>iWeu2dxHRDg · manual captions · one_or_more</p>
+<p><strong>Annotated</strong> 17:30–18:18 (1050–1098 s)</p>
+<p><strong>Review interpretation:</strong> Conservative exactly matches this manual interval. Aggressive expands into adjacent content. This illustrates why blanket neighbor expansion is unsafe even when classification is correct.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 17:30–18:18 (1050–1098 s)</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 17:08–18:25 (1028–1105 s)</p>
+<p class='note'>Label 1: start error 0 s; end error 0 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 17:25–18:25 (1045–1105 s)</p>
+<p class='metrics'>12 s false · 0 s missed</p>
+<p class='error'>False: 17:25–17:30 (1045–1050 s); 18:18–18:25 (1098–1105 s)<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 17:08–18:25 (1028–1105 s)</p>
+<p class='note'>Label 1: start error 5 s; end error 7 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>17:17–17:38 (1037–1058 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=iWeu2dxHRDg&amp;t=1037' target='_blank' rel='noopener noreferrer'>17:17–17:25†</a><br><small>cue #149</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Being an engineer is the best, because you can make whatever you can dream up. But what&#x27;s the first step?</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=iWeu2dxHRDg&amp;t=1045' target='_blank' rel='noopener noreferrer'>17:25–17:30†</a><br><small>cue #150</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>How do you get started down that path? Well, I&#x27;ll tell you exactly how.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=iWeu2dxHRDg&amp;t=1050' target='_blank' rel='noopener noreferrer'>17:30–17:39†</a><br><small>cue #151</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>It&#x27;s called the CrunchLabs Build Box, and it gets delivered right to your doorstep every month, and then we build it together, while I teach you all the juicy physics that make it work.</p></div>
+<h4>18:10–18:33 (1090–1113 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=iWeu2dxHRDg&amp;t=1086' target='_blank' rel='noopener noreferrer'>18:06–18:14†</a><br><small>cue #156</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>So if you wanna embark on this yearlong journey with me, while there&#x27;s still time to get it before Christmas, just head on over to crunchlabs.com or use the link in the video description,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=iWeu2dxHRDg&amp;t=1094' target='_blank' rel='noopener noreferrer'>18:14–18:18†</a><br><small>cue #157</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>where we&#x27;re giving it away two months free as a holiday special.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=iWeu2dxHRDg&amp;t=1098' target='_blank' rel='noopener noreferrer'>18:18–18:25†</a><br><small>cue #158</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>(logo chimes)</p></div>
+</details></article>
+<article data-search='backyard squirrel maze 2.0- the walnut heist dtvs9lvrxz8' data-conservative='false' data-aggressive='false'>
+<h2><a href='https://www.youtube.com/watch?v=DTvS9lvRxZ8' target='_blank' rel='noopener noreferrer'>Backyard Squirrel Maze 2.0- The Walnut Heist</a></h2>
+<p class='meta'>DTvS9lvRxZ8 · manual captions · none</p>
+<p><strong>Annotated</strong> None</p>
+<p><strong>Review interpretation:</strong> Both modes correctly produce no skips relative to the reviewed negative label. The excerpt is a highest-scoring inspection window, not a proposed promotion.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> None</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: None</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> None</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: None</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<p class='note'>Reviewed negative with no skips. Highest-scoring rule window shown for inspection; it is not an error.</p>
+<h4>00:00–00:30 (0–30 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=DTvS9lvRxZ8&amp;t=0' target='_blank' rel='noopener noreferrer'>00:00–00:06†</a><br><small>cue #0</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>- This is a bird feeder, and everything you see surrounding me in my yard is an attempt to protect it from four thieving squirrels.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=DTvS9lvRxZ8&amp;t=6' target='_blank' rel='noopener noreferrer'>00:06–00:15†</a><br><small>cue #1</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>If they want the birdseed and the lifetime supply of walnuts in this bank vault, they&#x27;ll first need to pass through my nine-part obstacle course. By design, it&#x27;s extremely challenging.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=DTvS9lvRxZ8&amp;t=15' target='_blank' rel='noopener noreferrer'>00:15–00:18†</a><br><small>cue #2</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>It&#x27;s meant to test their mental limits and their physical limits.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=DTvS9lvRxZ8&amp;t=18' target='_blank' rel='noopener noreferrer'>00:18–00:25†</a><br><small>cue #3</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>I held back no punches, but I have to admit, in hindsight, I once again completely underestimated my adversary.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=DTvS9lvRxZ8&amp;t=25' target='_blank' rel='noopener noreferrer'>00:25–00:36†</a><br><small>cue #4</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>And truthfully, I never thought I&#x27;d be that crazy guy in the neighborhood obsessing over the squirrels, but they started it first when they would constantly pillage the birdseed from any bird feeder I would put up about a year ago.</p></div>
+</details></article>
+<article data-search='how to make friends i9hj_rux9y0' data-conservative='false' data-aggressive='false'>
+<h2><a href='https://www.youtube.com/watch?v=I9hJ_Rux9y0' target='_blank' rel='noopener noreferrer'>How To Make Friends</a></h2>
+<p class='meta'>I9hJ_Rux9y0 · generated captions · none</p>
+<p><strong>Annotated</strong> None</p>
+<p><strong>Review interpretation:</strong> ANNOTATION REVIEW NEEDED: this is labeled a reviewed negative, but cues 144–149 (683–715 s, derived ends) describe wormhole pins, matching posters and buying from the creator&#x27;s shop. Under our creator-owned promotion definition this looks like a promotional interruption. Please review the video before changing any annotation. Metrics retain the supplied negative label. Aggressive builds a 677–715 s candidate but refinement rejects it; Conservative does not assemble a candidate. Zero false-positive negatives therefore does not prove safety or complete recall.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> None</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: None</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> None</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 11:17–11:55 (677–715 s)</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<p class='note'>Reviewed negative with no skips. Highest-scoring rule window shown for inspection; it is not an error.</p>
+<h4>11:21–11:51 (681–711 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=I9hJ_Rux9y0&amp;t=677' target='_blank' rel='noopener noreferrer'>11:17–11:23†</a><br><small>cue #143</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Go get to know them!</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=I9hJ_Rux9y0&amp;t=683' target='_blank' rel='noopener noreferrer'>11:23–11:28†</a><br><small>cue #144</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>so we’ve created a few things you  can share with new and old friends!  </p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=I9hJ_Rux9y0&amp;t=688' target='_blank' rel='noopener noreferrer'>11:28–11:33†</a><br><small>cue #145</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Two wormhole pins to connect you and your BFF  no matter where you are. If you want to share  </p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=I9hJ_Rux9y0&amp;t=693' target='_blank' rel='noopener noreferrer'>11:33–11:38†</a><br><small>cue #146</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>something with your entire friend group – get a  little bird pin for each of them. They are all  </p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=I9hJ_Rux9y0&amp;t=698' target='_blank' rel='noopener noreferrer'>11:38–11:44†</a><br><small>cue #147</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>unique but fit together like pieces of a puzzle.  Or get matching posters to let your friends know  </p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=I9hJ_Rux9y0&amp;t=704' target='_blank' rel='noopener noreferrer'>11:44–11:50†</a><br><small>cue #148</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>you’re thinking of them. Or just browse all the  sciency things we made for you! If you like videos  </p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=I9hJ_Rux9y0&amp;t=710' target='_blank' rel='noopener noreferrer'>11:50–11:55†</a><br><small>cue #149</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>like this, getting something from our shop is the  best way to support us! Thank you for watching.</p></div>
+</details></article>
+<article data-search='how the immune system actually works - immune lxfek8g8cui' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=lXfEK8G8CUI' target='_blank' rel='noopener noreferrer'>How The Immune System ACTUALLY Works - IMMUNE</a></h2>
+<p class='meta'>lXfEK8G8CUI · manual captions · one_or_more</p>
+<p><strong>Annotated</strong> 09:18–10:45 (558–645 s)</p>
+<p><strong>Review interpretation:</strong> Conservative loses 21 annotated seconds inside its candidate (3 s lead-in plus 18 s tail), including a pre-order discussion and link. Another 8 s (637–645) lies beyond the observed analysis span: the final start is 633 s with a derived 4 s fallback. Those 8 s remain in the supplied-label metric but cannot be assigned to classifier failure. The source does not establish speech or video end.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 09:21–10:19 (561–619 s)</p>
+<p class='metrics'>0 s false · 29 s missed</p>
+<p class='error'>False: None<br>Missed: 09:18–09:21 (558–561 s); 10:19–10:45 (619–645 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 21 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 8 s.</p><p class='note'>Candidate spans: 08:58–10:37 (538–637 s)</p>
+<p class='note'>Label 1: start error 3 s; end error 26 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 09:20–10:23 (560–623 s)</p>
+<p class='metrics'>0 s false · 24 s missed</p>
+<p class='error'>False: None<br>Missed: 09:18–09:20 (558–560 s); 10:23–10:45 (623–645 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 16 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 8 s.</p><p class='note'>Candidate spans: 08:58–10:37 (538–637 s)</p>
+<p class='note'>Label 1: start error 2 s; end error 22 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>09:10–09:29 (550–569 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=548' target='_blank' rel='noopener noreferrer'>09:08–09:15†</a><br><small>cue #133</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>While for millions of cells, it was a desperate fight for life and death.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=555' target='_blank' rel='noopener noreferrer'>09:15–09:20†</a><br><small>cue #134</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>But this is just the beginning of the epic story that unfolds inside you every day,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=560' target='_blank' rel='noopener noreferrer'>09:20–09:21†</a><br><small>cue #135</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and is told in full in</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=561' target='_blank' rel='noopener noreferrer'>09:21–09:25†</a><br><small>cue #136</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>&quot;Immune: A Journey into the Mysterious System That Keeps You Alive&quot;,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=565' target='_blank' rel='noopener noreferrer'>09:25–09:29†</a><br><small>cue #137</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>written by Philipp Dettmer, the founder and head writer of Kurzgesagt.</p></div>
+<h4>10:11–10:53 (611–653 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=611' target='_blank' rel='noopener noreferrer'>10:11–10:12†</a><br><small>cue #149</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>The book will be out in six weeks</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=612' target='_blank' rel='noopener noreferrer'>10:12–10:16†</a><br><small>cue #150</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and it would mean the world to us and Philipp if you could pre-order it.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=616' target='_blank' rel='noopener noreferrer'>10:16–10:19†</a><br><small>cue #151</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Pre-ordering is super important in the world of books,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=619' target='_blank' rel='noopener noreferrer'>10:19–10:23†</a><br><small>cue #152</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and in contrast to games, we can guarantee that it&#x27;s actually finished</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=623' target='_blank' rel='noopener noreferrer'>10:23–10:26†</a><br><small>cue #153</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>and there will be no day one patch.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=626' target='_blank' rel='noopener noreferrer'>10:26–10:28†</a><br><small>cue #154</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>There&#x27;s a link in the description.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=628' target='_blank' rel='noopener noreferrer'>10:28–10:33†</a><br><small>cue #155</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>This is the end of a decade-long personal journey and we&#x27;d love to see what you think.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=lXfEK8G8CUI&amp;t=633' target='_blank' rel='noopener noreferrer'>10:33–10:37†</a><br><small>cue #156</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>Thank you for watching.</p></div>
+</details></article>
+<article data-search='my framework investment should not have worked out -lergzzguby' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=-lErGZZgUbY' target='_blank' rel='noopener noreferrer'>My Framework Investment Should NOT Have Worked Out</a></h2>
+<p class='meta'>-lErGZZgUbY · generated captions · one_or_more</p>
+<p><strong>Annotated</strong> 00:53–01:14 (53–74 s)</p>
+<p><strong>Review interpretation:</strong> Mixed-purpose cues and annotation uncertainty: cue 6 (50–58 s) moves from Framework tiles to the sponsor; cue 8 (66–83 s) contains security features and the purchase link. Conservative takes whole cues, yielding 12 false-skip seconds against 53–74 s. Some of 74–83 s still reads promotional. Inspect the source video before treating every excess second as genuinely unwanted skipping; do not silently alter labels.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 00:50–01:23 (50–83 s)</p>
+<p class='metrics'>12 s false · 0 s missed</p>
+<p class='error'>False: 00:50–00:53 (50–53 s); 01:14–01:23 (74–83 s)<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 00:25–01:46 (25–106 s)</p>
+<p class='note'>Label 1: start error 3 s; end error 9 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 00:43–01:46 (43–106 s)</p>
+<p class='metrics'>42 s false · 0 s missed</p>
+<p class='error'>False: 00:43–00:53 (43–53 s); 01:14–01:46 (74–106 s)<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 00:25–01:46 (25–106 s)</p>
+<p class='note'>Label 1: start error 10 s; end error 32 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>00:35–01:01 (35–61 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=34' target='_blank' rel='noopener noreferrer'>00:34–00:43†</a><br><small>cue #4</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>desktop did we really need framework to develop modular repairable desktops oh wait hold on a second this</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=43' target='_blank' rel='noopener noreferrer'>00:43–00:50†</a><br><small>cue #5</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>is new modular swappable front IO and look at this you can even swap these</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=50' target='_blank' rel='noopener noreferrer'>00:50–00:58†</a><br><small>cue #6</small>
+<span class='tag' data-mode='conservative'>Conservative: false skip</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>tiles this one has a segue to our sponsor ug green are you getting the storage warning on your phone again well</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=58' target='_blank' rel='noopener noreferrer'>00:58–01:06†</a><br><small>cue #7</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>a ug green NZ could be the solution with up to 64 tabt of storage it can store up to 22 million selfies and to keep them</p></div>
+<h4>01:06–01:54 (66–114 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=66' target='_blank' rel='noopener noreferrer'>01:06–01:23†</a><br><small>cue #8</small>
+<span class='tag' data-mode='conservative'>Conservative: false skip</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>secure it comes with a built-in security manager to protect your data so check out the ugreen nas sync dxp 2800 at the link in the video</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=83' target='_blank' rel='noopener noreferrer'>01:23–01:32†</a><br><small>cue #9</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>description normally for a multi-product video we go from most exciting to less exciting and then save a pretty good one for the the end but I&#x27;m equally stoked</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=92' target='_blank' rel='noopener noreferrer'>01:32–01:39†</a><br><small>cue #10</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>for everything here so game of chance</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=99' target='_blank' rel='noopener noreferrer'>01:39–01:46†</a><br><small>cue #11</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>hey nice one of my biggest disappointments at CES was amd&#x27;s stricks</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=106' target='_blank' rel='noopener noreferrer'>01:46–01:53†</a><br><small>cue #12</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Halo processor not the chip itself of course I mean that could be the coolest thing that I&#x27;ve seen out of AMD in years</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=-lErGZZgUbY&amp;t=113' target='_blank' rel='noopener noreferrer'>01:53–02:00†</a><br><small>cue #13</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and maybe even the coolest PC CPU on the market right now this thing has a massive integrated GP that boasts</p></div>
+</details></article>
+<article data-search='iphone 16/16 pro review: times have changed! mrtg6a1f2ko' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko' target='_blank' rel='noopener noreferrer'>iPhone 16/16 Pro Review: Times Have Changed!</a></h2>
+<p class='meta'>MRtg6A1f2Ko · manual captions · one_or_more</p>
+<p><strong>Annotated</strong> 00:35–01:44 (35–104 s)</p>
+<p><strong>Review interpretation:</strong> Boundary selection starts at a mixed cue (25–34 s: phone review then app launch), creating 10 s excess against the label start of 35. It ends at the last selected sales cue, 90 s, dropping the app follow-up in cues 15–16 (90–104). No return-to-content marker causes this early end: sparse lexical boundary evidence does. The real topical return is at 104 s. A semantic boundary pass may help; cue timing still limits precision.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 00:25–01:30 (25–90 s)</p>
+<p class='metrics'>10 s false · 14 s missed</p>
+<p class='error'>False: 00:25–00:35 (25–35 s)<br>Missed: 01:30–01:44 (90–104 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 14 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 00:00–02:02 (0–122 s)</p>
+<p class='note'>Label 1: start error 10 s; end error 14 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 00:21–01:30 (21–90 s)</p>
+<p class='metrics'>14 s false · 14 s missed</p>
+<p class='error'>False: 00:21–00:35 (21–35 s)<br>Missed: 01:30–01:44 (90–104 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 14 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 00:00–02:02 (0–122 s)</p>
+<p class='note'>Label 1: start error 14 s; end error 14 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>00:13–00:43 (13–43 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=9' target='_blank' rel='noopener noreferrer'>00:09–00:21†</a><br><small>cue #1</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>(energetic music) (phone vibrating) Profound new intelligence capabilities that will make our platforms even smarter.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=21' target='_blank' rel='noopener noreferrer'>00:21–00:25†</a><br><small>cue #2</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>- So this is the iPhone 16, and this is the iPhone 16 Pro.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=25' target='_blank' rel='noopener noreferrer'>00:25–00:34†</a><br><small>cue #3</small>
+<span class='tag' data-mode='conservative'>Conservative: false skip</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>Brand new, and I&#x27;ve been testing them for about two weeks now. But you know what I&#x27;ve been doing way longer than two weeks? Working on a new app that we are finally launching.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=34' target='_blank' rel='noopener noreferrer'>00:34–00:37†</a><br><small>cue #4</small>
+<span class='tag' data-mode='conservative'>Conservative: false skip</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>You guys have always been asking me where I get my wallpapers.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=37' target='_blank' rel='noopener noreferrer'>00:37–00:45†</a><br><small>cue #5</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Like, it&#x27;s frequently the number one suggested search result under my name, has been for years. So now we&#x27;ve put them all in one place. It&#x27;s called Panels.</p></div>
+<h4>01:22–01:52 (82–112 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=81' target='_blank' rel='noopener noreferrer'>01:21–01:29†</a><br><small>cue #13</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>I don&#x27;t want to over promise too much, but it&#x27;s going to be pretty consistently improving over time, which is part of the reason why we&#x27;re offering a subscription to support it.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=89' target='_blank' rel='noopener noreferrer'>01:29–01:30†</a><br><small>cue #14</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>So go pick it up now.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=90' target='_blank' rel='noopener noreferrer'>01:30–01:35†</a><br><small>cue #15</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>Poke around, find your new favorite wallpaper, your new favorite artist, and lemme know what you think.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=95' target='_blank' rel='noopener noreferrer'>01:35–01:44†</a><br><small>cue #16</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>It&#x27;s kind of fun to be on the other side now, on the development side, where now other people are gonna review what we make, which is always exciting.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=104' target='_blank' rel='noopener noreferrer'>01:44–01:51†</a><br><small>cue #17</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Anyway, so the meta with new smartphones these days is a bunch of incremental hardware improvements</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=MRtg6A1f2Ko&amp;t=111' target='_blank' rel='noopener noreferrer'>01:51–01:57†</a><br><small>cue #18</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and then a whole bunch of AI features that also are being added on top, which is where the real value is.</p></div>
+</details></article>
+<article data-search='iphone 16/pro impressions: the great separation! 9lx11dy9j30' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=9lx11dy9J30' target='_blank' rel='noopener noreferrer'>iPhone 16/Pro Impressions: The Great Separation!</a></h2>
+<p class='meta'>9lx11dy9J30 · generated captions · one_or_more</p>
+<p><strong>Annotated</strong> 15:03–16:02 (903–962 s)</p>
+<p><strong>Review interpretation:</strong> Conservative ends at 942 s although feature and sales text continues to 959 s. The 20 s miss is mostly sparse lexical end selection. Aggressive extends to 950 s but still misses 12 s. Cue 120 (959–968 s) mixes a final sales phrase with &#x27;that&#x27;s been it&#x27;; the transition regex would cut at cue start, not the spoken transition inside it. Exact refinement cannot recover word-level timing from these cues.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 15:03–15:42 (903–942 s)</p>
+<p class='metrics'>0 s false · 20 s missed</p>
+<p class='error'>False: None<br>Missed: 15:42–16:02 (942–962 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 20 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 14:32–16:16 (872–976 s)</p>
+<p class='note'>Label 1: start error 0 s; end error 20 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 14:55–15:59 (895–959 s)</p>
+<p class='metrics'>8 s false · 3 s missed</p>
+<p class='error'>False: 14:55–15:03 (895–903 s)<br>Missed: 15:59–16:02 (959–962 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 3 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 14:32–16:16 (872–976 s)</p>
+<p class='note'>Label 1: start error 8 s; end error 3 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>14:47–15:11 (887–911 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=886' target='_blank' rel='noopener noreferrer'>14:46–14:55†</a><br><small>cue #111</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>the actual camera app until later this year via a software update that&#x27;s just weird too there&#x27;s just a lot of fun weird stuff going on with the shutter</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=895' target='_blank' rel='noopener noreferrer'>14:55–15:03†</a><br><small>cue #112</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>button but now that you&#x27;ve made it this far let me know in the comment section down below what you want to see in those full reviews as you get subscribed to see them and thanks to Anor for</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=903' target='_blank' rel='noopener noreferrer'>15:03–15:10†</a><br><small>cue #113</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>sponsoring this video their latest mag go lineup is out the six series and there&#x27;s a couple changes there&#x27;s a new Slimmer battery bank there&#x27;s a battery</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=910' target='_blank' rel='noopener noreferrer'>15:10–15:17†</a><br><small>cue #114</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>bank with an Apple Watch charger a stand with a rotating click head and one of my favorite items a 3in1 foldable charging</p></div>
+<h4>15:34–16:10 (934–970 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=925' target='_blank' rel='noopener noreferrer'>15:25–15:35†</a><br><small>cue #116</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>W wireless charging and temperature control so it keeps your device is protected by keeping charging under 40° C all in this slim 15 mm body and then</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=935' target='_blank' rel='noopener noreferrer'>15:35–15:42†</a><br><small>cue #117</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>the anchor Mago wireless charging station this thing charges three devices at once an iPhone airpods and your Apple</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=942' target='_blank' rel='noopener noreferrer'>15:42–15:50†</a><br><small>cue #118</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>watch all at the same time it supports ch25 wat fast charging and mag safe charging for iPhones and it just folds up into this compact little package fits</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=950' target='_blank' rel='noopener noreferrer'>15:50–15:59†</a><br><small>cue #119</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>in your pocket and it can even fold the other way to make it into a stand to activate Apple standby mode while you charge your phone so yeah check these out at the link below and start charging</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=959' target='_blank' rel='noopener noreferrer'>15:59–16:08†</a><br><small>cue #120</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>your devices faster but yeah that&#x27;s been it thanks for watching this impress video and I&#x27;ll catch you guys in the next one soon peace</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=9lx11dy9J30&amp;t=968' target='_blank' rel='noopener noreferrer'>16:08–16:16†</a><br><small>cue #121</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>[Music]</p></div>
+</details></article>
+<article data-search='why billions of people won&#x27;t eat pork (or why we don&#x27;t know) sew4rctkghy' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=Sew4rctKghY' target='_blank' rel='noopener noreferrer'>Why billions of people won&#x27;t eat pork (or why we don&#x27;t know)</a></h2>
+<p class='meta'>Sew4rctKghY · unknown captions · one_or_more</p>
+<p><strong>Annotated</strong> 12:04–13:08 (724–788 s)</p>
+<p><strong>Review interpretation:</strong> The promotion is found; Conservative drops its final 4 annotated seconds within the already assembled candidate. This is a boundary-evidence discrepancy. Compare the last sponsor cue and the return to the video&#x27;s subject, rather than adding uniform padding.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 12:04–13:04 (724–784 s)</p>
+<p class='metrics'>0 s false · 4 s missed</p>
+<p class='error'>False: None<br>Missed: 13:04–13:08 (784–788 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 4 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 11:39–13:13 (699–793 s)</p>
+<p class='note'>Label 1: start error 0 s; end error 4 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 11:53–13:13 (713–793 s)</p>
+<p class='metrics'>16 s false · 0 s missed</p>
+<p class='error'>False: 11:53–12:04 (713–724 s); 13:08–13:13 (788–793 s)<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 11:39–13:13 (699–793 s)</p>
+<p class='note'>Label 1: start error 11 s; end error 5 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>11:45–12:12 (705–732 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=Sew4rctKghY&amp;t=699' target='_blank' rel='noopener noreferrer'>11:39–11:48†</a><br><small>cue #81</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>And then it became a way for the Muslims, who inherited the Abrahamic tradition, to distinguish themselves from, say, those dirty crusading Franks with their filthy streets.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=Sew4rctKghY&amp;t=708' target='_blank' rel='noopener noreferrer'>11:48–11:53†</a><br><small>cue #82</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>It&#x27;s easy to imagine why the pork taboo spread, and why it persists to the point where my</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=Sew4rctKghY&amp;t=713' target='_blank' rel='noopener noreferrer'>11:53–12:04†</a><br><small>cue #83</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>pork recipes here in this global platform get noticeably fewer views than my other meat recipes. But where the pork taboo first came from, nobody knows for sure.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=Sew4rctKghY&amp;t=724' target='_blank' rel='noopener noreferrer'>12:04–12:14†</a><br><small>cue #84</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>What I do know for sure is that people of all religions and dietary codes can make a beautiful and functional website with Squarespace. Whether you want to spread the good word of</p></div>
+<h4>12:56–13:21 (776–801 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=Sew4rctKghY&amp;t=772' target='_blank' rel='noopener noreferrer'>12:52–13:04†</a><br><small>cue #89</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>once you&#x27;re ready to publish or register a custom domain, you can do us both a favor and save 10% by going to squarespace.com/ragusea. That link of mine is in the description, thank you, Squarespace.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=Sew4rctKghY&amp;t=784' target='_blank' rel='noopener noreferrer'>13:04–13:13†</a><br><small>cue #90</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>And, you know, thank you, piggies.</p></div>
+</details></article>
+<article data-search='ice cream made with a pan, a spoon and a freezer o7sqbfpqcvu' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=O7sQBfpQCvU' target='_blank' rel='noopener noreferrer'>Ice cream made with a pan, a spoon and a freezer</a></h2>
+<p class='meta'>O7sQBfpQCvU · manual captions · one_or_more</p>
+<p><strong>Annotated</strong> 09:25–10:17 (565–617 s)</p>
+<p><strong>Review interpretation:</strong> ANNOTATION BOUNDARY QUESTION: the label ends at 617 s, but cue 148 starts at 611 s with &#x27;Now walk in your kitchen and make some ice cream&#x27;, returning to the recipe. Conservative&#x27;s end at 611 s may be semantically preferable to the supplied label. Keep the 6 s metric miss until you review it. A separate opening sponsor-disclosure candidate is rejected; a brief acknowledgment is not necessarily a skippable pitch.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 09:25–10:11 (565–611 s)</p>
+<p class='metrics'>0 s false · 6 s missed</p>
+<p class='error'>False: None<br>Missed: 10:11–10:17 (611–617 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 6 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 00:00–00:47 (0–47 s); 08:58–10:17 (538–617 s)</p>
+<p class='note'>Label 1: start error 0 s; end error 6 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 09:21–10:13 (561–613 s)</p>
+<p class='metrics'>4 s false · 4 s missed</p>
+<p class='error'>False: 09:21–09:25 (561–565 s)<br>Missed: 10:13–10:17 (613–617 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 4 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 00:00–00:47 (0–47 s); 08:58–10:17 (538–617 s)</p>
+<p class='note'>Label 1: start error 4 s; end error 4 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>09:13–09:33 (553–573 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=550' target='_blank' rel='noopener noreferrer'>09:10–09:15†</a><br><small>cue #134</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and to let your creativity run wild. Chuck whatever you want in your ice cream and see</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=555' target='_blank' rel='noopener noreferrer'>09:15–09:16†</a><br><small>cue #135</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>what works.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=556' target='_blank' rel='noopener noreferrer'>09:16–09:21†</a><br><small>cue #136</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>The still-freeze method offers an evening of good, wholesome fun for kids of all ages.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=561' target='_blank' rel='noopener noreferrer'>09:21–09:25†</a><br><small>cue #137</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>And unlike most science experiments, you get to eat this at the end. Just as you&#x27;ll have</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=565' target='_blank' rel='noopener noreferrer'>09:25–09:29†</a><br><small>cue #138</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>a website at the end of an evening with Squarespace. Seriously, you could easily get your site</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=569' target='_blank' rel='noopener noreferrer'>09:29–09:33†</a><br><small>cue #139</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>built in-between the stirrings for one batch of ice cream.</p></div>
+<h4>10:03–10:25 (603–625 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=600' target='_blank' rel='noopener noreferrer'>10:00–10:04†</a><br><small>cue #145</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>published, Squarespace hosts the site for you, they can handle any credit card transactions</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=604' target='_blank' rel='noopener noreferrer'>10:04–10:08†</a><br><small>cue #146</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>you need to do, they can send out your email blasts — anything you could need. It&#x27;s a</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=608' target='_blank' rel='noopener noreferrer'>10:08–10:11†</a><br><small>cue #147</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>one-stop shop. Thank you, Squarespace.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=611' target='_blank' rel='noopener noreferrer'>10:11–10:13†</a><br><small>cue #148</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Now walk in your kitchen and make some ice cream. You probably have everything you need</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=O7sQBfpQCvU&amp;t=613' target='_blank' rel='noopener noreferrer'>10:13–10:17†</a><br><small>cue #149</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>already.</p></div>
+</details></article>
+<article data-search='c in 100 seconds u3axwizdbq4' data-conservative='false' data-aggressive='false'>
+<h2><a href='https://www.youtube.com/watch?v=U3aXWizDbQ4' target='_blank' rel='noopener noreferrer'>C in 100 Seconds</a></h2>
+<p class='meta'>U3aXWizDbQ4 · generated captions · none</p>
+<p><strong>Annotated</strong> None</p>
+<p><strong>Review interpretation:</strong> Both modes produce no skips on the reviewed negative. Technical and product vocabulary without a promotional interruption should remain a negative; the shown window is context only.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> None</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: None</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> None</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: None</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<p class='note'>Reviewed negative with no skips. Highest-scoring rule window shown for inspection; it is not an error.</p>
+<h4>00:15–00:45 (15–45 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=15' target='_blank' rel='noopener noreferrer'>00:15–00:17†</a><br><small>cue #7</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>tools like vim and git and countless</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=17' target='_blank' rel='noopener noreferrer'>00:17–00:20†</a><br><small>cue #8</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>others it was created in 1972 by Dennis</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=20' target='_blank' rel='noopener noreferrer'>00:20–00:22†</a><br><small>cue #9</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Richie at Bell Labs where it would be</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=22' target='_blank' rel='noopener noreferrer'>00:22–00:24†</a><br><small>cue #10</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>used to develop the Unix operating</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=24' target='_blank' rel='noopener noreferrer'>00:24–00:25†</a><br><small>cue #11</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>system it would go on to become the</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=25' target='_blank' rel='noopener noreferrer'>00:25–00:27†</a><br><small>cue #12</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>mother of all languages inspiring the</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=27' target='_blank' rel='noopener noreferrer'>00:27–00:31†</a><br><small>cue #13</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>syntax of C++ CP Java JavaScript Pearl</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=31' target='_blank' rel='noopener noreferrer'>00:31–00:34†</a><br><small>cue #14</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and PHP just to name a few it compiles</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=34' target='_blank' rel='noopener noreferrer'>00:34–00:35†</a><br><small>cue #15</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>directly to machine code and requires</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=35' target='_blank' rel='noopener noreferrer'>00:35–00:38†</a><br><small>cue #16</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>minimal runtime support but is platform</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=38' target='_blank' rel='noopener noreferrer'>00:38–00:39†</a><br><small>cue #17</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>dependent meaning the executable is</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=39' target='_blank' rel='noopener noreferrer'>00:39–00:42†</a><br><small>cue #18</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>designed to run on a specific operating</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=42' target='_blank' rel='noopener noreferrer'>00:42–00:43†</a><br><small>cue #19</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>system it&#x27;s a highlevel language</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=U3aXWizDbQ4&amp;t=43' target='_blank' rel='noopener noreferrer'>00:43–00:45†</a><br><small>cue #20</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>designed for humans yet provides</p></div>
+</details></article>
+<article data-search='python in 100 seconds x7x9w_gim1s' data-conservative='false' data-aggressive='false'>
+<h2><a href='https://www.youtube.com/watch?v=x7X9w_GIm1s' target='_blank' rel='noopener noreferrer'>Python in 100 Seconds</a></h2>
+<p class='meta'>x7X9w_GIm1s · generated captions · none</p>
+<p><strong>Annotated</strong> None</p>
+<p><strong>Review interpretation:</strong> Both modes produce no skips on the reviewed negative. This is one educational example, not broad evidence that all product or programming discussions are safe.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> None</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: None</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> None</p>
+<p class='metrics'>0 s false · 0 s missed</p>
+<p class='error'>False: None<br>Missed: None</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 0 s; missed inside observed transcript but outside candidates: 0 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: None</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<p class='note'>Reviewed negative with no skips. Highest-scoring rule window shown for inspection; it is not an error.</p>
+<h4>00:00–00:30 (0–30 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=0' target='_blank' rel='noopener noreferrer'>00:00–00:02†</a><br><small>cue #0</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>python a highlevel interpreted</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=2' target='_blank' rel='noopener noreferrer'>00:02–00:04†</a><br><small>cue #1</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>programming language famous for its</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=4' target='_blank' rel='noopener noreferrer'>00:04–00:06†</a><br><small>cue #2</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>zen-like code it&#x27;s arguably the most</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=6' target='_blank' rel='noopener noreferrer'>00:06–00:08†</a><br><small>cue #3</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>popular language in the world because</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=8' target='_blank' rel='noopener noreferrer'>00:08–00:10†</a><br><small>cue #4</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>it&#x27;s easy to learn yet practical for</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=10' target='_blank' rel='noopener noreferrer'>00:10–00:12†</a><br><small>cue #5</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>serious projects in fact you&#x27;re watching</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=12' target='_blank' rel='noopener noreferrer'>00:12–00:14†</a><br><small>cue #6</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>this YouTube video in a python web</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=14' target='_blank' rel='noopener noreferrer'>00:14–00:16†</a><br><small>cue #7</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>application right now it was created by</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=16' target='_blank' rel='noopener noreferrer'>00:16–00:19†</a><br><small>cue #8</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Guido van rossom and released in 1991</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=19' target='_blank' rel='noopener noreferrer'>00:19–00:21†</a><br><small>cue #9</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>who named it after Monty Python&#x27;s Flying</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=21' target='_blank' rel='noopener noreferrer'>00:21–00:22†</a><br><small>cue #10</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Circus which is why you&#x27;ll sometimes</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=22' target='_blank' rel='noopener noreferrer'>00:22–00:25†</a><br><small>cue #11</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>find spaming eggs instead of Foo and bar</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=25' target='_blank' rel='noopener noreferrer'>00:25–00:27†</a><br><small>cue #12</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>and code samples it&#x27;s commonly used to</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=27' target='_blank' rel='noopener noreferrer'>00:27–00:29†</a><br><small>cue #13</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>build serers side applications like web</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=x7X9w_GIm1s&amp;t=29' target='_blank' rel='noopener noreferrer'>00:29–00:31†</a><br><small>cue #14</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>apps with the framework and is the</p></div>
+</details></article>
+<article data-search='but what is a neural network? | deep learning chapter 1 aircaruvnkk' data-conservative='true' data-aggressive='true'>
+<h2><a href='https://www.youtube.com/watch?v=aircAruvnKk' target='_blank' rel='noopener noreferrer'>But what is a neural network? | Deep learning chapter 1</a></h2>
+<p class='meta'>aircAruvnKk · unknown captions · one_or_more</p>
+<p><strong>Annotated</strong> 16:32–17:03 (992–1023 s)</p>
+<p><strong>Review interpretation:</strong> SCOPE/BOUNDARY QUESTION: the supplied label starts at 992 s, during the ordinary subscribe/notification discussion; Patreon support begins at 1010 s. Conservative selects 1010–1023 s. Of its 18 s measured miss, 17 s is inside the candidate and 1 s outside. Confirm whether a plain subscribe request belongs in the promotion taxonomy. A candidate-only detector cannot recover genuinely absent candidates; semantic interpretation and label policy must agree first.</p>
+<div class='grid'>
+<section class='mode conservative' data-mode='conservative'>
+<h3>Conservative</h3><p><strong>Predicted</strong> 16:50–17:03 (1010–1023 s)</p>
+<p class='metrics'>0 s false · 18 s missed</p>
+<p class='error'>False: None<br>Missed: 16:32–16:50 (992–1010 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 17 s; missed inside observed transcript but outside candidates: 1 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 16:33–17:19 (993–1039 s)</p>
+<p class='note'>Label 1: start error 18 s; end error 0 s.</p>
+</section>
+<section class='mode aggressive' data-mode='aggressive'>
+<h3>Aggressive</h3><p><strong>Predicted</strong> 16:48–17:07 (1008–1027 s)</p>
+<p class='metrics'>4 s false · 16 s missed</p>
+<p class='error'>False: 17:03–17:07 (1023–1027 s)<br>Missed: 16:32–16:48 (992–1008 s)</p>
+<p>Unmatched predictions: 0; unmatched annotations: 0. Missed within candidate spans (refinement/policy loss): 15 s; missed inside observed transcript but outside candidates: 1 s; missed beyond observed analysis span: 0 s.</p><p class='note'>Candidate spans: 16:33–17:19 (993–1039 s)</p>
+<p class='note'>Label 1: start error 16 s; end error 4 s.</p>
+</section>
+</div><details><summary>Timestamped transcript context</summary>
+<h4>16:24–17:15 (984–1035 s)</h4>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=983' target='_blank' rel='noopener noreferrer'>16:23–16:27†</a><br><small>cue #253</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>more into what this particular network we&#x27;re seeing is really doing.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=987' target='_blank' rel='noopener noreferrer'>16:27–16:30†</a><br><small>cue #254</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Now is the point I suppose I should say subscribe to stay notified</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=990' target='_blank' rel='noopener noreferrer'>16:30–16:33†</a><br><small>cue #255</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>about when that video or any new videos come out,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=993' target='_blank' rel='noopener noreferrer'>16:33–16:38†</a><br><small>cue #256</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>but realistically most of you don&#x27;t actually receive notifications from YouTube, do you?</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=998' target='_blank' rel='noopener noreferrer'>16:38–16:41†</a><br><small>cue #257</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>Maybe more honestly I should say subscribe so that the neural networks</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1001' target='_blank' rel='noopener noreferrer'>16:41–16:44†</a><br><small>cue #258</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>that underlie YouTube&#x27;s recommendation algorithm are primed to believe</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1004' target='_blank' rel='noopener noreferrer'>16:44–16:48†</a><br><small>cue #259</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: missed</span>
+</div><p>that you want to see content from this channel get recommended to you.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1008' target='_blank' rel='noopener noreferrer'>16:48–16:50†</a><br><small>cue #260</small>
+<span class='tag' data-mode='conservative'>Conservative: missed</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Anyway, stay posted for more.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1010' target='_blank' rel='noopener noreferrer'>16:50–16:54†</a><br><small>cue #261</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>Thank you very much to everyone supporting these videos on Patreon.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1014' target='_blank' rel='noopener noreferrer'>16:54–16:57†</a><br><small>cue #262</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>I&#x27;ve been a little slow to progress in the probability series this summer,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1017' target='_blank' rel='noopener noreferrer'>16:57–16:59†</a><br><small>cue #263</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>but I&#x27;m jumping back into it after this project,</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1019' target='_blank' rel='noopener noreferrer'>16:59–17:03†</a><br><small>cue #264</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>so patrons you can look out for updates there.</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1023' target='_blank' rel='noopener noreferrer'>17:03–17:07†</a><br><small>cue #265</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: false skip</span>
+</div><p>To close things off here I have with me Lisha Li who did her PhD work on the</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1027' target='_blank' rel='noopener noreferrer'>17:07–17:10†</a><br><small>cue #266</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>theoretical side of deep learning and who currently works at a venture capital</p></div>
+<div class='cue'><div>
+<a href='https://www.youtube.com/watch?v=aircAruvnKk&amp;t=1030' target='_blank' rel='noopener noreferrer'>17:10–17:15†</a><br><small>cue #267</small>
+<span class='tag' data-mode='conservative'>Conservative: context</span>
+<span class='tag' data-mode='aggressive'>Aggressive: context</span>
+</div><p>firm called Amplify Partners who kindly provided some of the funding for this video.</p></div>
+</details></article>
+</main><script>
+
+const mode = document.querySelector('#mode');
+const search = document.querySelector('#search');
+const errors = document.querySelector('#errors');
+function render() {
+  document.querySelectorAll('[data-mode]').forEach(el => {
+    el.hidden = mode.value !== 'both' && el.dataset.mode !== mode.value;
+  });
+  let visible = 0;
+  document.querySelectorAll('article').forEach(el => {
+    const hasError = mode.value === 'both'
+      ? el.dataset.conservative === 'true' || el.dataset.aggressive === 'true'
+      : el.dataset[mode.value] === 'true';
+    el.hidden = !el.dataset.search.includes(search.value.trim().toLowerCase())
+      || (errors.checked && !hasError);
+    if (!el.hidden) visible++;
+  });
+  document.querySelector('#count').textContent = `${visible} videos shown`;
+}
+[mode, search, errors].forEach(el => el.addEventListener('input', render));
+render();
+
+</script></body></html>

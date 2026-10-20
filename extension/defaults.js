@@ -4,5 +4,7 @@ const DEFAULT_SETTINGS = Object.freeze({
   showNotifications: true,
   developmentFixtures: false,
   developmentBrowserAcquisition: false,
+  previewDetectedPromotions: false,
+  previewTranscriptSource: "saved",
   backendUrl: "http://127.0.0.1:8000"
 });

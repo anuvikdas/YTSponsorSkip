@@ -57,7 +57,12 @@ input[type="url"] { width: 100%; margin-top: 8px; padding: 10px 12px; border: 1p
 button { padding: 10px 16px; border: 0; border-radius: 8px; color: #fff; background: #dc2626; cursor: pointer; font-weight: 700; }
 button.secondary { color: #27272a; background: #e4e4e7; }
 output { margin-left: auto; color: #166534; font-size: 13px; }
+.preview-warning { padding: 10px 12px; border-radius: 8px; background: #fff4e5; color: #733b07; }
+select { width: 100%; padding: 10px; margin-top: 8px; border: 1px solid #d4d4d8; border-radius: 8px; background: white; }
 
 .popup-page { width: 330px; padding: 18px; background: #fff; }
 .popup-page h1 { font-size: 20px; }
 .status-card { min-height: 60px; padding: 12px; border-radius: 10px; color: #3f3f46; background: #f4f4f5; line-height: 1.45; }
+.preview-meta { color: #52525b; font-size: 12px; line-height: 1.4; }
+#preview-intervals { margin: 8px 0; padding-left: 22px; max-height: 220px; overflow-y: auto; }
+#preview-intervals li { margin: 6px 0; font-variant-numeric: tabular-nums; }

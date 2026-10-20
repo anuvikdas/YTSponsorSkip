@@ -1,3 +1,5 @@
+from typing import Literal
+
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -15,7 +17,7 @@ class TranscriptSnippetResponse(StrictModel):
 class TranscriptMetadataResponse(StrictModel):
     language: str
     language_code: str
-    is_generated: bool
+    is_generated: bool | None
     provider: str
     provider_version: str
 
@@ -55,3 +57,35 @@ class ErrorResponse(StrictModel):
 class HealthResponse(StrictModel):
     status: str
     environment: str
+
+
+class DetectedIntervalResponse(StrictModel):
+    start_seconds: float = Field(ge=0, allow_inf_nan=False)
+    end_seconds: float = Field(gt=0, allow_inf_nan=False)
+    heuristic_score: int
+    evidence: list[str]
+    snippet_indices: list[int]
+    auto_skip_eligible: bool
+
+
+class DetectionResponse(StrictModel):
+    status: Literal["ready"] = "ready"
+    video_id: str
+    request_id: str
+    mode: Literal["conservative", "aggressive"]
+    transcript_source: Literal["saved", "supadata"]
+    transcript_provider: str
+    transcript_sha256: str
+    detector_version: str
+    language_code: str
+    caption_type: Literal["manual", "generated", "unknown"]
+    timing_provenance: str
+    intervals: list[DetectedIntervalResponse]
+    window_count: int = Field(ge=0)
+    transcript_cache_hit: bool
+    transcript_coalesced: bool
+    detection_cache_hit: bool
+    detection_coalesced: bool
+    provider_latency_ms: float | None = Field(ge=0, default=None)
+    detection_latency_ms: float | None = Field(ge=0, default=None)
+    total_latency_ms: float = Field(ge=0)

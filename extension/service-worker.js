@@ -1,7 +1,9 @@
-importScripts("defaults.js");
+importScripts("defaults.js", "preview-contract.js");
 
 const controllersByTab = new Map();
 const requestMetadataByTab = new Map();
+const generationsByTab = new Map();
+const stateWritesByTab = new Map();
 
 function stateKey(tabId) {
   return `tab-${tabId}`;
@@ -12,7 +14,15 @@ function transcriptKey(tabId) {
 }
 
 async function saveState(tabId, state) {
-  await chrome.storage.session.set({ [stateKey(tabId)]: state });
+  const generation = generationsByTab.get(tabId);
+  const previous = stateWritesByTab.get(tabId) || Promise.resolve();
+  const next = previous.catch(() => {}).then(async () => {
+    if (generation === generationsByTab.get(tabId)) {
+      await chrome.storage.session.set({ [stateKey(tabId)]: state });
+    }
+  });
+  stateWritesByTab.set(tabId, next);
+  await next;
 }
 
 function isCurrentRequest(tabId, controller) {
@@ -28,6 +38,7 @@ function clearCurrentRequest(tabId, controller) {
 }
 
 function cancelTabRequest(tabId) {
+  generationsByTab.set(tabId, (generationsByTab.get(tabId) || 0) + 1);
   controllersByTab.get(tabId)?.abort();
   clearTimeout(requestMetadataByTab.get(tabId)?.timeoutId);
   controllersByTab.delete(tabId);
@@ -51,6 +62,15 @@ chrome.runtime.onMessage.addListener((message, sender) => {
   }
 
   const tabId = sender.tab.id;
+  if (message.type === "video-cleared") {
+    cancelTabRequest(tabId);
+    chrome.storage.session.remove(transcriptKey(tabId));
+    saveState(tabId, {
+      status: message.videoId ? "loading" : "unsupported",
+      videoId: message.videoId || null
+    });
+    return undefined;
+  }
   if (message.type === "video-changed") {
     cancelTabRequest(tabId);
     chrome.storage.session.remove(transcriptKey(tabId));
@@ -63,7 +83,23 @@ chrome.runtime.onMessage.addListener((message, sender) => {
       startedAtMs: Date.now(),
       timeoutId: null
     });
-    if (message.acquisitionMode === "browser-probe") {
+    if (!message.videoId) {
+      notifyCurrentRequest(tabId, { status: "unsupported", videoId: null }, controller);
+      clearCurrentRequest(tabId, controller);
+    } else if (message.acquisitionMode === "conflict") {
+      notifyCurrentRequest(tabId, {
+        status: "unavailable", videoId: message.videoId, requestId: message.requestId,
+        reason: "CONFLICTING_EXPERIMENT_SETTINGS"
+      }, controller);
+      clearCurrentRequest(tabId, controller);
+    } else if (message.acquisitionMode === "preview") {
+      acquirePreview(tabId, message, controller);
+    } else if (message.acquisitionMode === "manual-fixture") {
+      notifyCurrentRequest(tabId, {
+        status: "manual-fixture", videoId: message.videoId, requestId: message.requestId
+      }, controller);
+      clearCurrentRequest(tabId, controller);
+    } else if (message.acquisitionMode === "browser-probe") {
       beginBrowserTranscriptProbe(tabId, message.videoId, message.requestId, controller);
     } else {
       acquireTranscript(tabId, message.videoId, message.requestId, controller);
@@ -75,6 +111,74 @@ chrome.runtime.onMessage.addListener((message, sender) => {
   }
   return undefined;
 });
+
+async function acquirePreview(tabId, message, controller) {
+  const { videoId, requestId } = message;
+  try {
+    const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
+    if (!isCurrentRequest(tabId, controller)) return;
+    if (
+      settings.previewDetectedPromotions !== true ||
+      settings.developmentFixtures || settings.developmentBrowserAcquisition ||
+      settings.previewTranscriptSource !== message.previewSource ||
+      settings.sensitivity !== message.sensitivity
+    ) {
+      await notifyCurrentRequest(tabId, {
+        status: "unavailable", videoId, requestId, reason: "PREVIEW_SETTINGS_CHANGED"
+      }, controller);
+      return;
+    }
+    const origin = localBackendUrl(settings.backendUrl);
+    if (!origin || origin !== localBackendUrl(message.backendUrl)) {
+      await notifyCurrentRequest(tabId, {
+        status: "unavailable", videoId, requestId, reason: "LOCAL_BACKEND_REQUIRED"
+      }, controller);
+      return;
+    }
+    const source = settings.previewTranscriptSource;
+    const mode = settings.sensitivity;
+    if (!["saved", "supadata"].includes(source) ||
+        !["conservative", "aggressive"].includes(mode)) {
+      await notifyCurrentRequest(tabId, {
+        status: "unavailable", videoId, requestId, reason: "INVALID_PREVIEW_SETTINGS"
+      }, controller);
+      return;
+    }
+    await notifyCurrentRequest(tabId, {
+      status: "loading", videoId, requestId, mode, source
+    }, controller);
+    if (!isCurrentRequest(tabId, controller)) return;
+    const url = new URL(`/api/v1/detections/${videoId}`, origin);
+    url.searchParams.set("mode", mode);
+    url.searchParams.set("source", source);
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: { "X-Request-ID": requestId }
+    });
+    const body = await response.json();
+    if (!isCurrentRequest(tabId, controller)) return;
+    if (!response.ok) {
+      await notifyCurrentRequest(tabId, {
+        status: "unavailable", videoId, requestId, mode, source,
+        reason: body?.error?.code || `HTTP_${response.status}`
+      }, controller);
+      return;
+    }
+    const state = validatePreviewResponse(body, { videoId, requestId, mode, source });
+    await notifyCurrentRequest(tabId, state || {
+      status: "unavailable", videoId, requestId, mode, source,
+      reason: "INVALID_DETECTION_RESPONSE"
+    }, controller);
+  } catch (error) {
+    if (error.name !== "AbortError") {
+      await notifyCurrentRequest(tabId, {
+        status: "unavailable", videoId, requestId, reason: "BACKEND_UNREACHABLE"
+      }, controller);
+    }
+  } finally {
+    clearCurrentRequest(tabId, controller);
+  }
+}
 
 async function beginBrowserTranscriptProbe(tabId, videoId, requestId, controller) {
   const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);

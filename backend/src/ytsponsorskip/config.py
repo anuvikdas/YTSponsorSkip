@@ -1,7 +1,11 @@
 from functools import lru_cache
+from pathlib import Path
+from typing import Literal
 
-from pydantic import Field, field_validator
+from pydantic import Field, SecretStr, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+DEFAULT_TRIAL_BUDGET_PATH = Path(__file__).resolve().parents[3] / "results/trial-budget.sqlite3"
 
 
 class Settings(BaseSettings):
@@ -19,6 +23,13 @@ class Settings(BaseSettings):
     cache_max_entries: int = Field(default=128, ge=1, le=10_000)
     request_limit_per_minute: int = Field(default=60, ge=1, le=10_000)
     api_token: str | None = None
+    transcript_provider: Literal["youtube", "supadata"] = "youtube"
+    trial_budget_path: Path = DEFAULT_TRIAL_BUDGET_PATH
+    trial_attempt_limit: int = Field(default=50, ge=2, le=50)
+    trial_poll_limit: int = Field(default=5, ge=1, le=5)
+    supadata_api_key: SecretStr | None = Field(
+        default=None, validation_alias="SUPADATA_API_KEY", repr=False
+    )
 
     @field_validator("allowed_origins_csv")
     @classmethod

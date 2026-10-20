@@ -1,3 +1,6 @@
+// The playback safety policy is applied after adjacent/overlapping intervals merge.
+const MINIMUM_AUTO_SKIP_DURATION_SECONDS = 3;
+
 class PlaybackController {
   constructor({ onSkip = () => {}, onUndo = () => {}, seekToleranceSeconds = 0.35 } = {}) {
     this.onSkip = onSkip;
@@ -95,10 +98,12 @@ class PlaybackController {
         merged.push({ ...interval, source, memberCount: 1 });
       }
     }
-    return merged.map((interval, index) => ({
+    return merged
+      .filter((interval) => interval.endSeconds - interval.startSeconds > MINIMUM_AUTO_SKIP_DURATION_SECONDS)
+      .map((interval, index) => ({
       ...interval,
       id: `${this.videoId}:${this.requestId}:${index}:${interval.startSeconds}:${interval.endSeconds}`
-    }));
+      }));
   }
 
   handleSeeking() {

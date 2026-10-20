@@ -12,7 +12,11 @@ from typing import Any
 
 from ytsponsorskip.detector import PromotionDetector, Sensitivity
 from ytsponsorskip.domain import Transcript, TranscriptSnippet
-from ytsponsorskip.evaluation import TimeRange, calculate_video_metrics
+from ytsponsorskip.evaluation import (
+    TimeRange,
+    calculate_video_metrics,
+    playback_eligible_intervals,
+)
 
 
 def sha256(path: Path) -> str:
@@ -149,6 +153,7 @@ def summarize_mode(
 ) -> dict[str, Any]:
     detector = PromotionDetector()
     per_video = []
+    playback_per_video = []
     runtime_ms = 0.0
     for video in videos:
         transcript = transcripts.get(video["video_id"])
@@ -165,6 +170,16 @@ def summarize_mode(
             predictions=detection.intervals,
             annotations=annotations,
         )
+        eligible = playback_eligible_intervals(detection.intervals)
+        playback_metrics = calculate_video_metrics(
+            video_id=video["video_id"],
+            promotion_status=video["promotion_status"],
+            predictions=eligible,
+            annotations=annotations,
+        )
+        playback_per_video.append(
+            {**asdict(playback_metrics), "eligible_intervals": [asdict(i) for i in eligible]}
+        )
         per_video.append(
             {
                 **asdict(metrics),
@@ -180,6 +195,16 @@ def summarize_mode(
             }
         )
 
+    summary = summarize_rows(per_video, runtime_ms)
+    summary["playback_policy"] = {
+        "rule": "merge adjacent/overlapping predictions, then retain duration > 3 seconds",
+        **summarize_rows(playback_per_video, runtime_ms),
+    }
+    return summary
+
+
+def summarize_rows(per_video: list[dict[str, Any]], runtime_ms: float) -> dict[str, Any]:
+    """Shared aggregation for live local rules and offline recorded predictions."""
     matches = [match for row in per_video for match in row["matches"]]
     negative_rows = [row for row in per_video if row["promotion_status"] == "none"]
     if not per_video:

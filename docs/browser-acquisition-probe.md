@@ -1,5 +1,13 @@
 # Development-only browser transcript probe
 
+## User-reported Chrome observation, October 19, 2026
+
+The user reports `TIMED_TEXT_PARSE_ERROR` for both `dQw4w9WgXcQ` and `Vw1Qrko8oTs` in the
+manual browser experiment. The precise HTTP bodies and parser inputs were not provided here, so
+the root cause is unconfirmed. Browser-probe debugging is paused while the native-caption
+Supadata alternative is tested. The earlier instructions and expectations below remain historical
+test protocol, not a claim that the browser probe succeeded.
+
 The probe is implemented but disabled by default. Automated contract tests pass; no actual Chrome
 acquisition result has been observed in this milestone, so browser reliability remains unverified.
 It does not run the detector or send intervals to playback.

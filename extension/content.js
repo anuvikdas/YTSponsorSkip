@@ -1,5 +1,8 @@
 let currentVideoId = null;
 let currentRequestId = null;
+let currentConfigurationKey = null;
+let refreshGeneration = 0;
+let previewActive = false;
 let lastUrl = location.href;
 let notificationTimer = null;
 let developmentFixtureTimer = null;
@@ -12,40 +15,71 @@ const playbackController = new PlaybackController({
 
 function videoIdFromLocation() {
   const url = new URL(location.href);
-  return url.pathname === "/watch" ? url.searchParams.get("v") : null;
+  const candidate = url.pathname === "/watch" ? url.searchParams.get("v") : null;
+  return candidate && /^[A-Za-z0-9_-]{11}$/.test(candidate) ? candidate : null;
 }
 
 function makeRequestId(videoId) {
   return `${videoId}-${Date.now()}-${crypto.randomUUID()}`;
 }
 
-function checkForVideoChange() {
+async function checkForVideoChange() {
+  const generation = ++refreshGeneration;
   const videoId = videoIdFromLocation();
-  if (videoId === currentVideoId) return;
-  currentVideoId = videoId;
+  if (videoId !== currentVideoId) {
+    currentVideoId = videoId;
+    currentRequestId = null;
+    currentConfigurationKey = null;
+    previewActive = false;
+    clearTimeout(developmentFixtureTimer);
+    clearTimeout(browserProbeTimer);
+    playbackController.beginVideo(videoId, null);
+    removeNotification();
+    chrome.runtime.sendMessage({ type: "video-cleared", videoId });
+  }
+  const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
+  if (generation !== refreshGeneration || videoId !== currentVideoId) return;
+  const configurationKey = JSON.stringify([
+    settings.enabled, settings.previewDetectedPromotions, settings.previewTranscriptSource,
+    settings.sensitivity, settings.developmentFixtures, settings.developmentBrowserAcquisition,
+    settings.backendUrl
+  ]);
+  if (configurationKey === currentConfigurationKey) return;
+  currentConfigurationKey = configurationKey;
   currentRequestId = videoId ? makeRequestId(videoId) : null;
+  previewActive = settings.previewDetectedPromotions === true;
   clearTimeout(developmentFixtureTimer);
   clearTimeout(browserProbeTimer);
   playbackController.beginVideo(currentVideoId, currentRequestId);
   attachCurrentVideo();
   removeNotification();
-  if (videoId) {
-    beginAcquisition(videoId, currentRequestId);
-    scheduleDevelopmentFixture(videoId, currentRequestId);
+  beginAcquisition(videoId, currentRequestId, settings);
+  if (videoId && !previewActive && !settings.developmentBrowserAcquisition) {
+    scheduleDevelopmentFixture(videoId, currentRequestId, settings);
   }
 }
 
-async function beginAcquisition(videoId, requestId) {
-  const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
-  if (videoId !== currentVideoId || requestId !== currentRequestId) return;
+function beginAcquisition(videoId, requestId, settings) {
+  if (!videoId) {
+    chrome.runtime.sendMessage({ type: "video-changed", videoId: null, requestId: null });
+    return;
+  }
   const browserProbe = settings.developmentBrowserAcquisition === true;
+  const fixture = settings.developmentFixtures === true;
+  const preview = settings.previewDetectedPromotions === true;
+  const acquisitionMode = preview && (browserProbe || fixture) ? "conflict"
+    : preview ? "preview" : browserProbe ? "browser-probe"
+      : fixture ? "manual-fixture" : "backend";
   chrome.runtime.sendMessage({
     type: "video-changed",
     videoId,
     requestId,
-    acquisitionMode: browserProbe ? "browser-probe" : "backend"
+    acquisitionMode,
+    previewSource: settings.previewTranscriptSource,
+    sensitivity: settings.sensitivity,
+    backendUrl: settings.backendUrl
   });
-  if (!browserProbe || !settings.enabled) return;
+  if (!browserProbe || preview || !settings.enabled) return;
   document.dispatchEvent(
     new CustomEvent("ytss-browser-transcript-request", {
       detail: { videoId, requestId }
@@ -157,10 +191,10 @@ function attachCurrentVideo() {
   playbackController.attachVideo(document.querySelector("video"));
 }
 
-async function scheduleDevelopmentFixture(videoId, requestId) {
-  const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
+async function scheduleDevelopmentFixture(videoId, requestId, settings) {
   if (
     !settings.enabled ||
+    settings.previewDetectedPromotions ||
     !settings.developmentFixtures ||
     videoId !== currentVideoId ||
     requestId !== currentRequestId
@@ -183,16 +217,29 @@ chrome.runtime.onMessage.addListener((message) => {
   if (message.type === "acquisition-status") {
     const state = message.state;
     if (state.videoId !== currentVideoId || state.requestId !== currentRequestId) return;
-    if (state.status === "unavailable") showUnavailable(state);
+    if (state.status === "unavailable" && !previewActive) showUnavailable(state);
     return;
   }
   if (message.type === "promotion-intervals") {
+    if (previewActive) return;
     playbackController.setIntervals(message);
   }
 });
 
 document.addEventListener("yt-navigate-finish", checkForVideoChange);
 window.addEventListener("popstate", checkForVideoChange);
+chrome.storage.onChanged.addListener((changes, area) => {
+  if (area === "sync" && Object.keys(changes).some((key) => key in DEFAULT_SETTINGS)) {
+    currentRequestId = null;
+    currentConfigurationKey = null;
+    previewActive = false;
+    clearTimeout(developmentFixtureTimer);
+    clearTimeout(browserProbeTimer);
+    playbackController.beginVideo(currentVideoId, null);
+    chrome.runtime.sendMessage({ type: "video-cleared", videoId: currentVideoId });
+    checkForVideoChange();
+  }
+});
 new MutationObserver(attachCurrentVideo).observe(document.documentElement, {
   childList: true,
   subtree: true
