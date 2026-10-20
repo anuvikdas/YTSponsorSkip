@@ -1,5 +1,14 @@
 # Next detection experiment — proposal only, 2026-10-11
 
+**2026-10-20 status note:** This document preserves the original proposal and historical
+thresholds. The first eight-video held-out evaluation has since run; see
+`docs/heldout-evaluation-2026-10-20.md`. A new partially reviewed tune example,
+`qf7ws2DF-zk`, has an approximately confirmed promotional opening but no confirmed end or
+saved timed transcript. See `docs/development-example-qf7ws2DF-zk.md`. It belongs in the
+context-aware comparison as a qualitative opening-recall diagnostic, **not** full-video accuracy.
+Do not tune against the previously evaluated held-out set while calling it untouched. A new
+untouched final set would be required after further rule/model development.
+
 No model was downloaded, installed, or invoked for this checkpoint. No API calls or costs.
 This dated comparison supplements the older strategy documents; their historical price tables
 are not a current purchasing recommendation. Official documentation was checked on 2026-10-11.
