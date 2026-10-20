@@ -33,7 +33,11 @@ def saved_app(provider=None, **settings_overrides):
         cache_ttl_seconds=60,
         cache_max_entries=8,
     )
-    detection = DetectionService({"saved": service}, cache_ttl_seconds=60)
+    detection = DetectionService(
+        {"saved": service},
+        cache_ttl_seconds=60,
+        detector_variant=settings.detector_variant,
+    )
     return create_app(settings=settings, detection_service=detection), detection
 
 
@@ -67,6 +71,37 @@ async def test_saved_positive_negative_and_mode_cache_identity():
         assert positive.json()["transcript_sha256"] == repeated.json()["transcript_sha256"]
     finally:
         detection.close()
+
+
+@pytest.mark.asyncio
+async def test_contextual_variant_is_opt_in_and_retains_preview_contract():
+    baseline_app, baseline = saved_app()
+    changed_app, changed = saved_app(detector_variant="contextual_v1")
+    try:
+        async with AsyncClient(
+            transport=ASGITransport(app=baseline_app), base_url="http://test"
+        ) as client:
+            old = await client.get(
+                path("I9hJ_Rux9y0"), headers={"X-Request-ID": "baseline"}
+            )
+        async with AsyncClient(
+            transport=ASGITransport(app=changed_app), base_url="http://test"
+        ) as client:
+            new = await client.get(
+                path("I9hJ_Rux9y0"), headers={"X-Request-ID": "contextual"}
+            )
+        assert old.status_code == new.status_code == 200
+        assert old.json()["intervals"] == []
+        new_ranges = [
+            (item["start_seconds"], item["end_seconds"])
+            for item in new.json()["intervals"]
+        ]
+        assert new_ranges == [(683, 715)]
+        assert new.json()["intervals"][0]["auto_skip_eligible"] is True
+        assert old.json()["detector_version"] != new.json()["detector_version"]
+    finally:
+        baseline.close()
+        changed.close()
 
 
 @pytest.mark.asyncio

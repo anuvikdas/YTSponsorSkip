@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     request_limit_per_minute: int = Field(default=60, ge=1, le=10_000)
     api_token: str | None = None
     transcript_provider: Literal["youtube", "supadata"] = "youtube"
+    detector_variant: Literal["frozen_rules", "contextual_v1"] = "frozen_rules"
     trial_budget_path: Path = DEFAULT_TRIAL_BUDGET_PATH
     trial_attempt_limit: int = Field(default=50, ge=2, le=50)
     trial_poll_limit: int = Field(default=5, ge=1, le=5)

@@ -8,12 +8,15 @@ import time
 from collections import OrderedDict
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Literal
 
+from ytsponsorskip.contextual_detector import ContextualPromotionDetector
 from ytsponsorskip.detector import DetectionResult, PromotionDetector, Sensitivity
 from ytsponsorskip.domain import FailureCode, Transcript, TranscriptAcquisitionError
 from ytsponsorskip.service import AcquisitionOutcome, TranscriptService
 
 DETECTOR_PATH = Path(__file__).with_name("detector.py")
+CONTEXTUAL_PATH = Path(__file__).with_name("contextual_detector.py")
 
 
 def transcript_identity(transcript: Transcript) -> str:
@@ -91,12 +94,20 @@ class DetectionService:
         cache_max_entries: int = 128,
         max_concurrent: int = 4,
         timeout_seconds: float = 30,
+        detector_variant: Literal["frozen_rules", "contextual_v1"] = "frozen_rules",
     ) -> None:
         self.sources = sources
-        self.detector = PromotionDetector()
-        self.detector_version = (
-            "rules-sha256:" + hashlib.sha256(DETECTOR_PATH.read_bytes()).hexdigest()[:16]
-        )
+        if detector_variant == "contextual_v1":
+            self.detector = ContextualPromotionDetector()
+            source = DETECTOR_PATH.read_bytes() + CONTEXTUAL_PATH.read_bytes()
+            self.detector_version = (
+                "contextual-v1-sha256:" + hashlib.sha256(source).hexdigest()[:16]
+            )
+        else:
+            self.detector = PromotionDetector()
+            self.detector_version = (
+                "rules-sha256:" + hashlib.sha256(DETECTOR_PATH.read_bytes()).hexdigest()[:16]
+            )
         self._ttl = cache_ttl_seconds
         self._max_entries = cache_max_entries
         self._semaphore = asyncio.Semaphore(max_concurrent)

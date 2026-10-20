@@ -21,7 +21,12 @@ YTSponsorSkip is an experimental Chrome extension for detecting and skipping cre
 The bounded alternative caption acquisition probe is documented in
 [Supadata native-caption probe](docs/supadata-probe.md). It uses the project-root ignored `.env`,
 free credits, native captions only, and two prespecified videos. Supadata is not yet selected as
-the FastAPI provider; that decision depends on both live probe outcomes.
+the default FastAPI provider; local live preview can select it explicitly, with Free-credit
+preflight and a persistent attempt budget.
+
+The opt-in contextual detector development checkpoint is documented in
+[the contextual comparison](docs/contextual-development-2026-10-20.md). The frozen rules remain
+the default, predictions remain preview-only, and the saved development transcript is Git-ignored.
 
 ## Offline detector review
 
@@ -101,6 +106,7 @@ Backend settings use the `YTSS_` prefix:
 | `YTSS_CACHE_MAX_ENTRIES` | `128` | In-memory LRU capacity |
 | `YTSS_REQUEST_LIMIT_PER_MINUTE` | `60` | Single-process API limit |
 | `YTSS_API_TOKEN` | unset | Optional bearer token for experiments |
+| `YTSS_DETECTOR_VARIANT` | `frozen_rules` | `contextual_v1` opt-in preview comparison |
 
 The cache, rate limiter, and in-flight request registry are intentionally process-local. This is sufficient for one free Render instance; scaling to multiple processes would require a shared design or acceptance of per-process limits.
 

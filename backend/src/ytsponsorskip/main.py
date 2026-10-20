@@ -135,6 +135,7 @@ def create_app(
             cache_max_entries=settings.cache_max_entries,
             max_concurrent=settings.max_concurrent_acquisitions,
             timeout_seconds=settings.request_timeout_seconds,
+            detector_variant=settings.detector_variant,
         )
     limiter = SlidingWindowRateLimiter(settings.request_limit_per_minute)
 
