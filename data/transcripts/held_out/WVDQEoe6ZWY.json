@@ -1,0 +1,916 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "video_id": "WVDQEoe6ZWY",
+  "acquired_at": "2026-10-20T04:49:13.687085+00:00",
+  "source": {
+    "library": "supadata-native",
+    "version": "v1-http-2026-10-19",
+    "request": {
+      "lang": "en",
+      "mode": "native",
+      "text": false
+    },
+    "credentials_used": "backend_api_key_only",
+    "manual_sponsor_annotations_used_as_input": false
+  },
+  "transcript": {
+    "language": "English",
+    "language_code": "en",
+    "caption_type": "unknown",
+    "is_generated": null,
+    "provider": "supadata-native",
+    "provider_version": "v1-http-2026-10-19"
+  },
+  "timing": {
+    "source_unit": "milliseconds",
+    "normalized_unit": "seconds",
+    "duration_available": true,
+    "duration_is_exact_promotion_boundary": false
+  },
+  "completeness": {
+    "snippet_count": 146,
+    "first_start_seconds": 0.0,
+    "last_start_seconds": 428.32,
+    "independently_verified": false,
+    "note": "Provider cue list was nonempty; video duration/truncation requires independent verification."
+  },
+  "snippets": [
+    {
+      "index": 0,
+      "text": "\"--but her achievements were never recognised...\"",
+      "start_seconds": 0.0,
+      "duration_seconds": 2.6
+    },
+    {
+      "index": 1,
+      "text": "...in her lifetime.",
+      "start_seconds": 2.6,
+      "duration_seconds": 1.46
+    },
+    {
+      "index": 2,
+      "text": "In 1942, penniless and forgotten,\nshe died of polio.",
+      "start_seconds": 4.07,
+      "duration_seconds": 3.88
+    },
+    {
+      "index": 3,
+      "text": "She couldn't protect herself from viruses,",
+      "start_seconds": 7.95,
+      "duration_seconds": 2.25
+    },
+    {
+      "index": 4,
+      "text": "but you can protect your computer\nby using a VPN.",
+      "start_seconds": 10.2,
+      "duration_seconds": 3.41
+    },
+    {
+      "index": 5,
+      "text": "Okay, look, I just want to say,\nI do not want to start drama with",
+      "start_seconds": 13.61,
+      "duration_seconds": 4.51
+    },
+    {
+      "index": 6,
+      "text": "people who take sponsorships from VPN companies.",
+      "start_seconds": 18.12,
+      "duration_seconds": 3.37
+    },
+    {
+      "index": 7,
+      "text": "With a VPN, all the data you send and receive\ngoes through an encrypted tunnel,",
+      "start_seconds": 21.49,
+      "duration_seconds": 3.97
+    },
+    {
+      "index": 8,
+      "text": "so no-one can see it.",
+      "start_seconds": 25.46,
+      "duration_seconds": 1.32
+    },
+    {
+      "index": 9,
+      "text": "Without a VPN,",
+      "start_seconds": 26.78,
+      "duration_seconds": 1.22
+    },
+    {
+      "index": 10,
+      "text": "every time you connect to free wifi\nin a hotel or a cafe,",
+      "start_seconds": 28.0,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 11,
+      "text": "you're risking people stealing your passwords,",
+      "start_seconds": 30.96,
+      "duration_seconds": 2.28
+    },
+    {
+      "index": 12,
+      "text": "your banking details,\nand your private data.",
+      "start_seconds": 33.24,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 13,
+      "text": "That's not true.",
+      "start_seconds": 35.56,
+      "duration_seconds": 1.38
+    },
+    {
+      "index": 14,
+      "text": "You’ve probably seen the adverts at the\nend of every educational channel’s videos,",
+      "start_seconds": 36.94,
+      "duration_seconds": 3.66
+    },
+    {
+      "index": 15,
+      "text": "and look,",
+      "start_seconds": 40.6,
+      "duration_seconds": 0.96
+    },
+    {
+      "index": 16,
+      "text": "it's just that I do this sort of\ncomputer security stuff,",
+      "start_seconds": 41.56,
+      "duration_seconds": 3.22
+    },
+    {
+      "index": 17,
+      "text": "I am supposed to know about it\nand understand it.",
+      "start_seconds": 44.78,
+      "duration_seconds": 2.69
+    },
+    {
+      "index": 18,
+      "text": "Like, if I took a sponsorship\nfrom a boat manufacturer",
+      "start_seconds": 47.47,
+      "duration_seconds": 2.81
+    },
+    {
+      "index": 19,
+      "text": "and then it turned out the boats sank,\nthat would suck,",
+      "start_seconds": 50.28,
+      "duration_seconds": 3.549
+    },
+    {
+      "index": 20,
+      "text": "but I'm not expected to know about boats.",
+      "start_seconds": 53.829,
+      "duration_seconds": 1.98
+    },
+    {
+      "index": 21,
+      "text": "I am expected to know about VPNs,\nVirtual Private Networks.",
+      "start_seconds": 55.809,
+      "duration_seconds": 3.711
+    },
+    {
+      "index": 22,
+      "text": "And some of the claims that VPN adverts make\nare wrong.",
+      "start_seconds": 59.52,
+      "duration_seconds": 4.7
+    },
+    {
+      "index": 23,
+      "text": "Password-stealing over wifi was a serious\nthreat, a few years ago.",
+      "start_seconds": 64.22,
+      "duration_seconds": 3.63
+    },
+    {
+      "index": 24,
+      "text": "Someone could run an ARP spoofing attack,",
+      "start_seconds": 67.85,
+      "duration_seconds": 2.03
+    },
+    {
+      "index": 25,
+      "text": "make their computer\npretend to be the network hub,",
+      "start_seconds": 69.88,
+      "duration_seconds": 2.55
+    },
+    {
+      "index": 26,
+      "text": "and steal every plain-text password that went\nthrough that wifi network.",
+      "start_seconds": 72.43,
+      "duration_seconds": 3.8
+    },
+    {
+      "index": 27,
+      "text": "It required very little technical knowledge.",
+      "start_seconds": 76.23,
+      "duration_seconds": 2.639
+    },
+    {
+      "index": 28,
+      "text": "Or they could compromise the hub itself and\nlook at all the traffic that was going through it.",
+      "start_seconds": 78.869,
+      "duration_seconds": 4.351
+    },
+    {
+      "index": 29,
+      "text": "But you know what else sends data through\nan encrypted tunnel?",
+      "start_seconds": 83.22,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 30,
+      "text": "Every single web site with a\npadlock in the browser,",
+      "start_seconds": 87.22,
+      "duration_seconds": 2.14
+    },
+    {
+      "index": 31,
+      "text": "every iPhone app since 2016,\nevery Android app since 2018.",
+      "start_seconds": 89.36,
+      "duration_seconds": 4.12
+    },
+    {
+      "index": 32,
+      "text": "Anything that sends any sort of personal data\nnow uses a trusted encrypted tunnel, HTTPS,",
+      "start_seconds": 93.49,
+      "duration_seconds": 5.449
+    },
+    {
+      "index": 33,
+      "text": "that padlock,",
+      "start_seconds": 98.939,
+      "duration_seconds": 1.18
+    },
+    {
+      "index": 34,
+      "text": "and unless you’re using web sites or apps\nfrom the past,",
+      "start_seconds": 100.119,
+      "duration_seconds": 3.221
+    },
+    {
+      "index": 35,
+      "text": "if anyone tries to intercept your data,\nit won't work.",
+      "start_seconds": 103.34,
+      "duration_seconds": 3.389
+    },
+    {
+      "index": 36,
+      "text": "Now, people on the network can see what sites\nyou're connecting to,",
+      "start_seconds": 106.729,
+      "duration_seconds": 3.091
+    },
+    {
+      "index": 37,
+      "text": "so, just the name of your bank,",
+      "start_seconds": 109.82,
+      "duration_seconds": 2.089
+    },
+    {
+      "index": 38,
+      "text": "and they could see the contents\nof dated web sites,",
+      "start_seconds": 111.909,
+      "duration_seconds": 2.851
+    },
+    {
+      "index": 39,
+      "text": "the ones where the browser now shows \"Not\nSecure\".",
+      "start_seconds": 114.76,
+      "duration_seconds": 2.39
+    },
+    {
+      "index": 40,
+      "text": "But that's all.",
+      "start_seconds": 117.15,
+      "duration_seconds": 1.12
+    },
+    {
+      "index": 41,
+      "text": "No passwords, no bank details.",
+      "start_seconds": 118.27,
+      "duration_seconds": 2.09
+    },
+    {
+      "index": 42,
+      "text": "Those attacks don't work any more.",
+      "start_seconds": 120.36,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 43,
+      "text": "One VPN company even had their advert banned\nby the UK regulator",
+      "start_seconds": 122.56,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 44,
+      "text": "because of those misleading claims.",
+      "start_seconds": 125.68,
+      "duration_seconds": 2.07
+    },
+    {
+      "index": 45,
+      "text": "VPNs use military grade encryption to keep\nyour data safe.",
+      "start_seconds": 127.75,
+      "duration_seconds": 4.01
+    },
+    {
+      "index": 46,
+      "text": "Military-grade encryption means \"AES\",",
+      "start_seconds": 131.76,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 47,
+      "text": "which is the same encryption that's baked\ninto every web browser and app.",
+      "start_seconds": 134.17,
+      "duration_seconds": 3.11
+    },
+    {
+      "index": 48,
+      "text": "You're using military-grade encryption to\nwatch this video.",
+      "start_seconds": 137.28,
+      "duration_seconds": 3.209
+    },
+    {
+      "index": 49,
+      "text": "The claim’s not wrong,\nit's just not special either.",
+      "start_seconds": 140.489,
+      "duration_seconds": 2.871
+    },
+    {
+      "index": 50,
+      "text": "Plus, a VPN stops your internet service provider\nspying on what you're doing online.",
+      "start_seconds": 143.36,
+      "duration_seconds": 5.0
+    },
+    {
+      "index": 51,
+      "text": "Now, that is true, to an extent.",
+      "start_seconds": 148.36,
+      "duration_seconds": 2.3
+    },
+    {
+      "index": 52,
+      "text": "Yes, without a VPN,",
+      "start_seconds": 150.66,
+      "duration_seconds": 1.26
+    },
+    {
+      "index": 53,
+      "text": "your internet service provider, your ISP,",
+      "start_seconds": 151.93,
+      "duration_seconds": 1.87
+    },
+    {
+      "index": 54,
+      "text": "can see what domain names\nyou've been connecting to.",
+      "start_seconds": 153.8,
+      "duration_seconds": 2.69
+    },
+    {
+      "index": 55,
+      "text": "There can be very good reasons to hide those.",
+      "start_seconds": 156.49,
+      "duration_seconds": 3.15
+    },
+    {
+      "index": 56,
+      "text": "Your country may allow ISPs to sell that data\nto advertisers,",
+      "start_seconds": 159.64,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 57,
+      "text": "or to build up a profile on you.",
+      "start_seconds": 162.79,
+      "duration_seconds": 1.94
+    },
+    {
+      "index": 58,
+      "text": "Maybe you are studying at a fundamentalist\nChristian college",
+      "start_seconds": 164.73,
+      "duration_seconds": 2.75
+    },
+    {
+      "index": 59,
+      "text": "and don't want university administrators knowing\nthat you're questioning your faith,",
+      "start_seconds": 167.48,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 60,
+      "text": "or questioning your sexuality.",
+      "start_seconds": 171.48,
+      "duration_seconds": 2.11
+    },
+    {
+      "index": 61,
+      "text": "Some ISPs also prioritise some apps, sites\nand traffic types over others,",
+      "start_seconds": 173.59,
+      "duration_seconds": 4.07
+    },
+    {
+      "index": 62,
+      "text": "and a VPN means that they can’t do that.",
+      "start_seconds": 177.66,
+      "duration_seconds": 2.71
+    },
+    {
+      "index": 63,
+      "text": "Or maybe your government is planning to introduce",
+      "start_seconds": 180.37,
+      "duration_seconds": 2.29
+    },
+    {
+      "index": 64,
+      "text": "an ill-advised and often-delayed\nblock on adult content",
+      "start_seconds": 182.66,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 65,
+      "text": "and you want to work around it.",
+      "start_seconds": 185.64,
+      "duration_seconds": 1.66
+    },
+    {
+      "index": 66,
+      "text": "That's all reasonable.",
+      "start_seconds": 187.3,
+      "duration_seconds": 1.33
+    },
+    {
+      "index": 67,
+      "text": "Metadata does give away a lot of information,",
+      "start_seconds": 188.63,
+      "duration_seconds": 1.77
+    },
+    {
+      "index": 68,
+      "text": "and wanting to keep that private\nis a fair idea.",
+      "start_seconds": 190.4,
+      "duration_seconds": 3.07
+    },
+    {
+      "index": 69,
+      "text": "But that's not what a lot of the VPN ads are\nimplying,",
+      "start_seconds": 193.47,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 70,
+      "text": "they're implying that your ISP can read the\ncontent of your messages.",
+      "start_seconds": 195.91,
+      "duration_seconds": 3.45
+    },
+    {
+      "index": 71,
+      "text": "And again, if there's a padlock in the browser,",
+      "start_seconds": 199.36,
+      "duration_seconds": 2.08
+    },
+    {
+      "index": 72,
+      "text": "or if you’re using a modern app,\nthat's not true.",
+      "start_seconds": 201.44,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 73,
+      "text": "And if you do use a VPN, all you're doing\nis changing who can see that metadata.",
+      "start_seconds": 204.48,
+      "duration_seconds": 4.44
+    },
+    {
+      "index": 74,
+      "text": "Your ISP can't any more,\nbut the VPN company can",
+      "start_seconds": 208.92,
+      "duration_seconds": 2.429
+    },
+    {
+      "index": 75,
+      "text": "because at their end of the tunnel,",
+      "start_seconds": 211.349,
+      "duration_seconds": 1.881
+    },
+    {
+      "index": 76,
+      "text": "they have to look at that metadata\nto work out where to send your traffic to.",
+      "start_seconds": 213.23,
+      "duration_seconds": 4.039
+    },
+    {
+      "index": 77,
+      "text": "But maybe that's worth it for you.",
+      "start_seconds": 217.269,
+      "duration_seconds": 1.44
+    },
+    {
+      "index": 78,
+      "text": "And besides...",
+      "start_seconds": 218.709,
+      "duration_seconds": 1.0
+    },
+    {
+      "index": 79,
+      "text": "A good VPN doesn’t keep any logs of who\nyou're talking to.",
+      "start_seconds": 219.709,
+      "duration_seconds": 3.221
+    },
+    {
+      "index": 80,
+      "text": "It is a brave move for a VPN not to keep any\nlogs, given that if that's true,",
+      "start_seconds": 222.93,
+      "duration_seconds": 4.253
+    },
+    {
+      "index": 81,
+      "text": "their service will inevitably be used for\na lot of really awful illegal stuff.",
+      "start_seconds": 227.183,
+      "duration_seconds": 3.446
+    },
+    {
+      "index": 82,
+      "text": "Some do claim that, some have even brought\nin independent auditors to try and prove",
+      "start_seconds": 230.629,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 83,
+      "text": "that they don't keep any logs.",
+      "start_seconds": 234.269,
+      "duration_seconds": 1.261
+    },
+    {
+      "index": 84,
+      "text": "And you can’t have 100% certainty of that,",
+      "start_seconds": 235.53,
+      "duration_seconds": 2.36
+    },
+    {
+      "index": 85,
+      "text": "but they have got as close\nas you reasonably can.",
+      "start_seconds": 237.89,
+      "duration_seconds": 2.65
+    },
+    {
+      "index": 86,
+      "text": "So if you're planning an assassination and\nyour priority is absolutely covering your tracks,",
+      "start_seconds": 240.54,
+      "duration_seconds": 4.46
+    },
+    {
+      "index": 87,
+      "text": "then sure, I guess a VPN might be worth it.",
+      "start_seconds": 245.0,
+      "duration_seconds": 2.42
+    },
+    {
+      "index": 88,
+      "text": "But to customers, a VPN that\ndoesn't keep logs is indistinguishable",
+      "start_seconds": 247.42,
+      "duration_seconds": 5.08
+    },
+    {
+      "index": 89,
+      "text": "from one that's been compromised by hackers,",
+      "start_seconds": 252.5,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 90,
+      "text": "or that's been given a little government\nblack box that they don't understand",
+      "start_seconds": 254.84,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 91,
+      "text": "but they have to plug into their systems and\nnot tell anyone about.",
+      "start_seconds": 259.0,
+      "duration_seconds": 3.319
+    },
+    {
+      "index": 92,
+      "text": "Or from a VPN where a single employee has\nbeen bribed",
+      "start_seconds": 262.319,
+      "duration_seconds": 3.82
+    },
+    {
+      "index": 93,
+      "text": "and has started logging things for just a\nfew accounts.",
+      "start_seconds": 266.139,
+      "duration_seconds": 3.161
+    },
+    {
+      "index": 94,
+      "text": "To be clear, I do not think any of the\nVPN services are a front for the FBI,",
+      "start_seconds": 269.3,
+      "duration_seconds": 4.14
+    },
+    {
+      "index": 95,
+      "text": "or Russian mobsters, or some state-sponsored\nplausibly-deniable intelligence operation.",
+      "start_seconds": 273.44,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 96,
+      "text": "Genuinely, they are almost certainly not,\nand I do not want to scaremonger.",
+      "start_seconds": 278.169,
+      "duration_seconds": 4.831
+    },
+    {
+      "index": 97,
+      "text": "Any company that was found to be logging stuff\nwithout permission would be bankrupt soon after,",
+      "start_seconds": 283.0,
+      "duration_seconds": 5.309
+    },
+    {
+      "index": 98,
+      "text": "it would be a very very bad business decision.",
+      "start_seconds": 288.309,
+      "duration_seconds": 2.07
+    },
+    {
+      "index": 99,
+      "text": "And the enormous amount of money that VPN\ncompanies suddenly have probably comes from",
+      "start_seconds": 290.379,
+      "duration_seconds": 5.59
+    },
+    {
+      "index": 100,
+      "text": "overenthusiastic venture capital firms.",
+      "start_seconds": 295.969,
+      "duration_seconds": 1.931
+    },
+    {
+      "index": 101,
+      "text": "Actually, it almost certainly comes from them.",
+      "start_seconds": 297.9,
+      "duration_seconds": 2.079
+    },
+    {
+      "index": 102,
+      "text": "But if you wanted to see what the most paranoid,\nsecurity-conscious people are connecting to,",
+      "start_seconds": 299.979,
+      "duration_seconds": 4.581
+    },
+    {
+      "index": 103,
+      "text": "and you wanted to install software\non their systems",
+      "start_seconds": 304.56,
+      "duration_seconds": 2.06
+    },
+    {
+      "index": 104,
+      "text": "that is designed to read all their network traffic",
+      "start_seconds": 306.62,
+      "duration_seconds": 2.5
+    },
+    {
+      "index": 105,
+      "text": "and then redirect it through\na single choke point,",
+      "start_seconds": 309.12,
+      "duration_seconds": 3.46
+    },
+    {
+      "index": 106,
+      "text": "then setting up a VPN service with a huge\nadvertising budget would be a great way to do it.",
+      "start_seconds": 312.58,
+      "duration_seconds": 4.34
+    },
+    {
+      "index": 107,
+      "text": "And if you use a VPN, you can connect to streaming\nservices around the world,",
+      "start_seconds": 316.92,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 108,
+      "text": "as if you were in those countries!",
+      "start_seconds": 320.33,
+      "duration_seconds": 1.639
+    },
+    {
+      "index": 109,
+      "text": "And that's the real reason a lot of people\nuse VPNs.",
+      "start_seconds": 321.969,
+      "duration_seconds": 2.17
+    },
+    {
+      "index": 110,
+      "text": "Are you going to China, or somewhere else\nthat blocks off access to a lot of web sites?",
+      "start_seconds": 324.139,
+      "duration_seconds": 3.351
+    },
+    {
+      "index": 111,
+      "text": "That's a fair reason.",
+      "start_seconds": 327.49,
+      "duration_seconds": 1.0
+    },
+    {
+      "index": 112,
+      "text": "Do you want to watch another country's streaming\ncontent,",
+      "start_seconds": 328.49,
+      "duration_seconds": 2.299
+    },
+    {
+      "index": 113,
+      "text": "or download just enormous amounts of BitTorrents\nwithout being tracked?",
+      "start_seconds": 330.789,
+      "duration_seconds": 3.94
+    },
+    {
+      "index": 114,
+      "text": "Those are valid uses of VPNs, even if they\nare legally questionable.",
+      "start_seconds": 334.729,
+      "duration_seconds": 3.74
+    },
+    {
+      "index": 115,
+      "text": "It's just that \"great for pirating stuff and\ngetting around the law\"",
+      "start_seconds": 338.469,
+      "duration_seconds": 3.301
+    },
+    {
+      "index": 116,
+      "text": "is the sort of marketing that gets a company\nin trouble,",
+      "start_seconds": 341.77,
+      "duration_seconds": 2.319
+    },
+    {
+      "index": 117,
+      "text": "and \"we stop bad people stealing your passwords\"\nis the sort of marketing",
+      "start_seconds": 344.089,
+      "duration_seconds": 4.031
+    },
+    {
+      "index": 118,
+      "text": "that scares people into buying something that\nthey might not need.",
+      "start_seconds": 348.12,
+      "duration_seconds": 3.9
+    },
+    {
+      "index": 119,
+      "text": "So, with that in mind, I wrote a more honest\nadvert for VPN services,",
+      "start_seconds": 352.02,
+      "duration_seconds": 4.28
+    },
+    {
+      "index": 120,
+      "text": "and I found a company that was willing to\nsponsor the video.",
+      "start_seconds": 356.3,
+      "duration_seconds": 4.239
+    },
+    {
+      "index": 121,
+      "text": "Unfortunately, they kept asking for changes,",
+      "start_seconds": 360.539,
+      "duration_seconds": 2.13
+    },
+    {
+      "index": 122,
+      "text": "and we disagreed on those,\nso at the last minute,",
+      "start_seconds": 362.669,
+      "duration_seconds": 2.951
+    },
+    {
+      "index": 123,
+      "text": "I have had to blank their name out.",
+      "start_seconds": 365.62,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 124,
+      "text": "Do you want your hide your sexuality from\nyour college administrators?",
+      "start_seconds": 368.8,
+      "duration_seconds": 2.5
+    },
+    {
+      "index": 125,
+      "text": "Do you want to download huge amounts of pirated\ncontent with an extremely low,",
+      "start_seconds": 371.3,
+      "duration_seconds": 4.36
+    },
+    {
+      "index": 126,
+      "text": "but not zero, risk of being found out?",
+      "start_seconds": 375.66,
+      "duration_seconds": 2.589
+    },
+    {
+      "index": 127,
+      "text": "Are you planning an assassination and want\nto hide your tracks?",
+      "start_seconds": 378.249,
+      "duration_seconds": 3.45
+    },
+    {
+      "index": 128,
+      "text": "Then you need [bleep] VPN,",
+      "start_seconds": 381.699,
+      "duration_seconds": 2.17
+    },
+    {
+      "index": 129,
+      "text": "the best choice for gay people, pirates, assassins,",
+      "start_seconds": 383.869,
+      "duration_seconds": 2.741
+    },
+    {
+      "index": 130,
+      "text": "and gay pirate assassins.",
+      "start_seconds": 386.61,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 131,
+      "text": "[bleep] VPN is a tool that can be used both\nfor good and evil,",
+      "start_seconds": 388.83,
+      "duration_seconds": 4.449
+    },
+    {
+      "index": 132,
+      "text": "and it's extremely unlikely to be a front\nfor the FBI.",
+      "start_seconds": 393.279,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 133,
+      "text": "But you should know:",
+      "start_seconds": 396.399,
+      "duration_seconds": 1.03
+    },
+    {
+      "index": 134,
+      "text": "unless you are being personally targeted by\nwell-funded hackers using exploits that the",
+      "start_seconds": 397.429,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 135,
+      "text": "world doesn’t know about yet,",
+      "start_seconds": 401.189,
+      "duration_seconds": 1.861
+    },
+    {
+      "index": 136,
+      "text": "it doesn't make your passwords and\nfinancial data any more safe.",
+      "start_seconds": 403.05,
+      "duration_seconds": 3.829
+    },
+    {
+      "index": 137,
+      "text": "They’re already pretty safe.",
+      "start_seconds": 406.879,
+      "duration_seconds": 1.72
+    },
+    {
+      "index": 138,
+      "text": "And if you are being targeted by hackers like\nthat, you have bigger problems.",
+      "start_seconds": 408.6,
+      "duration_seconds": 4.7
+    },
+    {
+      "index": 139,
+      "text": "But if you want to hide your identity,",
+      "start_seconds": 413.3,
+      "duration_seconds": 2.12
+    },
+    {
+      "index": 140,
+      "text": "pretend you’re in another country,",
+      "start_seconds": 415.429,
+      "duration_seconds": 1.49
+    },
+    {
+      "index": 141,
+      "text": "or make sure your connection is secure as\nyou work out the",
+      "start_seconds": 416.919,
+      "duration_seconds": 1.981
+    },
+    {
+      "index": 142,
+      "text": "lethal doses of particular chemicals,",
+      "start_seconds": 418.9,
+      "duration_seconds": 1.72
+    },
+    {
+      "index": 143,
+      "text": "then go to [bleep].com/honest for [bleep]",
+      "start_seconds": 420.62,
+      "duration_seconds": 3.8
+    },
+    {
+      "index": 144,
+      "text": "That was a lot of money left on the table.",
+      "start_seconds": 425.6,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 145,
+      "text": "Lot of money.",
+      "start_seconds": 428.32,
+      "duration_seconds": 1.54
+    }
+  ]
+}

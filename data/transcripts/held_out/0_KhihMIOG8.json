@@ -1,0 +1,1072 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "video_id": "0_KhihMIOG8",
+  "acquired_at": "2026-10-20T04:49:39.185706+00:00",
+  "source": {
+    "library": "supadata-native",
+    "version": "v1-http-2026-10-19",
+    "request": {
+      "lang": "en",
+      "mode": "native",
+      "text": false
+    },
+    "credentials_used": "backend_api_key_only",
+    "manual_sponsor_annotations_used_as_input": false
+  },
+  "transcript": {
+    "language": "English",
+    "language_code": "en",
+    "caption_type": "unknown",
+    "is_generated": null,
+    "provider": "supadata-native",
+    "provider_version": "v1-http-2026-10-19"
+  },
+  "timing": {
+    "source_unit": "milliseconds",
+    "normalized_unit": "seconds",
+    "duration_available": true,
+    "duration_is_exact_promotion_boundary": false
+  },
+  "completeness": {
+    "snippet_count": 172,
+    "first_start_seconds": 0.08,
+    "last_start_seconds": 874.08,
+    "independently_verified": false,
+    "note": "Provider cue list was nonempty; video duration/truncation requires independent verification."
+  },
+  "snippets": [
+    {
+      "index": 0,
+      "text": "When we bought our house several years ago, we \nfell in love with every part of it except one:  ",
+      "start_seconds": 0.08,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 1,
+      "text": "the foundation. At 75 years old, we knew \nthese old piers were just about finished  ",
+      "start_seconds": 4.72,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 2,
+      "text": "holding this old house up. This year we \nfinally bit the bullet to have them replaced.  ",
+      "start_seconds": 9.92,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 3,
+      "text": "Any homeowner who’s had foundation work \ndone can commiserate with us on the cost  ",
+      "start_seconds": 14.72,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 4,
+      "text": "and disruption of a project like this. But homes \naren’t the only structures with foundations.  ",
+      "start_seconds": 19.2,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 5,
+      "text": "It is both a gravitational necessity and a source \nof job stability to structural and geotechnical  ",
+      "start_seconds": 24.4,
+      "duration_seconds": 6.0
+    },
+    {
+      "index": 6,
+      "text": "engineers that all construction - great and small \n- sits upon the ground. And the ways in which we  ",
+      "start_seconds": 30.4,
+      "duration_seconds": 6.32
+    },
+    {
+      "index": 7,
+      "text": "accomplish such a seemingly unexceptional feat \nare full of fascinating and unexpected details.  ",
+      "start_seconds": 36.72,
+      "duration_seconds": 6.16
+    },
+    {
+      "index": 8,
+      "text": "I’m Grady and this is Practical Engineering. In \ntoday’s episode, we’re talking about foundations.",
+      "start_seconds": 42.88,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 9,
+      "text": "This video is sponsored by CuriosityStream \nand Nebula. More on them later.",
+      "start_seconds": 55.84,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 10,
+      "text": "There’s really just one rule for structural and \ngeotechnical engineers designing foundations:  ",
+      "start_seconds": 65.68,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 11,
+      "text": "when you put something on the ground, it should \nnot move. That seems like a pretty straightforward  ",
+      "start_seconds": 71.04,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 12,
+      "text": "directive. You can put a lot of stuff on the \nground and have it stay there. For example,  ",
+      "start_seconds": 75.92,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 13,
+      "text": "several years ago I optimistically stacked \nthese pavers behind my shed with the false hope  ",
+      "start_seconds": 80.4,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 14,
+      "text": "that I would use them in a landscaping project \nsomeday, but their most likely future is to sit  ",
+      "start_seconds": 85.2,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 15,
+      "text": "here in this shady purgatory for all of eternity. \nUnfortunately, buildings and other structures are  ",
+      "start_seconds": 89.84,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 16,
+      "text": "a little different. Mainly, they are large enough \nthat one part could move relative to the other  ",
+      "start_seconds": 95.2,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 17,
+      "text": "parts, a phenomenon we call differential movement. \nWhen you move one piece of anyTHING relative to  ",
+      "start_seconds": 100.16,
+      "duration_seconds": 5.84
+    },
+    {
+      "index": 18,
+      "text": "the rest of it, you introduce stress. And if that \nstress is greater than the inherent strength of  ",
+      "start_seconds": 106.0,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 19,
+      "text": "the thing, that thing will pull itself apart. \nIt happens all the time, all around the world,  ",
+      "start_seconds": 111.44,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 20,
+      "text": "including right here in my own house. When \none of these piers settles or heaves more  ",
+      "start_seconds": 116.4,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 21,
+      "text": "than the others, all the stuff it supports \ntries to move too. But doorframes, drywall,  ",
+      "start_seconds": 120.72,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 22,
+      "text": "and ceramic tile work much better and last much \nlonger when the surrounding structure stays put.",
+      "start_seconds": 125.76,
+      "duration_seconds": 6.32
+    },
+    {
+      "index": 23,
+      "text": "There are many kinds of foundations used for \nthe various structures in our built environment,  ",
+      "start_seconds": 132.08,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 24,
+      "text": "but before we dive into how they work, I think it \nwill be helpful to first talk about what they’re  ",
+      "start_seconds": 136.72,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 25,
+      "text": "up against, or actually down against. Of course, \nbuildings are heavy, and one of the most important  ",
+      "start_seconds": 141.6,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 26,
+      "text": "jobs of a foundation is to evenly distribute \nthat weight into the subsurface as downward  ",
+      "start_seconds": 146.96,
+      "duration_seconds": 5.84
+    },
+    {
+      "index": 27,
+      "text": "pressure. Soil isn’t infinitely strong against \nvertical loads. It can fail just like any other  ",
+      "start_seconds": 152.8,
+      "duration_seconds": 5.68
+    },
+    {
+      "index": 28,
+      "text": "component of a structural system. When the forces \nare high enough to shear through soil particles,  ",
+      "start_seconds": 158.48,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 29,
+      "text": "we call it a bearing failure. The soil \ndirectly below the load is forced downward,  ",
+      "start_seconds": 163.84,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 30,
+      "text": "pushing the rest of the soil to either side, \neventually bulging up around the edges.",
+      "start_seconds": 168.48,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 31,
+      "text": "Even if the subsurface doesn’t full-on shear, it \ncan still settle. This happens when the particles  ",
+      "start_seconds": 173.12,
+      "duration_seconds": 5.28
+    },
+    {
+      "index": 32,
+      "text": "are compressed more closely together, and it \nusually takes place over a longer period of time.  ",
+      "start_seconds": 178.4,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 33,
+      "text": "(I have a video all about settlement \nthat you can check out after this.)  ",
+      "start_seconds": 183.6,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 34,
+      "text": "So, job number 1 of a foundation is to distribute \nthe downward force of a structure over a large  ",
+      "start_seconds": 187.04,
+      "duration_seconds": 5.76
+    },
+    {
+      "index": 35,
+      "text": "enough area to reduce the bearing pressure and \navoid shear failures or excessive settlement.",
+      "start_seconds": 192.8,
+      "duration_seconds": 5.6
+    },
+    {
+      "index": 36,
+      "text": "Structural loads don’t just come from gravity. \nWind can exert tremendous and rapidly-fluctuating  ",
+      "start_seconds": 198.4,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 37,
+      "text": "pressure on a large structure pushing it \nhorizontally and even creating uplift like the  ",
+      "start_seconds": 203.92,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 38,
+      "text": "wing of an airplane. Earthquakes also create loads \non structures, shifting and shaking them with very  ",
+      "start_seconds": 208.56,
+      "duration_seconds": 5.6
+    },
+    {
+      "index": 39,
+      "text": "little warning. Just like the normal weight of \na structure, these loads must also be resisted  ",
+      "start_seconds": 214.16,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 40,
+      "text": "by a foundation to prevent it from lifting or \nsliding along the ground. That’s job number 2.",
+      "start_seconds": 219.2,
+      "duration_seconds": 5.84
+    },
+    {
+      "index": 41,
+      "text": "Speaking of the ground, it’s not the most \nhospitable place for many building materials.  ",
+      "start_seconds": 225.04,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 42,
+      "text": "It has bugs, like termites, that can eat away \nat wooden members over time, reducing their  ",
+      "start_seconds": 229.92,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 43,
+      "text": "strength. It also has moisture that can lead to \nmold and rot. My house was built in the 1940s  ",
+      "start_seconds": 234.96,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 44,
+      "text": "on top of cedar piers. This is a wood species \nthat is naturally resistant to bugs and fungi,  ",
+      "start_seconds": 240.48,
+      "duration_seconds": 5.28
+    },
+    {
+      "index": 45,
+      "text": "but not completely immune to them as you can see. \nSo, job number 3 of a foundation is to resist  ",
+      "start_seconds": 245.76,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 46,
+      "text": "the effects of long-term degradation and decay \nthat come from our tiny biological neighbors.",
+      "start_seconds": 251.28,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 47,
+      "text": "Another problem with the ground is that \nsoil isn’t really as static as we think.  ",
+      "start_seconds": 256.8,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 48,
+      "text": "Freezing isn’t usually a problem for me in \ncentral Texas, but many places in the world see  ",
+      "start_seconds": 261.04,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 49,
+      "text": "temperatures that rise and fall below the freezing \npoint of water tens or hundreds of times per year.  ",
+      "start_seconds": 265.6,
+      "duration_seconds": 6.0
+    },
+    {
+      "index": 50,
+      "text": "We all know water expands when it freezes, and \nit can do so with prodigious force. When this  ",
+      "start_seconds": 271.6,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 51,
+      "text": "happens to subsurface water below a structure, it \ncan behave like a jack to lift it up. Over time,  ",
+      "start_seconds": 276.72,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 52,
+      "text": "these cycles of freeze and thaw can slowly shift \nor raise parts of a structure more than others,  ",
+      "start_seconds": 282.16,
+      "duration_seconds": 5.28
+    },
+    {
+      "index": 53,
+      "text": "creating issues. Similarly, some kinds \nof soil expand when exposed to moisture.  ",
+      "start_seconds": 287.44,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 54,
+      "text": "I also have a video on this phenomenon, so you \nhave two videos to watch after this one. Expansive  ",
+      "start_seconds": 292.32,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 55,
+      "text": "clay soil can create the same type of damage \nas cycles of freeze and thaw by subtly moving  ",
+      "start_seconds": 296.88,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 56,
+      "text": "a structure in small amounts with each cycle of \nwet and dry. So job number 4 of a foundation is  ",
+      "start_seconds": 301.92,
+      "duration_seconds": 5.68
+    },
+    {
+      "index": 57,
+      "text": "to reach a deep enough layer that can’t freeze \nor that doesn’t experience major fluctuations  ",
+      "start_seconds": 307.6,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 58,
+      "text": "in moisture content to avoid these problems that \ncome with water in the subgrade below a structure.",
+      "start_seconds": 313.04,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 59,
+      "text": "Job number 5 isn’t necessarily applicable to \nmost buildings, but there are many types of  ",
+      "start_seconds": 318.56,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 60,
+      "text": "structures (like bridges and retaining walls) \nthat are regularly subject to flowing water.  ",
+      "start_seconds": 322.88,
+      "duration_seconds": 5.28
+    },
+    {
+      "index": 61,
+      "text": "Over time (or sometimes over the course of a \nsingle flood), that water can create erosion,  ",
+      "start_seconds": 328.16,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 62,
+      "text": "undermining the structure. Many foundations \nare specifically designed to combat erosion,  ",
+      "start_seconds": 333.28,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 63,
+      "text": "either with hard armoring or by simply \nbeing installed so deep into the earth  ",
+      "start_seconds": 338.0,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 64,
+      "text": "that they can’t be undermined \nby quickly flowing water.",
+      "start_seconds": 342.24,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 65,
+      "text": "Job number 6 really applies to all of engineering: \nfoundations have to be cost effective. Could the  ",
+      "start_seconds": 345.2,
+      "duration_seconds": 5.68
+    },
+    {
+      "index": 66,
+      "text": "contractor who built my house in the 1940s \nhave driven twice as many piers, each one to  ",
+      "start_seconds": 350.88,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 67,
+      "text": "three times the depth? Of course it can be done, \nbut (with some minor maintenance and repairs),  ",
+      "start_seconds": 356.24,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 68,
+      "text": "this one lasted 75 years before needing to be \nreplaced. With the median length of homeownership  ",
+      "start_seconds": 360.88,
+      "duration_seconds": 5.68
+    },
+    {
+      "index": 69,
+      "text": "somewhere between 5 and 15 years, few people \nwould be willing to pay more for a house with  ",
+      "start_seconds": 366.56,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 70,
+      "text": "500 years of remaining life in the foundation \nthan they would for one with 30. I could have  ",
+      "start_seconds": 371.92,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 71,
+      "text": "paid this contractor to build me a foundation \nthat will last hundreds of years... but I didn’t.  ",
+      "start_seconds": 376.8,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 72,
+      "text": "Engineering is a job of balancing constraints, and \nmany of the decisions in foundation engineering  ",
+      "start_seconds": 382.32,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 73,
+      "text": "come down to the question of “How can we \nachieve all of the first 5 jobs I mentioned  ",
+      "start_seconds": 387.84,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 74,
+      "text": "without overdoing it and wasting a bunch of \nmoney in the process?” Let’s look at a few ways.",
+      "start_seconds": 392.72,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 75,
+      "text": "Foundations are generally \ndivided into two classes:  ",
+      "start_seconds": 397.84,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 76,
+      "text": "deep and shallow. Most buildings with only \na few stories, including nearly all homes,  ",
+      "start_seconds": 401.12,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 77,
+      "text": "are built on shallow foundations. That means they \ntransfer the structure’s weight to the surface of  ",
+      "start_seconds": 405.84,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 78,
+      "text": "the earth (or just below it). Maybe the most basic \nof these is how my house was originally built.  ",
+      "start_seconds": 411.28,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 79,
+      "text": "They cut down cedar trees, hammered those \nlogs into the ground as piles, layed wooden  ",
+      "start_seconds": 416.64,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 80,
+      "text": "beams across the top of those piers, and then \nbuilt the rest of the house atop the beams.  ",
+      "start_seconds": 421.76,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 81,
+      "text": "Pier and beam foundations are pretty common, \nat least in my neck of the woods, and they have  ",
+      "start_seconds": 426.32,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 82,
+      "text": "an added benefit of creating a crawlspace below \nthe structure in which utilities like plumbing,  ",
+      "start_seconds": 430.4,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 83,
+      "text": "drains, and electric lines can be installed \nand maintained. However, all these individual,  ",
+      "start_seconds": 435.44,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 84,
+      "text": "unconnected points of contact with the earth leave \nquite a bit of room for differential movement.",
+      "start_seconds": 440.32,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 85,
+      "text": "Another basic type of shallow foundation is \nthe strip footing, which generally consists  ",
+      "start_seconds": 445.28,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 86,
+      "text": "of a ribbon or strip of concrete upon which walls \ncan sit. In some cases the floor is isolated from  ",
+      "start_seconds": 449.6,
+      "duration_seconds": 6.16
+    },
+    {
+      "index": 87,
+      "text": "the walls and sits directly on concrete slab atop \nthe subgrade, but strip footings can also support  ",
+      "start_seconds": 455.76,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 88,
+      "text": "floor joists, making room for a crawlspace below. \nFor sites with strong soils, this is a great  ",
+      "start_seconds": 461.12,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 89,
+      "text": "option because it’s simple and cheap, but if the \nsubgrade soils are poor, strip footings can still  ",
+      "start_seconds": 466.08,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 90,
+      "text": "allow differential movement because all the walls \naren’t rigidly connected together. In that case,  ",
+      "start_seconds": 471.04,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 91,
+      "text": "it makes sense to use a raft foundation - a \ncompletely solid concrete slab that extends  ",
+      "start_seconds": 475.84,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 92,
+      "text": "across the entire structure. Raft foundations \nare typically concrete slabs placed directly on  ",
+      "start_seconds": 481.28,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 93,
+      "text": "the ground (usually with some thickened areas \nto provide extra rigidity). They distribute  ",
+      "start_seconds": 486.48,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 94,
+      "text": "the loads across a larger area, reducing \nthe pressure on the subgrade, and they can  ",
+      "start_seconds": 491.28,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 95,
+      "text": "accommodate some movement of the ground without \ntransferring the movement into a structure,  ",
+      "start_seconds": 495.6,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 96,
+      "text": "essentially riding the waves of the earth like \na raft on the ocean (hence the name). However,  ",
+      "start_seconds": 499.92,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 97,
+      "text": "they don’t have a crawlspace which makes \nplumbing repairs much more challenging.",
+      "start_seconds": 504.64,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 98,
+      "text": "One issue with all shallow foundations is that \nyou still need to install them below the frost  ",
+      "start_seconds": 508.48,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 99,
+      "text": "line - that is the maximum depth to which water \nin the soil might freeze during the harshest part  ",
+      "start_seconds": 513.12,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 100,
+      "text": "of the winter - in order to avoid frost heaving. \nIn some parts of the contiguous United States,  ",
+      "start_seconds": 518.32,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 101,
+      "text": "the frost line can be upwards of 8 \nfeet or nearly two-and-a-half meters.  ",
+      "start_seconds": 523.52,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 102,
+      "text": "If you’re going to dig that deep \nto install a foundation anyway,  ",
+      "start_seconds": 527.76,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 103,
+      "text": "you might as well just add an extra \nfloor to your structure below the ground.  ",
+      "start_seconds": 531.04,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 104,
+      "text": "That’s usually called a basement, and it \ncan be considered a building’s foundation  ",
+      "start_seconds": 534.8,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 105,
+      "text": "(although the walls are usually constructed on \na raft or strip footings as described above).",
+      "start_seconds": 538.48,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 106,
+      "text": "As a structure’s size increases, so do the \nloads it imposes on the ground, and eventually  ",
+      "start_seconds": 543.2,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 107,
+      "text": "it becomes infeasible to rely only on soils \nnear the surface of the earth. Tall buildings,  ",
+      "start_seconds": 548.08,
+      "duration_seconds": 5.6
+    },
+    {
+      "index": 108,
+      "text": "elevated roadways, bridges, and coastal structures \noften rely on deep foundations for support. This  ",
+      "start_seconds": 553.68,
+      "duration_seconds": 6.24
+    },
+    {
+      "index": 109,
+      "text": "is especially true when the soils at the surface \nare not as firm as the layers farther below the  ",
+      "start_seconds": 559.92,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 110,
+      "text": "ground. Deep foundations almost always rely on \npiles, which are vertical structural elements that  ",
+      "start_seconds": 564.88,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 111,
+      "text": "are driven or drilled into the earth, often down \nto a stronger layer of soil or bedrock, and there  ",
+      "start_seconds": 570.0,
+      "duration_seconds": 5.6
+    },
+    {
+      "index": 112,
+      "text": "are way more types than I could ever cover in a \nsingle video. Piles not only transfer loads at the  ",
+      "start_seconds": 575.6,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 113,
+      "text": "bottom (called end bearing), but they can also be \nsupported along their length through a phenomenon  ",
+      "start_seconds": 580.96,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 114,
+      "text": "called skin friction. This makes it possible \nfor a foundation to resist much more significant  ",
+      "start_seconds": 585.84,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 115,
+      "text": "loads - whether downward, upward or horizontal \n- within a given footprint of a structure.",
+      "start_seconds": 590.88,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 116,
+      "text": "One of the benefits of driven piles is \nthat you install them in somewhat the  ",
+      "start_seconds": 595.76,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 117,
+      "text": "same way that they’ll be loaded in their final \nconfiguration. There’s some efficiency there  ",
+      "start_seconds": 599.44,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 118,
+      "text": "because you can just stop pushing the pile \ninto the ground once it’s able to resist  ",
+      "start_seconds": 603.68,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 119,
+      "text": "the design loads. There’s a problem with \nthis though. Let me show you what I mean.  ",
+      "start_seconds": 607.84,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 120,
+      "text": "This hydraulic press has more than enough \npower to push this steel rod into the ground.  ",
+      "start_seconds": 612.16,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 121,
+      "text": "And at first, it does just that. But eventually, \nit reaches a point where the weight of the press  ",
+      "start_seconds": 616.96,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 122,
+      "text": "is less than the bearing capacity of the pile, and \nit just lifts itself up. Easy… (you might think).  ",
+      "start_seconds": 622.0,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 123,
+      "text": "Just add more weight. But consider that these \npiles might be designed to support the weight  ",
+      "start_seconds": 627.44,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 124,
+      "text": "of an entire structure. It’s not feasible \nto bring in or build some massive weight  ",
+      "start_seconds": 632.0,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 125,
+      "text": "just to react against to drive a pile into \nthe ground. Instead, we usually use hammers,  ",
+      "start_seconds": 636.72,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 126,
+      "text": "which can deliver significantly more force to \ndrive a pile with only a relatively small weight.",
+      "start_seconds": 641.84,
+      "duration_seconds": 5.84
+    },
+    {
+      "index": 127,
+      "text": "The problem with hammered piles is that the \ndynamic loading they undergo during installation  ",
+      "start_seconds": 647.68,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 128,
+      "text": "is different from the static loading \nthey see once in service. In other words,  ",
+      "start_seconds": 652.64,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 129,
+      "text": "buildings don’t usually hammer on their \nfoundations. For example, if a pile can  ",
+      "start_seconds": 657.52,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 130,
+      "text": "withstand the force of a 5-ton weight dropped \nfrom 16 feet or 5 meters without moving, what’s  ",
+      "start_seconds": 662.4,
+      "duration_seconds": 5.84
+    },
+    {
+      "index": 131,
+      "text": "the equivalent static load it can withstand? That \nturns out to be a pretty complicated question,  ",
+      "start_seconds": 668.24,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 132,
+      "text": "and even though there are published equivalencies \nbetween static and dynamic loads, their accuracy  ",
+      "start_seconds": 673.6,
+      "duration_seconds": 5.6
+    },
+    {
+      "index": 133,
+      "text": "can vary widely depending on soil conditions. \nThat’s especially true for long piles where  ",
+      "start_seconds": 679.2,
+      "duration_seconds": 5.84
+    },
+    {
+      "index": 134,
+      "text": "the pressure wave generated by a hammer might not \neven travel fast enough to load the entire member  ",
+      "start_seconds": 685.04,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 135,
+      "text": "at the same moment in time. Static tests are more \nreliable, but also much more expensive because you  ",
+      "start_seconds": 690.4,
+      "duration_seconds": 6.0
+    },
+    {
+      "index": 136,
+      "text": "either have to bring in a ton (or thousands of \ntons) of weight to put on top, or you have to  ",
+      "start_seconds": 696.4,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 137,
+      "text": "build additional piles with a beam across them \nto give the test rig something to react against.",
+      "start_seconds": 701.52,
+      "duration_seconds": 5.68
+    },
+    {
+      "index": 138,
+      "text": "One interesting solution to this problem \nis called statnamic testing of piles.  ",
+      "start_seconds": 707.2,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 139,
+      "text": "In this method, a mass is accelerated \nupward using explosives, creating an  ",
+      "start_seconds": 711.76,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 140,
+      "text": "equal and opposite force on the pile to be \ntested. It’s kind of like a reverse hammer,  ",
+      "start_seconds": 716.48,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 141,
+      "text": "except unlike a hammer where the force on \nthe pile lasts only for a few milliseconds,  ",
+      "start_seconds": 720.88,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 142,
+      "text": "the duration of loading in a statnamic test \nis often upwards of 100 or 200 milliseconds.  ",
+      "start_seconds": 725.36,
+      "duration_seconds": 5.28
+    },
+    {
+      "index": 143,
+      "text": "That makes it much more similar to a static \nforce on the pile without having to bring in  ",
+      "start_seconds": 730.64,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 144,
+      "text": "tons and tons of weight or build expensive \nreaction piers just to conduct a test.",
+      "start_seconds": 735.04,
+      "duration_seconds": 8.8
+    },
+    {
+      "index": 145,
+      "text": "I’m only scratching the surface (or subsurface) \nof a topic that fills hundreds of engineering  ",
+      "start_seconds": 745.52,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 146,
+      "text": "textbooks and the careers of thousands of \ncontractors and engineers. If all the earth  ",
+      "start_seconds": 750.56,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 147,
+      "text": "was solid rock, life would be a lot simpler, but \nmaybe a lot less interesting too. If there are  ",
+      "start_seconds": 755.44,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 148,
+      "text": "topics in foundations that you’d like to learn \nmore about, add a comment or send me an email,  ",
+      "start_seconds": 760.96,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 149,
+      "text": "and I’ll try to address it in a future video, \nbut I hope this one gives you some appreciation  ",
+      "start_seconds": 765.2,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 150,
+      "text": "of those innocuous bits of structural and \ngeotechnical engineering below our feet.",
+      "start_seconds": 769.92,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 151,
+      "text": "Hey, thanks for sticking around to the end of \nthis video. You know how this works because you  ",
+      "start_seconds": 776.8,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 152,
+      "text": "probably watch a lot of videos about science \nand engineering to the end just like I do.  ",
+      "start_seconds": 780.64,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 153,
+      "text": "You probably also don’t enjoy watching ads like \nthis one, which is great, because Nebula doesn’t  ",
+      "start_seconds": 785.04,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 154,
+      "text": "have any. Nebula is a streaming service built by \nand for independent creators like MinutePhysics,  ",
+      "start_seconds": 789.68,
+      "duration_seconds": 5.6
+    },
+    {
+      "index": 155,
+      "text": "Real Engineering, Wendover Productions, \nand a bunch of others (including me).  ",
+      "start_seconds": 795.28,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 156,
+      "text": "It’s a way for us to try new ideas that might \nnot work on advertiser-supported platforms like  ",
+      "start_seconds": 799.2,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 157,
+      "text": "YouTube. My videos go live there the day before \nthey publish here, with no ads or sponsorships.  ",
+      "start_seconds": 803.92,
+      "duration_seconds": 5.6
+    },
+    {
+      "index": 158,
+      "text": "And, we’re super excited to continue our \npartnership with CuriosityStream, a service with  ",
+      "start_seconds": 809.52,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 159,
+      "text": "thousands of documentaries and non-fiction titles \non pretty much every subject you can imagine.  ",
+      "start_seconds": 814.32,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 160,
+      "text": "CuriosityStream loves independent creators and \nwants to help us grow our platform, so they’re  ",
+      "start_seconds": 819.52,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 161,
+      "text": "offering free access to Nebula when you sign \nup at CuriosityStream.com/practicalengineering.",
+      "start_seconds": 824.32,
+      "duration_seconds": 6.48
+    },
+    {
+      "index": 162,
+      "text": "I know there are a lot of streaming services \nright now, and all those monthly subscriptions  ",
+      "start_seconds": 830.8,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 163,
+      "text": "can be tough to keep track of. That’s why this \nbundle is such an awesome deal. CuriosityStream  ",
+      "start_seconds": 834.48,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 164,
+      "text": "is taking 26% off an annual plan - that makes \nit only $15 for an entire year of access to  ",
+      "start_seconds": 839.12,
+      "duration_seconds": 7.12
+    },
+    {
+      "index": 165,
+      "text": "thousands of thought-provoking documentaries \non CuriosityStream AND everything on Nebula as  ",
+      "start_seconds": 846.24,
+      "duration_seconds": 5.76
+    },
+    {
+      "index": 166,
+      "text": "well. You can watch awesome big-budget content \non CuriosityStream. I love watching the European  ",
+      "start_seconds": 852.0,
+      "duration_seconds": 2.08
+    },
+    {
+      "index": 167,
+      "text": "Inventor Awards that showcase the coolest new \ninventions each year on CuriosityStream. Or,  ",
+      "start_seconds": 854.08,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 168,
+      "text": "watch the new Nebula-exclusive series “Logistics \nof D-Day” by my friend Brian at Real Engineering.  ",
+      "start_seconds": 859.04,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 169,
+      "text": "It’s a great way to support my channel and a whole \nhost of your other favorite educational creators.  ",
+      "start_seconds": 864.48,
+      "duration_seconds": 5.28
+    },
+    {
+      "index": 170,
+      "text": "Plus it’s just a great deal. Do us both a \nfavor and click that link in the description.  ",
+      "start_seconds": 869.76,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 171,
+      "text": "Thank you for watching, and \nlet me know what you think!",
+      "start_seconds": 874.08,
+      "duration_seconds": 9.76
+    }
+  ]
+}

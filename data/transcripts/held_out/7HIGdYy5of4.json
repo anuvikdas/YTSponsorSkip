@@ -1,0 +1,4180 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "video_id": "7HIGdYy5of4",
+  "acquired_at": "2026-10-20T04:49:25.195735+00:00",
+  "source": {
+    "library": "supadata-native",
+    "version": "v1-http-2026-10-19",
+    "request": {
+      "lang": "en",
+      "mode": "native",
+      "text": false
+    },
+    "credentials_used": "backend_api_key_only",
+    "manual_sponsor_annotations_used_as_input": false
+  },
+  "transcript": {
+    "language": "English",
+    "language_code": "en",
+    "caption_type": "unknown",
+    "is_generated": null,
+    "provider": "supadata-native",
+    "provider_version": "v1-http-2026-10-19"
+  },
+  "timing": {
+    "source_unit": "milliseconds",
+    "normalized_unit": "seconds",
+    "duration_available": true,
+    "duration_is_exact_promotion_boundary": false
+  },
+  "completeness": {
+    "snippet_count": 690,
+    "first_start_seconds": 0.08,
+    "last_start_seconds": 1338.64,
+    "independently_verified": false,
+    "note": "Provider cue list was nonempty; video duration/truncation requires independent verification."
+  },
+  "snippets": [
+    {
+      "index": 0,
+      "text": "welcome today we are looking at five",
+      "start_seconds": 0.08,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 1,
+      "text": "espresso machines under or around 500",
+      "start_seconds": 1.92,
+      "duration_seconds": 3.839
+    },
+    {
+      "index": 2,
+      "text": "pounds this was a follow-up to a",
+      "start_seconds": 4.4,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 3,
+      "text": "previous video which was the best",
+      "start_seconds": 5.759,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 4,
+      "text": "espresso machine under 100 pounds here",
+      "start_seconds": 7.04,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 5,
+      "text": "we are",
+      "start_seconds": 9.12,
+      "duration_seconds": 3.519
+    },
+    {
+      "index": 6,
+      "text": "500 pounds and anything between 100 and",
+      "start_seconds": 10.32,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 7,
+      "text": "500 was on the table first up we have",
+      "start_seconds": 12.639,
+      "duration_seconds": 5.761
+    },
+    {
+      "index": 8,
+      "text": "the la lit anna that was 350 pounds we",
+      "start_seconds": 14.96,
+      "duration_seconds": 6.64
+    },
+    {
+      "index": 9,
+      "text": "have the delonghi dedica 189 pounds by",
+      "start_seconds": 18.4,
+      "duration_seconds": 4.879
+    },
+    {
+      "index": 10,
+      "text": "far the cheapest in this category but",
+      "start_seconds": 21.6,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 11,
+      "text": "had a lot of requests to look at this",
+      "start_seconds": 23.279,
+      "duration_seconds": 2.641
+    },
+    {
+      "index": 12,
+      "text": "and this seemed like the best",
+      "start_seconds": 24.96,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 13,
+      "text": "opportunity to do so we&amp;#39;ve got the",
+      "start_seconds": 25.92,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 14,
+      "text": "rentalia sylvia it&amp;#39;s 529 pounds is what",
+      "start_seconds": 27.68,
+      "duration_seconds": 4.399
+    },
+    {
+      "index": 15,
+      "text": "i paid so technically out of budget but",
+      "start_seconds": 30.56,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 16,
+      "text": "i&amp;#39;ve seen it for around 500 so it was",
+      "start_seconds": 32.079,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 17,
+      "text": "worthy of inclusion here we&amp;#39;ve got the",
+      "start_seconds": 33.92,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 18,
+      "text": "sage bambino plus that was 399 pounds",
+      "start_seconds": 35.84,
+      "duration_seconds": 4.719
+    },
+    {
+      "index": 19,
+      "text": "and at the end here we&amp;#39;ve got the gadget",
+      "start_seconds": 38.96,
+      "duration_seconds": 3.88
+    },
+    {
+      "index": 20,
+      "text": "classic pro also",
+      "start_seconds": 40.559,
+      "duration_seconds": 5.361
+    },
+    {
+      "index": 21,
+      "text": "399 pounds important note here i&amp;#39;m going",
+      "start_seconds": 42.84,
+      "duration_seconds": 5.879
+    },
+    {
+      "index": 22,
+      "text": "to use these as mostly stock i&amp;#39;m not",
+      "start_seconds": 45.92,
+      "duration_seconds": 4.959
+    },
+    {
+      "index": 23,
+      "text": "going to modify them heavily with one",
+      "start_seconds": 48.719,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 24,
+      "text": "small exception where i can i&amp;#39;ll be",
+      "start_seconds": 50.879,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 25,
+      "text": "using a better basket these two machines",
+      "start_seconds": 52.879,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 26,
+      "text": "both came with pressurized porta filters",
+      "start_seconds": 55.28,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 27,
+      "text": "only and it was such an easy thing to",
+      "start_seconds": 57.199,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 28,
+      "text": "switch out that it seemed worthwhile",
+      "start_seconds": 59.52,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 29,
+      "text": "doing and in this case with the geji and",
+      "start_seconds": 61.039,
+      "duration_seconds": 4.241
+    },
+    {
+      "index": 30,
+      "text": "the ranchillo they&amp;#39;re both 58mm",
+      "start_seconds": 63.84,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 31,
+      "text": "portafilters i&amp;#39;m going to use a better",
+      "start_seconds": 65.28,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 32,
+      "text": "basket for them too for the espresso",
+      "start_seconds": 66.88,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 33,
+      "text": "testing that does put the lid at a",
+      "start_seconds": 68.32,
+      "duration_seconds": 3.839
+    },
+    {
+      "index": 34,
+      "text": "slight disadvantage because it will be",
+      "start_seconds": 70.56,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 35,
+      "text": "using its stock basket which isn&amp;#39;t as",
+      "start_seconds": 72.159,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 36,
+      "text": "good as a vst basket but it&amp;#39;s a 57mm",
+      "start_seconds": 74.479,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 37,
+      "text": "portafilter and i just couldn&amp;#39;t find a",
+      "start_seconds": 76.799,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 38,
+      "text": "basket in time that was of a standard",
+      "start_seconds": 78.24,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 39,
+      "text": "that i was looking for as to how these",
+      "start_seconds": 80.56,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 40,
+      "text": "were chosen there was really one",
+      "start_seconds": 82.08,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 41,
+      "text": "criteria which is that they were broadly",
+      "start_seconds": 83.2,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 42,
+      "text": "available in lots of different parts of",
+      "start_seconds": 85.04,
+      "duration_seconds": 3.119
+    },
+    {
+      "index": 43,
+      "text": "the world there were other machines that",
+      "start_seconds": 86.64,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 44,
+      "text": "were proposed mostly by my patreon group",
+      "start_seconds": 88.159,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 45,
+      "text": "but but i picked these because they&amp;#39;re",
+      "start_seconds": 90.88,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 46,
+      "text": "they&amp;#39;re kind of the most available",
+      "start_seconds": 93.119,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 47,
+      "text": "and easy to get and therefore giving",
+      "start_seconds": 94.96,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 48,
+      "text": "this the widest utility i hope to you",
+      "start_seconds": 96.56,
+      "duration_seconds": 4.559
+    },
+    {
+      "index": 49,
+      "text": "the viewer so here&amp;#39;s how testing is",
+      "start_seconds": 99.36,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 50,
+      "text": "going to work",
+      "start_seconds": 101.119,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 51,
+      "text": "firstly i&amp;#39;m going to talk through each",
+      "start_seconds": 102.24,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 52,
+      "text": "individual model in terms of its build",
+      "start_seconds": 103.759,
+      "duration_seconds": 4.081
+    },
+    {
+      "index": 53,
+      "text": "construction how it&amp;#39;s kind of felt to",
+      "start_seconds": 105.68,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 54,
+      "text": "use some of the ergonomics there then",
+      "start_seconds": 107.84,
+      "duration_seconds": 4.239
+    },
+    {
+      "index": 55,
+      "text": "the important stuff we&amp;#39;re going to pull",
+      "start_seconds": 110.72,
+      "duration_seconds": 3.359
+    },
+    {
+      "index": 56,
+      "text": "some shots of espresso with each of them",
+      "start_seconds": 112.079,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 57,
+      "text": "and i&amp;#39;ll talk through the kind of",
+      "start_seconds": 114.079,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 58,
+      "text": "espresso i was able to get and if one of",
+      "start_seconds": 115.52,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 59,
+      "text": "them maybe pulls better espresso than",
+      "start_seconds": 117.52,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 60,
+      "text": "another we&amp;#39;ll do some simple milk",
+      "start_seconds": 119.439,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 61,
+      "text": "steaming tests both how quick it is and",
+      "start_seconds": 121.439,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 62,
+      "text": "the kind of quality of milk that the",
+      "start_seconds": 123.2,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 63,
+      "text": "steam ones on these produce at the end",
+      "start_seconds": 124.799,
+      "duration_seconds": 4.001
+    },
+    {
+      "index": 64,
+      "text": "we&amp;#39;ll wrap up talk through which one of",
+      "start_seconds": 127.2,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 65,
+      "text": "these will suit you the best based on",
+      "start_seconds": 128.8,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 66,
+      "text": "what you want from an espresso machine",
+      "start_seconds": 130.56,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 67,
+      "text": "owning experience let&amp;#39;s start with the",
+      "start_seconds": 132.16,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 68,
+      "text": "lit ammo now i&amp;#39;ll be honest going into",
+      "start_seconds": 134.72,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 69,
+      "text": "this la lit was not a brand i knew",
+      "start_seconds": 137.12,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 70,
+      "text": "particularly well 350 pounds buys you a",
+      "start_seconds": 139.2,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 71,
+      "text": "pretty solid build using this didn&amp;#39;t",
+      "start_seconds": 141.92,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 72,
+      "text": "result in a machine sliding around very",
+      "start_seconds": 144.16,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 73,
+      "text": "much it&amp;#39;s got a nice weight to it",
+      "start_seconds": 145.76,
+      "duration_seconds": 4.559
+    },
+    {
+      "index": 74,
+      "text": "the things i liked less about the build",
+      "start_seconds": 148.08,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 75,
+      "text": "if i&amp;#39;m honest were the water tank",
+      "start_seconds": 150.319,
+      "duration_seconds": 4.721
+    },
+    {
+      "index": 76,
+      "text": "now it just feels a little bit cheap the",
+      "start_seconds": 153.28,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 77,
+      "text": "way it works you&amp;#39;ve got a couple of",
+      "start_seconds": 155.04,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 78,
+      "text": "hoses that go in here and then just a",
+      "start_seconds": 156.0,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 79,
+      "text": "large",
+      "start_seconds": 158.4,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 80,
+      "text": "plastic tank and the cutout in the side",
+      "start_seconds": 159.599,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 81,
+      "text": "i don&amp;#39;t think is a great way to assess",
+      "start_seconds": 162.319,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 82,
+      "text": "how much water is in your tank there&amp;#39;s a",
+      "start_seconds": 164.0,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 83,
+      "text": "common theme today we&amp;#39;re going to",
+      "start_seconds": 165.92,
+      "duration_seconds": 2.959
+    },
+    {
+      "index": 84,
+      "text": "complain about the the valve for steam",
+      "start_seconds": 167.28,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 85,
+      "text": "ones generally they just feel a bit",
+      "start_seconds": 168.879,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 86,
+      "text": "cheap and plasticky and i know i&amp;#39;m used",
+      "start_seconds": 171.2,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 87,
+      "text": "to commercial equipment but but",
+      "start_seconds": 172.8,
+      "duration_seconds": 4.799
+    },
+    {
+      "index": 88,
+      "text": "it feels okay the buttons",
+      "start_seconds": 174.8,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 89,
+      "text": "fine nicely made work well enough what",
+      "start_seconds": 177.599,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 90,
+      "text": "is a nice inclusion is the pressure",
+      "start_seconds": 180.0,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 91,
+      "text": "gauge here that is very helpful that&amp;#39;s a",
+      "start_seconds": 181.599,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 92,
+      "text": "big plus from me on the build of this",
+      "start_seconds": 183.92,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 93,
+      "text": "thing however the drip tray is one part",
+      "start_seconds": 186.0,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 94,
+      "text": "of this that i don&amp;#39;t particularly like",
+      "start_seconds": 188.0,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 95,
+      "text": "it&amp;#39;s it&amp;#39;s quite fussy to get in and out",
+      "start_seconds": 189.92,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 96,
+      "text": "there&amp;#39;s no float in the drip tray so you",
+      "start_seconds": 191.92,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 97,
+      "text": "have no real way of knowing how full it",
+      "start_seconds": 193.44,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 98,
+      "text": "is so i always feel nervous if i have to",
+      "start_seconds": 195.04,
+      "duration_seconds": 4.479
+    },
+    {
+      "index": 99,
+      "text": "tip a drip tray to lift it out that",
+      "start_seconds": 197.28,
+      "duration_seconds": 4.239
+    },
+    {
+      "index": 100,
+      "text": "makes me concerned if i&amp;#39;ve got this a",
+      "start_seconds": 199.519,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 101,
+      "text": "little bit too full now the delonghi",
+      "start_seconds": 201.519,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 102,
+      "text": "dedica is coming in at a disadvantage it",
+      "start_seconds": 203.12,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 103,
+      "text": "is substantially cheaper than anything",
+      "start_seconds": 205.28,
+      "duration_seconds": 4.959
+    },
+    {
+      "index": 104,
+      "text": "else here and you can tell that from the",
+      "start_seconds": 207.76,
+      "duration_seconds": 3.759
+    },
+    {
+      "index": 105,
+      "text": "bill where there might be a lot of metal",
+      "start_seconds": 210.239,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 106,
+      "text": "in other machines there&amp;#39;s a lot of",
+      "start_seconds": 211.519,
+      "duration_seconds": 3.041
+    },
+    {
+      "index": 107,
+      "text": "plastic here even with that kind of",
+      "start_seconds": 212.959,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 108,
+      "text": "chrome finish at the top its footprint",
+      "start_seconds": 214.56,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 109,
+      "text": "is tiny and that might be a big",
+      "start_seconds": 216.159,
+      "duration_seconds": 4.241
+    },
+    {
+      "index": 110,
+      "text": "advantage for a lot of people but it is",
+      "start_seconds": 217.599,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 111,
+      "text": "light and you definitely have to grip",
+      "start_seconds": 220.4,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 112,
+      "text": "this thing when you lock it in and for",
+      "start_seconds": 222.159,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 113,
+      "text": "me my instinct to grip is to grip it",
+      "start_seconds": 224.4,
+      "duration_seconds": 3.839
+    },
+    {
+      "index": 114,
+      "text": "around here and with my you know big old",
+      "start_seconds": 226.319,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 115,
+      "text": "hands i&amp;#39;ve occasionally pushed buttons",
+      "start_seconds": 228.239,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 116,
+      "text": "while trying to hold the machine in a",
+      "start_seconds": 230.08,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 117,
+      "text": "funny sort of way and the drip tray is",
+      "start_seconds": 231.599,
+      "duration_seconds": 3.041
+    },
+    {
+      "index": 118,
+      "text": "really very small but it has the",
+      "start_seconds": 233.36,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 119,
+      "text": "convenience at least of having a float",
+      "start_seconds": 234.64,
+      "duration_seconds": 2.959
+    },
+    {
+      "index": 120,
+      "text": "to let you know when you&amp;#39;re about to",
+      "start_seconds": 236.56,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 121,
+      "text": "make a terrible mess of your kitchen",
+      "start_seconds": 237.599,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 122,
+      "text": "water tank",
+      "start_seconds": 239.12,
+      "duration_seconds": 4.319
+    },
+    {
+      "index": 123,
+      "text": "removable easy to use",
+      "start_seconds": 241.36,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 124,
+      "text": "clear plastic overall it&amp;#39;s what you&amp;#39;d",
+      "start_seconds": 243.439,
+      "duration_seconds": 4.241
+    },
+    {
+      "index": 125,
+      "text": "expect for the money the ranchero silvia",
+      "start_seconds": 245.68,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 126,
+      "text": "is built like an absolute tank it is by",
+      "start_seconds": 247.68,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 127,
+      "text": "far the heaviest of the units here once",
+      "start_seconds": 250.72,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 128,
+      "text": "it&amp;#39;s on the counter where you want it to",
+      "start_seconds": 253.12,
+      "duration_seconds": 2.24
+    },
+    {
+      "index": 129,
+      "text": "be",
+      "start_seconds": 254.64,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 130,
+      "text": "it&amp;#39;s going nowhere this was the easiest",
+      "start_seconds": 255.36,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 131,
+      "text": "to lock in or remove the portafilter",
+      "start_seconds": 257.44,
+      "duration_seconds": 4.079
+    },
+    {
+      "index": 132,
+      "text": "from simply because of its weight it was",
+      "start_seconds": 259.84,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 133,
+      "text": "not going anywhere on the counter",
+      "start_seconds": 261.519,
+      "duration_seconds": 3.841
+    },
+    {
+      "index": 134,
+      "text": "buttons switches",
+      "start_seconds": 263.6,
+      "duration_seconds": 4.159
+    },
+    {
+      "index": 135,
+      "text": "very nice high quality stuff on here you",
+      "start_seconds": 265.36,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 136,
+      "text": "can feel the sort of build quality of",
+      "start_seconds": 267.759,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 137,
+      "text": "kind of parts here the steam valve is",
+      "start_seconds": 269.44,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 138,
+      "text": "probably the best of them in terms of",
+      "start_seconds": 271.68,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 139,
+      "text": "feel um though it still does feel like a",
+      "start_seconds": 273.68,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 140,
+      "text": "domestic steam valve in many ways the",
+      "start_seconds": 276.16,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 141,
+      "text": "water tank is again a bit of a weak",
+      "start_seconds": 278.24,
+      "duration_seconds": 4.399
+    },
+    {
+      "index": 142,
+      "text": "point for me it&amp;#39;s not a great experience",
+      "start_seconds": 280.56,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 143,
+      "text": "to remove you&amp;#39;ve got your two hoses",
+      "start_seconds": 282.639,
+      "duration_seconds": 4.641
+    },
+    {
+      "index": 144,
+      "text": "again it&amp;#39;s that white plastic material",
+      "start_seconds": 285.6,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 145,
+      "text": "but you have no real insight into how",
+      "start_seconds": 287.28,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 146,
+      "text": "full your tank is unless you open the",
+      "start_seconds": 289.36,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 147,
+      "text": "lid and have a look drip tray the depth",
+      "start_seconds": 291.12,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 148,
+      "text": "and size isn&amp;#39;t bad but it&amp;#39;s actually",
+      "start_seconds": 293.12,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 149,
+      "text": "quite difficult to see how much liquid",
+      "start_seconds": 295.36,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 150,
+      "text": "is inside it and there&amp;#39;s no float or",
+      "start_seconds": 297.28,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 151,
+      "text": "indicator on here to let you know that",
+      "start_seconds": 298.96,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 152,
+      "text": "it&amp;#39;s too full so again this drip tray",
+      "start_seconds": 300.32,
+      "duration_seconds": 4.879
+    },
+    {
+      "index": 153,
+      "text": "has caught me out the sagebrumbiner plus",
+      "start_seconds": 302.4,
+      "duration_seconds": 5.359
+    },
+    {
+      "index": 154,
+      "text": "is a more expensive machine but it has",
+      "start_seconds": 305.199,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 155,
+      "text": "the build quality of something a little",
+      "start_seconds": 307.759,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 156,
+      "text": "bit cheaper because they spent the money",
+      "start_seconds": 309.6,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 157,
+      "text": "on features rather than build so lots of",
+      "start_seconds": 311.199,
+      "duration_seconds": 4.321
+    },
+    {
+      "index": 158,
+      "text": "plastic all over the machine everywhere",
+      "start_seconds": 313.44,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 159,
+      "text": "it&amp;#39;s very light and that makes it a",
+      "start_seconds": 315.52,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 160,
+      "text": "little bit annoying to get a portafilter",
+      "start_seconds": 317.6,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 161,
+      "text": "into and out of it will move around on",
+      "start_seconds": 319.44,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 162,
+      "text": "the counter unless you&amp;#39;re holding the",
+      "start_seconds": 321.36,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 163,
+      "text": "machine but the other details are",
+      "start_seconds": 322.4,
+      "duration_seconds": 4.799
+    },
+    {
+      "index": 164,
+      "text": "generally pretty good the water tank",
+      "start_seconds": 323.68,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 165,
+      "text": "easily removed and it does have",
+      "start_seconds": 327.199,
+      "duration_seconds": 2.881
+    },
+    {
+      "index": 166,
+      "text": "instructions for cleaning printed on the",
+      "start_seconds": 328.56,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 167,
+      "text": "back the portafilter a little cheap and",
+      "start_seconds": 330.08,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 168,
+      "text": "plasticky the buttons at least feel",
+      "start_seconds": 332.4,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 169,
+      "text": "reliable they&amp;#39;re a manufacturer making a",
+      "start_seconds": 334.08,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 170,
+      "text": "lot of things with a lot of buttons so",
+      "start_seconds": 336.08,
+      "duration_seconds": 2.48
+    },
+    {
+      "index": 171,
+      "text": "you&amp;#39;d expect",
+      "start_seconds": 337.52,
+      "duration_seconds": 2.959
+    },
+    {
+      "index": 172,
+      "text": "those to be of good quality",
+      "start_seconds": 338.56,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 173,
+      "text": "uh it&amp;#39;s not a steam valved machine it&amp;#39;s",
+      "start_seconds": 340.479,
+      "duration_seconds": 4.241
+    },
+    {
+      "index": 174,
+      "text": "an electronic steam controller which i",
+      "start_seconds": 343.28,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 175,
+      "text": "think is interesting but we&amp;#39;ll talk",
+      "start_seconds": 344.72,
+      "duration_seconds": 2.08
+    },
+    {
+      "index": 176,
+      "text": "about that when it&amp;#39;s time to steam some",
+      "start_seconds": 345.68,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 177,
+      "text": "milk the drip tray is a little bit small",
+      "start_seconds": 346.8,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 178,
+      "text": "but it does at least have a float in",
+      "start_seconds": 348.88,
+      "duration_seconds": 2.879
+    },
+    {
+      "index": 179,
+      "text": "there to let you know that you&amp;#39;ve got",
+      "start_seconds": 350.4,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 180,
+      "text": "too much liquid and it&amp;#39;s time for a",
+      "start_seconds": 351.759,
+      "duration_seconds": 3.201
+    },
+    {
+      "index": 181,
+      "text": "little cleaning it&amp;#39;s a tricky one the",
+      "start_seconds": 353.12,
+      "duration_seconds": 3.519
+    },
+    {
+      "index": 182,
+      "text": "build doesn&amp;#39;t feel as nice as other",
+      "start_seconds": 354.96,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 183,
+      "text": "machines it doesn&amp;#39;t feel as solid it",
+      "start_seconds": 356.639,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 184,
+      "text": "doesn&amp;#39;t feel as hefty but their design",
+      "start_seconds": 358.16,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 185,
+      "text": "decision was to spend money on features",
+      "start_seconds": 360.08,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 186,
+      "text": "not on build and we&amp;#39;ll see later on how",
+      "start_seconds": 361.84,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 187,
+      "text": "that pans out before i get into the",
+      "start_seconds": 364.0,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 188,
+      "text": "gadget actually i need to have a quick",
+      "start_seconds": 365.759,
+      "duration_seconds": 3.521
+    },
+    {
+      "index": 189,
+      "text": "disclaimer or a disclosure i guess my",
+      "start_seconds": 367.12,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 190,
+      "text": "first ever coffee job was working for a",
+      "start_seconds": 369.28,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 191,
+      "text": "company that was gagia uk",
+      "start_seconds": 370.96,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 192,
+      "text": "selling",
+      "start_seconds": 373.12,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 193,
+      "text": "gadget classics this was back in 2003",
+      "start_seconds": 374.0,
+      "duration_seconds": 5.919
+    },
+    {
+      "index": 194,
+      "text": "that company no longer exists it was a",
+      "start_seconds": 377.44,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 195,
+      "text": "great company i&amp;#39;m very grateful to my",
+      "start_seconds": 379.919,
+      "duration_seconds": 3.521
+    },
+    {
+      "index": 196,
+      "text": "first boss raj biedel for encouraging me",
+      "start_seconds": 381.36,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 197,
+      "text": "into a coffee career shout out to raj",
+      "start_seconds": 383.44,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 198,
+      "text": "and he now has a separate business that",
+      "start_seconds": 385.36,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 199,
+      "text": "sells these and i bought this from him",
+      "start_seconds": 386.88,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 200,
+      "text": "so full disclosure about the whole",
+      "start_seconds": 388.4,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 201,
+      "text": "backstory of me and gadget there the",
+      "start_seconds": 390.24,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 202,
+      "text": "build is really very good this is the",
+      "start_seconds": 392.08,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 203,
+      "text": "classic pro which is new to me in some",
+      "start_seconds": 394.8,
+      "duration_seconds": 4.399
+    },
+    {
+      "index": 204,
+      "text": "ways it has better switches across the",
+      "start_seconds": 396.96,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 205,
+      "text": "top here it&amp;#39;s got a different steam wand",
+      "start_seconds": 399.199,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 206,
+      "text": "to the kind of traditional i think",
+      "start_seconds": 401.28,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 207,
+      "text": "they&amp;#39;re called pannarello ones but the",
+      "start_seconds": 402.639,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 208,
+      "text": "build is solid brush stainless",
+      "start_seconds": 404.08,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 209,
+      "text": "everywhere water tank can be accessed",
+      "start_seconds": 405.759,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 210,
+      "text": "from the front and you can pull it out",
+      "start_seconds": 407.84,
+      "duration_seconds": 2.799
+    },
+    {
+      "index": 211,
+      "text": "through the front if you want to which",
+      "start_seconds": 409.36,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 212,
+      "text": "makes changing water very easy but you",
+      "start_seconds": 410.639,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 213,
+      "text": "can just still",
+      "start_seconds": 412.88,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 214,
+      "text": "pour in the top and fill this way but",
+      "start_seconds": 414.319,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 215,
+      "text": "one little gripe gotta say the porta",
+      "start_seconds": 416.08,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 216,
+      "text": "filter on this thing doesn&amp;#39;t feel great",
+      "start_seconds": 417.68,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 217,
+      "text": "it&amp;#39;s solid and it&amp;#39;s hefty it&amp;#39;s a 58mm",
+      "start_seconds": 420.4,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 218,
+      "text": "portafilter but just the finish around",
+      "start_seconds": 422.24,
+      "duration_seconds": 4.079
+    },
+    {
+      "index": 219,
+      "text": "here didn&amp;#39;t feel",
+      "start_seconds": 424.319,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 220,
+      "text": "premium in a way that some of the other",
+      "start_seconds": 426.319,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 221,
+      "text": "portafilters do drip tray is is",
+      "start_seconds": 427.919,
+      "duration_seconds": 4.321
+    },
+    {
+      "index": 222,
+      "text": "reasonably deep but again no float to",
+      "start_seconds": 429.919,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 223,
+      "text": "indicate that you&amp;#39;re about to make a",
+      "start_seconds": 432.24,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 224,
+      "text": "horrible horrible mess overall for 3.99",
+      "start_seconds": 433.28,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 225,
+      "text": "the kind of build you would expect from",
+      "start_seconds": 436.16,
+      "duration_seconds": 3.439
+    },
+    {
+      "index": 226,
+      "text": "a premium machine so here&amp;#39;s how espresso",
+      "start_seconds": 437.84,
+      "duration_seconds": 2.799
+    },
+    {
+      "index": 227,
+      "text": "testing is going to work i&amp;#39;m going to",
+      "start_seconds": 439.599,
+      "duration_seconds": 2.641
+    },
+    {
+      "index": 228,
+      "text": "take a coffee that i know very well i&amp;#39;m",
+      "start_seconds": 440.639,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 229,
+      "text": "going to use the fix recipe across all",
+      "start_seconds": 442.24,
+      "duration_seconds": 3.359
+    },
+    {
+      "index": 230,
+      "text": "the machines which is going to be about",
+      "start_seconds": 443.919,
+      "duration_seconds": 5.441
+    },
+    {
+      "index": 231,
+      "text": "18 in to 38 grams out in the region 28",
+      "start_seconds": 445.599,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 232,
+      "text": "to maybe 32 seconds depending on the",
+      "start_seconds": 449.36,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 233,
+      "text": "machine and the kind of setup i want the",
+      "start_seconds": 451.039,
+      "duration_seconds": 3.121
+    },
+    {
+      "index": 234,
+      "text": "machines to do the best job they can",
+      "start_seconds": 452.88,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 235,
+      "text": "with the recipe but by keeping this kind",
+      "start_seconds": 454.16,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 236,
+      "text": "of fixed and using the same grinder",
+      "start_seconds": 456.72,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 237,
+      "text": "we&amp;#39;ll be able to understand something",
+      "start_seconds": 458.96,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 238,
+      "text": "about the pressures that the machines",
+      "start_seconds": 460.8,
+      "duration_seconds": 2.959
+    },
+    {
+      "index": 239,
+      "text": "are putting out now the first one up the",
+      "start_seconds": 462.24,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 240,
+      "text": "lid does have a pressure gauge the",
+      "start_seconds": 463.759,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 241,
+      "text": "others do not and they do not as a",
+      "start_seconds": 465.44,
+      "duration_seconds": 4.159
+    },
+    {
+      "index": 242,
+      "text": "standard all run at nine bars which is",
+      "start_seconds": 467.12,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 243,
+      "text": "massively frustrating but we&amp;#39;ll discuss",
+      "start_seconds": 469.599,
+      "duration_seconds": 3.521
+    },
+    {
+      "index": 244,
+      "text": "more later and i&amp;#39;ll share at the end of",
+      "start_seconds": 471.52,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 245,
+      "text": "the different grind settings used on the",
+      "start_seconds": 473.12,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 246,
+      "text": "same grinder for the same recipe just so",
+      "start_seconds": 474.4,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 247,
+      "text": "we can see some differences but first up",
+      "start_seconds": 476.4,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 248,
+      "text": "let&amp;#39;s discuss espresso on the lit and",
+      "start_seconds": 478.4,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 249,
+      "text": "and having a gauge on here is really",
+      "start_seconds": 480.96,
+      "duration_seconds": 4.51
+    },
+    {
+      "index": 250,
+      "text": "nice let&amp;#39;s pull a shot",
+      "start_seconds": 483.12,
+      "duration_seconds": 5.469
+    },
+    {
+      "index": 251,
+      "text": "[Applause]",
+      "start_seconds": 485.47,
+      "duration_seconds": 3.119
+    },
+    {
+      "index": 252,
+      "text": "[Music]",
+      "start_seconds": 489.15,
+      "duration_seconds": 4.13
+    },
+    {
+      "index": 253,
+      "text": "now before we taste we need to stir so",
+      "start_seconds": 491.12,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 254,
+      "text": "i&amp;#39;ve upgraded my spoon selection that&amp;#39;s",
+      "start_seconds": 493.28,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 255,
+      "text": "very important so i&amp;#39;ll be stirring with",
+      "start_seconds": 495.039,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 256,
+      "text": "the fanciest little teaspoons from the",
+      "start_seconds": 496.319,
+      "duration_seconds": 5.6
+    },
+    {
+      "index": 257,
+      "text": "1940s because i&amp;#39;m a fancy man",
+      "start_seconds": 497.759,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 258,
+      "text": "now i have to say i have enjoyed the",
+      "start_seconds": 502.8,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 259,
+      "text": "shots from the anna they have been",
+      "start_seconds": 504.319,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 260,
+      "text": "generally sweet and balanced what",
+      "start_seconds": 506.56,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 261,
+      "text": "they&amp;#39;re lacking often is a little bit of",
+      "start_seconds": 508.24,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 262,
+      "text": "heft a little bit of texture a little",
+      "start_seconds": 510.0,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 263,
+      "text": "bit of body",
+      "start_seconds": 511.68,
+      "duration_seconds": 2.799
+    },
+    {
+      "index": 264,
+      "text": "that might be a function of of the",
+      "start_seconds": 512.8,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 265,
+      "text": "basket maybe not being quite good enough",
+      "start_seconds": 514.479,
+      "duration_seconds": 4.081
+    },
+    {
+      "index": 266,
+      "text": "to allow a really fine grind for the",
+      "start_seconds": 516.32,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 267,
+      "text": "kind of recipe i would want so i would",
+      "start_seconds": 518.56,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 268,
+      "text": "hope for a touch more body in the mouth",
+      "start_seconds": 519.919,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 269,
+      "text": "feel the shots that i&amp;#39;ve had but overall",
+      "start_seconds": 521.44,
+      "duration_seconds": 4.079
+    },
+    {
+      "index": 270,
+      "text": "it has made me very tasty espresso a",
+      "start_seconds": 523.68,
+      "duration_seconds": 4.159
+    },
+    {
+      "index": 271,
+      "text": "little bit impressed by the lid the",
+      "start_seconds": 525.519,
+      "duration_seconds": 5.121
+    },
+    {
+      "index": 272,
+      "text": "dedicate is a funny little machine",
+      "start_seconds": 527.839,
+      "duration_seconds": 4.801
+    },
+    {
+      "index": 273,
+      "text": "it has a very frustrating portafilter so",
+      "start_seconds": 530.64,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 274,
+      "text": "i changed the basket on this it came",
+      "start_seconds": 532.64,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 275,
+      "text": "with a standard pressurized portafilter",
+      "start_seconds": 533.92,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 276,
+      "text": "basket which i don&amp;#39;t want to use so i",
+      "start_seconds": 535.92,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 277,
+      "text": "put a normal 54 ml basket in but to do",
+      "start_seconds": 537.44,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 278,
+      "text": "that i had to sort of damage the",
+      "start_seconds": 540.08,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 279,
+      "text": "portafilter further it has a little",
+      "start_seconds": 541.6,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 280,
+      "text": "insert inside it looks a little bit like",
+      "start_seconds": 543.6,
+      "duration_seconds": 3.679
+    },
+    {
+      "index": 281,
+      "text": "this i couldn&amp;#39;t get the basket in",
+      "start_seconds": 545.68,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 282,
+      "text": "without taking this out and in taking",
+      "start_seconds": 547.279,
+      "duration_seconds": 2.961
+    },
+    {
+      "index": 283,
+      "text": "this out",
+      "start_seconds": 548.959,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 284,
+      "text": "there&amp;#39;s a little screw here that holds",
+      "start_seconds": 550.24,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 285,
+      "text": "the plastic piece in place the coffee",
+      "start_seconds": 551.839,
+      "duration_seconds": 4.081
+    },
+    {
+      "index": 286,
+      "text": "now drips out of this too so it&amp;#39;s a bit",
+      "start_seconds": 553.92,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 287,
+      "text": "messy but it&amp;#39;s the only way i could get",
+      "start_seconds": 555.92,
+      "duration_seconds": 3.359
+    },
+    {
+      "index": 288,
+      "text": "proper espresso from this you don&amp;#39;t have",
+      "start_seconds": 557.519,
+      "duration_seconds": 3.521
+    },
+    {
+      "index": 289,
+      "text": "a ton of height between portafilter",
+      "start_seconds": 559.279,
+      "duration_seconds": 4.641
+    },
+    {
+      "index": 290,
+      "text": "spouts and drip tray which makes getting",
+      "start_seconds": 561.04,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 291,
+      "text": "scales and cups under there not",
+      "start_seconds": 563.92,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 292,
+      "text": "impossible but but not super easy a",
+      "start_seconds": 566.08,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 293,
+      "text": "little bit more clearance is always",
+      "start_seconds": 568.72,
+      "duration_seconds": 6.119
+    },
+    {
+      "index": 294,
+      "text": "appreciated there let&amp;#39;s pull a shot",
+      "start_seconds": 569.92,
+      "duration_seconds": 4.919
+    },
+    {
+      "index": 295,
+      "text": "[Music]",
+      "start_seconds": 576.65,
+      "duration_seconds": 3.269
+    },
+    {
+      "index": 296,
+      "text": "now this needed a coarser grind than the",
+      "start_seconds": 582.24,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 297,
+      "text": "lid and i think that&amp;#39;s interesting",
+      "start_seconds": 584.72,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 298,
+      "text": "and the extraction is notably",
+      "start_seconds": 586.56,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 299,
+      "text": "lower now this doesn&amp;#39;t er on the side of",
+      "start_seconds": 589.04,
+      "duration_seconds": 3.359
+    },
+    {
+      "index": 300,
+      "text": "hot and if anything this tastes like a",
+      "start_seconds": 590.72,
+      "duration_seconds": 3.679
+    },
+    {
+      "index": 301,
+      "text": "slightly cool shot to me the acidity is",
+      "start_seconds": 592.399,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 302,
+      "text": "very pronounced the texture is okay it",
+      "start_seconds": 594.399,
+      "duration_seconds": 3.681
+    },
+    {
+      "index": 303,
+      "text": "doesn&amp;#39;t feel like we&amp;#39;ve had a great",
+      "start_seconds": 596.8,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 304,
+      "text": "extraction here and i would say for",
+      "start_seconds": 598.08,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 305,
+      "text": "lighter roasts this will be a difficult",
+      "start_seconds": 600.16,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 306,
+      "text": "setup to get good espresso from it&amp;#39;s",
+      "start_seconds": 602.48,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 307,
+      "text": "running i think at quite a high pump",
+      "start_seconds": 604.32,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 308,
+      "text": "pressure it&amp;#39;s not running at a high brew",
+      "start_seconds": 605.6,
+      "duration_seconds": 2.799
+    },
+    {
+      "index": 309,
+      "text": "temperature those two things in",
+      "start_seconds": 606.88,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 310,
+      "text": "combination with lighter roasts will",
+      "start_seconds": 608.399,
+      "duration_seconds": 4.161
+    },
+    {
+      "index": 311,
+      "text": "make it an enormous uphill battle the",
+      "start_seconds": 610.8,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 312,
+      "text": "more developed the coffee gets the",
+      "start_seconds": 612.56,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 313,
+      "text": "easier it&amp;#39;s going to be to extract and i",
+      "start_seconds": 613.92,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 314,
+      "text": "suspect the better the shots you&amp;#39;ll have",
+      "start_seconds": 615.36,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 315,
+      "text": "and if you like medium through to dark",
+      "start_seconds": 618.24,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 316,
+      "text": "espresso roast then you may have a good",
+      "start_seconds": 619.92,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 317,
+      "text": "experience here it&amp;#39;s not light years",
+      "start_seconds": 621.76,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 318,
+      "text": "better than the cheap de&amp;#39;longhi that we",
+      "start_seconds": 623.92,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 319,
+      "text": "tested in the sub-hundred pounds",
+      "start_seconds": 626.0,
+      "duration_seconds": 3.839
+    },
+    {
+      "index": 320,
+      "text": "category it is a little better for sure",
+      "start_seconds": 627.519,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 321,
+      "text": "in terms of shock quality but not light",
+      "start_seconds": 629.839,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 322,
+      "text": "years better so broadly pulling shots",
+      "start_seconds": 631.92,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 323,
+      "text": "with the silvia is quite a pleasant",
+      "start_seconds": 633.839,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 324,
+      "text": "experience the buttons are very nice the",
+      "start_seconds": 635.519,
+      "duration_seconds": 3.841
+    },
+    {
+      "index": 325,
+      "text": "portafilter feels very nice but my",
+      "start_seconds": 637.6,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 326,
+      "text": "complaint is brew temperature actually",
+      "start_seconds": 639.36,
+      "duration_seconds": 4.44
+    },
+    {
+      "index": 327,
+      "text": "on this one it runs a little hot often",
+      "start_seconds": 641.44,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 328,
+      "text": "[Music]",
+      "start_seconds": 643.8,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 329,
+      "text": "you can hear and see a good amount of",
+      "start_seconds": 645.2,
+      "duration_seconds": 3.199
+    },
+    {
+      "index": 330,
+      "text": "steam coming out of that group head",
+      "start_seconds": 646.56,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 331,
+      "text": "that&amp;#39;s that&amp;#39;s not ideal so you might",
+      "start_seconds": 648.399,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 332,
+      "text": "have to do some temperature surfing",
+      "start_seconds": 650.0,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 333,
+      "text": "where you pull out that very hot water",
+      "start_seconds": 651.279,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 334,
+      "text": "by dumping it into the drip tray and",
+      "start_seconds": 652.88,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 335,
+      "text": "then you try to catch it as it reheats",
+      "start_seconds": 654.399,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 336,
+      "text": "at the right point to get the best",
+      "start_seconds": 656.8,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 337,
+      "text": "possible shot people have other mods for",
+      "start_seconds": 658.079,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 338,
+      "text": "this but we&amp;#39;ll talk about modding at the",
+      "start_seconds": 660.079,
+      "duration_seconds": 3.281
+    },
+    {
+      "index": 339,
+      "text": "end i&amp;#39;ve changed out the basket in this",
+      "start_seconds": 661.44,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 340,
+      "text": "to a vst basket because i don&amp;#39;t really",
+      "start_seconds": 663.36,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 341,
+      "text": "rate the basket that came as stock so",
+      "start_seconds": 665.04,
+      "duration_seconds": 5.71
+    },
+    {
+      "index": 342,
+      "text": "i&amp;#39;m going to use that instead",
+      "start_seconds": 667.279,
+      "duration_seconds": 6.711
+    },
+    {
+      "index": 343,
+      "text": "[Music]",
+      "start_seconds": 670.75,
+      "duration_seconds": 3.24
+    },
+    {
+      "index": 344,
+      "text": "now ergonomically while the drip tray is",
+      "start_seconds": 674.32,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 345,
+      "text": "a little bit annoying it doesn&amp;#39;t drain",
+      "start_seconds": 676.0,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 346,
+      "text": "super well having that width to work",
+      "start_seconds": 677.44,
+      "duration_seconds": 4.399
+    },
+    {
+      "index": 347,
+      "text": "with is very nice let&amp;#39;s talk about the",
+      "start_seconds": 679.68,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 348,
+      "text": "espresso",
+      "start_seconds": 681.839,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 349,
+      "text": "now i&amp;#39;ve had a range of shots from the",
+      "start_seconds": 684.0,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 350,
+      "text": "silvia and they&amp;#39;ve all been pretty good",
+      "start_seconds": 685.44,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 351,
+      "text": "having a good basket in there lets me",
+      "start_seconds": 687.12,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 352,
+      "text": "grind finer that&amp;#39;s good extractions have",
+      "start_seconds": 688.56,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 353,
+      "text": "been even when i&amp;#39;ve used a naked",
+      "start_seconds": 690.48,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 354,
+      "text": "portafilter",
+      "start_seconds": 691.92,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 355,
+      "text": "the frustration for me has been",
+      "start_seconds": 693.44,
+      "duration_seconds": 2.639
+    },
+    {
+      "index": 356,
+      "text": "temperature i&amp;#39;ve had shots that have had",
+      "start_seconds": 694.56,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 357,
+      "text": "a harshness from brewing a little bit",
+      "start_seconds": 696.079,
+      "duration_seconds": 2.961
+    },
+    {
+      "index": 358,
+      "text": "too hot a sourness from brewing a little",
+      "start_seconds": 697.2,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 359,
+      "text": "bit too cool",
+      "start_seconds": 699.04,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 360,
+      "text": "it wanders around a bit in temperature",
+      "start_seconds": 700.8,
+      "duration_seconds": 4.159
+    },
+    {
+      "index": 361,
+      "text": "and that for me is a frustration you can",
+      "start_seconds": 702.64,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 362,
+      "text": "get very very good espresso from this",
+      "start_seconds": 704.959,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 363,
+      "text": "but you&amp;#39;ll also get occasionally",
+      "start_seconds": 707.2,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 364,
+      "text": "frustratingly just kind of off espresso",
+      "start_seconds": 708.56,
+      "duration_seconds": 3.839
+    },
+    {
+      "index": 365,
+      "text": "from the brew temp being in a funny",
+      "start_seconds": 710.72,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 366,
+      "text": "place so the sage bambino is an",
+      "start_seconds": 712.399,
+      "duration_seconds": 3.201
+    },
+    {
+      "index": 367,
+      "text": "interesting little machine but",
+      "start_seconds": 714.639,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 368,
+      "text": "unfortunately does come with that",
+      "start_seconds": 715.6,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 369,
+      "text": "pressurized portafilter that i just",
+      "start_seconds": 716.959,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 370,
+      "text": "don&amp;#39;t want or particularly need i get",
+      "start_seconds": 719.44,
+      "duration_seconds": 3.199
+    },
+    {
+      "index": 371,
+      "text": "that they exist for people who just want",
+      "start_seconds": 721.279,
+      "duration_seconds": 2.721
+    },
+    {
+      "index": 372,
+      "text": "an easier life and don&amp;#39;t want a nice",
+      "start_seconds": 722.639,
+      "duration_seconds": 2.801
+    },
+    {
+      "index": 373,
+      "text": "grinder but we&amp;#39;re trying to get good",
+      "start_seconds": 724.0,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 374,
+      "text": "espresso here and these things are",
+      "start_seconds": 725.44,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 375,
+      "text": "worthless so we&amp;#39;re going to use a proper",
+      "start_seconds": 727.04,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 376,
+      "text": "basket in this and for some proper shot",
+      "start_seconds": 728.88,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 377,
+      "text": "it&amp;#39;s a full featured machine and you can",
+      "start_seconds": 731.36,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 378,
+      "text": "play with stuff like pre-infusion it&amp;#39;s",
+      "start_seconds": 733.04,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 379,
+      "text": "quite easy to do manual pre-infusion if",
+      "start_seconds": 734.48,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 380,
+      "text": "you want to get into that thing which",
+      "start_seconds": 736.079,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 381,
+      "text": "seems contrary to having a pressurized",
+      "start_seconds": 737.519,
+      "duration_seconds": 4.161
+    },
+    {
+      "index": 382,
+      "text": "portafilter but they really do seem to",
+      "start_seconds": 739.519,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 383,
+      "text": "be trying to capture the whole wide",
+      "start_seconds": 741.68,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 384,
+      "text": "audience there&amp;#39;s a ton of distance from",
+      "start_seconds": 743.279,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 385,
+      "text": "spouts to drip tray which suggests they",
+      "start_seconds": 745.2,
+      "duration_seconds": 3.439
+    },
+    {
+      "index": 386,
+      "text": "know that people want to put scales",
+      "start_seconds": 747.2,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 387,
+      "text": "underneath the shots well let&amp;#39;s pull one",
+      "start_seconds": 748.639,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 388,
+      "text": "now",
+      "start_seconds": 751.04,
+      "duration_seconds": 2.239
+    },
+    {
+      "index": 389,
+      "text": "texture is actually okay but it has used",
+      "start_seconds": 756.88,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 390,
+      "text": "the coarsest grind setting so far for",
+      "start_seconds": 759.04,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 391,
+      "text": "that flow and that doesn&amp;#39;t yield the",
+      "start_seconds": 760.8,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 392,
+      "text": "best tasting shots if you&amp;#39;re using",
+      "start_seconds": 762.48,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 393,
+      "text": "lighter roasts like me again we&amp;#39;re back",
+      "start_seconds": 764.079,
+      "duration_seconds": 3.521
+    },
+    {
+      "index": 394,
+      "text": "to that sour espresso",
+      "start_seconds": 765.68,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 395,
+      "text": "reasonable texture reasonable mouthfeel",
+      "start_seconds": 767.6,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 396,
+      "text": "but but i think it&amp;#39;s going to be a",
+      "start_seconds": 769.6,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 397,
+      "text": "difficult machine to absolutely get the",
+      "start_seconds": 770.88,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 398,
+      "text": "best out of",
+      "start_seconds": 772.56,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 399,
+      "text": "with with lighter roasts i&amp;#39;m just",
+      "start_seconds": 774.24,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 400,
+      "text": "frustrated by my ill ability to access",
+      "start_seconds": 776.32,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 401,
+      "text": "more features in the machine that are so",
+      "start_seconds": 778.56,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 402,
+      "text": "key to good espresso when it has so much",
+      "start_seconds": 780.72,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 403,
+      "text": "you know control over other stuff like",
+      "start_seconds": 783.2,
+      "duration_seconds": 3.439
+    },
+    {
+      "index": 404,
+      "text": "pre-infusion and shot volumes and all",
+      "start_seconds": 785.36,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 405,
+      "text": "the sort of stuff you would want not bad",
+      "start_seconds": 786.639,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 406,
+      "text": "simply not the best of the group so now",
+      "start_seconds": 788.959,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 407,
+      "text": "the gagia classic pro a machine that i&amp;#39;m",
+      "start_seconds": 790.959,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 408,
+      "text": "sort of familiar with but but not now",
+      "start_seconds": 793.519,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 409,
+      "text": "polling shots with this was broadly",
+      "start_seconds": 795.839,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 410,
+      "text": "pretty enjoyable again got rid of the",
+      "start_seconds": 797.279,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 411,
+      "text": "stock basket",
+      "start_seconds": 799.2,
+      "duration_seconds": 3.199
+    },
+    {
+      "index": 412,
+      "text": "get rid of the stock basket put a vst",
+      "start_seconds": 800.639,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 413,
+      "text": "basket in still using the portafilter",
+      "start_seconds": 802.399,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 414,
+      "text": "that i don&amp;#39;t really love it and with a",
+      "start_seconds": 804.0,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 415,
+      "text": "different basket the fit is a bit",
+      "start_seconds": 805.76,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 416,
+      "text": "frustrating here now one feature this",
+      "start_seconds": 807.279,
+      "duration_seconds": 3.761
+    },
+    {
+      "index": 417,
+      "text": "thing has is a has a solenoid valve has",
+      "start_seconds": 808.88,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 418,
+      "text": "a pressure release valve that dumps any",
+      "start_seconds": 811.04,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 419,
+      "text": "excess pressure at the end of the shot",
+      "start_seconds": 813.12,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 420,
+      "text": "into the drip tray that does make",
+      "start_seconds": 814.72,
+      "duration_seconds": 3.679
+    },
+    {
+      "index": 421,
+      "text": "back-to-back shots quickly uh relatively",
+      "start_seconds": 816.399,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 422,
+      "text": "easy you don&amp;#39;t get what someone once",
+      "start_seconds": 818.399,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 423,
+      "text": "described as portable to sneeze when you",
+      "start_seconds": 820.079,
+      "duration_seconds": 3.841
+    },
+    {
+      "index": 424,
+      "text": "immediately release the filter and some",
+      "start_seconds": 822.079,
+      "duration_seconds": 3.281
+    },
+    {
+      "index": 425,
+      "text": "pressure leaks out like that so the",
+      "start_seconds": 823.92,
+      "duration_seconds": 2.479
+    },
+    {
+      "index": 426,
+      "text": "shots",
+      "start_seconds": 825.36,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 427,
+      "text": "let&amp;#39;s pull a shot",
+      "start_seconds": 826.399,
+      "duration_seconds": 4.721
+    },
+    {
+      "index": 428,
+      "text": "[Music]",
+      "start_seconds": 828.04,
+      "duration_seconds": 3.08
+    },
+    {
+      "index": 429,
+      "text": "now as you can see from the shot one",
+      "start_seconds": 831.6,
+      "duration_seconds": 3.359
+    },
+    {
+      "index": 430,
+      "text": "frustration that&amp;#39;s very clear is the",
+      "start_seconds": 833.36,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 431,
+      "text": "spout to drip tray height there&amp;#39;s not a",
+      "start_seconds": 834.959,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 432,
+      "text": "lot of room to get a scale and a set of",
+      "start_seconds": 837.44,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 433,
+      "text": "espresso cups in there or a cappuccino",
+      "start_seconds": 839.36,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 434,
+      "text": "cup or whatever you want to use secondly",
+      "start_seconds": 841.04,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 435,
+      "text": "this thing definitely runs at high",
+      "start_seconds": 842.8,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 436,
+      "text": "pressures that&amp;#39;s kind of a well-known",
+      "start_seconds": 844.079,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 437,
+      "text": "thing and we&amp;#39;ll talk about modding that",
+      "start_seconds": 845.36,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 438,
+      "text": "later but it did allow me to pull shots",
+      "start_seconds": 846.959,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 439,
+      "text": "at a much finer grind setting than",
+      "start_seconds": 849.04,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 440,
+      "text": "anything else",
+      "start_seconds": 850.639,
+      "duration_seconds": 3.121
+    },
+    {
+      "index": 441,
+      "text": "however like the ranchelio the",
+      "start_seconds": 851.76,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 442,
+      "text": "temperature does wander around a little",
+      "start_seconds": 853.76,
+      "duration_seconds": 3.759
+    },
+    {
+      "index": 443,
+      "text": "bit it is possible to have it overheat",
+      "start_seconds": 855.76,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 444,
+      "text": "and have some steam when you flush the",
+      "start_seconds": 857.519,
+      "duration_seconds": 2.961
+    },
+    {
+      "index": 445,
+      "text": "grip head or have it run below",
+      "start_seconds": 858.8,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 446,
+      "text": "temperature so a bit of a temperature",
+      "start_seconds": 860.48,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 447,
+      "text": "surfing routine will yield you the best",
+      "start_seconds": 862.399,
+      "duration_seconds": 6.8
+    },
+    {
+      "index": 448,
+      "text": "tasting espresso as for how this shot is",
+      "start_seconds": 864.72,
+      "duration_seconds": 4.479
+    },
+    {
+      "index": 449,
+      "text": "pretty good not overly acidic but it has",
+      "start_seconds": 869.519,
+      "duration_seconds": 4.161
+    },
+    {
+      "index": 450,
+      "text": "a certain sort of harshness that i",
+      "start_seconds": 872.079,
+      "duration_seconds": 4.241
+    },
+    {
+      "index": 451,
+      "text": "associate with higher pump pressures now",
+      "start_seconds": 873.68,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 452,
+      "text": "that could be and may well be",
+      "start_seconds": 876.32,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 453,
+      "text": "um confirmation bias right like i&amp;#39;m",
+      "start_seconds": 878.8,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 454,
+      "text": "seeing something that i expect to be",
+      "start_seconds": 881.04,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 455,
+      "text": "there but that shot",
+      "start_seconds": 882.48,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 456,
+      "text": "flowed at a nice kind of time 18 in 38",
+      "start_seconds": 884.639,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 457,
+      "text": "out in 28 to 29 seconds",
+      "start_seconds": 887.12,
+      "duration_seconds": 4.959
+    },
+    {
+      "index": 458,
+      "text": "that shouldn&amp;#39;t have that kind of texture",
+      "start_seconds": 889.839,
+      "duration_seconds": 4.161
+    },
+    {
+      "index": 459,
+      "text": "and quality of woodiness and bitterness",
+      "start_seconds": 892.079,
+      "duration_seconds": 4.081
+    },
+    {
+      "index": 460,
+      "text": "that hasn&amp;#39;t been present in other shots",
+      "start_seconds": 894.0,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 461,
+      "text": "again we&amp;#39;ll talk about modding but as",
+      "start_seconds": 896.16,
+      "duration_seconds": 5.28
+    },
+    {
+      "index": 462,
+      "text": "stock it is frustratingly close to great",
+      "start_seconds": 898.16,
+      "duration_seconds": 5.359
+    },
+    {
+      "index": 463,
+      "text": "but but the espressos aren&amp;#39;t",
+      "start_seconds": 901.44,
+      "duration_seconds": 4.639
+    },
+    {
+      "index": 464,
+      "text": "superb",
+      "start_seconds": 903.519,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 465,
+      "text": "milk steaming is a really important part",
+      "start_seconds": 910.079,
+      "duration_seconds": 2.961
+    },
+    {
+      "index": 466,
+      "text": "of a good espresso machine at home so",
+      "start_seconds": 911.519,
+      "duration_seconds": 3.041
+    },
+    {
+      "index": 467,
+      "text": "that&amp;#39;s what we&amp;#39;re going to look at next",
+      "start_seconds": 913.04,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 468,
+      "text": "first test is very simple it&amp;#39;s just",
+      "start_seconds": 914.56,
+      "duration_seconds": 4.719
+    },
+    {
+      "index": 469,
+      "text": "power i&amp;#39;ve got 150 grams of cold milk",
+      "start_seconds": 916.639,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 470,
+      "text": "i&amp;#39;m going to steam it to 60 degrees",
+      "start_seconds": 919.279,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 471,
+      "text": "celsius on each of the machines and",
+      "start_seconds": 921.04,
+      "duration_seconds": 5.88
+    },
+    {
+      "index": 472,
+      "text": "we&amp;#39;re going to see how quick it is",
+      "start_seconds": 922.88,
+      "duration_seconds": 4.04
+    },
+    {
+      "index": 473,
+      "text": "so aside from the speed test which was",
+      "start_seconds": 932.639,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 474,
+      "text": "interesting let&amp;#39;s talk about the actual",
+      "start_seconds": 934.48,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 475,
+      "text": "experience of steaming milk now the lid",
+      "start_seconds": 935.759,
+      "duration_seconds": 3.681
+    },
+    {
+      "index": 476,
+      "text": "was okay it has underneath its sort of",
+      "start_seconds": 937.44,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 477,
+      "text": "auto frothing attachment a regular steam",
+      "start_seconds": 939.44,
+      "duration_seconds": 3.839
+    },
+    {
+      "index": 478,
+      "text": "wand that that i wanted to use because",
+      "start_seconds": 941.6,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 479,
+      "text": "that&amp;#39;s significantly better than using",
+      "start_seconds": 943.279,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 480,
+      "text": "the little attachments that it comes",
+      "start_seconds": 945.04,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 481,
+      "text": "with it wasn&amp;#39;t super well powered but i",
+      "start_seconds": 946.399,
+      "duration_seconds": 4.081
+    },
+    {
+      "index": 482,
+      "text": "got some reasonably good milk texture",
+      "start_seconds": 949.12,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 483,
+      "text": "out of it i wasn&amp;#39;t upset by it not the",
+      "start_seconds": 950.48,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 484,
+      "text": "slowest not the worst",
+      "start_seconds": 952.8,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 485,
+      "text": "steaming was okay the delonghi dedica",
+      "start_seconds": 954.48,
+      "duration_seconds": 4.719
+    },
+    {
+      "index": 486,
+      "text": "has this automated sort of steam wand",
+      "start_seconds": 956.8,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 487,
+      "text": "part that helps add foam add air to your",
+      "start_seconds": 959.199,
+      "duration_seconds": 4.64
+    },
+    {
+      "index": 488,
+      "text": "milk for you this was the most difficult",
+      "start_seconds": 961.6,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 489,
+      "text": "to get great texture from you got",
+      "start_seconds": 963.839,
+      "duration_seconds": 2.961
+    },
+    {
+      "index": 490,
+      "text": "pleasantly fluffy milk but if you wanted",
+      "start_seconds": 965.44,
+      "duration_seconds": 3.199
+    },
+    {
+      "index": 491,
+      "text": "something a little silkier a little bit",
+      "start_seconds": 966.8,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 492,
+      "text": "uh easier to pour latte out with you&amp;#39;d",
+      "start_seconds": 968.639,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 493,
+      "text": "really kind of struggle here the silvia",
+      "start_seconds": 970.88,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 494,
+      "text": "was a beast this was the closest to",
+      "start_seconds": 973.199,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 495,
+      "text": "steaming with a commercial steam wand of",
+      "start_seconds": 975.12,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 496,
+      "text": "any of these machines it was incredibly",
+      "start_seconds": 977.12,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 497,
+      "text": "quick incredibly powerful i&amp;#39;ve been",
+      "start_seconds": 979.04,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 498,
+      "text": "steaming milk for a long time so i loved",
+      "start_seconds": 980.56,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 499,
+      "text": "that but if i was new to steaming milk",
+      "start_seconds": 982.88,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 500,
+      "text": "this would be intimidating this would be",
+      "start_seconds": 985.04,
+      "duration_seconds": 3.919
+    },
+    {
+      "index": 501,
+      "text": "tricky i would make a mess a whole bunch",
+      "start_seconds": 987.04,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 502,
+      "text": "of times before i got my milk texturing",
+      "start_seconds": 988.959,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 503,
+      "text": "down so not the easiest but if you know",
+      "start_seconds": 990.639,
+      "duration_seconds": 4.081
+    },
+    {
+      "index": 504,
+      "text": "what you&amp;#39;re doing a real pleasure to",
+      "start_seconds": 992.88,
+      "duration_seconds": 4.639
+    },
+    {
+      "index": 505,
+      "text": "steam with now the sage was a surprise",
+      "start_seconds": 994.72,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 506,
+      "text": "you could tell going in that milk was a",
+      "start_seconds": 997.519,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 507,
+      "text": "big part of its cell it&amp;#39;s got a full",
+      "start_seconds": 999.12,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 508,
+      "text": "featured set around milk steaming so you",
+      "start_seconds": 1001.12,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 509,
+      "text": "can use it as a manual a sort of milk",
+      "start_seconds": 1002.72,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 510,
+      "text": "steamer which is what i would do and",
+      "start_seconds": 1004.32,
+      "duration_seconds": 3.519
+    },
+    {
+      "index": 511,
+      "text": "what i did and the results were really",
+      "start_seconds": 1005.759,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 512,
+      "text": "very good i thought it would be slow but",
+      "start_seconds": 1007.839,
+      "duration_seconds": 4.321
+    },
+    {
+      "index": 513,
+      "text": "actually it gave me lots of time to do",
+      "start_seconds": 1010.079,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 514,
+      "text": "what i needed to do to have a phase of",
+      "start_seconds": 1012.16,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 515,
+      "text": "adding air sort of stretching the milk",
+      "start_seconds": 1014.0,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 516,
+      "text": "and then going into a phase of kind of",
+      "start_seconds": 1016.16,
+      "duration_seconds": 3.359
+    },
+    {
+      "index": 517,
+      "text": "rolling it around the end result was",
+      "start_seconds": 1017.68,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 518,
+      "text": "very good not the quickest but",
+      "start_seconds": 1019.519,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 519,
+      "text": "kind of easy to learn with if i was",
+      "start_seconds": 1021.92,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 520,
+      "text": "teaching someone to steam milk for the",
+      "start_seconds": 1023.839,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 521,
+      "text": "first time this would be a good machine",
+      "start_seconds": 1025.12,
+      "duration_seconds": 4.319
+    },
+    {
+      "index": 522,
+      "text": "to do it on now it does have some extras",
+      "start_seconds": 1027.28,
+      "duration_seconds": 3.759
+    },
+    {
+      "index": 523,
+      "text": "it&amp;#39;s got some automated milk steaming",
+      "start_seconds": 1029.439,
+      "duration_seconds": 2.801
+    },
+    {
+      "index": 524,
+      "text": "that lets you choose your end",
+      "start_seconds": 1031.039,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 525,
+      "text": "temperature there&amp;#39;s a little thermometer",
+      "start_seconds": 1032.24,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 526,
+      "text": "built into the drip tray and it&amp;#39;ll let",
+      "start_seconds": 1034.48,
+      "duration_seconds": 4.079
+    },
+    {
+      "index": 527,
+      "text": "you choose your texture as well that&amp;#39;s",
+      "start_seconds": 1036.16,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 528,
+      "text": "great if you don&amp;#39;t want to get into how",
+      "start_seconds": 1038.559,
+      "duration_seconds": 2.961
+    },
+    {
+      "index": 529,
+      "text": "to steam milk and you want some good",
+      "start_seconds": 1040.16,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 530,
+      "text": "results",
+      "start_seconds": 1041.52,
+      "duration_seconds": 3.519
+    },
+    {
+      "index": 531,
+      "text": "that&amp;#39;s kind of impressive to me",
+      "start_seconds": 1042.72,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 532,
+      "text": "and again where they&amp;#39;ve skimped on build",
+      "start_seconds": 1045.039,
+      "duration_seconds": 4.401
+    },
+    {
+      "index": 533,
+      "text": "they&amp;#39;ve really gone hard on features and",
+      "start_seconds": 1047.6,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 534,
+      "text": "milk is a big one here so this was",
+      "start_seconds": 1049.44,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 535,
+      "text": "a pleasant surprise the the manual",
+      "start_seconds": 1051.52,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 536,
+      "text": "steaming was very good now with the",
+      "start_seconds": 1053.039,
+      "duration_seconds": 3.681
+    },
+    {
+      "index": 537,
+      "text": "gadget i was actually a little",
+      "start_seconds": 1055.28,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 538,
+      "text": "disappointed it felt underpowered so",
+      "start_seconds": 1056.72,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 539,
+      "text": "much so that i had to steam twice to",
+      "start_seconds": 1059.76,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 540,
+      "text": "check that i hadn&amp;#39;t done something wrong",
+      "start_seconds": 1061.44,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 541,
+      "text": "or you know",
+      "start_seconds": 1062.799,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 542,
+      "text": "something had gone awry but actually we",
+      "start_seconds": 1064.08,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 543,
+      "text": "repeated exactly the same result on both",
+      "start_seconds": 1066.16,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 544,
+      "text": "tests i had no problem stretching the",
+      "start_seconds": 1068.24,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 545,
+      "text": "milk but where i wanted to kind of roll",
+      "start_seconds": 1069.84,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 546,
+      "text": "it around and texture it and mix it",
+      "start_seconds": 1071.36,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 547,
+      "text": "that&amp;#39;s where it just didn&amp;#39;t seem to have",
+      "start_seconds": 1073.6,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 548,
+      "text": "enough pressure and power and that was a",
+      "start_seconds": 1075.44,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 549,
+      "text": "bit disappointing and it was notable",
+      "start_seconds": 1077.6,
+      "duration_seconds": 2.959
+    },
+    {
+      "index": 550,
+      "text": "that it was the slowest of them i got",
+      "start_seconds": 1078.88,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 551,
+      "text": "some great texture out of it i just",
+      "start_seconds": 1080.559,
+      "duration_seconds": 4.641
+    },
+    {
+      "index": 552,
+      "text": "wanted a bit more pressure from it so",
+      "start_seconds": 1082.64,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 553,
+      "text": "what i&amp;#39;ll do now is i&amp;#39;ll summarize very",
+      "start_seconds": 1085.2,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 554,
+      "text": "quickly the kind of overall experience",
+      "start_seconds": 1086.88,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 555,
+      "text": "of each of the machines the lit",
+      "start_seconds": 1088.72,
+      "duration_seconds": 4.319
+    },
+    {
+      "index": 556,
+      "text": "i was a little bit impressed by it&amp;#39;s a",
+      "start_seconds": 1091.44,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 557,
+      "text": "new brand to me it&amp;#39;s the first time i&amp;#39;ve",
+      "start_seconds": 1093.039,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 558,
+      "text": "used one of their machines there&amp;#39;s a",
+      "start_seconds": 1094.64,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 559,
+      "text": "couple of little weak points on it the",
+      "start_seconds": 1096.48,
+      "duration_seconds": 3.199
+    },
+    {
+      "index": 560,
+      "text": "milk steaming and the basket that it",
+      "start_seconds": 1098.24,
+      "duration_seconds": 3.679
+    },
+    {
+      "index": 561,
+      "text": "ships with and the fact that it has a 57",
+      "start_seconds": 1099.679,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 562,
+      "text": "millimeter portafilter for me is a",
+      "start_seconds": 1101.919,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 563,
+      "text": "slight frustration but it produced good",
+      "start_seconds": 1103.679,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 564,
+      "text": "results and i think with a better basket",
+      "start_seconds": 1106.799,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 565,
+      "text": "you&amp;#39;d get a notable increase in shock",
+      "start_seconds": 1108.559,
+      "duration_seconds": 3.521
+    },
+    {
+      "index": 566,
+      "text": "quality i think it&amp;#39;s very good value for",
+      "start_seconds": 1110.24,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 567,
+      "text": "the money at 350 pounds and comparing it",
+      "start_seconds": 1112.08,
+      "duration_seconds": 5.44
+    },
+    {
+      "index": 568,
+      "text": "to say something at 190 pounds you could",
+      "start_seconds": 1114.72,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 569,
+      "text": "absolutely see where your money is going",
+      "start_seconds": 1117.52,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 570,
+      "text": "the delonghi",
+      "start_seconds": 1119.44,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 571,
+      "text": "is is okay",
+      "start_seconds": 1120.96,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 572,
+      "text": "for the money but it&amp;#39;s it&amp;#39;s a machine at",
+      "start_seconds": 1122.4,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 573,
+      "text": "that price point that says to me it&amp;#39;s",
+      "start_seconds": 1124.4,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 574,
+      "text": "worth spending more you get better milk",
+      "start_seconds": 1125.679,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 575,
+      "text": "steaming you get better shots you get a",
+      "start_seconds": 1127.52,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 576,
+      "text": "better build you get a better experience",
+      "start_seconds": 1129.28,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 577,
+      "text": "all around so i really wouldn&amp;#39;t",
+      "start_seconds": 1131.76,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 578,
+      "text": "recommend the delonghi necessarily but i",
+      "start_seconds": 1134.0,
+      "duration_seconds": 3.679
+    },
+    {
+      "index": 579,
+      "text": "would understand if you were really",
+      "start_seconds": 1136.32,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 580,
+      "text": "budget constricted you can get okay",
+      "start_seconds": 1137.679,
+      "duration_seconds": 4.641
+    },
+    {
+      "index": 581,
+      "text": "espresso from it it might frustrate you",
+      "start_seconds": 1140.0,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 582,
+      "text": "if you want really great textured flat",
+      "start_seconds": 1142.32,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 583,
+      "text": "whites or cafe lattes the silvia",
+      "start_seconds": 1144.32,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 584,
+      "text": "is the closest to a commercial machine",
+      "start_seconds": 1147.28,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 585,
+      "text": "of the group here it&amp;#39;s it&amp;#39;s right at the",
+      "start_seconds": 1149.12,
+      "duration_seconds": 3.439
+    },
+    {
+      "index": 586,
+      "text": "beginning of that kind of prosumer",
+      "start_seconds": 1150.96,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 587,
+      "text": "category where you get sort of miniature",
+      "start_seconds": 1152.559,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 588,
+      "text": "commercial machines for the home the",
+      "start_seconds": 1154.64,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 589,
+      "text": "steaming on this thing really impressed",
+      "start_seconds": 1156.48,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 590,
+      "text": "me the build is fantastic it is heavy",
+      "start_seconds": 1158.24,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 591,
+      "text": "it&amp;#39;s hefty it&amp;#39;s very well made",
+      "start_seconds": 1160.48,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 592,
+      "text": "all of the componentry seems extremely",
+      "start_seconds": 1162.64,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 593,
+      "text": "good",
+      "start_seconds": 1164.48,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 594,
+      "text": "but 529 pounds i&amp;#39;m annoyed that if i",
+      "start_seconds": 1165.44,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 595,
+      "text": "owned this",
+      "start_seconds": 1168.4,
+      "duration_seconds": 2.639
+    },
+    {
+      "index": 596,
+      "text": "i would want to mod it further and that",
+      "start_seconds": 1169.44,
+      "duration_seconds": 4.239
+    },
+    {
+      "index": 597,
+      "text": "would cost me at least 100 pounds plus",
+      "start_seconds": 1171.039,
+      "duration_seconds": 4.721
+    },
+    {
+      "index": 598,
+      "text": "to add a pid to it to control the",
+      "start_seconds": 1173.679,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 599,
+      "text": "temperature for it now there is a",
+      "start_seconds": 1175.76,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 600,
+      "text": "substantial community out there of",
+      "start_seconds": 1177.6,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 601,
+      "text": "sylvia owners who will help you out",
+      "start_seconds": 1179.12,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 602,
+      "text": "there&amp;#39;s tons of guides there&amp;#39;s tons of",
+      "start_seconds": 1181.12,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 603,
+      "text": "kits you would be joining a kind of",
+      "start_seconds": 1182.64,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 604,
+      "text": "ecosystem of owners and people who mod",
+      "start_seconds": 1184.4,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 605,
+      "text": "these machines",
+      "start_seconds": 1186.64,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 606,
+      "text": "if that&amp;#39;s what you&amp;#39;re into i would just",
+      "start_seconds": 1187.84,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 607,
+      "text": "be slightly frustrated that at the most",
+      "start_seconds": 1189.679,
+      "duration_seconds": 4.161
+    },
+    {
+      "index": 608,
+      "text": "expensive machine there&amp;#39;s still stuff i",
+      "start_seconds": 1191.84,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 609,
+      "text": "want to tweak and change that has a",
+      "start_seconds": 1193.84,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 610,
+      "text": "pretty substantial impact on the",
+      "start_seconds": 1195.6,
+      "duration_seconds": 5.04
+    },
+    {
+      "index": 611,
+      "text": "espresso now the sage is super",
+      "start_seconds": 1197.84,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 612,
+      "text": "interesting it&amp;#39;s about the same price as",
+      "start_seconds": 1200.64,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 613,
+      "text": "the gadget but they couldn&amp;#39;t be further",
+      "start_seconds": 1202.72,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 614,
+      "text": "apart where you might have a substantial",
+      "start_seconds": 1204.24,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 615,
+      "text": "modifying community for the rancho leo",
+      "start_seconds": 1206.48,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 616,
+      "text": "actually for the gadget you&amp;#39;re not gonna",
+      "start_seconds": 1208.48,
+      "duration_seconds": 4.079
+    },
+    {
+      "index": 617,
+      "text": "find one for the sage this is not a",
+      "start_seconds": 1210.24,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 618,
+      "text": "machine you&amp;#39;re gonna tinker with or play",
+      "start_seconds": 1212.559,
+      "duration_seconds": 2.881
+    },
+    {
+      "index": 619,
+      "text": "with it&amp;#39;s not when you&amp;#39;re gonna get",
+      "start_seconds": 1214.24,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 620,
+      "text": "under the hood and mess with it&amp;#39;s too",
+      "start_seconds": 1215.44,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 621,
+      "text": "complicated",
+      "start_seconds": 1217.12,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 622,
+      "text": "it&amp;#39;s just not built that way it does",
+      "start_seconds": 1218.4,
+      "duration_seconds": 4.399
+    },
+    {
+      "index": 623,
+      "text": "have a ton of features and i think",
+      "start_seconds": 1220.32,
+      "duration_seconds": 3.839
+    },
+    {
+      "index": 624,
+      "text": "they&amp;#39;ve really identified an audience of",
+      "start_seconds": 1222.799,
+      "duration_seconds": 3.841
+    },
+    {
+      "index": 625,
+      "text": "people who want good espresso great milk",
+      "start_seconds": 1224.159,
+      "duration_seconds": 4.321
+    },
+    {
+      "index": 626,
+      "text": "drinks who don&amp;#39;t necessarily want to",
+      "start_seconds": 1226.64,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 627,
+      "text": "become hobbyist baristas this is for",
+      "start_seconds": 1228.48,
+      "duration_seconds": 5.439
+    },
+    {
+      "index": 628,
+      "text": "somebody who wants a very enjoyable",
+      "start_seconds": 1231.6,
+      "duration_seconds": 4.079
+    },
+    {
+      "index": 629,
+      "text": "experience who maybe wants to go through",
+      "start_seconds": 1233.919,
+      "duration_seconds": 3.361
+    },
+    {
+      "index": 630,
+      "text": "the process of making their own coffee",
+      "start_seconds": 1235.679,
+      "duration_seconds": 3.441
+    },
+    {
+      "index": 631,
+      "text": "but they don&amp;#39;t want to have to spend too",
+      "start_seconds": 1237.28,
+      "duration_seconds": 3.519
+    },
+    {
+      "index": 632,
+      "text": "much time investing in their own skill",
+      "start_seconds": 1239.12,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 633,
+      "text": "set now to round us out we&amp;#39;ve got the",
+      "start_seconds": 1240.799,
+      "duration_seconds": 3.841
+    },
+    {
+      "index": 634,
+      "text": "gadget classic pro now i did enjoy using",
+      "start_seconds": 1242.32,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 635,
+      "text": "this i know there&amp;#39;s a little bit",
+      "start_seconds": 1244.64,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 636,
+      "text": "nostalgia for me but it&amp;#39;s well built it",
+      "start_seconds": 1245.6,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 637,
+      "text": "can pull good shots like the silvia i",
+      "start_seconds": 1247.84,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 638,
+      "text": "would want to modify it to have better",
+      "start_seconds": 1250.72,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 639,
+      "text": "brew temperatures and actually i&amp;#39;d",
+      "start_seconds": 1252.64,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 640,
+      "text": "probably want to modify it to do better",
+      "start_seconds": 1254.0,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 641,
+      "text": "brew pressures all you would need to do",
+      "start_seconds": 1255.84,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 642,
+      "text": "is change some springs and bits inside",
+      "start_seconds": 1258.0,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 643,
+      "text": "the over pressure valve it&amp;#39;s not very",
+      "start_seconds": 1259.76,
+      "duration_seconds": 3.039
+    },
+    {
+      "index": 644,
+      "text": "expensive and you&amp;#39;ll get much better",
+      "start_seconds": 1261.12,
+      "duration_seconds": 2.559
+    },
+    {
+      "index": 645,
+      "text": "shots",
+      "start_seconds": 1262.799,
+      "duration_seconds": 2.801
+    },
+    {
+      "index": 646,
+      "text": "but it requires you voiding your",
+      "start_seconds": 1263.679,
+      "duration_seconds": 4.161
+    },
+    {
+      "index": 647,
+      "text": "warranty opening this thing up tinkering",
+      "start_seconds": 1265.6,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 648,
+      "text": "with parts inside and that&amp;#39;s not for",
+      "start_seconds": 1267.84,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 649,
+      "text": "everyone and the way that they&amp;#39;re built",
+      "start_seconds": 1270.08,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 650,
+      "text": "they seem to carry a lasting value and",
+      "start_seconds": 1271.28,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 651,
+      "text": "and that&amp;#39;s kind of the difference i",
+      "start_seconds": 1273.28,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 652,
+      "text": "expect these two machines to hold their",
+      "start_seconds": 1274.559,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 653,
+      "text": "value much better than these two",
+      "start_seconds": 1276.559,
+      "duration_seconds": 3.681
+    },
+    {
+      "index": 654,
+      "text": "machines the gagia",
+      "start_seconds": 1278.48,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 655,
+      "text": "was was pretty good i i like this",
+      "start_seconds": 1280.24,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 656,
+      "text": "machine",
+      "start_seconds": 1282.24,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 657,
+      "text": "i think for the money it&amp;#39;s good value i",
+      "start_seconds": 1283.12,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 658,
+      "text": "wish i had a bit more steaming power i",
+      "start_seconds": 1284.96,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 659,
+      "text": "wish the temperature was a little bit",
+      "start_seconds": 1286.72,
+      "duration_seconds": 2.48
+    },
+    {
+      "index": 660,
+      "text": "more stable",
+      "start_seconds": 1288.08,
+      "duration_seconds": 3.599
+    },
+    {
+      "index": 661,
+      "text": "i wish it brewed at nine bars but you",
+      "start_seconds": 1289.2,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 662,
+      "text": "can fix those problems personally if i",
+      "start_seconds": 1291.679,
+      "duration_seconds": 3.681
+    },
+    {
+      "index": 663,
+      "text": "got to keep one of these which one would",
+      "start_seconds": 1293.76,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 664,
+      "text": "i keep",
+      "start_seconds": 1295.36,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 665,
+      "text": "well i&amp;#39;d be torn between these two",
+      "start_seconds": 1296.64,
+      "duration_seconds": 3.519
+    },
+    {
+      "index": 666,
+      "text": "probably because i&amp;#39;m open to modding and",
+      "start_seconds": 1298.0,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 667,
+      "text": "i&amp;#39;m interested in that so these two are",
+      "start_seconds": 1300.159,
+      "duration_seconds": 3.841
+    },
+    {
+      "index": 668,
+      "text": "in a similar category but if milk is",
+      "start_seconds": 1302.32,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 669,
+      "text": "important",
+      "start_seconds": 1304.0,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 670,
+      "text": "this really is a fantastic little",
+      "start_seconds": 1305.36,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 671,
+      "text": "espresso machine for milk steaming but",
+      "start_seconds": 1306.96,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 672,
+      "text": "of course i don&amp;#39;t get to keep these",
+      "start_seconds": 1308.4,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 673,
+      "text": "these will get given away to my patreon",
+      "start_seconds": 1310.24,
+      "duration_seconds": 3.679
+    },
+    {
+      "index": 674,
+      "text": "supporters i&amp;#39;m very grateful to all of",
+      "start_seconds": 1312.48,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 675,
+      "text": "them for supporting this channel giving",
+      "start_seconds": 1313.919,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 676,
+      "text": "me budget to just go and buy these and",
+      "start_seconds": 1315.6,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 677,
+      "text": "at the end of it when i&amp;#39;ve tested them",
+      "start_seconds": 1317.679,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 678,
+      "text": "when i&amp;#39;ve shared my opinion i can give",
+      "start_seconds": 1319.52,
+      "duration_seconds": 3.519
+    },
+    {
+      "index": 679,
+      "text": "them away but i&amp;#39;d be interested to hear",
+      "start_seconds": 1321.28,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 680,
+      "text": "your thoughts down in the comments below",
+      "start_seconds": 1323.039,
+      "duration_seconds": 3.921
+    },
+    {
+      "index": 681,
+      "text": "do you have one of these machines are",
+      "start_seconds": 1325.52,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 682,
+      "text": "you having a very different experience",
+      "start_seconds": 1326.96,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 683,
+      "text": "to me have you found other things you",
+      "start_seconds": 1328.4,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 684,
+      "text": "like about them or other things you",
+      "start_seconds": 1330.48,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 685,
+      "text": "dislike about them i&amp;#39;d be super",
+      "start_seconds": 1331.76,
+      "duration_seconds": 3.279
+    },
+    {
+      "index": 686,
+      "text": "interested to hear from you down in the",
+      "start_seconds": 1333.52,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 687,
+      "text": "comments below but for now i&amp;#39;ll say",
+      "start_seconds": 1335.039,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 688,
+      "text": "thank you so much for watching",
+      "start_seconds": 1336.64,
+      "duration_seconds": 4.96
+    },
+    {
+      "index": 689,
+      "text": "and i hope you have a great day",
+      "start_seconds": 1338.64,
+      "duration_seconds": 2.96
+    }
+  ]
+}

@@ -1,0 +1,593 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-10-20T04:50:22.508198+00:00",
+  "run_kind": "first_frozen_held_out_evaluation",
+  "freeze_manifest": "docs/conservative-freeze-2026-10-20.md",
+  "frozen_sha256": {
+    "backend/src/ytsponsorskip/detector.py": "764f1dba6f1929b1e00bbe5785f183f91a496bf10ce472603a7552bea185e62c",
+    "backend/src/ytsponsorskip/evaluation.py": "b211aa4f02ef8aab2e3db6b1235285d761ad327007de81c6953c848cdbe191e7",
+    "scripts/evaluate_detector.py": "54578328abafc6b863509e4902f0ce885d09727ba80d70828d6d02ec2c4c2d0e",
+    "data/validation/revised-2026-10-19/videos.csv": "e931d4969aae5c015230b4afe9b75adfd59f6974432e6548e6859004230b3fe1",
+    "data/validation/revised-2026-10-19/segments.csv": "f5ae20577aca2acbd8dc8c4c576eeb7bd70b6d752784423c9547b109427b366c"
+  },
+  "transcript_provider": "supadata-native unless saved prior",
+  "provider_settings": {
+    "mode": "native",
+    "text": false,
+    "language": "en"
+  },
+  "source_files": [
+    {
+      "path": "/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/data/transcripts/held_out/0_KhihMIOG8.json",
+      "sha256": "8ffd14533d20c240ffdf27983e88ea414f3e3bf949a4a4bb84e69dd5bcfbce22",
+      "entry_count": 1,
+      "usable_entry_count": 1,
+      "video_ids": [
+        "0_KhihMIOG8"
+      ]
+    },
+    {
+      "path": "/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/data/transcripts/held_out/1Jwo5qc78QU.json",
+      "sha256": "f219e4e7d630022eda11e72f3754e959d2945f17a4f7057f8bd395ba3fe7e1dd",
+      "entry_count": 1,
+      "usable_entry_count": 1,
+      "video_ids": [
+        "1Jwo5qc78QU"
+      ]
+    },
+    {
+      "path": "/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/data/transcripts/held_out/7HIGdYy5of4.json",
+      "sha256": "c3dd60938966d80618aa2938c6acc87817c1cd8dd5daae59f3246bc11105db43",
+      "entry_count": 1,
+      "usable_entry_count": 1,
+      "video_ids": [
+        "7HIGdYy5of4"
+      ]
+    },
+    {
+      "path": "/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/data/transcripts/held_out/WVDQEoe6ZWY.json",
+      "sha256": "3dfe1cf6d60e3282e91628f1d61f11de682c18caef852065e6e8a3ff1f88e537",
+      "entry_count": 1,
+      "usable_entry_count": 1,
+      "video_ids": [
+        "WVDQEoe6ZWY"
+      ]
+    },
+    {
+      "path": "/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/data/transcripts/held_out/e0kQ5WqjcU8.json",
+      "sha256": "773afce550612e58a5f8df838ba13e0a8225aa594e2e84ba7d9a924d2ebed844",
+      "entry_count": 1,
+      "usable_entry_count": 1,
+      "video_ids": [
+        "e0kQ5WqjcU8"
+      ]
+    },
+    {
+      "path": "/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/data/transcripts/held_out/rb7TVW77ZCs.json",
+      "sha256": "5694d62d8217ca8c9e1d96cad1d77219687f10fe8423997d9e3e6fea0149ed5e",
+      "entry_count": 1,
+      "usable_entry_count": 1,
+      "video_ids": [
+        "rb7TVW77ZCs"
+      ]
+    },
+    {
+      "path": "/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/data/transcripts/held_out/v-NEr3KCug8.json",
+      "sha256": "c9297ac215ae024670aa3b672ab5e84b3dfec819c14492ae49223a5acca6c214",
+      "entry_count": 1,
+      "usable_entry_count": 1,
+      "video_ids": [
+        "v-NEr3KCug8"
+      ]
+    },
+    {
+      "path": "/Users/anuvikdas/Downloads/YTSponsorSkip/YTSponsorSkip/data/transcripts/held_out/vIfC4Aj05Ps.json",
+      "sha256": "21b4c82bb6cf6d5d1da49219ab26946f19fd5993b4296aca7ed9ac772dbee099",
+      "entry_count": 1,
+      "usable_entry_count": 1,
+      "video_ids": [
+        "vIfC4Aj05Ps"
+      ]
+    }
+  ],
+  "transcript_identity_sha256": {
+    "0_KhihMIOG8": "c33be8611dba8e70a49b78512ee09df1f90566708a1e71fe090f7c40a94f0286",
+    "1Jwo5qc78QU": "d51f91005d3453ecc91cfcdd048298ed0ed95c7b348bb293e27642cee5dc0afd",
+    "7HIGdYy5of4": "1dcf09ba3650ec4c64aa3d8ba4c70b42df4036750a66bb38e0763a2ea990ed41",
+    "WVDQEoe6ZWY": "c3e33a0271d932e5f1ac6df376869dd8e32cb9b9effbd556b969614b8d6a8b8b",
+    "e0kQ5WqjcU8": "edcfd6c9baec852f1e01ca754cfb70f236d1084f8e381793996c581766228615",
+    "rb7TVW77ZCs": "38282bc72b710282309f8f90386d0fbe3f3d17645a12844b13be7ea062f0ff80",
+    "v-NEr3KCug8": "a04e6d070d9eff1dabbcc42d0e6c4887f5ea7ccb49ed92fd88fa95c5e732f014",
+    "vIfC4Aj05Ps": "a57ce77e9dc650fa58b06579a27f3b9ea44b12397b8b0bdc95175d2b1c46255f"
+  },
+  "coverage": {
+    "fully_reviewed_held_out_videos": 8,
+    "usable_transcript_count": 8,
+    "evaluated_video_ids": [
+      "WVDQEoe6ZWY",
+      "vIfC4Aj05Ps",
+      "1Jwo5qc78QU",
+      "7HIGdYy5of4",
+      "e0kQ5WqjcU8",
+      "rb7TVW77ZCs",
+      "v-NEr3KCug8",
+      "0_KhihMIOG8"
+    ],
+    "excluded": []
+  },
+  "acquisition": {
+    "per_video": [
+      {
+        "video_id": "WVDQEoe6ZWY",
+        "source": "supadata-native",
+        "http_statuses": [
+          200
+        ],
+        "result": "usable",
+        "error": null,
+        "latency_ms": 1101.874,
+        "record_sha256": "67e9179054b4da7ebc0a1c3708596202bdc7e596b77493c20667132b51c1718b"
+      },
+      {
+        "video_id": "vIfC4Aj05Ps",
+        "source": "supadata-native",
+        "http_statuses": [
+          200
+        ],
+        "result": "usable",
+        "error": null,
+        "latency_ms": 1451.516,
+        "record_sha256": "d87dedb8414d3a457f2aa7d9c9401c2284ad249c80f80715185e01b6fe8b7b60"
+      },
+      {
+        "video_id": "1Jwo5qc78QU",
+        "source": "supadata-native",
+        "http_statuses": [
+          200
+        ],
+        "result": "usable",
+        "error": null,
+        "latency_ms": 1987.286,
+        "record_sha256": "6843f5f420bcee8df0dcaf8881a716d5abb017d4136183f3a5131126795258b4"
+      },
+      {
+        "video_id": "7HIGdYy5of4",
+        "source": "supadata-native",
+        "http_statuses": [
+          200
+        ],
+        "result": "usable",
+        "error": null,
+        "latency_ms": 1920.779,
+        "record_sha256": "e4983693074533cc7b487a02f990c6cd45bf73c7c84501101da11705e8a7ebd0"
+      },
+      {
+        "video_id": "e0kQ5WqjcU8",
+        "source": "supadata-native",
+        "http_statuses": [
+          200
+        ],
+        "result": "usable",
+        "error": null,
+        "latency_ms": 1841.864,
+        "record_sha256": "1be2f3570ab11d45559894078c871a603301062515af51d412488678a6bf3250"
+      },
+      {
+        "video_id": "rb7TVW77ZCs",
+        "source": "supadata-native",
+        "http_statuses": [
+          200
+        ],
+        "result": "usable",
+        "error": null,
+        "latency_ms": 1240.102,
+        "record_sha256": "4d54933d248186f8138beb1445a5316f9e7effe761f821e88a901b3a72784bf5"
+      },
+      {
+        "video_id": "v-NEr3KCug8",
+        "source": "supadata-native",
+        "http_statuses": [
+          200
+        ],
+        "result": "usable",
+        "error": null,
+        "latency_ms": 1432.461,
+        "record_sha256": "b2f08c5f2b8e5cc1dcc53a22d33e3495be28d2b4df91201093f65473fc1a20a0"
+      },
+      {
+        "video_id": "0_KhihMIOG8",
+        "source": "supadata-native",
+        "http_statuses": [
+          200
+        ],
+        "result": "usable",
+        "error": null,
+        "latency_ms": 1248.494,
+        "record_sha256": "ef16688a6669ea0dfcc6cae39272d3b58f01b81d16f2e001c85677e745853ef5"
+      }
+    ],
+    "mean_latency_ms": 1528.047,
+    "min_latency_ms": 1101.874,
+    "max_latency_ms": 1987.286,
+    "note": "Acquisition latency excludes offline detector runtime; provider completeness is not independently verified."
+  },
+  "detector": {
+    "mode": "conservative",
+    "result": {
+      "evaluated_video_count": 8,
+      "incorrect_predicted_seconds": 11.52,
+      "negative_videos_with_any_predicted_skip": 1,
+      "evaluated_negative_video_count": 6,
+      "missed_promotional_seconds": 128.96,
+      "matched_segment_count": 1,
+      "mean_start_boundary_error_seconds": 21.2,
+      "mean_end_boundary_error_seconds": 43.76,
+      "detection_runtime_ms": 148.955,
+      "per_video": [
+        {
+          "video_id": "WVDQEoe6ZWY",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "This Video Is Sponsored By ___ VPN",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 29,
+          "detection_runtime_ms": 6.09
+        },
+        {
+          "video_id": "vIfC4Aj05Ps",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "The US government is giving out free wasps",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 17,
+          "detection_runtime_ms": 3.128
+        },
+        {
+          "video_id": "1Jwo5qc78QU",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 60.0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 60.0,
+          "matches": [],
+          "title": "YouTube's copyright system isn't broken. The world's is.",
+          "annotations": [
+            {
+              "start_seconds": 2339.0,
+              "end_seconds": 2399.0
+            }
+          ],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 170,
+          "detection_runtime_ms": 39.903
+        },
+        {
+          "video_id": "7HIGdYy5of4",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 11.519999999999996,
+          "incorrect_predicted_seconds": 11.519999999999996,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "The Best Espresso Machine Under \u00a3500",
+          "annotations": [],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 85.04,
+              "end_seconds": 96.56,
+              "score": 7,
+              "evidence": [
+                "creator_owned",
+                "membership",
+                "sales"
+              ],
+              "snippet_indices": [
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ]
+            }
+          ],
+          "window_count": 90,
+          "detection_runtime_ms": 28.105
+        },
+        {
+          "video_id": "e0kQ5WqjcU8",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "The Best Espresso Machine Under \u00a31,500",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 155,
+          "detection_runtime_ms": 49.015
+        },
+        {
+          "video_id": "rb7TVW77ZCs",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "How do vaccines work? - Kelwalin Dhanasarnsombut",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 17,
+          "detection_runtime_ms": 2.708
+        },
+        {
+          "video_id": "v-NEr3KCug8",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 19,
+          "detection_runtime_ms": 2.969
+        },
+        {
+          "video_id": "0_KhihMIOG8",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 116.0,
+          "predicted_seconds": 47.039999999999964,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 68.96000000000004,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 1,
+              "overlap_seconds": 47.039999999999964,
+              "start_error_seconds": 21.200000000000045,
+              "end_error_seconds": 43.75999999999999
+            }
+          ],
+          "title": "Why Buildings Need Foundations",
+          "annotations": [
+            {
+              "start_seconds": 55.0,
+              "end_seconds": 59.0
+            },
+            {
+              "start_seconds": 778.0,
+              "end_seconds": 890.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 799.2,
+              "end_seconds": 846.24,
+              "score": 6,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171
+              ]
+            }
+          ],
+          "window_count": 59,
+          "detection_runtime_ms": 17.037
+        }
+      ],
+      "playback_policy": {
+        "rule": "merge adjacent/overlapping predictions, then retain duration > 3 seconds",
+        "evaluated_video_count": 8,
+        "incorrect_predicted_seconds": 11.52,
+        "negative_videos_with_any_predicted_skip": 1,
+        "evaluated_negative_video_count": 6,
+        "missed_promotional_seconds": 128.96,
+        "matched_segment_count": 1,
+        "mean_start_boundary_error_seconds": 21.2,
+        "mean_end_boundary_error_seconds": 43.76,
+        "detection_runtime_ms": 148.955,
+        "per_video": [
+          {
+            "video_id": "WVDQEoe6ZWY",
+            "promotion_status": "none",
+            "annotated_seconds": 0,
+            "predicted_seconds": 0,
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "eligible_intervals": []
+          },
+          {
+            "video_id": "vIfC4Aj05Ps",
+            "promotion_status": "none",
+            "annotated_seconds": 0,
+            "predicted_seconds": 0,
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "eligible_intervals": []
+          },
+          {
+            "video_id": "1Jwo5qc78QU",
+            "promotion_status": "one_or_more",
+            "annotated_seconds": 60.0,
+            "predicted_seconds": 0,
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 60.0,
+            "matches": [],
+            "eligible_intervals": []
+          },
+          {
+            "video_id": "7HIGdYy5of4",
+            "promotion_status": "none",
+            "annotated_seconds": 0,
+            "predicted_seconds": 11.519999999999996,
+            "incorrect_predicted_seconds": 11.519999999999996,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "eligible_intervals": [
+              {
+                "start_seconds": 85.04,
+                "end_seconds": 96.56,
+                "score": 0,
+                "evidence": [],
+                "snippet_indices": []
+              }
+            ]
+          },
+          {
+            "video_id": "e0kQ5WqjcU8",
+            "promotion_status": "none",
+            "annotated_seconds": 0,
+            "predicted_seconds": 0,
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "eligible_intervals": []
+          },
+          {
+            "video_id": "rb7TVW77ZCs",
+            "promotion_status": "none",
+            "annotated_seconds": 0,
+            "predicted_seconds": 0,
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "eligible_intervals": []
+          },
+          {
+            "video_id": "v-NEr3KCug8",
+            "promotion_status": "none",
+            "annotated_seconds": 0,
+            "predicted_seconds": 0,
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "eligible_intervals": []
+          },
+          {
+            "video_id": "0_KhihMIOG8",
+            "promotion_status": "one_or_more",
+            "annotated_seconds": 116.0,
+            "predicted_seconds": 47.039999999999964,
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 68.96000000000004,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 1,
+                "overlap_seconds": 47.039999999999964,
+                "start_error_seconds": 21.200000000000045,
+                "end_error_seconds": 43.75999999999999
+              }
+            ],
+            "eligible_intervals": [
+              {
+                "start_seconds": 799.2,
+                "end_seconds": 846.24,
+                "score": 0,
+                "evidence": [],
+                "snippet_indices": []
+              }
+            ]
+          }
+        ],
+        "unmatched_predicted_segment_count": 1,
+        "unmatched_annotated_segment_count": 2,
+        "annotated_seconds": 176.0,
+        "missed_fraction": 0.73273
+      },
+      "unmatched_predicted_segment_count": 1,
+      "unmatched_annotated_segment_count": 2,
+      "annotated_seconds": 176.0,
+      "missed_fraction": 0.73273
+    }
+  },
+  "interpretation": {
+    "labels_are": "user_manual_annotations_not_independently_verified_truth",
+    "conditional_quality": "metrics include only videos with usable transcripts",
+    "end_to_end_coverage": "8/8",
+    "automatic_skipping_enabled": false
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "video_id": "v-NEr3KCug8",
+  "acquired_at": "2026-10-20T04:49:35.843495+00:00",
+  "source": {
+    "library": "supadata-native",
+    "version": "v1-http-2026-10-19",
+    "request": {
+      "lang": "en",
+      "mode": "native",
+      "text": false
+    },
+    "credentials_used": "backend_api_key_only",
+    "manual_sponsor_annotations_used_as_input": false
+  },
+  "transcript": {
+    "language": "English",
+    "language_code": "en",
+    "caption_type": "unknown",
+    "is_generated": null,
+    "provider": "supadata-native",
+    "provider_version": "v1-http-2026-10-19"
+  },
+  "timing": {
+    "source_unit": "milliseconds",
+    "normalized_unit": "seconds",
+    "duration_available": true,
+    "duration_is_exact_promotion_boundary": false
+  },
+  "completeness": {
+    "snippet_count": 74,
+    "first_start_seconds": 7.704,
+    "last_start_seconds": 280.579,
+    "independently_verified": false,
+    "note": "Provider cue list was nonempty; video duration/truncation requires independent verification."
+  },
+  "snippets": [
+    {
+      "index": 0,
+      "text": "In the 20th century, most vaccines took\nwell over a decade",
+      "start_seconds": 7.704,
+      "duration_seconds": 4.167
+    },
+    {
+      "index": 1,
+      "text": "to research, test, and produce.",
+      "start_seconds": 11.871,
+      "duration_seconds": 2.542
+    },
+    {
+      "index": 2,
+      "text": "But the vaccines for COVID-19 cleared \nthe threshold for emergency use",
+      "start_seconds": 14.829,
+      "duration_seconds": 4.292
+    },
+    {
+      "index": 3,
+      "text": "in less than 11 months.",
+      "start_seconds": 19.121,
+      "duration_seconds": 2.042
+    },
+    {
+      "index": 4,
+      "text": "The secret behind this speed \nis a medical technology",
+      "start_seconds": 21.538,
+      "duration_seconds": 3.458
+    },
+    {
+      "index": 5,
+      "text": "that’s been developing for decades:",
+      "start_seconds": 24.996,
+      "duration_seconds": 2.333
+    },
+    {
+      "index": 6,
+      "text": "the mRNA vaccine.",
+      "start_seconds": 27.329,
+      "duration_seconds": 1.959
+    },
+    {
+      "index": 7,
+      "text": "This new treatment uses our body’s \nexisting cellular machinery",
+      "start_seconds": 29.788,
+      "duration_seconds": 3.874
+    },
+    {
+      "index": 8,
+      "text": "to trigger an immune response,",
+      "start_seconds": 33.662,
+      "duration_seconds": 2.042
+    },
+    {
+      "index": 9,
+      "text": "protecting us from viruses without\never experiencing an infection.",
+      "start_seconds": 35.704,
+      "duration_seconds": 4.333
+    },
+    {
+      "index": 10,
+      "text": "And in the future, this approach might\nbe able to treat new diseases",
+      "start_seconds": 40.787,
+      "duration_seconds": 4.042
+    },
+    {
+      "index": 11,
+      "text": "almost as quickly as they emerge.",
+      "start_seconds": 44.829,
+      "duration_seconds": 2.5
+    },
+    {
+      "index": 12,
+      "text": "So how do these \nrevolutionary vaccines work?",
+      "start_seconds": 47.621,
+      "duration_seconds": 3.5
+    },
+    {
+      "index": 13,
+      "text": "The key ingredient is in the name.",
+      "start_seconds": 51.371,
+      "duration_seconds": 2.916
+    },
+    {
+      "index": 14,
+      "text": "mRNA, or messenger ribonucleic acid,\nis a naturally occurring molecule",
+      "start_seconds": 54.287,
+      "duration_seconds": 6.167
+    },
+    {
+      "index": 15,
+      "text": "that encodes the instructions \nfor producing proteins.",
+      "start_seconds": 60.454,
+      "duration_seconds": 2.75
+    },
+    {
+      "index": 16,
+      "text": "When our cells process mRNA, \na part of the cell called the ribosome",
+      "start_seconds": 63.746,
+      "duration_seconds": 4.667
+    },
+    {
+      "index": 17,
+      "text": "translates and follows these instructions\nto build the encoded protein.",
+      "start_seconds": 68.413,
+      "duration_seconds": 4.041
+    },
+    {
+      "index": 18,
+      "text": "The mRNA in these vaccines works\nin exactly the same way,",
+      "start_seconds": 72.788,
+      "duration_seconds": 3.875
+    },
+    {
+      "index": 19,
+      "text": "but scientists use the molecule to safely\nintroduce our body to a virus.",
+      "start_seconds": 76.663,
+      "duration_seconds": 4.583
+    },
+    {
+      "index": 20,
+      "text": "First, researchers encode trillions \nof mRNA molecules with the instructions",
+      "start_seconds": 81.788,
+      "duration_seconds": 4.708
+    },
+    {
+      "index": 21,
+      "text": "for a specific viral protein.",
+      "start_seconds": 86.496,
+      "duration_seconds": 2.042
+    },
+    {
+      "index": 22,
+      "text": "This part of the virus is\nharmless by itself,",
+      "start_seconds": 88.829,
+      "duration_seconds": 2.417
+    },
+    {
+      "index": 23,
+      "text": "but helpful for training \nour body’s immune response.",
+      "start_seconds": 91.246,
+      "duration_seconds": 2.75
+    },
+    {
+      "index": 24,
+      "text": "Then, they inject those molecules \ninto a nanoparticle",
+      "start_seconds": 94.454,
+      "duration_seconds": 3.459
+    },
+    {
+      "index": 25,
+      "text": "roughly 1,000 times smaller \nthan the average cell.",
+      "start_seconds": 97.913,
+      "duration_seconds": 3.291
+    },
+    {
+      "index": 26,
+      "text": "This nanoparticle is made of lipids,",
+      "start_seconds": 101.454,
+      "duration_seconds": 2.292
+    },
+    {
+      "index": 27,
+      "text": "the same type of fatty material that forms\nthe membrane around our cells.",
+      "start_seconds": 103.746,
+      "duration_seconds": 4.083
+    },
+    {
+      "index": 28,
+      "text": "But these lipids have been \nspecially engineered",
+      "start_seconds": 108.204,
+      "duration_seconds": 2.875
+    },
+    {
+      "index": 29,
+      "text": "to protect the mRNA on its journey \nthrough the body",
+      "start_seconds": 111.079,
+      "duration_seconds": 3.334
+    },
+    {
+      "index": 30,
+      "text": "and assist its entry into the cell.",
+      "start_seconds": 114.413,
+      "duration_seconds": 2.166
+    },
+    {
+      "index": 31,
+      "text": "Lastly, the final ingredients are added:\nsugars and salt",
+      "start_seconds": 116.954,
+      "duration_seconds": 4.125
+    },
+    {
+      "index": 32,
+      "text": "to help keep the nanoparticles intact \nuntil they reach their destination.",
+      "start_seconds": 121.079,
+      "duration_seconds": 4.292
+    },
+    {
+      "index": 33,
+      "text": "Before use, the vaccine is kept at a \ntemperature of -20 to -80 degrees Celsius",
+      "start_seconds": 125.621,
+      "duration_seconds": 5.833
+    },
+    {
+      "index": 34,
+      "text": "to ensure none of the components\nbreak down.",
+      "start_seconds": 131.454,
+      "duration_seconds": 2.584
+    },
+    {
+      "index": 35,
+      "text": "Once injected, the nanoparticles\ndisperse and encounter cells.",
+      "start_seconds": 134.038,
+      "duration_seconds": 3.916
+    },
+    {
+      "index": 36,
+      "text": "The lipid coating on each nanoparticle\nfuses with the lipid membrane of a cell",
+      "start_seconds": 138.204,
+      "duration_seconds": 4.875
+    },
+    {
+      "index": 37,
+      "text": "and releases the mRNA to do its work.",
+      "start_seconds": 143.079,
+      "duration_seconds": 2.834
+    },
+    {
+      "index": 38,
+      "text": "At this point, we should note \nthat while the vaccine is delivering",
+      "start_seconds": 145.913,
+      "duration_seconds": 3.791
+    },
+    {
+      "index": 39,
+      "text": "viral genetic material into our cells,",
+      "start_seconds": 149.704,
+      "duration_seconds": 2.25
+    },
+    {
+      "index": 40,
+      "text": "it’s impossible for this material \nto alter our DNA.",
+      "start_seconds": 151.954,
+      "duration_seconds": 3.917
+    },
+    {
+      "index": 41,
+      "text": "mRNA is a short-lived molecule",
+      "start_seconds": 156.288,
+      "duration_seconds": 2.666
+    },
+    {
+      "index": 42,
+      "text": "that would need additional enzymes and \nchemical signals to even access our DNA,",
+      "start_seconds": 158.954,
+      "duration_seconds": 5.792
+    },
+    {
+      "index": 43,
+      "text": "let alone change it.",
+      "start_seconds": 164.746,
+      "duration_seconds": 1.708
+    },
+    {
+      "index": 44,
+      "text": "And none of these DNA altering components\nare present in mRNA vaccines.",
+      "start_seconds": 166.704,
+      "duration_seconds": 5.667
+    },
+    {
+      "index": 45,
+      "text": "Once inside the cell, the ribosome\ntranslates the mRNA’s instructions",
+      "start_seconds": 172.829,
+      "duration_seconds": 4.709
+    },
+    {
+      "index": 46,
+      "text": "and begins assembling the viral protein.",
+      "start_seconds": 177.538,
+      "duration_seconds": 2.375
+    },
+    {
+      "index": 47,
+      "text": "In COVID-19 vaccines, that protein \nis one of the spikes typically found",
+      "start_seconds": 180.288,
+      "duration_seconds": 4.333
+    },
+    {
+      "index": 48,
+      "text": "on the virus’s surface.",
+      "start_seconds": 184.621,
+      "duration_seconds": 1.458
+    },
+    {
+      "index": 49,
+      "text": "Without the rest of the virus \nthis lone spike is not infectious,",
+      "start_seconds": 186.371,
+      "duration_seconds": 4.25
+    },
+    {
+      "index": 50,
+      "text": "but it does trigger our immune response.",
+      "start_seconds": 190.621,
+      "duration_seconds": 3.292
+    },
+    {
+      "index": 51,
+      "text": "Activating the immune system\ncan be taxing on the body,",
+      "start_seconds": 194.079,
+      "duration_seconds": 3.125
+    },
+    {
+      "index": 52,
+      "text": "resulting in brief fatigue, fever, \nand muscle soreness in some people.",
+      "start_seconds": 197.204,
+      "duration_seconds": 4.042
+    },
+    {
+      "index": 53,
+      "text": "But this doesn’t mean \nthe recipient is sick—",
+      "start_seconds": 201.871,
+      "duration_seconds": 2.375
+    },
+    {
+      "index": 54,
+      "text": "it means the vaccine is working.",
+      "start_seconds": 204.246,
+      "duration_seconds": 2.333
+    },
+    {
+      "index": 55,
+      "text": "The body is producing antibodies to fight\nthat viral protein,",
+      "start_seconds": 207.079,
+      "duration_seconds": 3.042
+    },
+    {
+      "index": 56,
+      "text": "that will then stick around to defend \nagainst future COVID-19 infections.",
+      "start_seconds": 210.121,
+      "duration_seconds": 4.5
+    },
+    {
+      "index": 57,
+      "text": "And since this particular protein is\nlikely to be found in most COVID variants,",
+      "start_seconds": 215.079,
+      "duration_seconds": 4.75
+    },
+    {
+      "index": 58,
+      "text": "these antibodies should reduce \nthe threat of catching new strains.",
+      "start_seconds": 219.829,
+      "duration_seconds": 3.75
+    },
+    {
+      "index": 59,
+      "text": "This approach offers significant\nadvantages over previous vaccines.",
+      "start_seconds": 224.079,
+      "duration_seconds": 4.125
+    },
+    {
+      "index": 60,
+      "text": "Traditional vaccines contain \nweakened versions of live viruses",
+      "start_seconds": 228.204,
+      "duration_seconds": 3.5
+    },
+    {
+      "index": 61,
+      "text": "or amputated sections of a virus,",
+      "start_seconds": 231.704,
+      "duration_seconds": 2.292
+    },
+    {
+      "index": 62,
+      "text": "both of which required time intensive\nresearch to prepare",
+      "start_seconds": 234.413,
+      "duration_seconds": 3.541
+    },
+    {
+      "index": 63,
+      "text": "and unique chemical treatments\nto safely inject.",
+      "start_seconds": 237.954,
+      "duration_seconds": 3.542
+    },
+    {
+      "index": 64,
+      "text": "But mRNA vaccines don’t actually\ncontain any viral particles,",
+      "start_seconds": 241.829,
+      "duration_seconds": 3.667
+    },
+    {
+      "index": 65,
+      "text": "so they don’t have to be built \nfrom scratch to safely adjust each virus.",
+      "start_seconds": 245.496,
+      "duration_seconds": 4.208
+    },
+    {
+      "index": 66,
+      "text": "In fact, every mRNA vaccine could have\nroughly the same list of ingredients.",
+      "start_seconds": 250.329,
+      "duration_seconds": 5.709
+    },
+    {
+      "index": 67,
+      "text": "Imagine a reliable, robustly tested\nvaccine that can treat any disease",
+      "start_seconds": 256.829,
+      "duration_seconds": 5.584
+    },
+    {
+      "index": 68,
+      "text": "by swapping out a single component.",
+      "start_seconds": 262.413,
+      "duration_seconds": 2.666
+    },
+    {
+      "index": 69,
+      "text": "To treat a new illness, researchers would \nidentify the right viral protein,",
+      "start_seconds": 265.621,
+      "duration_seconds": 4.333
+    },
+    {
+      "index": 70,
+      "text": "encode it into mRNA,",
+      "start_seconds": 269.954,
+      "duration_seconds": 2.125
+    },
+    {
+      "index": 71,
+      "text": "and then swap that mRNA \ninto the existing vaccine platform.",
+      "start_seconds": 272.079,
+      "duration_seconds": 4.292
+    },
+    {
+      "index": 72,
+      "text": "This could make it possible to develop\nnew vaccines in weeks,",
+      "start_seconds": 276.621,
+      "duration_seconds": 3.958
+    },
+    {
+      "index": 73,
+      "text": "giving humanity a flexible new tool \nin the never-ending fight against disease.",
+      "start_seconds": 280.579,
+      "duration_seconds": 5.25
+    }
+  ]
+}

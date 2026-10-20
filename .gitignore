@@ -10,6 +10,7 @@ __pycache__/
 results/*.json
 results/*.csv
 results/supadata/
+results/heldout-acquisition/
 results/*.sqlite3
 results/*.sqlite3-shm
 results/*.sqlite3-wal
