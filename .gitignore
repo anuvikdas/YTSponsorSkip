@@ -12,6 +12,7 @@ results/*.csv
 results/supadata/
 results/heldout-acquisition/
 results/development-transcripts/
+results/local-semantic/
 results/*.sqlite3
 results/*.sqlite3-shm
 results/*.sqlite3-wal
