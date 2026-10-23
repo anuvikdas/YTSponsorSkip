@@ -1,0 +1,27 @@
+video_id,case,expected_outcome,expected_caption_type,channel,title,notes
+dQw4w9WgXcQ,eligible,success,manual,Rick Astley,Rick Astley - Never Gonna Give You Up,Confirmed locally
+jNQXAC9IVRw,eligible,success,manual,Jawed,Me at the zoo,Confirmed locally; short early upload
+M7lc1UVf-VE,eligible,success,manual,Google for Developers,YouTube IFrame Player API demo,Confirmed locally; technical demo
+aircAruvnKk,eligible,success,manual,3Blue1Brown,But what is a neural network?,Confirmed locally; educational
+rfscVS0vtbw,eligible,success,manual,freeCodeCamp.org,Learn Python - Full Course for Beginners,Confirmed locally; multi-hour video
+HXzMwe8PZBA,eligible,success,manual,Unknown,Public long-form video,Confirmed locally
+-IwSck8x8Hw,eligible,success,manual,NBC News,Meet the Press NOW - March 19,Confirmed during corpus discovery; long news program
+bsSumVpPas0,eligible,success,manual,LegalEagle,America's Unhinged Driving Laws,Confirmed during corpus discovery
+JLtwsKgPcGg,eligible,success,manual,Suit Channel,Long-distance train journey,Confirmed English manual track during corpus discovery
+Vw1Qrko8oTs,eligible,success,generated,PhilsComputerLab,S3 ViRGE Unleashed,Confirmed during corpus discovery
+FfwvYyQDRhc,eligible,success,generated,LukeEats,Valve silently shut down CS2 beta servers,Confirmed during corpus discovery
+ViUbWUbaCBY,eligible,success,generated,Transformotion Vehicle Rebuilds,Can our Audi TT be fixed and sold for profit?,Confirmed during corpus discovery
+Gwp5MHt3nnA,eligible,success,generated,Law&Crime Network,10 entitled mom meltdowns caught on bodycam,Confirmed during corpus discovery; long video
+3N-BlCX4NS4,eligible,success,generated,Pyrocynical,The worst Tik Tok trend yet,Confirmed during corpus discovery
+5CUA9VqRl4s,eligible,success,generated,Possum Reviews,They created one super bad movie,Confirmed during corpus discovery
+umC5c79HFEw,eligible,success,generated,KrazyRabb1t,The Fallout Show iceberg explained,Confirmed during corpus discovery; long video
+SqHwCfc9uv4,eligible,success,generated,SciShow,Alexander the Great was killed by a mosquito,Confirmed during corpus discovery
+YSkfGGetZ7o,eligible,success,generated,linguamarina,11 words that confuse Americans,Confirmed during corpus discovery
+vRDVwIAJ4Fs,eligible,success,generated,See Mindy Mom,Pack budget lunches for the week,Confirmed during corpus discovery
+XWMKt2wqNAo,eligible,success,generated,AutoDeal.com.ph,Top 10 family cars under P1-million,Confirmed during corpus discovery
+7Nv-AGbiKjc,eligible,success,generated,Luke Stephens,I tried the new AC Shadows expansion,Confirmed during corpus discovery
+Z_jl71GApQQ,negative,expected_failure,none,Unknown,Known captions-disabled video,Confirmed TranscriptsDisabled during corpus discovery
+P_cRgAF9rkk,negative,expected_failure,none,Unknown,Known no-English-transcript video,Confirmed NoTranscriptFound during corpus discovery
+zI_e7jEW4Xc,negative,expected_failure,none,Unknown,Known unavailable video,Confirmed VideoUnavailable during corpus discovery
+aaaaaaaaaaa,negative,expected_failure,none,none,Deliberately unavailable identifier,Expected provider-level unavailable case
+invalid id,negative,expected_failure,none,none,Deliberately invalid identifier,Expected FastAPI validation failure

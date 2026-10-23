@@ -1,0 +1,16 @@
+{
+  "selected_before_acquisition_or_detector_output": true,
+  "video_id": "DxL2HoqLbyA",
+  "url": "https://www.youtube.com/watch?v=DxL2HoqLbyA",
+  "title": "The Most Misunderstood Concept in Physics",
+  "selection_reason": "Previously unused prerecorded English educational video on a familiar supported channel; chosen once for the unfamiliar-video workflow, without inspecting predictions or transcript.",
+  "prior_global_acquisitions_for_id": 0,
+  "saved_transcript_found": false,
+  "native_authorization_used_before_task": 1,
+  "native_authorization_remaining_before_task": 4,
+  "global_ledger_attempts_before_task": 16,
+  "observed_free_credits_used_before_task": 15,
+  "observed_free_credits_limit": 100,
+  "replacement_after_failure_allowed": false,
+  "manual_promotional_labels_available": false
+}

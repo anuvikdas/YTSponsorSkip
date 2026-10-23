@@ -1,0 +1,3780 @@
+{
+  "schema_version": 1,
+  "evaluation_sha256": "d9f301da5b1676b706643182e2c50142398d2c37d0d869989637ab69786d0458",
+  "review_notes_sha256": "a5282a1770d054dcc3886827b0b5f1c2f4d2324ac501dc7c661ae8eafb0a97b4",
+  "transcript_hashes": {
+    "094y1Z2wpJg": "36755f8e3cf9d595196777f686c5c666393f372608ba96792002af2f199b97d1",
+    "bHIhgxav9LY": "7310c0566c0f725cb5a81741a9d250a8fd7d737a42e4c2c84d20f567488619eb",
+    "iWeu2dxHRDg": "99761732d9c6e900348c120a9fb3386a4415f33cc438cbe58d80850caefd5dd9",
+    "DTvS9lvRxZ8": "1a569b446ae1486986284c22b01d61e86e9885785ddef5ba63616cf026b191ce",
+    "I9hJ_Rux9y0": "59ecab1c8b120fc8f5f63a2945feb57e87adaf04f8ea20153a798bbf2f1829d5",
+    "lXfEK8G8CUI": "9b20ff0b33c90b49b3ab1c1a64970ac11454d9d55413c79b8d6349df66836e0f",
+    "-lErGZZgUbY": "96ad682a775f7f713971e898925f796dd000ed486d44223bb88483b2c10f5b59",
+    "MRtg6A1f2Ko": "e08344f6697d1f04439624f5c0dda7516c3a5cea88a24e43d9effa5908130116",
+    "9lx11dy9J30": "fa6d5f4fa1c5bc38445c11aa840ececfbed8ef9b159876faecc6f69115ac0d85",
+    "Sew4rctKghY": "bfa3d0cf1311596ba37a3ac4637e0e4acfc330753991df3f96bfdd7025bd96f3",
+    "O7sQBfpQCvU": "71ce2c66263d1d3b001acbb9e88f5ebeeaff364920ce908b2fd0b69a1a3a2999",
+    "U3aXWizDbQ4": "1e59ca51c098ff4c65d9b88da40fb17a47c1bc91b50633056874cfcf85e023ca",
+    "x7X9w_GIm1s": "cc548b1402ed20d2f8542d4205157bdffd746d24f3bff557157feff617302484",
+    "aircAruvnKk": "2736b544157abd0231cd9e8c5b408fcf79ddd1e1a6d140bcbc0cda662f69eaef"
+  },
+  "summary": {
+    "conservative": {
+      "evaluated_video_count": 14,
+      "incorrect_predicted_seconds": 25.0,
+      "negative_videos_with_any_predicted_skip": 0,
+      "evaluated_negative_video_count": 4,
+      "missed_promotional_seconds": 104.0,
+      "matched_segment_count": 10,
+      "mean_start_boundary_error_seconds": 4.6,
+      "mean_end_boundary_error_seconds": 8.3,
+      "detection_runtime_ms": 192.838
+    },
+    "aggressive": {
+      "evaluated_video_count": 14,
+      "incorrect_predicted_seconds": 107.0,
+      "negative_videos_with_any_predicted_skip": 0,
+      "evaluated_negative_video_count": 4,
+      "missed_promotional_seconds": 69.0,
+      "matched_segment_count": 10,
+      "mean_start_boundary_error_seconds": 7.8,
+      "mean_end_boundary_error_seconds": 9.8,
+      "detection_runtime_ms": 208.13
+    }
+  },
+  "videos": [
+    {
+      "video_id": "094y1Z2wpJg",
+      "title": "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          1248.0,
+          1327.0
+        ]
+      ],
+      "caption_type": "generated",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          1329.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 1254.0,
+              "end_seconds": 1326.0,
+              "score": 7,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                450,
+                451,
+                452,
+                453,
+                454,
+                455,
+                456,
+                457,
+                458,
+                459,
+                460,
+                461,
+                462,
+                463,
+                464,
+                465,
+                466,
+                467,
+                468,
+                469,
+                470,
+                471,
+                472,
+                473,
+                474,
+                475,
+                476,
+                477,
+                478,
+                479,
+                480,
+                481,
+                482,
+                483,
+                484,
+                485,
+                486,
+                487,
+                488,
+                489,
+                490,
+                491
+              ]
+            }
+          ],
+          "false_skip_ranges": [],
+          "missed_ranges": [
+            [
+              1248.0,
+              1254.0
+            ],
+            [
+              1326.0,
+              1327.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              1229.0,
+              1329.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              1248.0,
+              1254.0
+            ],
+            [
+              1326.0,
+              1327.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 7.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 72.0,
+                "start_error_seconds": 6.0,
+                "end_error_seconds": 1.0
+              }
+            ],
+            "detection_runtime_ms": 18.577
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 1252.0,
+              "end_seconds": 1329.0,
+              "score": 7,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                450,
+                451,
+                452,
+                453,
+                454,
+                455,
+                456,
+                457,
+                458,
+                459,
+                460,
+                461,
+                462,
+                463,
+                464,
+                465,
+                466,
+                467,
+                468,
+                469,
+                470,
+                471,
+                472,
+                473,
+                474,
+                475,
+                476,
+                477,
+                478,
+                479,
+                480,
+                481,
+                482,
+                483,
+                484,
+                485,
+                486,
+                487,
+                488,
+                489,
+                490,
+                491
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              1327.0,
+              1329.0
+            ]
+          ],
+          "missed_ranges": [
+            [
+              1248.0,
+              1252.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              1229.0,
+              1329.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              1248.0,
+              1252.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 2.0,
+            "missed_promotional_seconds": 4.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 75.0,
+                "start_error_seconds": 4.0,
+                "end_error_seconds": 2.0
+              }
+            ],
+            "detection_runtime_ms": 18.849
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 1240.0,
+          "end": 1262.0,
+          "snippets": [
+            {
+              "index": 453,
+              "text": "(gentle music)",
+              "start": 1237.0,
+              "end": 1242.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 454,
+              "text": "What I love about 3x+1",
+              "start": 1242.0,
+              "end": 1244.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 455,
+              "text": "is it's a problem almost anyone can understand",
+              "start": 1244.0,
+              "end": 1247.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 456,
+              "text": "and play around with.",
+              "start": 1247.0,
+              "end": 1248.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 457,
+              "text": "And actually trying to figure things out for yourself",
+              "start": 1248.0,
+              "end": 1250.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 458,
+              "text": "is the best way to learn,",
+              "start": 1250.0,
+              "end": 1252.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 459,
+              "text": "which is why I subscribed to Brilliant,",
+              "start": 1252.0,
+              "end": 1254.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 460,
+              "text": "the sponsor of this video.",
+              "start": 1254.0,
+              "end": 1256.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 461,
+              "text": "Now, recently, Brilliant have upped their interactivity.",
+              "start": 1256.0,
+              "end": 1259.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 462,
+              "text": "For example, here is a great lesson",
+              "start": 1259.0,
+              "end": 1261.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 463,
+              "text": "on the Pythagorean theorem.",
+              "start": 1261.0,
+              "end": 1263.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 1318.0,
+          "end": 1337.0,
+          "snippets": [
+            {
+              "index": 487,
+              "text": "and a community of 8 million other learners,",
+              "start": 1316.0,
+              "end": 1319.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 488,
+              "text": "go to brilliant.org/veritasium.",
+              "start": 1319.0,
+              "end": 1321.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 489,
+              "text": "I will put that link down in the description.",
+              "start": 1321.0,
+              "end": 1324.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 490,
+              "text": "So I wanna thank Brilliant for sponsoring this video,",
+              "start": 1324.0,
+              "end": 1326.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 491,
+              "text": "and I wanna thank you for watching.",
+              "start": 1326.0,
+              "end": 1329.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "false skip"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Boundary under-coverage, not an entirely missed promotion: the candidate spans 1229\u20131329 s but Conservative selects 1254\u20131326 s against 1248\u20131327 s. Evidence-bearing cue selection drops the lead-in and final second. Exact sub-cue edges remain uncertain."
+      ]
+    },
+    {
+      "video_id": "bHIhgxav9LY",
+      "title": "The Biggest Misconception About Electricity",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          813.0,
+          882.0
+        ]
+      ],
+      "caption_type": "manual",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          887.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 819.0,
+              "end_seconds": 885.0,
+              "score": 7,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                331,
+                332,
+                333,
+                334,
+                335,
+                336,
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346,
+                347,
+                348,
+                349,
+                350,
+                351,
+                352,
+                353,
+                354,
+                355,
+                356,
+                357,
+                358,
+                359,
+                360,
+                361,
+                362,
+                363,
+                364,
+                365,
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              882.0,
+              885.0
+            ]
+          ],
+          "missed_ranges": [
+            [
+              813.0,
+              819.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              794.0,
+              887.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              813.0,
+              819.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 3.0,
+            "missed_promotional_seconds": 6.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 63.0,
+                "start_error_seconds": 6.0,
+                "end_error_seconds": 3.0
+              }
+            ],
+            "detection_runtime_ms": 13.584
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 817.0,
+              "end_seconds": 887.0,
+              "score": 7,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                331,
+                332,
+                333,
+                334,
+                335,
+                336,
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346,
+                347,
+                348,
+                349,
+                350,
+                351,
+                352,
+                353,
+                354,
+                355,
+                356,
+                357,
+                358,
+                359,
+                360,
+                361,
+                362,
+                363,
+                364,
+                365,
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              882.0,
+              887.0
+            ]
+          ],
+          "missed_ranges": [
+            [
+              813.0,
+              817.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              794.0,
+              887.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              813.0,
+              817.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 5.0,
+            "missed_promotional_seconds": 4.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 65.0,
+                "start_error_seconds": 4.0,
+                "end_error_seconds": 5.0
+              }
+            ],
+            "detection_runtime_ms": 13.8
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 805.0,
+          "end": 827.0,
+          "snippets": [
+            {
+              "index": 335,
+              "text": "are really what's delivering your power.",
+              "start": 803.0,
+              "end": 810.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 336,
+              "text": "Hey, now that you understand",
+              "start": 810.0,
+              "end": 811.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 337,
+              "text": "how electrical energy actually flows,",
+              "start": 811.0,
+              "end": 814.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 338,
+              "text": "you can think about that",
+              "start": 814.0,
+              "end": 817.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 339,
+              "text": "every time you flick on a light switch.",
+              "start": 814.0,
+              "end": 817.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 340,
+              "text": "And if you want to take your switches to the next level,",
+              "start": 817.0,
+              "end": 819.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 341,
+              "text": "the sponsor of this video, Caseta by Lutron,",
+              "start": 819.0,
+              "end": 821.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 342,
+              "text": "provides premium smart lighting control,",
+              "start": 821.0,
+              "end": 823.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 343,
+              "text": "including switches, remotes, and plug-in smart dimmers.",
+              "start": 823.0,
+              "end": 827.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 874.0,
+          "end": 895.0,
+          "snippets": [
+            {
+              "index": 367,
+              "text": "they're just a click or a call away.",
+              "start": 873.0,
+              "end": 875.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 368,
+              "text": "Learn more about Caseda at Lutron's website,",
+              "start": 875.0,
+              "end": 877.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 369,
+              "text": "lutron.com/veritasium.",
+              "start": 877.0,
+              "end": 879.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 370,
+              "text": "I will put that link down in the description.",
+              "start": 879.0,
+              "end": 881.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 371,
+              "text": "So, I want to thank Lutron Electronics",
+              "start": 881.0,
+              "end": 884.0,
+              "tags": {
+                "conservative": "false skip",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 372,
+              "text": "for sponsoring this video,",
+              "start": 884.0,
+              "end": 885.0,
+              "tags": {
+                "conservative": "false skip",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 373,
+              "text": "and I want to thank you for watching.",
+              "start": 885.0,
+              "end": 887.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "A detected promotion starts 6 s late and ends 3 s late. Candidate coverage includes the whole annotation; this is a refinement discrepancy, not candidate omission. Inspect the transition cues before deciding whether padding is justified."
+      ]
+    },
+    {
+      "video_id": "iWeu2dxHRDg",
+      "title": "Car Thieves vs the Almost Final GlitterBomb 5.0",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          1050.0,
+          1098.0
+        ]
+      ],
+      "caption_type": "manual",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          1105.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 1050.0,
+              "end_seconds": 1098.0,
+              "score": 6,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158
+              ]
+            }
+          ],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [
+            [
+              1028.0,
+              1105.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 48.0,
+                "start_error_seconds": 0.0,
+                "end_error_seconds": 0.0
+              }
+            ],
+            "detection_runtime_ms": 19.254
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 1045.0,
+              "end_seconds": 1105.0,
+              "score": 6,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              1045.0,
+              1050.0
+            ],
+            [
+              1098.0,
+              1105.0
+            ]
+          ],
+          "missed_ranges": [],
+          "candidate_ranges": [
+            [
+              1028.0,
+              1105.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 12.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 48.0,
+                "start_error_seconds": 5.0,
+                "end_error_seconds": 7.0
+              }
+            ],
+            "detection_runtime_ms": 32.729
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 1037.0,
+          "end": 1058.0,
+          "snippets": [
+            {
+              "index": 149,
+              "text": "Being an engineer is the best, because you can make whatever you can dream up. But what's the first step?",
+              "start": 1037.0,
+              "end": 1045.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 150,
+              "text": "How do you get started down that path? Well, I'll tell you exactly how.",
+              "start": 1045.0,
+              "end": 1050.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 151,
+              "text": "It's called the CrunchLabs Build Box, and it gets delivered right to your doorstep every month, and then we build it together, while I teach you all the juicy physics that make it work.",
+              "start": 1050.0,
+              "end": 1059.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 1090.0,
+          "end": 1113.0,
+          "snippets": [
+            {
+              "index": 156,
+              "text": "So if you wanna embark on this yearlong journey with me, while there's still time to get it before Christmas, just head on over to crunchlabs.com or use the link in the video description,",
+              "start": 1086.0,
+              "end": 1094.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 157,
+              "text": "where we're giving it away two months free as a holiday special.",
+              "start": 1094.0,
+              "end": 1098.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 158,
+              "text": "(logo chimes)",
+              "start": 1098.0,
+              "end": 1105.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Conservative exactly matches this manual interval. Aggressive expands into adjacent content. This illustrates why blanket neighbor expansion is unsafe even when classification is correct."
+      ]
+    },
+    {
+      "video_id": "DTvS9lvRxZ8",
+      "title": "Backyard Squirrel Maze 2.0- The Walnut Heist",
+      "promotion_status": "none",
+      "annotations": [],
+      "caption_type": "manual",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          1002.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "detection_runtime_ms": 13.938
+          }
+        },
+        "aggressive": {
+          "predictions": [],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "detection_runtime_ms": 16.077
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 0.0,
+          "end": 30.0,
+          "snippets": [
+            {
+              "index": 0,
+              "text": "- This is a bird feeder, and everything you see surrounding me in my yard is an attempt to protect it from four thieving squirrels.",
+              "start": 0.0,
+              "end": 6.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 1,
+              "text": "If they want the birdseed and the lifetime supply of walnuts in this bank vault, they'll first need to pass through my nine-part obstacle course. By design, it's extremely challenging.",
+              "start": 6.0,
+              "end": 15.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 2,
+              "text": "It's meant to test their mental limits and their physical limits.",
+              "start": 15.0,
+              "end": 18.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 3,
+              "text": "I held back no punches, but I have to admit, in hindsight, I once again completely underestimated my adversary.",
+              "start": 18.0,
+              "end": 25.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 4,
+              "text": "And truthfully, I never thought I'd be that crazy guy in the neighborhood obsessing over the squirrels, but they started it first when they would constantly pillage the birdseed from any bird feeder I would put up about a year ago.",
+              "start": 25.0,
+              "end": 36.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Both modes correctly produce no skips relative to the reviewed negative label. The excerpt is a highest-scoring inspection window, not a proposed promotion."
+      ]
+    },
+    {
+      "video_id": "I9hJ_Rux9y0",
+      "title": "How To Make Friends",
+      "promotion_status": "none",
+      "annotations": [],
+      "caption_type": "generated",
+      "derived_durations": true,
+      "source_span": [
+        [
+          6.0,
+          715.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "detection_runtime_ms": 8.742
+          }
+        },
+        "aggressive": {
+          "predictions": [],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [
+            [
+              677.0,
+              715.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "detection_runtime_ms": 10.087
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 681.0,
+          "end": 711.0,
+          "snippets": [
+            {
+              "index": 143,
+              "text": "Go get to know them!",
+              "start": 677.0,
+              "end": 683.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 144,
+              "text": "so we\u2019ve created a few things you  can share with new and old friends!  ",
+              "start": 683.0,
+              "end": 688.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 145,
+              "text": "Two wormhole pins to connect you and your BFF  no matter where you are. If you want to share  ",
+              "start": 688.0,
+              "end": 693.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 146,
+              "text": "something with your entire friend group \u2013 get a  little bird pin for each of them. They are all  ",
+              "start": 693.0,
+              "end": 698.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 147,
+              "text": "unique but fit together like pieces of a puzzle.  Or get matching posters to let your friends know  ",
+              "start": 698.0,
+              "end": 704.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 148,
+              "text": "you\u2019re thinking of them. Or just browse all the  sciency things we made for you! If you like videos  ",
+              "start": 704.0,
+              "end": 710.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 149,
+              "text": "like this, getting something from our shop is the  best way to support us! Thank you for watching.",
+              "start": 710.0,
+              "end": 715.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "ANNOTATION REVIEW NEEDED: this is labeled a reviewed negative, but cues 144\u2013149 (683\u2013715 s, derived ends) describe wormhole pins, matching posters and buying from the creator's shop. Under our creator-owned promotion definition this looks like a promotional interruption. Please review the video before changing any annotation. Metrics retain the supplied negative label. Aggressive builds a 677\u2013715 s candidate but refinement rejects it; Conservative does not assemble a candidate. Zero false-positive negatives therefore does not prove safety or complete recall."
+      ]
+    },
+    {
+      "video_id": "lXfEK8G8CUI",
+      "title": "How The Immune System ACTUALLY Works - IMMUNE",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          558.0,
+          645.0
+        ]
+      ],
+      "caption_type": "manual",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          637.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 561.0,
+              "end_seconds": 619.0,
+              "score": 4,
+              "evidence": [
+                "creator_owned",
+                "cta",
+                "offer"
+              ],
+              "snippet_indices": [
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156
+              ]
+            }
+          ],
+          "false_skip_ranges": [],
+          "missed_ranges": [
+            [
+              558.0,
+              561.0
+            ],
+            [
+              619.0,
+              645.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              538.0,
+              637.0
+            ]
+          ],
+          "outside_observed_span": [
+            [
+              637.0,
+              645.0
+            ]
+          ],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              558.0,
+              561.0
+            ],
+            [
+              619.0,
+              637.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 29.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 58.0,
+                "start_error_seconds": 3.0,
+                "end_error_seconds": 26.0
+              }
+            ],
+            "detection_runtime_ms": 10.743
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 560.0,
+              "end_seconds": 623.0,
+              "score": 4,
+              "evidence": [
+                "creator_owned",
+                "cta",
+                "offer"
+              ],
+              "snippet_indices": [
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156
+              ]
+            }
+          ],
+          "false_skip_ranges": [],
+          "missed_ranges": [
+            [
+              558.0,
+              560.0
+            ],
+            [
+              623.0,
+              645.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              538.0,
+              637.0
+            ]
+          ],
+          "outside_observed_span": [
+            [
+              637.0,
+              645.0
+            ]
+          ],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              558.0,
+              560.0
+            ],
+            [
+              623.0,
+              637.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 24.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 63.0,
+                "start_error_seconds": 2.0,
+                "end_error_seconds": 22.0
+              }
+            ],
+            "detection_runtime_ms": 10.81
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 550.0,
+          "end": 569.0,
+          "snippets": [
+            {
+              "index": 133,
+              "text": "While for millions of cells, it was a desperate fight for life and death.",
+              "start": 548.0,
+              "end": 555.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 134,
+              "text": "But this is just the beginning of the epic story that unfolds inside you every day,",
+              "start": 555.0,
+              "end": 560.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 135,
+              "text": "and is told in full in",
+              "start": 560.0,
+              "end": 561.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 136,
+              "text": "\"Immune: A Journey into the Mysterious System That Keeps You Alive\",",
+              "start": 561.0,
+              "end": 565.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 137,
+              "text": "written by Philipp Dettmer, the founder and head writer of Kurzgesagt.",
+              "start": 565.0,
+              "end": 569.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 611.0,
+          "end": 653.0,
+          "snippets": [
+            {
+              "index": 149,
+              "text": "The book will be out in six weeks",
+              "start": 611.0,
+              "end": 612.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 150,
+              "text": "and it would mean the world to us and Philipp if you could pre-order it.",
+              "start": 612.0,
+              "end": 616.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 151,
+              "text": "Pre-ordering is super important in the world of books,",
+              "start": 616.0,
+              "end": 619.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 152,
+              "text": "and in contrast to games, we can guarantee that it's actually finished",
+              "start": 619.0,
+              "end": 623.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 153,
+              "text": "and there will be no day one patch.",
+              "start": 623.0,
+              "end": 626.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 154,
+              "text": "There's a link in the description.",
+              "start": 626.0,
+              "end": 628.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 155,
+              "text": "This is the end of a decade-long personal journey and we'd love to see what you think.",
+              "start": 628.0,
+              "end": 633.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 156,
+              "text": "Thank you for watching.",
+              "start": 633.0,
+              "end": 637.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Conservative loses 21 annotated seconds inside its candidate (3 s lead-in plus 18 s tail), including a pre-order discussion and link. Another 8 s (637\u2013645) lies beyond the observed analysis span: the final start is 633 s with a derived 4 s fallback. Those 8 s remain in the supplied-label metric but cannot be assigned to classifier failure. The source does not establish speech or video end."
+      ]
+    },
+    {
+      "video_id": "-lErGZZgUbY",
+      "title": "My Framework Investment Should NOT Have Worked Out",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          53.0,
+          74.0
+        ]
+      ],
+      "caption_type": "generated",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          1062.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 50.0,
+              "end_seconds": 83.0,
+              "score": 5,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales"
+              ],
+              "snippet_indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              50.0,
+              53.0
+            ],
+            [
+              74.0,
+              83.0
+            ]
+          ],
+          "missed_ranges": [],
+          "candidate_ranges": [
+            [
+              25.0,
+              106.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 12.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 21.0,
+                "start_error_seconds": 3.0,
+                "end_error_seconds": 9.0
+              }
+            ],
+            "detection_runtime_ms": 16.205
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 43.0,
+              "end_seconds": 106.0,
+              "score": 5,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales"
+              ],
+              "snippet_indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              43.0,
+              53.0
+            ],
+            [
+              74.0,
+              106.0
+            ]
+          ],
+          "missed_ranges": [],
+          "candidate_ranges": [
+            [
+              25.0,
+              106.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 42.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 21.0,
+                "start_error_seconds": 10.0,
+                "end_error_seconds": 32.0
+              }
+            ],
+            "detection_runtime_ms": 16.025
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 35.0,
+          "end": 61.0,
+          "snippets": [
+            {
+              "index": 4,
+              "text": "desktop did we really need framework to develop modular repairable desktops oh wait hold on a second this",
+              "start": 34.0,
+              "end": 43.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 5,
+              "text": "is new modular swappable front IO and look at this you can even swap these",
+              "start": 43.0,
+              "end": 50.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 6,
+              "text": "tiles this one has a segue to our sponsor ug green are you getting the storage warning on your phone again well",
+              "start": 50.0,
+              "end": 58.0,
+              "tags": {
+                "conservative": "false skip",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 7,
+              "text": "a ug green NZ could be the solution with up to 64 tabt of storage it can store up to 22 million selfies and to keep them",
+              "start": 58.0,
+              "end": 66.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 66.0,
+          "end": 114.0,
+          "snippets": [
+            {
+              "index": 8,
+              "text": "secure it comes with a built-in security manager to protect your data so check out the ugreen nas sync dxp 2800 at the link in the video",
+              "start": 66.0,
+              "end": 83.0,
+              "tags": {
+                "conservative": "false skip",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 9,
+              "text": "description normally for a multi-product video we go from most exciting to less exciting and then save a pretty good one for the the end but I'm equally stoked",
+              "start": 83.0,
+              "end": 92.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 10,
+              "text": "for everything here so game of chance",
+              "start": 92.0,
+              "end": 99.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 11,
+              "text": "hey nice one of my biggest disappointments at CES was amd's stricks",
+              "start": 99.0,
+              "end": 106.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 12,
+              "text": "Halo processor not the chip itself of course I mean that could be the coolest thing that I've seen out of AMD in years",
+              "start": 106.0,
+              "end": 113.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 13,
+              "text": "and maybe even the coolest PC CPU on the market right now this thing has a massive integrated GP that boasts",
+              "start": 113.0,
+              "end": 120.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Mixed-purpose cues and annotation uncertainty: cue 6 (50\u201358 s) moves from Framework tiles to the sponsor; cue 8 (66\u201383 s) contains security features and the purchase link. Conservative takes whole cues, yielding 12 false-skip seconds against 53\u201374 s. Some of 74\u201383 s still reads promotional. Inspect the source video before treating every excess second as genuinely unwanted skipping; do not silently alter labels."
+      ]
+    },
+    {
+      "video_id": "MRtg6A1f2Ko",
+      "title": "iPhone 16/16 Pro Review: Times Have Changed!",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          35.0,
+          104.0
+        ]
+      ],
+      "caption_type": "manual",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          1242.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 25.0,
+              "end_seconds": 90.0,
+              "score": 6,
+              "evidence": [
+                "creator_owned",
+                "cta",
+                "offer",
+                "sales"
+              ],
+              "snippet_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              25.0,
+              35.0
+            ]
+          ],
+          "missed_ranges": [
+            [
+              90.0,
+              104.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              0.0,
+              122.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              90.0,
+              104.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 10.0,
+            "missed_promotional_seconds": 14.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 55.0,
+                "start_error_seconds": 10.0,
+                "end_error_seconds": 14.0
+              }
+            ],
+            "detection_runtime_ms": 23.061
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 21.0,
+              "end_seconds": 90.0,
+              "score": 6,
+              "evidence": [
+                "creator_owned",
+                "cta",
+                "offer",
+                "sales"
+              ],
+              "snippet_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              21.0,
+              35.0
+            ]
+          ],
+          "missed_ranges": [
+            [
+              90.0,
+              104.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              0.0,
+              122.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              90.0,
+              104.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 14.0,
+            "missed_promotional_seconds": 14.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 55.0,
+                "start_error_seconds": 14.0,
+                "end_error_seconds": 14.0
+              }
+            ],
+            "detection_runtime_ms": 21.974
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 13.0,
+          "end": 43.0,
+          "snippets": [
+            {
+              "index": 1,
+              "text": "(energetic music) (phone vibrating) Profound new intelligence capabilities that will make our platforms even smarter.",
+              "start": 9.0,
+              "end": 21.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 2,
+              "text": "- So this is the iPhone 16, and this is the iPhone 16 Pro.",
+              "start": 21.0,
+              "end": 25.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 3,
+              "text": "Brand new, and I've been testing them for about two weeks now. But you know what I've been doing way longer than two weeks? Working on a new app that we are finally launching.",
+              "start": 25.0,
+              "end": 34.0,
+              "tags": {
+                "conservative": "false skip",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 4,
+              "text": "You guys have always been asking me where I get my wallpapers.",
+              "start": 34.0,
+              "end": 37.0,
+              "tags": {
+                "conservative": "false skip",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 5,
+              "text": "Like, it's frequently the number one suggested search result under my name, has been for years. So now we've put them all in one place. It's called Panels.",
+              "start": 37.0,
+              "end": 45.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 82.0,
+          "end": 112.0,
+          "snippets": [
+            {
+              "index": 13,
+              "text": "I don't want to over promise too much, but it's going to be pretty consistently improving over time, which is part of the reason why we're offering a subscription to support it.",
+              "start": 81.0,
+              "end": 89.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 14,
+              "text": "So go pick it up now.",
+              "start": 89.0,
+              "end": 90.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 15,
+              "text": "Poke around, find your new favorite wallpaper, your new favorite artist, and lemme know what you think.",
+              "start": 90.0,
+              "end": 95.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 16,
+              "text": "It's kind of fun to be on the other side now, on the development side, where now other people are gonna review what we make, which is always exciting.",
+              "start": 95.0,
+              "end": 104.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 17,
+              "text": "Anyway, so the meta with new smartphones these days is a bunch of incremental hardware improvements",
+              "start": 104.0,
+              "end": 111.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 18,
+              "text": "and then a whole bunch of AI features that also are being added on top, which is where the real value is.",
+              "start": 111.0,
+              "end": 117.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Boundary selection starts at a mixed cue (25\u201334 s: phone review then app launch), creating 10 s excess against the label start of 35. It ends at the last selected sales cue, 90 s, dropping the app follow-up in cues 15\u201316 (90\u2013104). No return-to-content marker causes this early end: sparse lexical boundary evidence does. The real topical return is at 104 s. A semantic boundary pass may help; cue timing still limits precision."
+      ]
+    },
+    {
+      "video_id": "9lx11dy9J30",
+      "title": "iPhone 16/Pro Impressions: The Great Separation!",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          903.0,
+          962.0
+        ]
+      ],
+      "caption_type": "generated",
+      "derived_durations": true,
+      "source_span": [
+        [
+          4.0,
+          976.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 903.0,
+              "end_seconds": 942.0,
+              "score": 5,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales"
+              ],
+              "snippet_indices": [
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121
+              ]
+            }
+          ],
+          "false_skip_ranges": [],
+          "missed_ranges": [
+            [
+              942.0,
+              962.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              872.0,
+              976.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              942.0,
+              962.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 20.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 39.0,
+                "start_error_seconds": 0.0,
+                "end_error_seconds": 20.0
+              }
+            ],
+            "detection_runtime_ms": 18.3
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 895.0,
+              "end_seconds": 959.0,
+              "score": 5,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales"
+              ],
+              "snippet_indices": [
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              895.0,
+              903.0
+            ]
+          ],
+          "missed_ranges": [
+            [
+              959.0,
+              962.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              872.0,
+              976.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              959.0,
+              962.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 8.0,
+            "missed_promotional_seconds": 3.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 56.0,
+                "start_error_seconds": 8.0,
+                "end_error_seconds": 3.0
+              }
+            ],
+            "detection_runtime_ms": 18.812
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 887.0,
+          "end": 911.0,
+          "snippets": [
+            {
+              "index": 111,
+              "text": "the actual camera app until later this year via a software update that's just weird too there's just a lot of fun weird stuff going on with the shutter",
+              "start": 886.0,
+              "end": 895.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 112,
+              "text": "button but now that you've made it this far let me know in the comment section down below what you want to see in those full reviews as you get subscribed to see them and thanks to Anor for",
+              "start": 895.0,
+              "end": 903.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 113,
+              "text": "sponsoring this video their latest mag go lineup is out the six series and there's a couple changes there's a new Slimmer battery bank there's a battery",
+              "start": 903.0,
+              "end": 910.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 114,
+              "text": "bank with an Apple Watch charger a stand with a rotating click head and one of my favorite items a 3in1 foldable charging",
+              "start": 910.0,
+              "end": 917.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 934.0,
+          "end": 970.0,
+          "snippets": [
+            {
+              "index": 116,
+              "text": "W wireless charging and temperature control so it keeps your device is protected by keeping charging under 40\u00b0 C all in this slim 15 mm body and then",
+              "start": 925.0,
+              "end": 935.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 117,
+              "text": "the anchor Mago wireless charging station this thing charges three devices at once an iPhone airpods and your Apple",
+              "start": 935.0,
+              "end": 942.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 118,
+              "text": "watch all at the same time it supports ch25 wat fast charging and mag safe charging for iPhones and it just folds up into this compact little package fits",
+              "start": 942.0,
+              "end": 950.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 119,
+              "text": "in your pocket and it can even fold the other way to make it into a stand to activate Apple standby mode while you charge your phone so yeah check these out at the link below and start charging",
+              "start": 950.0,
+              "end": 959.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 120,
+              "text": "your devices faster but yeah that's been it thanks for watching this impress video and I'll catch you guys in the next one soon peace",
+              "start": 959.0,
+              "end": 968.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 121,
+              "text": "[Music]",
+              "start": 968.0,
+              "end": 976.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Conservative ends at 942 s although feature and sales text continues to 959 s. The 20 s miss is mostly sparse lexical end selection. Aggressive extends to 950 s but still misses 12 s. Cue 120 (959\u2013968 s) mixes a final sales phrase with 'that's been it'; the transition regex would cut at cue start, not the spoken transition inside it. Exact refinement cannot recover word-level timing from these cues."
+      ]
+    },
+    {
+      "video_id": "Sew4rctKghY",
+      "title": "Why billions of people won't eat pork (or why we don't know)",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          724.0,
+          788.0
+        ]
+      ],
+      "caption_type": "unknown",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          793.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 724.0,
+              "end_seconds": 784.0,
+              "score": 8,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90
+              ]
+            }
+          ],
+          "false_skip_ranges": [],
+          "missed_ranges": [
+            [
+              784.0,
+              788.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              699.0,
+              793.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              784.0,
+              788.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 4.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 60.0,
+                "start_error_seconds": 0.0,
+                "end_error_seconds": 4.0
+              }
+            ],
+            "detection_runtime_ms": 15.15
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 713.0,
+              "end_seconds": 793.0,
+              "score": 8,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              713.0,
+              724.0
+            ],
+            [
+              788.0,
+              793.0
+            ]
+          ],
+          "missed_ranges": [],
+          "candidate_ranges": [
+            [
+              699.0,
+              793.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 16.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 64.0,
+                "start_error_seconds": 11.0,
+                "end_error_seconds": 5.0
+              }
+            ],
+            "detection_runtime_ms": 14.351
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 705.0,
+          "end": 732.0,
+          "snippets": [
+            {
+              "index": 81,
+              "text": "And then it became a way for the Muslims, who inherited the Abrahamic tradition, to distinguish themselves from, say, those dirty crusading Franks with their filthy streets.",
+              "start": 699.0,
+              "end": 708.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 82,
+              "text": "It's easy to imagine why the pork taboo spread, and why it persists to the point where my",
+              "start": 708.0,
+              "end": 713.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 83,
+              "text": "pork recipes here in this global platform get noticeably fewer views than my other meat recipes. But where the pork taboo first came from, nobody knows for sure.",
+              "start": 713.0,
+              "end": 724.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 84,
+              "text": "What I do know for sure is that people of all religions and dietary codes can make a beautiful and functional website with Squarespace. Whether you want to spread the good word of",
+              "start": 724.0,
+              "end": 734.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 776.0,
+          "end": 801.0,
+          "snippets": [
+            {
+              "index": 89,
+              "text": "once you're ready to publish or register a custom domain, you can do us both a favor and save 10% by going to squarespace.com/ragusea. That link of mine is in the description, thank you, Squarespace.",
+              "start": 772.0,
+              "end": 784.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 90,
+              "text": "And, you know, thank you, piggies.",
+              "start": 784.0,
+              "end": 793.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "false skip"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "The promotion is found; Conservative drops its final 4 annotated seconds within the already assembled candidate. This is a boundary-evidence discrepancy. Compare the last sponsor cue and the return to the video's subject, rather than adding uniform padding."
+      ]
+    },
+    {
+      "video_id": "O7sQBfpQCvU",
+      "title": "Ice cream made with a pan, a spoon and a freezer",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          565.0,
+          617.0
+        ]
+      ],
+      "caption_type": "manual",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          617.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 565.0,
+              "end_seconds": 611.0,
+              "score": 6,
+              "evidence": [
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149
+              ]
+            }
+          ],
+          "false_skip_ranges": [],
+          "missed_ranges": [
+            [
+              611.0,
+              617.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              0.0,
+              47.0
+            ],
+            [
+              538.0,
+              617.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              611.0,
+              617.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 6.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 46.0,
+                "start_error_seconds": 0.0,
+                "end_error_seconds": 6.0
+              }
+            ],
+            "detection_runtime_ms": 15.095
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 561.0,
+              "end_seconds": 613.0,
+              "score": 6,
+              "evidence": [
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              561.0,
+              565.0
+            ]
+          ],
+          "missed_ranges": [
+            [
+              613.0,
+              617.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              0.0,
+              47.0
+            ],
+            [
+              538.0,
+              617.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [
+            [
+              613.0,
+              617.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 4.0,
+            "missed_promotional_seconds": 4.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 48.0,
+                "start_error_seconds": 4.0,
+                "end_error_seconds": 4.0
+              }
+            ],
+            "detection_runtime_ms": 14.83
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 553.0,
+          "end": 573.0,
+          "snippets": [
+            {
+              "index": 134,
+              "text": "and to let your creativity run wild. Chuck whatever you want in your ice cream and see",
+              "start": 550.0,
+              "end": 555.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 135,
+              "text": "what works.",
+              "start": 555.0,
+              "end": 556.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 136,
+              "text": "The still-freeze method offers an evening of good, wholesome fun for kids of all ages.",
+              "start": 556.0,
+              "end": 561.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 137,
+              "text": "And unlike most science experiments, you get to eat this at the end. Just as you'll have",
+              "start": 561.0,
+              "end": 565.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 138,
+              "text": "a website at the end of an evening with Squarespace. Seriously, you could easily get your site",
+              "start": 565.0,
+              "end": 569.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 139,
+              "text": "built in-between the stirrings for one batch of ice cream.",
+              "start": 569.0,
+              "end": 573.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        },
+        {
+          "start": 603.0,
+          "end": 625.0,
+          "snippets": [
+            {
+              "index": 145,
+              "text": "published, Squarespace hosts the site for you, they can handle any credit card transactions",
+              "start": 600.0,
+              "end": 604.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 146,
+              "text": "you need to do, they can send out your email blasts \u2014 anything you could need. It's a",
+              "start": 604.0,
+              "end": 608.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 147,
+              "text": "one-stop shop. Thank you, Squarespace.",
+              "start": 608.0,
+              "end": 611.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 148,
+              "text": "Now walk in your kitchen and make some ice cream. You probably have everything you need",
+              "start": 611.0,
+              "end": 613.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 149,
+              "text": "already.",
+              "start": 613.0,
+              "end": 617.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "ANNOTATION BOUNDARY QUESTION: the label ends at 617 s, but cue 148 starts at 611 s with 'Now walk in your kitchen and make some ice cream', returning to the recipe. Conservative's end at 611 s may be semantically preferable to the supplied label. Keep the 6 s metric miss until you review it. A separate opening sponsor-disclosure candidate is rejected; a brief acknowledgment is not necessarily a skippable pitch."
+      ]
+    },
+    {
+      "video_id": "U3aXWizDbQ4",
+      "title": "C in 100 Seconds",
+      "promotion_status": "none",
+      "annotations": [],
+      "caption_type": "generated",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          145.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "detection_runtime_ms": 2.097
+          }
+        },
+        "aggressive": {
+          "predictions": [],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "detection_runtime_ms": 1.814
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 15.0,
+          "end": 45.0,
+          "snippets": [
+            {
+              "index": 7,
+              "text": "tools like vim and git and countless",
+              "start": 15.0,
+              "end": 17.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 8,
+              "text": "others it was created in 1972 by Dennis",
+              "start": 17.0,
+              "end": 20.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 9,
+              "text": "Richie at Bell Labs where it would be",
+              "start": 20.0,
+              "end": 22.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 10,
+              "text": "used to develop the Unix operating",
+              "start": 22.0,
+              "end": 24.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 11,
+              "text": "system it would go on to become the",
+              "start": 24.0,
+              "end": 25.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 12,
+              "text": "mother of all languages inspiring the",
+              "start": 25.0,
+              "end": 27.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 13,
+              "text": "syntax of C++ CP Java JavaScript Pearl",
+              "start": 27.0,
+              "end": 31.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 14,
+              "text": "and PHP just to name a few it compiles",
+              "start": 31.0,
+              "end": 34.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 15,
+              "text": "directly to machine code and requires",
+              "start": 34.0,
+              "end": 35.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 16,
+              "text": "minimal runtime support but is platform",
+              "start": 35.0,
+              "end": 38.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 17,
+              "text": "dependent meaning the executable is",
+              "start": 38.0,
+              "end": 39.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 18,
+              "text": "designed to run on a specific operating",
+              "start": 39.0,
+              "end": 42.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 19,
+              "text": "system it's a highlevel language",
+              "start": 42.0,
+              "end": 43.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 20,
+              "text": "designed for humans yet provides",
+              "start": 43.0,
+              "end": 45.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Both modes produce no skips on the reviewed negative. Technical and product vocabulary without a promotional interruption should remain a negative; the shown window is context only."
+      ]
+    },
+    {
+      "video_id": "x7X9w_GIm1s",
+      "title": "Python in 100 Seconds",
+      "promotion_status": "none",
+      "annotations": [],
+      "caption_type": "generated",
+      "derived_durations": true,
+      "source_span": [
+        [
+          0.0,
+          143.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "detection_runtime_ms": 1.908
+          }
+        },
+        "aggressive": {
+          "predictions": [],
+          "false_skip_ranges": [],
+          "missed_ranges": [],
+          "candidate_ranges": [],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [],
+          "refinement_missed_ranges": [],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 0.0,
+            "matches": [],
+            "detection_runtime_ms": 1.69
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 0.0,
+          "end": 30.0,
+          "snippets": [
+            {
+              "index": 0,
+              "text": "python a highlevel interpreted",
+              "start": 0.0,
+              "end": 2.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 1,
+              "text": "programming language famous for its",
+              "start": 2.0,
+              "end": 4.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 2,
+              "text": "zen-like code it's arguably the most",
+              "start": 4.0,
+              "end": 6.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 3,
+              "text": "popular language in the world because",
+              "start": 6.0,
+              "end": 8.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 4,
+              "text": "it's easy to learn yet practical for",
+              "start": 8.0,
+              "end": 10.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 5,
+              "text": "serious projects in fact you're watching",
+              "start": 10.0,
+              "end": 12.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 6,
+              "text": "this YouTube video in a python web",
+              "start": 12.0,
+              "end": 14.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 7,
+              "text": "application right now it was created by",
+              "start": 14.0,
+              "end": 16.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 8,
+              "text": "Guido van rossom and released in 1991",
+              "start": 16.0,
+              "end": 19.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 9,
+              "text": "who named it after Monty Python's Flying",
+              "start": 19.0,
+              "end": 21.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 10,
+              "text": "Circus which is why you'll sometimes",
+              "start": 21.0,
+              "end": 22.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 11,
+              "text": "find spaming eggs instead of Foo and bar",
+              "start": 22.0,
+              "end": 25.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 12,
+              "text": "and code samples it's commonly used to",
+              "start": 25.0,
+              "end": 27.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 13,
+              "text": "build serers side applications like web",
+              "start": 27.0,
+              "end": 29.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 14,
+              "text": "apps with the framework and is the",
+              "start": 29.0,
+              "end": 31.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "Both modes produce no skips on the reviewed negative. This is one educational example, not broad evidence that all product or programming discussions are safe."
+      ]
+    },
+    {
+      "video_id": "aircAruvnKk",
+      "title": "But what is a neural network? | Deep learning chapter 1",
+      "promotion_status": "one_or_more",
+      "annotations": [
+        [
+          992.0,
+          1023.0
+        ]
+      ],
+      "caption_type": "unknown",
+      "derived_durations": true,
+      "source_span": [
+        [
+          4.0,
+          1109.0
+        ]
+      ],
+      "modes": {
+        "conservative": {
+          "predictions": [
+            {
+              "start_seconds": 1010.0,
+              "end_seconds": 1023.0,
+              "score": 5,
+              "evidence": [
+                "creator_owned",
+                "membership"
+              ],
+              "snippet_indices": [
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268
+              ]
+            }
+          ],
+          "false_skip_ranges": [],
+          "missed_ranges": [
+            [
+              992.0,
+              1010.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              993.0,
+              1039.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [
+            [
+              992.0,
+              993.0
+            ]
+          ],
+          "refinement_missed_ranges": [
+            [
+              993.0,
+              1010.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 0.0,
+            "missed_promotional_seconds": 18.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 13.0,
+                "start_error_seconds": 18.0,
+                "end_error_seconds": 0.0
+              }
+            ],
+            "detection_runtime_ms": 16.183
+          }
+        },
+        "aggressive": {
+          "predictions": [
+            {
+              "start_seconds": 1008.0,
+              "end_seconds": 1027.0,
+              "score": 5,
+              "evidence": [
+                "creator_owned",
+                "membership"
+              ],
+              "snippet_indices": [
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268
+              ]
+            }
+          ],
+          "false_skip_ranges": [
+            [
+              1023.0,
+              1027.0
+            ]
+          ],
+          "missed_ranges": [
+            [
+              992.0,
+              1008.0
+            ]
+          ],
+          "candidate_ranges": [
+            [
+              993.0,
+              1039.0
+            ]
+          ],
+          "outside_observed_span": [],
+          "candidate_stage_missed_ranges": [
+            [
+              992.0,
+              993.0
+            ]
+          ],
+          "refinement_missed_ranges": [
+            [
+              993.0,
+              1008.0
+            ]
+          ],
+          "unmatched_prediction_count": 0,
+          "unmatched_annotation_count": 0,
+          "metrics": {
+            "incorrect_predicted_seconds": 4.0,
+            "missed_promotional_seconds": 16.0,
+            "matches": [
+              {
+                "prediction_index": 0,
+                "annotation_index": 0,
+                "overlap_seconds": 15.0,
+                "start_error_seconds": 16.0,
+                "end_error_seconds": 4.0
+              }
+            ],
+            "detection_runtime_ms": 16.282
+          }
+        }
+      },
+      "excerpts": [
+        {
+          "start": 984.0,
+          "end": 1035.0,
+          "snippets": [
+            {
+              "index": 253,
+              "text": "more into what this particular network we're seeing is really doing.",
+              "start": 983.0,
+              "end": 987.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 254,
+              "text": "Now is the point I suppose I should say subscribe to stay notified",
+              "start": 987.0,
+              "end": 990.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 255,
+              "text": "about when that video or any new videos come out,",
+              "start": 990.0,
+              "end": 993.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 256,
+              "text": "but realistically most of you don't actually receive notifications from YouTube, do you?",
+              "start": 993.0,
+              "end": 998.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 257,
+              "text": "Maybe more honestly I should say subscribe so that the neural networks",
+              "start": 998.0,
+              "end": 1001.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 258,
+              "text": "that underlie YouTube's recommendation algorithm are primed to believe",
+              "start": 1001.0,
+              "end": 1004.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 259,
+              "text": "that you want to see content from this channel get recommended to you.",
+              "start": 1004.0,
+              "end": 1008.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "missed"
+              }
+            },
+            {
+              "index": 260,
+              "text": "Anyway, stay posted for more.",
+              "start": 1008.0,
+              "end": 1010.0,
+              "tags": {
+                "conservative": "missed",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 261,
+              "text": "Thank you very much to everyone supporting these videos on Patreon.",
+              "start": 1010.0,
+              "end": 1014.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 262,
+              "text": "I've been a little slow to progress in the probability series this summer,",
+              "start": 1014.0,
+              "end": 1017.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 263,
+              "text": "but I'm jumping back into it after this project,",
+              "start": 1017.0,
+              "end": 1019.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 264,
+              "text": "so patrons you can look out for updates there.",
+              "start": 1019.0,
+              "end": 1023.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 265,
+              "text": "To close things off here I have with me Lisha Li who did her PhD work on the",
+              "start": 1023.0,
+              "end": 1027.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "false skip"
+              }
+            },
+            {
+              "index": 266,
+              "text": "theoretical side of deep learning and who currently works at a venture capital",
+              "start": 1027.0,
+              "end": 1030.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            },
+            {
+              "index": 267,
+              "text": "firm called Amplify Partners who kindly provided some of the funding for this video.",
+              "start": 1030.0,
+              "end": 1035.0,
+              "tags": {
+                "conservative": "context",
+                "aggressive": "context"
+              }
+            }
+          ]
+        }
+      ],
+      "review_notes": [
+        "SCOPE/BOUNDARY QUESTION: the supplied label starts at 992 s, during the ordinary subscribe/notification discussion; Patreon support begins at 1010 s. Conservative selects 1010\u20131023 s. Of its 18 s measured miss, 17 s is inside the candidate and 1 s outside. Confirm whether a plain subscribe request belongs in the promotion taxonomy. A candidate-only detector cannot recover genuinely absent candidates; semantic interpretation and label policy must agree first."
+      ]
+    }
+  ]
+}

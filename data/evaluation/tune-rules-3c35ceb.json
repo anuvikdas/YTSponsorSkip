@@ -1,0 +1,1582 @@
+{
+  "detector": {
+    "baseline_commit": "3c35ceb02c84d1facd025ec8d012e09d592a6e00",
+    "source_path": "backend/src/ytsponsorskip/detector.py",
+    "source_sha256": "764f1dba6f1929b1e00bbe5785f183f91a496bf10ce472603a7552bea185e62c",
+    "classifier": "RulesWindowClassifier",
+    "window_seconds": 30.0,
+    "overlap_seconds": 15.0,
+    "conservative_join_gap_seconds": 20.0,
+    "aggressive_join_gap_seconds": 30.0
+  },
+  "scope": {
+    "split": "tune",
+    "held_out_used": false,
+    "partial_reviews_used": false,
+    "rule_development_note": "Manual segment timestamps are evaluation targets only.",
+    "timing_note": "Imported source contains starts only. duration_seconds is a derived analysis span, not an exact caption or speech boundary."
+  },
+  "inventory": {
+    "seen_video_ids": [
+      "-lErGZZgUbY",
+      "094y1Z2wpJg",
+      "9lx11dy9J30",
+      "DTvS9lvRxZ8",
+      "I9hJ_Rux9y0",
+      "MRtg6A1f2Ko",
+      "O7sQBfpQCvU",
+      "Sew4rctKghY",
+      "U3aXWizDbQ4",
+      "aircAruvnKk",
+      "bHIhgxav9LY",
+      "iWeu2dxHRDg",
+      "lXfEK8G8CUI",
+      "x7X9w_GIm1s"
+    ],
+    "metadata_only_ids": [],
+    "failure_codes": {},
+    "sources": [
+      {
+        "path": "data/transcripts/tune/-lErGZZgUbY.json",
+        "sha256": "96ad682a775f7f713971e898925f796dd000ed486d44223bb88483b2c10f5b59",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "-lErGZZgUbY"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/094y1Z2wpJg.json",
+        "sha256": "36755f8e3cf9d595196777f686c5c666393f372608ba96792002af2f199b97d1",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "094y1Z2wpJg"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/9lx11dy9J30.json",
+        "sha256": "fa6d5f4fa1c5bc38445c11aa840ececfbed8ef9b159876faecc6f69115ac0d85",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "9lx11dy9J30"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/DTvS9lvRxZ8.json",
+        "sha256": "1a569b446ae1486986284c22b01d61e86e9885785ddef5ba63616cf026b191ce",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "DTvS9lvRxZ8"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/I9hJ_Rux9y0.json",
+        "sha256": "59ecab1c8b120fc8f5f63a2945feb57e87adaf04f8ea20153a798bbf2f1829d5",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "I9hJ_Rux9y0"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/MRtg6A1f2Ko.json",
+        "sha256": "e08344f6697d1f04439624f5c0dda7516c3a5cea88a24e43d9effa5908130116",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "MRtg6A1f2Ko"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/O7sQBfpQCvU.json",
+        "sha256": "71ce2c66263d1d3b001acbb9e88f5ebeeaff364920ce908b2fd0b69a1a3a2999",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "O7sQBfpQCvU"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/Sew4rctKghY.json",
+        "sha256": "bfa3d0cf1311596ba37a3ac4637e0e4acfc330753991df3f96bfdd7025bd96f3",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "Sew4rctKghY"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/U3aXWizDbQ4.json",
+        "sha256": "1e59ca51c098ff4c65d9b88da40fb17a47c1bc91b50633056874cfcf85e023ca",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "U3aXWizDbQ4"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/aircAruvnKk.json",
+        "sha256": "2736b544157abd0231cd9e8c5b408fcf79ddd1e1a6d140bcbc0cda662f69eaef",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "aircAruvnKk"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/bHIhgxav9LY.json",
+        "sha256": "7310c0566c0f725cb5a81741a9d250a8fd7d737a42e4c2c84d20f567488619eb",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "bHIhgxav9LY"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/iWeu2dxHRDg.json",
+        "sha256": "99761732d9c6e900348c120a9fb3386a4415f33cc438cbe58d80850caefd5dd9",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "iWeu2dxHRDg"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/lXfEK8G8CUI.json",
+        "sha256": "9b20ff0b33c90b49b3ab1c1a64970ac11454d9d55413c79b8d6349df66836e0f",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "lXfEK8G8CUI"
+        ]
+      },
+      {
+        "path": "data/transcripts/tune/x7X9w_GIm1s.json",
+        "sha256": "cc548b1402ed20d2f8542d4205157bdffd746d24f3bff557157feff617302484",
+        "entry_count": 1,
+        "usable_entry_count": 1,
+        "video_ids": [
+          "x7X9w_GIm1s"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "reviewed_tune_videos": 14,
+    "usable_tune_transcripts": 14,
+    "usable_tune_video_ids": [
+      "-lErGZZgUbY",
+      "094y1Z2wpJg",
+      "9lx11dy9J30",
+      "DTvS9lvRxZ8",
+      "I9hJ_Rux9y0",
+      "MRtg6A1f2Ko",
+      "O7sQBfpQCvU",
+      "Sew4rctKghY",
+      "U3aXWizDbQ4",
+      "aircAruvnKk",
+      "bHIhgxav9LY",
+      "iWeu2dxHRDg",
+      "lXfEK8G8CUI",
+      "x7X9w_GIm1s"
+    ],
+    "excluded_reviewed_tune_videos": [],
+    "excluded_partial_tune_videos": [
+      "jHP942Livy0",
+      "DTsQjiPlksA"
+    ]
+  },
+  "modes": {
+    "conservative": {
+      "evaluated_video_count": 14,
+      "incorrect_predicted_seconds": 25.0,
+      "negative_videos_with_any_predicted_skip": 0,
+      "evaluated_negative_video_count": 4,
+      "missed_promotional_seconds": 104.0,
+      "matched_segment_count": 10,
+      "mean_start_boundary_error_seconds": 4.6,
+      "mean_end_boundary_error_seconds": 8.3,
+      "detection_runtime_ms": 192.838,
+      "per_video": [
+        {
+          "video_id": "094y1Z2wpJg",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 79.0,
+          "predicted_seconds": 72.0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 7.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 72.0,
+              "start_error_seconds": 6.0,
+              "end_error_seconds": 1.0
+            }
+          ],
+          "title": "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
+          "annotations": [
+            {
+              "start_seconds": 1248.0,
+              "end_seconds": 1327.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 1254.0,
+              "end_seconds": 1326.0,
+              "score": 7,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                450,
+                451,
+                452,
+                453,
+                454,
+                455,
+                456,
+                457,
+                458,
+                459,
+                460,
+                461,
+                462,
+                463,
+                464,
+                465,
+                466,
+                467,
+                468,
+                469,
+                470,
+                471,
+                472,
+                473,
+                474,
+                475,
+                476,
+                477,
+                478,
+                479,
+                480,
+                481,
+                482,
+                483,
+                484,
+                485,
+                486,
+                487,
+                488,
+                489,
+                490,
+                491
+              ]
+            }
+          ],
+          "window_count": 89,
+          "detection_runtime_ms": 18.577
+        },
+        {
+          "video_id": "bHIhgxav9LY",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 69.0,
+          "predicted_seconds": 66.0,
+          "incorrect_predicted_seconds": 3.0,
+          "missed_promotional_seconds": 6.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 63.0,
+              "start_error_seconds": 6.0,
+              "end_error_seconds": 3.0
+            }
+          ],
+          "title": "The Biggest Misconception About Electricity",
+          "annotations": [
+            {
+              "start_seconds": 813.0,
+              "end_seconds": 882.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 819.0,
+              "end_seconds": 885.0,
+              "score": 7,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                331,
+                332,
+                333,
+                334,
+                335,
+                336,
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346,
+                347,
+                348,
+                349,
+                350,
+                351,
+                352,
+                353,
+                354,
+                355,
+                356,
+                357,
+                358,
+                359,
+                360,
+                361,
+                362,
+                363,
+                364,
+                365,
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373
+              ]
+            }
+          ],
+          "window_count": 60,
+          "detection_runtime_ms": 13.584
+        },
+        {
+          "video_id": "iWeu2dxHRDg",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 48.0,
+          "predicted_seconds": 48.0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 48.0,
+              "start_error_seconds": 0.0,
+              "end_error_seconds": 0.0
+            }
+          ],
+          "title": "Car Thieves vs the Almost Final GlitterBomb 5.0",
+          "annotations": [
+            {
+              "start_seconds": 1050.0,
+              "end_seconds": 1098.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 1050.0,
+              "end_seconds": 1098.0,
+              "score": 6,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158
+              ]
+            }
+          ],
+          "window_count": 74,
+          "detection_runtime_ms": 19.254
+        },
+        {
+          "video_id": "DTvS9lvRxZ8",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "Backyard Squirrel Maze 2.0- The Walnut Heist",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 67,
+          "detection_runtime_ms": 13.938
+        },
+        {
+          "video_id": "I9hJ_Rux9y0",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "How To Make Friends",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 48,
+          "detection_runtime_ms": 8.742
+        },
+        {
+          "video_id": "lXfEK8G8CUI",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 87.0,
+          "predicted_seconds": 58.0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 29.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 58.0,
+              "start_error_seconds": 3.0,
+              "end_error_seconds": 26.0
+            }
+          ],
+          "title": "How The Immune System ACTUALLY Works - IMMUNE",
+          "annotations": [
+            {
+              "start_seconds": 558.0,
+              "end_seconds": 645.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 561.0,
+              "end_seconds": 619.0,
+              "score": 4,
+              "evidence": [
+                "creator_owned",
+                "cta",
+                "offer"
+              ],
+              "snippet_indices": [
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156
+              ]
+            }
+          ],
+          "window_count": 43,
+          "detection_runtime_ms": 10.743
+        },
+        {
+          "video_id": "-lErGZZgUbY",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 21.0,
+          "predicted_seconds": 33.0,
+          "incorrect_predicted_seconds": 12.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 21.0,
+              "start_error_seconds": 3.0,
+              "end_error_seconds": 9.0
+            }
+          ],
+          "title": "My Framework Investment Should NOT Have Worked Out",
+          "annotations": [
+            {
+              "start_seconds": 53.0,
+              "end_seconds": 74.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 50.0,
+              "end_seconds": 83.0,
+              "score": 5,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales"
+              ],
+              "snippet_indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ]
+            }
+          ],
+          "window_count": 71,
+          "detection_runtime_ms": 16.205
+        },
+        {
+          "video_id": "MRtg6A1f2Ko",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 69.0,
+          "predicted_seconds": 65.0,
+          "incorrect_predicted_seconds": 10.0,
+          "missed_promotional_seconds": 14.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 55.0,
+              "start_error_seconds": 10.0,
+              "end_error_seconds": 14.0
+            }
+          ],
+          "title": "iPhone 16/16 Pro Review: Times Have Changed!",
+          "annotations": [
+            {
+              "start_seconds": 35.0,
+              "end_seconds": 104.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 25.0,
+              "end_seconds": 90.0,
+              "score": 6,
+              "evidence": [
+                "creator_owned",
+                "cta",
+                "offer",
+                "sales"
+              ],
+              "snippet_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ]
+            }
+          ],
+          "window_count": 83,
+          "detection_runtime_ms": 23.061
+        },
+        {
+          "video_id": "9lx11dy9J30",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 59.0,
+          "predicted_seconds": 39.0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 20.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 39.0,
+              "start_error_seconds": 0.0,
+              "end_error_seconds": 20.0
+            }
+          ],
+          "title": "iPhone 16/Pro Impressions: The Great Separation!",
+          "annotations": [
+            {
+              "start_seconds": 903.0,
+              "end_seconds": 962.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 903.0,
+              "end_seconds": 942.0,
+              "score": 5,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales"
+              ],
+              "snippet_indices": [
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121
+              ]
+            }
+          ],
+          "window_count": 65,
+          "detection_runtime_ms": 18.3
+        },
+        {
+          "video_id": "Sew4rctKghY",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 64.0,
+          "predicted_seconds": 60.0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 4.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 60.0,
+              "start_error_seconds": 0.0,
+              "end_error_seconds": 4.0
+            }
+          ],
+          "title": "Why billions of people won't eat pork (or why we don't know)",
+          "annotations": [
+            {
+              "start_seconds": 724.0,
+              "end_seconds": 788.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 724.0,
+              "end_seconds": 784.0,
+              "score": 8,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90
+              ]
+            }
+          ],
+          "window_count": 53,
+          "detection_runtime_ms": 15.15
+        },
+        {
+          "video_id": "O7sQBfpQCvU",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 52.0,
+          "predicted_seconds": 46.0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 6.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 46.0,
+              "start_error_seconds": 0.0,
+              "end_error_seconds": 6.0
+            }
+          ],
+          "title": "Ice cream made with a pan, a spoon and a freezer",
+          "annotations": [
+            {
+              "start_seconds": 565.0,
+              "end_seconds": 617.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 565.0,
+              "end_seconds": 611.0,
+              "score": 6,
+              "evidence": [
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149
+              ]
+            }
+          ],
+          "window_count": 42,
+          "detection_runtime_ms": 15.095
+        },
+        {
+          "video_id": "U3aXWizDbQ4",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "C in 100 Seconds",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 10,
+          "detection_runtime_ms": 2.097
+        },
+        {
+          "video_id": "x7X9w_GIm1s",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "Python in 100 Seconds",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 10,
+          "detection_runtime_ms": 1.908
+        },
+        {
+          "video_id": "aircAruvnKk",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 31.0,
+          "predicted_seconds": 13.0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 18.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 13.0,
+              "start_error_seconds": 18.0,
+              "end_error_seconds": 0.0
+            }
+          ],
+          "title": "But what is a neural network? | Deep learning chapter 1",
+          "annotations": [
+            {
+              "start_seconds": 992.0,
+              "end_seconds": 1023.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 1010.0,
+              "end_seconds": 1023.0,
+              "score": 5,
+              "evidence": [
+                "creator_owned",
+                "membership"
+              ],
+              "snippet_indices": [
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268
+              ]
+            }
+          ],
+          "window_count": 74,
+          "detection_runtime_ms": 16.183
+        }
+      ]
+    },
+    "aggressive": {
+      "evaluated_video_count": 14,
+      "incorrect_predicted_seconds": 107.0,
+      "negative_videos_with_any_predicted_skip": 0,
+      "evaluated_negative_video_count": 4,
+      "missed_promotional_seconds": 69.0,
+      "matched_segment_count": 10,
+      "mean_start_boundary_error_seconds": 7.8,
+      "mean_end_boundary_error_seconds": 9.8,
+      "detection_runtime_ms": 208.13,
+      "per_video": [
+        {
+          "video_id": "094y1Z2wpJg",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 79.0,
+          "predicted_seconds": 77.0,
+          "incorrect_predicted_seconds": 2.0,
+          "missed_promotional_seconds": 4.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 75.0,
+              "start_error_seconds": 4.0,
+              "end_error_seconds": 2.0
+            }
+          ],
+          "title": "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
+          "annotations": [
+            {
+              "start_seconds": 1248.0,
+              "end_seconds": 1327.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 1252.0,
+              "end_seconds": 1329.0,
+              "score": 7,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                450,
+                451,
+                452,
+                453,
+                454,
+                455,
+                456,
+                457,
+                458,
+                459,
+                460,
+                461,
+                462,
+                463,
+                464,
+                465,
+                466,
+                467,
+                468,
+                469,
+                470,
+                471,
+                472,
+                473,
+                474,
+                475,
+                476,
+                477,
+                478,
+                479,
+                480,
+                481,
+                482,
+                483,
+                484,
+                485,
+                486,
+                487,
+                488,
+                489,
+                490,
+                491
+              ]
+            }
+          ],
+          "window_count": 89,
+          "detection_runtime_ms": 18.849
+        },
+        {
+          "video_id": "bHIhgxav9LY",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 69.0,
+          "predicted_seconds": 70.0,
+          "incorrect_predicted_seconds": 5.0,
+          "missed_promotional_seconds": 4.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 65.0,
+              "start_error_seconds": 4.0,
+              "end_error_seconds": 5.0
+            }
+          ],
+          "title": "The Biggest Misconception About Electricity",
+          "annotations": [
+            {
+              "start_seconds": 813.0,
+              "end_seconds": 882.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 817.0,
+              "end_seconds": 887.0,
+              "score": 7,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                331,
+                332,
+                333,
+                334,
+                335,
+                336,
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346,
+                347,
+                348,
+                349,
+                350,
+                351,
+                352,
+                353,
+                354,
+                355,
+                356,
+                357,
+                358,
+                359,
+                360,
+                361,
+                362,
+                363,
+                364,
+                365,
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373
+              ]
+            }
+          ],
+          "window_count": 60,
+          "detection_runtime_ms": 13.8
+        },
+        {
+          "video_id": "iWeu2dxHRDg",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 48.0,
+          "predicted_seconds": 60.0,
+          "incorrect_predicted_seconds": 12.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 48.0,
+              "start_error_seconds": 5.0,
+              "end_error_seconds": 7.0
+            }
+          ],
+          "title": "Car Thieves vs the Almost Final GlitterBomb 5.0",
+          "annotations": [
+            {
+              "start_seconds": 1050.0,
+              "end_seconds": 1098.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 1045.0,
+              "end_seconds": 1105.0,
+              "score": 6,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158
+              ]
+            }
+          ],
+          "window_count": 74,
+          "detection_runtime_ms": 32.729
+        },
+        {
+          "video_id": "DTvS9lvRxZ8",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "Backyard Squirrel Maze 2.0- The Walnut Heist",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 67,
+          "detection_runtime_ms": 16.077
+        },
+        {
+          "video_id": "I9hJ_Rux9y0",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "How To Make Friends",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 48,
+          "detection_runtime_ms": 10.087
+        },
+        {
+          "video_id": "lXfEK8G8CUI",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 87.0,
+          "predicted_seconds": 63.0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 24.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 63.0,
+              "start_error_seconds": 2.0,
+              "end_error_seconds": 22.0
+            }
+          ],
+          "title": "How The Immune System ACTUALLY Works - IMMUNE",
+          "annotations": [
+            {
+              "start_seconds": 558.0,
+              "end_seconds": 645.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 560.0,
+              "end_seconds": 623.0,
+              "score": 4,
+              "evidence": [
+                "creator_owned",
+                "cta",
+                "offer"
+              ],
+              "snippet_indices": [
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156
+              ]
+            }
+          ],
+          "window_count": 43,
+          "detection_runtime_ms": 10.81
+        },
+        {
+          "video_id": "-lErGZZgUbY",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 21.0,
+          "predicted_seconds": 63.0,
+          "incorrect_predicted_seconds": 42.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 21.0,
+              "start_error_seconds": 10.0,
+              "end_error_seconds": 32.0
+            }
+          ],
+          "title": "My Framework Investment Should NOT Have Worked Out",
+          "annotations": [
+            {
+              "start_seconds": 53.0,
+              "end_seconds": 74.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 43.0,
+              "end_seconds": 106.0,
+              "score": 5,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales"
+              ],
+              "snippet_indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ]
+            }
+          ],
+          "window_count": 71,
+          "detection_runtime_ms": 16.025
+        },
+        {
+          "video_id": "MRtg6A1f2Ko",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 69.0,
+          "predicted_seconds": 69.0,
+          "incorrect_predicted_seconds": 14.0,
+          "missed_promotional_seconds": 14.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 55.0,
+              "start_error_seconds": 14.0,
+              "end_error_seconds": 14.0
+            }
+          ],
+          "title": "iPhone 16/16 Pro Review: Times Have Changed!",
+          "annotations": [
+            {
+              "start_seconds": 35.0,
+              "end_seconds": 104.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 21.0,
+              "end_seconds": 90.0,
+              "score": 6,
+              "evidence": [
+                "creator_owned",
+                "cta",
+                "offer",
+                "sales"
+              ],
+              "snippet_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ]
+            }
+          ],
+          "window_count": 83,
+          "detection_runtime_ms": 21.974
+        },
+        {
+          "video_id": "9lx11dy9J30",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 59.0,
+          "predicted_seconds": 64.0,
+          "incorrect_predicted_seconds": 8.0,
+          "missed_promotional_seconds": 3.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 56.0,
+              "start_error_seconds": 8.0,
+              "end_error_seconds": 3.0
+            }
+          ],
+          "title": "iPhone 16/Pro Impressions: The Great Separation!",
+          "annotations": [
+            {
+              "start_seconds": 903.0,
+              "end_seconds": 962.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 895.0,
+              "end_seconds": 959.0,
+              "score": 5,
+              "evidence": [
+                "cta",
+                "disclosure",
+                "sales"
+              ],
+              "snippet_indices": [
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121
+              ]
+            }
+          ],
+          "window_count": 65,
+          "detection_runtime_ms": 18.812
+        },
+        {
+          "video_id": "Sew4rctKghY",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 64.0,
+          "predicted_seconds": 80.0,
+          "incorrect_predicted_seconds": 16.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 64.0,
+              "start_error_seconds": 11.0,
+              "end_error_seconds": 5.0
+            }
+          ],
+          "title": "Why billions of people won't eat pork (or why we don't know)",
+          "annotations": [
+            {
+              "start_seconds": 724.0,
+              "end_seconds": 788.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 713.0,
+              "end_seconds": 793.0,
+              "score": 8,
+              "evidence": [
+                "cta",
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90
+              ]
+            }
+          ],
+          "window_count": 53,
+          "detection_runtime_ms": 14.351
+        },
+        {
+          "video_id": "O7sQBfpQCvU",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 52.0,
+          "predicted_seconds": 52.0,
+          "incorrect_predicted_seconds": 4.0,
+          "missed_promotional_seconds": 4.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 48.0,
+              "start_error_seconds": 4.0,
+              "end_error_seconds": 4.0
+            }
+          ],
+          "title": "Ice cream made with a pan, a spoon and a freezer",
+          "annotations": [
+            {
+              "start_seconds": 565.0,
+              "end_seconds": 617.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 561.0,
+              "end_seconds": 613.0,
+              "score": 6,
+              "evidence": [
+                "offer",
+                "sales",
+                "url"
+              ],
+              "snippet_indices": [
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149
+              ]
+            }
+          ],
+          "window_count": 42,
+          "detection_runtime_ms": 14.83
+        },
+        {
+          "video_id": "U3aXWizDbQ4",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "C in 100 Seconds",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 10,
+          "detection_runtime_ms": 1.814
+        },
+        {
+          "video_id": "x7X9w_GIm1s",
+          "promotion_status": "none",
+          "annotated_seconds": 0,
+          "predicted_seconds": 0,
+          "incorrect_predicted_seconds": 0.0,
+          "missed_promotional_seconds": 0.0,
+          "matches": [],
+          "title": "Python in 100 Seconds",
+          "annotations": [],
+          "prediction_count": 0,
+          "predictions": [],
+          "window_count": 10,
+          "detection_runtime_ms": 1.69
+        },
+        {
+          "video_id": "aircAruvnKk",
+          "promotion_status": "one_or_more",
+          "annotated_seconds": 31.0,
+          "predicted_seconds": 19.0,
+          "incorrect_predicted_seconds": 4.0,
+          "missed_promotional_seconds": 16.0,
+          "matches": [
+            {
+              "prediction_index": 0,
+              "annotation_index": 0,
+              "overlap_seconds": 15.0,
+              "start_error_seconds": 16.0,
+              "end_error_seconds": 4.0
+            }
+          ],
+          "title": "But what is a neural network? | Deep learning chapter 1",
+          "annotations": [
+            {
+              "start_seconds": 992.0,
+              "end_seconds": 1023.0
+            }
+          ],
+          "prediction_count": 1,
+          "predictions": [
+            {
+              "start_seconds": 1008.0,
+              "end_seconds": 1027.0,
+              "score": 5,
+              "evidence": [
+                "creator_owned",
+                "membership"
+              ],
+              "snippet_indices": [
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268
+              ]
+            }
+          ],
+          "window_count": 74,
+          "detection_runtime_ms": 16.282
+        }
+      ]
+    }
+  }
+}

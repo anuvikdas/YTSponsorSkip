@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "video_id": "qf7ws2DF-zk",
+  "url": "https://www.youtube.com/watch?v=qf7ws2DF-zk",
+  "title": null,
+  "split": "tune",
+  "review_status": "in_progress",
+  "promotion_status": "one_or_more",
+  "caption_type": "unknown",
+  "annotation_source": "user_manual_video_review",
+  "annotation": {
+    "start_seconds_approximately": 1331,
+    "start_boundary_certainty": "approximate",
+    "end_seconds": null,
+    "end_boundary_certainty": "unknown",
+    "category": null
+  },
+  "reported_preview": {
+    "mode": "conservative",
+    "start_seconds": 1398.3,
+    "end_seconds": 1408.4,
+    "source": "user_reported_chrome_preview",
+    "transcript_source": "unverified",
+    "detector_version": "unverified"
+  },
+  "evaluation_policy": {
+    "full_video_accuracy_eligible": false,
+    "end_boundary_error_eligible": false,
+    "untouched_test_example": false,
+    "timestamps_as_detector_inputs": false
+  },
+  "notes": "User confirmed a promotional opening around 22:11; actual ending is not yet confirmed. Preview start is 67.3 seconds later than that approximate opening. Do not convert this partial annotation into a complete interval or a clean negative."
+}

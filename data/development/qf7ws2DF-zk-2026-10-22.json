@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "video_id": "qf7ws2DF-zk",
+  "url": "https://www.youtube.com/watch?v=qf7ws2DF-zk",
+  "split": "development",
+  "review_status": "partial",
+  "review_scope": "confirmed_interval_only",
+  "annotation_source": "user_manual_video_review",
+  "recorded_on": "2026-10-22",
+  "supersedes_for_interval_evaluation": "data/development/partial-qf7ws2DF-zk.json",
+  "intervals": [
+    {
+      "start_seconds": 1331,
+      "end_seconds": 1412,
+      "start_boundary_certainty": "approximate",
+      "end_boundary_certainty": "user_confirmed_to_second",
+      "category": null
+    }
+  ],
+  "evaluation_policy": {
+    "full_video_accuracy_eligible": false,
+    "confirmed_interval_coverage_eligible": true,
+    "matched_interval_boundary_errors_eligible": true,
+    "predictions_outside_reviewed_interval": "unreviewed_not_false_positive_labels",
+    "untouched_test_example": false,
+    "timestamps_as_detector_inputs": false
+  },
+  "notes": "User confirms only the promotional interruption at 22:11–23:32. The start remains approximate. No complete review, negative labels, or additional promotions are inferred for the rest of the video. The prior annotation and all frozen reports remain preserved."
+}

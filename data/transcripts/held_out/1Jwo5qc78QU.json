@@ -1,0 +1,5086 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "video_id": "1Jwo5qc78QU",
+  "acquired_at": "2026-10-20T04:49:21.202160+00:00",
+  "source": {
+    "library": "supadata-native",
+    "version": "v1-http-2026-10-19",
+    "request": {
+      "lang": "en",
+      "mode": "native",
+      "text": false
+    },
+    "credentials_used": "backend_api_key_only",
+    "manual_sponsor_annotations_used_as_input": false
+  },
+  "transcript": {
+    "language": "English",
+    "language_code": "en",
+    "caption_type": "unknown",
+    "is_generated": null,
+    "provider": "supadata-native",
+    "provider_version": "v1-http-2026-10-19"
+  },
+  "timing": {
+    "source_unit": "milliseconds",
+    "normalized_unit": "seconds",
+    "duration_available": true,
+    "duration_is_exact_promotion_boundary": false
+  },
+  "completeness": {
+    "snippet_count": 841,
+    "first_start_seconds": 1.72,
+    "last_start_seconds": 2542.2,
+    "independently_verified": false,
+    "note": "Provider cue list was nonempty; video duration/truncation requires independent verification."
+  },
+  "snippets": [
+    {
+      "index": 0,
+      "text": "I'm not saying\nthat's how it should be.",
+      "start_seconds": 1.72,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 1,
+      "text": "I'm saying that's how it is.",
+      "start_seconds": 3.98,
+      "duration_seconds": 1.6
+    },
+    {
+      "index": 2,
+      "text": "So. How do we fix it?",
+      "start_seconds": 7.22,
+      "duration_seconds": 1.7
+    },
+    {
+      "index": 3,
+      "text": "What's up, world?\nIt's your boy Tom—",
+      "start_seconds": 12.34,
+      "duration_seconds": 1.56
+    },
+    {
+      "index": 4,
+      "text": "Oh, come on!",
+      "start_seconds": 13.9,
+      "duration_seconds": 0.94
+    },
+    {
+      "index": 5,
+      "text": "This video is sponsored by CuriosityStream,",
+      "start_seconds": 14.84,
+      "duration_seconds": 1.66
+    },
+    {
+      "index": 6,
+      "text": "and by this:\nmy new Nebula streaming series",
+      "start_seconds": 16.5,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 7,
+      "text": "that you can watch for free\nwhen you join.",
+      "start_seconds": 19.2,
+      "duration_seconds": 1.7
+    },
+    {
+      "index": 8,
+      "text": "More on that later.",
+      "start_seconds": 20.9,
+      "duration_seconds": 1.1
+    },
+    {
+      "index": 9,
+      "text": "Sellout!",
+      "start_seconds": 22.0,
+      "duration_seconds": 1.1
+    },
+    {
+      "index": 10,
+      "text": "What's up world?\nIt's your boy, TomReacts.",
+      "start_seconds": 23.1,
+      "duration_seconds": 1.88
+    },
+    {
+      "index": 11,
+      "text": "Let's see what this prat has to say.",
+      "start_seconds": 24.98,
+      "duration_seconds": 1.48
+    },
+    {
+      "index": 12,
+      "text": "A few disclaimers before we start:",
+      "start_seconds": 26.46,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 13,
+      "text": "While this video has been proofed\nand fact-checked by a team of legal experts,",
+      "start_seconds": 28.78,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 14,
+      "text": "I am not a lawyer, and this is not\na substitute for legal advice.",
+      "start_seconds": 32.38,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 15,
+      "text": "Yeah, I can tell that, mate.",
+      "start_seconds": 35.44,
+      "duration_seconds": 1.5
+    },
+    {
+      "index": 16,
+      "text": "I'm also talking a lot about YouTube and Google,\ncompanies that I benefit from enormously.",
+      "start_seconds": 36.94,
+      "duration_seconds": 4.34
+    },
+    {
+      "index": 17,
+      "text": "Google even sponsored an entire series\non this channel last year.",
+      "start_seconds": 41.28,
+      "duration_seconds": 2.74
+    },
+    {
+      "index": 18,
+      "text": "Shill!",
+      "start_seconds": 44.02,
+      "duration_seconds": 1.08
+    },
+    {
+      "index": 19,
+      "text": "I'm friends with a few YouTube employees.",
+      "start_seconds": 45.1,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 20,
+      "text": "'Course you are.",
+      "start_seconds": 47.0,
+      "duration_seconds": 1.12
+    },
+    {
+      "index": 21,
+      "text": "So, while all the words here are my own,\nYouTube don't even know I'm making this,",
+      "start_seconds": 48.12,
+      "duration_seconds": 3.86
+    },
+    {
+      "index": 22,
+      "text": "you should know that\nif you're one of the outliers",
+      "start_seconds": 51.98,
+      "duration_seconds": 2.14
+    },
+    {
+      "index": 23,
+      "text": "who's been screwed over by\nYouTube's copyright system…",
+      "start_seconds": 54.12,
+      "duration_seconds": 3.5
+    },
+    {
+      "index": 24,
+      "text": "Yeah, you will probably have\na different view of parts of this.",
+      "start_seconds": 57.62,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 25,
+      "text": "Although I hope you'll still agree\nwith my conclusion.",
+      "start_seconds": 60.62,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 26,
+      "text": "With all that said,\nenjoy the show.",
+      "start_seconds": 63.42,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 27,
+      "text": "Get on with it!",
+      "start_seconds": 65.68,
+      "duration_seconds": 1.28
+    },
+    {
+      "index": 28,
+      "text": "Not you.",
+      "start_seconds": 66.96,
+      "duration_seconds": 0.88
+    },
+    {
+      "index": 29,
+      "text": "I realise saying\n\"YouTube's Copyright System Isn't Broken\"",
+      "start_seconds": 73.58,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 30,
+      "text": "is a controversial claim to make,",
+      "start_seconds": 76.88,
+      "duration_seconds": 2.18
+    },
+    {
+      "index": 31,
+      "text": "when every week\nthere seems to be a new headline",
+      "start_seconds": 79.06,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 32,
+      "text": "about how a YouTube creator\nis being screwed over",
+      "start_seconds": 81.5,
+      "duration_seconds": 2.84
+    },
+    {
+      "index": 33,
+      "text": "by false copyright claims, or mistaken identity,\nor deliberate copyright abuse.",
+      "start_seconds": 84.34,
+      "duration_seconds": 5.2
+    },
+    {
+      "index": 34,
+      "text": "I'm not saying\nthat the system is perfect.",
+      "start_seconds": 89.54,
+      "duration_seconds": 2.38
+    },
+    {
+      "index": 35,
+      "text": "It's far from perfect,\nand I'll talk about that too.",
+      "start_seconds": 91.92,
+      "duration_seconds": 3.22
+    },
+    {
+      "index": 36,
+      "text": "But I don't think\nit's fundamentally broken.",
+      "start_seconds": 95.14,
+      "duration_seconds": 3.08
+    },
+    {
+      "index": 37,
+      "text": "In May 2019, a YouTube\nMinecraft player called Oli",
+      "start_seconds": 98.22,
+      "duration_seconds": 2.94
+    },
+    {
+      "index": 38,
+      "text": "had hundreds of his videos claimed\nby music label Warner Chappell",
+      "start_seconds": 101.16,
+      "duration_seconds": 3.42
+    },
+    {
+      "index": 39,
+      "text": "using YouTube's Content ID system.",
+      "start_seconds": 104.58,
+      "duration_seconds": 2.18
+    },
+    {
+      "index": 40,
+      "text": "His post about it made a lot of people\nrighteously angry.",
+      "start_seconds": 106.76,
+      "duration_seconds": 3.42
+    },
+    {
+      "index": 41,
+      "text": "He'd got permission to use a track from\nan independent composer as his intro music,",
+      "start_seconds": 110.18,
+      "duration_seconds": 3.74
+    },
+    {
+      "index": 42,
+      "text": "and now a big corporation was\nclaiming every video and taking all his revenue!",
+      "start_seconds": 113.92,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 43,
+      "text": "Popular websites went so far as to claim\nthat Oli was the victim of outright theft,",
+      "start_seconds": 118.4,
+      "duration_seconds": 4.34
+    },
+    {
+      "index": 44,
+      "text": "since 25% of his revenues\nwere directed to Warner Chappell.",
+      "start_seconds": 122.74,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 45,
+      "text": "But the follow-up wasn't seen\nby nearly as many people:",
+      "start_seconds": 127.22,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 46,
+      "text": "those claims were entirely legitimate.",
+      "start_seconds": 130.24,
+      "duration_seconds": 2.74
+    },
+    {
+      "index": 47,
+      "text": "Yes, Oli got permission\nto use that music from its composer,",
+      "start_seconds": 132.98,
+      "duration_seconds": 3.24
+    },
+    {
+      "index": 48,
+      "text": "but that composer had sampled\nanother piece of music",
+      "start_seconds": 136.22,
+      "duration_seconds": 2.62
+    },
+    {
+      "index": 49,
+      "text": "that was owned by Warner Chappell,\nwithout a license.",
+      "start_seconds": 138.84,
+      "duration_seconds": 4.04
+    },
+    {
+      "index": 50,
+      "text": "So the permission that Oli got\nwas entirely useless.",
+      "start_seconds": 142.88,
+      "duration_seconds": 3.48
+    },
+    {
+      "index": 51,
+      "text": "Warner Chappell was right,\nand Oli was wrong.",
+      "start_seconds": 146.36,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 52,
+      "text": "So, here's how\nthat should have worked",
+      "start_seconds": 149.72,
+      "duration_seconds": 1.58
+    },
+    {
+      "index": 53,
+      "text": "in the world that current copyright law\nwas designed for:",
+      "start_seconds": 151.3,
+      "duration_seconds": 3.56
+    },
+    {
+      "index": 54,
+      "text": "First, everyone involved would have been\npart of a large company with a legal team.",
+      "start_seconds": 154.86,
+      "duration_seconds": 4.7
+    },
+    {
+      "index": 55,
+      "text": "Lawyers from the music label would have contacted\nthe lawyers for the video company,",
+      "start_seconds": 159.56,
+      "duration_seconds": 4.12
+    },
+    {
+      "index": 56,
+      "text": "and they would have said, \"What's going on?\nYou didn't license that.\"",
+      "start_seconds": 163.68,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 57,
+      "text": "And the video company lawyers\nwould have gone:",
+      "start_seconds": 168.16,
+      "duration_seconds": 2.18
+    },
+    {
+      "index": 58,
+      "text": "Oh, I'm sorry. I had no idea.",
+      "start_seconds": 170.34,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 59,
+      "text": "We bought that license in good faith\nfrom a third party.",
+      "start_seconds": 172.54,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 60,
+      "text": "We should both talk to them.",
+      "start_seconds": 174.88,
+      "duration_seconds": 1.26
+    },
+    {
+      "index": 61,
+      "text": "At which point the third company's lawyers\nwould get a very worrying phone call.",
+      "start_seconds": 176.14,
+      "duration_seconds": 3.96
+    },
+    {
+      "index": 62,
+      "text": "[screams]",
+      "start_seconds": 180.1,
+      "duration_seconds": 1.94
+    },
+    {
+      "index": 63,
+      "text": "And all the mess would almost certainly\nhave been settled out of court.",
+      "start_seconds": 182.04,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 64,
+      "text": "Maybe by backroom dealings,",
+      "start_seconds": 185.1,
+      "duration_seconds": 1.26
+    },
+    {
+      "index": 65,
+      "text": "maybe by teams of lawyers\nsending formal letters to each other.",
+      "start_seconds": 186.36,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 66,
+      "text": "That was the world\nthat copyright law was designed for.",
+      "start_seconds": 189.04,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 67,
+      "text": "Because individuals couldn't make things",
+      "start_seconds": 191.6,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 68,
+      "text": "that were viewed by millions\nwithout corporate support,",
+      "start_seconds": 193.82,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 69,
+      "text": "you needed a publisher, or a broadcaster,\nor a huge production company,",
+      "start_seconds": 196.78,
+      "duration_seconds": 3.58
+    },
+    {
+      "index": 70,
+      "text": "and… those companies had lawyers.",
+      "start_seconds": 200.36,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 71,
+      "text": "The world has moved on,\nand copyright law hasn't.",
+      "start_seconds": 203.66,
+      "duration_seconds": 3.16
+    },
+    {
+      "index": 72,
+      "text": "And the result is that,\nwhen something like this happens",
+      "start_seconds": 206.82,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 73,
+      "text": "in the world of relatively-tiny,\nindependent online creators,",
+      "start_seconds": 209.02,
+      "duration_seconds": 3.9
+    },
+    {
+      "index": 74,
+      "text": "we have to work around\nwhat the law is meant to do.",
+      "start_seconds": 212.92,
+      "duration_seconds": 3.9
+    },
+    {
+      "index": 75,
+      "text": "[Canon in D by Pachelbel]",
+      "start_seconds": 217.0,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 76,
+      "text": "Music has two main copyrights.",
+      "start_seconds": 221.36,
+      "duration_seconds": 4.42
+    },
+    {
+      "index": 77,
+      "text": "First, there's the copyright\non the composition itself:",
+      "start_seconds": 225.78,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 78,
+      "text": "all the parts of a work\nthat can be written down,",
+      "start_seconds": 228.76,
+      "duration_seconds": 3.34
+    },
+    {
+      "index": 79,
+      "text": "so, lyrics and notes.",
+      "start_seconds": 232.1,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 80,
+      "text": "And then, second, there's a copyright on\neach individual recorded performance.",
+      "start_seconds": 235.74,
+      "duration_seconds": 6.04
+    },
+    {
+      "index": 81,
+      "text": "So I can sit here, and I can play\nPachelbel's Canon in D",
+      "start_seconds": 243.04,
+      "duration_seconds": 3.98
+    },
+    {
+      "index": 82,
+      "text": "without having to pay any licensing fees,",
+      "start_seconds": 247.02,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 83,
+      "text": "because Pachelbel died in 1706\nand his work is now in the public domain,",
+      "start_seconds": 249.66,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 84,
+      "text": "in the pool of works\nwhere the copyright has expired.",
+      "start_seconds": 254.78,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 85,
+      "text": "His music is now free for anyone to use\nwithout payment and without credit.",
+      "start_seconds": 257.5,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 86,
+      "text": "Which is brilliant!",
+      "start_seconds": 261.74,
+      "duration_seconds": 2.1
+    },
+    {
+      "index": 87,
+      "text": "But if I'm not playing it,",
+      "start_seconds": 263.84,
+      "duration_seconds": 1.84
+    },
+    {
+      "index": 88,
+      "text": "I'm actually using a modern recording of it…\n",
+      "start_seconds": 265.68,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 89,
+      "text": "[music continues]",
+      "start_seconds": 267.0,
+      "duration_seconds": 1.6
+    },
+    {
+      "index": 90,
+      "text": "…then it doesn't matter that\nthe composition is in the public domain:",
+      "start_seconds": 268.38,
+      "duration_seconds": 2.82
+    },
+    {
+      "index": 91,
+      "text": "[music stops]",
+      "start_seconds": 269.5,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 92,
+      "text": "someone has added\ntheir own hard work playing it,",
+      "start_seconds": 271.2,
+      "duration_seconds": 2.38
+    },
+    {
+      "index": 93,
+      "text": "along with the work of a production team\nmaking it sound good,",
+      "start_seconds": 273.58,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 94,
+      "text": "and that recording is\nunder a separate copyright",
+      "start_seconds": 275.8,
+      "duration_seconds": 3.08
+    },
+    {
+      "index": 95,
+      "text": "that needs licensing to use\nin a video like this.",
+      "start_seconds": 278.88,
+      "duration_seconds": 2.9
+    },
+    {
+      "index": 96,
+      "text": "Songwriter after songwriter after songwriter\nhas used Pachelbel's Canon in D",
+      "start_seconds": 281.78,
+      "duration_seconds": 3.66
+    },
+    {
+      "index": 97,
+      "text": "to the extent that it's now a cliché,",
+      "start_seconds": 285.44,
+      "duration_seconds": 1.94
+    },
+    {
+      "index": 98,
+      "text": "and no-one's had to pay Pachelbel\nor his family a penny in centuries,",
+      "start_seconds": 287.38,
+      "duration_seconds": 3.18
+    },
+    {
+      "index": 99,
+      "text": "but that doesn't mean any of the modern songs\nbased on it are in the public domain.",
+      "start_seconds": 290.56,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 100,
+      "text": "There is new work there.",
+      "start_seconds": 294.64,
+      "duration_seconds": 1.42
+    },
+    {
+      "index": 101,
+      "text": "And I can't use those modern songs\nin this video to demonstrate that,",
+      "start_seconds": 296.06,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 102,
+      "text": "unless I'm actually criticising them.",
+      "start_seconds": 299.82,
+      "duration_seconds": 2.82
+    },
+    {
+      "index": 103,
+      "text": "On that point…",
+      "start_seconds": 302.64,
+      "duration_seconds": 1.22
+    },
+    {
+      "index": 104,
+      "text": "♫♫",
+      "start_seconds": 303.86,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 105,
+      "text": "Maroon 5's Memories \nis an infuriating composition",
+      "start_seconds": 303.86,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 106,
+      "text": "that uses the start of the melody\nof Canon in D but never resolves it,",
+      "start_seconds": 306.26,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 107,
+      "text": "which means it has the same\nstuck-in-your-head effect",
+      "start_seconds": 308.7,
+      "duration_seconds": 2.0
+    },
+    {
+      "index": 108,
+      "text": "as the jingle from\nAlfred Bester's The Demolished Man,",
+      "start_seconds": 310.7,
+      "duration_seconds": 2.04
+    },
+    {
+      "index": 109,
+      "text": "and I hate it.",
+      "start_seconds": 312.74,
+      "duration_seconds": 1.5
+    },
+    {
+      "index": 110,
+      "text": "♫♫",
+      "start_seconds": 314.24,
+      "duration_seconds": 2.54
+    },
+    {
+      "index": 111,
+      "text": "Coolio's C U When U Get There \nwas a lukewarm lead single",
+      "start_seconds": 314.24,
+      "duration_seconds": 2.54
+    },
+    {
+      "index": 112,
+      "text": "from a third album that obviously did\nfar better with a naive world audience",
+      "start_seconds": 316.78,
+      "duration_seconds": 2.28
+    },
+    {
+      "index": 113,
+      "text": "than it ever did\nwith its actual target market.",
+      "start_seconds": 319.06,
+      "duration_seconds": 2.14
+    },
+    {
+      "index": 114,
+      "text": "There's a reason it went platinum\nin New Zealand.",
+      "start_seconds": 321.2,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 115,
+      "text": "♫♫",
+      "start_seconds": 323.4,
+      "duration_seconds": 2.84
+    },
+    {
+      "index": 116,
+      "text": "And The Farm's\nAll Together Now is…",
+      "start_seconds": 323.4,
+      "duration_seconds": 2.84
+    },
+    {
+      "index": 117,
+      "text": "actually a pretty good song",
+      "start_seconds": 326.24,
+      "duration_seconds": 1.14
+    },
+    {
+      "index": 118,
+      "text": "despite the incongruity between\nits subject matter and its style,",
+      "start_seconds": 327.38,
+      "duration_seconds": 1.78
+    },
+    {
+      "index": 119,
+      "text": "but it's been completely destroyed",
+      "start_seconds": 329.16,
+      "duration_seconds": 1.82
+    },
+    {
+      "index": 120,
+      "text": "by repetitive and unnecessary\ncover versions and football chants.",
+      "start_seconds": 330.98,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 121,
+      "text": "Criticism and review!\nThere we go.",
+      "start_seconds": 334.84,
+      "duration_seconds": 2.1
+    },
+    {
+      "index": 122,
+      "text": "That is the sort of thing that's considered\n\"fair use\" under US law,",
+      "start_seconds": 336.94,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 123,
+      "text": "and \"fair dealing\"\nunder the much more strict UK law,",
+      "start_seconds": 339.92,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 124,
+      "text": "but I had to censor the album art\nof those songs,",
+      "start_seconds": 342.84,
+      "duration_seconds": 2.5
+    },
+    {
+      "index": 125,
+      "text": "because I wasn't criticising\nand reviewing the art,",
+      "start_seconds": 345.34,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 126,
+      "text": "and the art is covered\nunder separate copyright.",
+      "start_seconds": 348.02,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 127,
+      "text": "In 2009, Andy Baio,\nthen one of the directors of Kickstarter,",
+      "start_seconds": 351.16,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 128,
+      "text": "released an 8-bit chiptune version\nof the best-selling jazz album of all time,",
+      "start_seconds": 354.6,
+      "duration_seconds": 4.22
+    },
+    {
+      "index": 129,
+      "text": "Miles Davis' Kind of Blue.",
+      "start_seconds": 358.82,
+      "duration_seconds": 1.62
+    },
+    {
+      "index": 130,
+      "text": "He got a license from the music publisher.\nHe called it Kind of Bloop.",
+      "start_seconds": 360.44,
+      "duration_seconds": 2.94
+    },
+    {
+      "index": 131,
+      "text": "It was all above board.",
+      "start_seconds": 363.38,
+      "duration_seconds": 1.58
+    },
+    {
+      "index": 132,
+      "text": "But he settled out of court\nfor more than $30,000 with Jay Maisel,",
+      "start_seconds": 364.96,
+      "duration_seconds": 4.34
+    },
+    {
+      "index": 133,
+      "text": "the photographer who took the iconic photograph\non the original album cover.",
+      "start_seconds": 369.3,
+      "duration_seconds": 3.78
+    },
+    {
+      "index": 134,
+      "text": "Kind of Bloop's album art was\na pixelated version of that album cover.",
+      "start_seconds": 373.08,
+      "duration_seconds": 3.8
+    },
+    {
+      "index": 135,
+      "text": "Baio thought it was fair use.",
+      "start_seconds": 376.88,
+      "duration_seconds": 2.02
+    },
+    {
+      "index": 136,
+      "text": "Maisel said it wasn't,\nand Maisel had lawyers.",
+      "start_seconds": 378.9,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 137,
+      "text": "To quote Baio:",
+      "start_seconds": 382.18,
+      "duration_seconds": 0.92
+    },
+    {
+      "index": 138,
+      "text": "\"The fact that I settled\nis not an admission of guilt.",
+      "start_seconds": 383.1,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 139,
+      "text": "\"This was the least expensive\noption available.\"",
+      "start_seconds": 386.06,
+      "duration_seconds": 3.66
+    },
+    {
+      "index": 140,
+      "text": "Because copyright lawyers and\ncopyright lawsuits are very, very expensive.",
+      "start_seconds": 389.72,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 141,
+      "text": "Expensive enough that\nthat isn't the album cover!",
+      "start_seconds": 394.6,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 142,
+      "text": "That is a stock photo\nthat looks kind-of like the album cover,",
+      "start_seconds": 397.24,
+      "duration_seconds": 2.46
+    },
+    {
+      "index": 143,
+      "text": "because I am taking no risks.",
+      "start_seconds": 399.7,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 144,
+      "text": "I don't know if that pixel art was fair use.",
+      "start_seconds": 402.46,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 145,
+      "text": "If someone took your greatest work,\nran it through a pixelation filter, and then sold it,",
+      "start_seconds": 405.1,
+      "duration_seconds": 5.16
+    },
+    {
+      "index": 146,
+      "text": "I don't think it's entirely unreasonable\nto think you've been ripped off.",
+      "start_seconds": 410.26,
+      "duration_seconds": 2.84
+    },
+    {
+      "index": 147,
+      "text": "The line of 'fair use' is very fuzzy,",
+      "start_seconds": 413.1,
+      "duration_seconds": 2.46
+    },
+    {
+      "index": 148,
+      "text": "and both sides can have\nvery strong and conflicting arguments.",
+      "start_seconds": 415.56,
+      "duration_seconds": 3.18
+    },
+    {
+      "index": 149,
+      "text": "That's the job of the courts to solve.",
+      "start_seconds": 418.74,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 150,
+      "text": "If both sides can afford it.",
+      "start_seconds": 421.06,
+      "duration_seconds": 2.0
+    },
+    {
+      "index": 151,
+      "text": "And there wasn't even a music video\ninvolved there!",
+      "start_seconds": 423.06,
+      "duration_seconds": 1.7
+    },
+    {
+      "index": 152,
+      "text": "That is a whole separate problem.",
+      "start_seconds": 424.76,
+      "duration_seconds": 1.8
+    },
+    {
+      "index": 153,
+      "text": "There is something\ncalled a 'compulsory license'",
+      "start_seconds": 426.56,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 154,
+      "text": "for selling and performing just music,",
+      "start_seconds": 429.54,
+      "duration_seconds": 2.54
+    },
+    {
+      "index": 155,
+      "text": "but if you want to publish a video\nto go with someone else's song,",
+      "start_seconds": 432.08,
+      "duration_seconds": 3.1
+    },
+    {
+      "index": 156,
+      "text": "even if it's just a video of you\nperforming it on a ukelele in your bedroom,",
+      "start_seconds": 435.18,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 157,
+      "text": "that requires a separate\nsynchronisation license,",
+      "start_seconds": 438.78,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 158,
+      "text": "and the copyright holder has\nan absolute right to say no to that.",
+      "start_seconds": 441.58,
+      "duration_seconds": 4.2
+    },
+    {
+      "index": 159,
+      "text": "YouTube has always had\na lot of people uploading cover songs,",
+      "start_seconds": 445.78,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 160,
+      "text": "singing and performing\nthe music that they love,",
+      "start_seconds": 448.1,
+      "duration_seconds": 2.08
+    },
+    {
+      "index": 161,
+      "text": "and hoping they'll get noticed.",
+      "start_seconds": 450.18,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 162,
+      "text": "By talent scouts, not by lawyers.",
+      "start_seconds": 452.08,
+      "duration_seconds": 2.14
+    },
+    {
+      "index": 163,
+      "text": "A lot of modern pop singers\ngot their start on YouTube,",
+      "start_seconds": 454.22,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 164,
+      "text": "but the legal baseline for doing that\noutside the YouTube bubble,",
+      "start_seconds": 457.42,
+      "duration_seconds": 3.26
+    },
+    {
+      "index": 165,
+      "text": "if you just filmed yourself\nand put it up somewhere else online…",
+      "start_seconds": 460.68,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 166,
+      "text": "Well, the baseline is that\nyou'd have to pay for an expensive license,",
+      "start_seconds": 464.08,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 167,
+      "text": "or you get sued, and you lose.",
+      "start_seconds": 466.78,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 168,
+      "text": "Or more likely,\nyou get a cease-and-desist letter,",
+      "start_seconds": 469.0,
+      "duration_seconds": 1.82
+    },
+    {
+      "index": 169,
+      "text": "you pay a bit of money\nto make the lawyers go away,",
+      "start_seconds": 470.82,
+      "duration_seconds": 1.8
+    },
+    {
+      "index": 170,
+      "text": "and you drop out of\nthe music industry, disillusioned.",
+      "start_seconds": 472.62,
+      "duration_seconds": 3.54
+    },
+    {
+      "index": 171,
+      "text": "And you can't get away with it\nby changing the lyrics.",
+      "start_seconds": 476.16,
+      "duration_seconds": 3.18
+    },
+    {
+      "index": 172,
+      "text": "A parody is probably not \"fair use\"\nunless you're directly criticising the original,",
+      "start_seconds": 479.34,
+      "duration_seconds": 4.06
+    },
+    {
+      "index": 173,
+      "text": "and even then, it's questionable.",
+      "start_seconds": 483.4,
+      "duration_seconds": 1.62
+    },
+    {
+      "index": 174,
+      "text": "'Weird' Al Yankovic,\nthe most popular parody artist in history,",
+      "start_seconds": 485.02,
+      "duration_seconds": 3.24
+    },
+    {
+      "index": 175,
+      "text": "licenses the songs that he parodies.",
+      "start_seconds": 488.26,
+      "duration_seconds": 2.0
+    },
+    {
+      "index": 176,
+      "text": "There are lots of lengthy law journal articles\nasking whether he needs to,",
+      "start_seconds": 490.26,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 177,
+      "text": "but… it's better safe than sorry,",
+      "start_seconds": 493.06,
+      "duration_seconds": 2.28
+    },
+    {
+      "index": 178,
+      "text": "and yeah, I wouldn't fancy his chances\nif it actually went to court.",
+      "start_seconds": 495.34,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 179,
+      "text": "The worst-case scenario of doing\nan unlicensed song parody on YouTube",
+      "start_seconds": 498.98,
+      "duration_seconds": 3.58
+    },
+    {
+      "index": 180,
+      "text": "is that you get sued, and you lose.",
+      "start_seconds": 502.56,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 181,
+      "text": "Because under current copyright law,\nyou are in the wrong.",
+      "start_seconds": 505.26,
+      "duration_seconds": 2.94
+    },
+    {
+      "index": 182,
+      "text": "I'm not saying that's how it should be.",
+      "start_seconds": 508.2,
+      "duration_seconds": 2.12
+    },
+    {
+      "index": 183,
+      "text": "I'm saying that's how it is.",
+      "start_seconds": 510.32,
+      "duration_seconds": 1.72
+    },
+    {
+      "index": 184,
+      "text": "And most people won't have the money\nto even start to defend a case like that.",
+      "start_seconds": 512.04,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 185,
+      "text": "Now, YouTube has a workaround for this,\nContent ID, I'll get to that later.",
+      "start_seconds": 516.2,
+      "duration_seconds": 3.5
+    },
+    {
+      "index": 186,
+      "text": "And if you're not actually using\nthe original piece,",
+      "start_seconds": 519.7,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 187,
+      "text": "if you're just…\nreminding the viewer of it,",
+      "start_seconds": 522.04,
+      "duration_seconds": 2.18
+    },
+    {
+      "index": 188,
+      "text": "just getting close enough\nin your parody,",
+      "start_seconds": 524.22,
+      "duration_seconds": 2.54
+    },
+    {
+      "index": 189,
+      "text": "then you're probably in the clear.",
+      "start_seconds": 526.76,
+      "duration_seconds": 2.1
+    },
+    {
+      "index": 190,
+      "text": "YouTube creators who change\njust the lyrics of songs to do parodies",
+      "start_seconds": 528.86,
+      "duration_seconds": 3.86
+    },
+    {
+      "index": 191,
+      "text": "often say, \"Oh, but it's transformative!\nIt's fair use, it's for criticism!",
+      "start_seconds": 532.72,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 192,
+      "text": "\"They can't claim copyright over it!\nThey're making a false…",
+      "start_seconds": 536.64,
+      "duration_seconds": 3.34
+    },
+    {
+      "index": 193,
+      "text": "[hits piano]",
+      "start_seconds": 538.6,
+      "duration_seconds": 1.38
+    },
+    {
+      "index": 194,
+      "text": "They're making a false claim!\"\nAnd…",
+      "start_seconds": 539.98,
+      "duration_seconds": 1.36
+    },
+    {
+      "index": 195,
+      "text": "Look, if you're taking a Katy Perry song\nand changing the words",
+      "start_seconds": 541.34,
+      "duration_seconds": 4.12
+    },
+    {
+      "index": 196,
+      "text": "to be about something other than\ncriticising Katy Perry or the song itself,",
+      "start_seconds": 545.46,
+      "duration_seconds": 3.46
+    },
+    {
+      "index": 197,
+      "text": "it's likely not fair use.",
+      "start_seconds": 548.92,
+      "duration_seconds": 1.72
+    },
+    {
+      "index": 198,
+      "text": "The same way that big movie companies\ncan't take small songwriters' work,",
+      "start_seconds": 550.64,
+      "duration_seconds": 3.34
+    },
+    {
+      "index": 199,
+      "text": "change the lyrics, and put the result\nin movies without paying and say,",
+      "start_seconds": 553.98,
+      "duration_seconds": 2.78
+    },
+    {
+      "index": 200,
+      "text": "\"Oh, but's transformative, it's fair use.\nLook, we changed the lyrics.\"",
+      "start_seconds": 556.76,
+      "duration_seconds": 3.24
+    },
+    {
+      "index": 201,
+      "text": "And it may seem unfair that the law holds\nkids on YouTube messing around",
+      "start_seconds": 560.0,
+      "duration_seconds": 4.42
+    },
+    {
+      "index": 202,
+      "text": "to more or less the same legal standard\nas Hollywood studios.",
+      "start_seconds": 564.42,
+      "duration_seconds": 3.26
+    },
+    {
+      "index": 203,
+      "text": "In public opinion,\nthere's definitely a big difference there:",
+      "start_seconds": 567.68,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 204,
+      "text": "People smile at small creators taking content\nfrom big companies well outside fair use,",
+      "start_seconds": 570.54,
+      "duration_seconds": 5.16
+    },
+    {
+      "index": 205,
+      "text": "but never the other way around.",
+      "start_seconds": 575.7,
+      "duration_seconds": 1.62
+    },
+    {
+      "index": 206,
+      "text": "And that's the reason that\nsome small-time reaction YouTuber…",
+      "start_seconds": 577.32,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 207,
+      "text": "Hey! Hey!",
+      "start_seconds": 579.64,
+      "duration_seconds": 1.3
+    },
+    {
+      "index": 208,
+      "text": "can take a five-second clip from a movie\nand use it for a cheap punchline,",
+      "start_seconds": 580.94,
+      "duration_seconds": 3.88
+    },
+    {
+      "index": 209,
+      "text": "even if it's not criticism and review…",
+      "start_seconds": 584.82,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 210,
+      "text": "but I'm damn sure if a movie studio\ntook a clip of a reaction channel's video",
+      "start_seconds": 587.26,
+      "duration_seconds": 3.8
+    },
+    {
+      "index": 211,
+      "text": "and used it in a film without permission,",
+      "start_seconds": 591.06,
+      "duration_seconds": 1.58
+    },
+    {
+      "index": 212,
+      "text": "there would be lawyers lining up\nto take the case.",
+      "start_seconds": 592.64,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 213,
+      "text": "Yeah, you're right.\nThis is my content, I own it!",
+      "start_seconds": 595.04,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 214,
+      "text": "You hear that, Disney? Right.",
+      "start_seconds": 597.24,
+      "duration_seconds": 1.82
+    },
+    {
+      "index": 215,
+      "text": "Remember, tomorrow I'm reacting\nto the new Star Wars trailer.",
+      "start_seconds": 599.06,
+      "duration_seconds": 3.22
+    },
+    {
+      "index": 216,
+      "text": "Maybe there should be\ndifferent treatment there.",
+      "start_seconds": 602.28,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 217,
+      "text": "But in current copyright law,\nthere isn't.",
+      "start_seconds": 604.68,
+      "duration_seconds": 3.46
+    },
+    {
+      "index": 218,
+      "text": "If you take a photograph off a stock image site,\nor from some photographer's Flickr account,",
+      "start_seconds": 612.26,
+      "duration_seconds": 4.48
+    },
+    {
+      "index": 219,
+      "text": "and you just copy it into your blog post\nor your company website,",
+      "start_seconds": 616.74,
+      "duration_seconds": 3.54
+    },
+    {
+      "index": 220,
+      "text": "you might well get an email\nfrom a service called Pixsy.",
+      "start_seconds": 620.28,
+      "duration_seconds": 3.56
+    },
+    {
+      "index": 221,
+      "text": "They use automatic systems\nto scan the web,",
+      "start_seconds": 623.84,
+      "duration_seconds": 1.88
+    },
+    {
+      "index": 222,
+      "text": "detect people who've used photographs\nwithout permission,",
+      "start_seconds": 625.72,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 223,
+      "text": "and then they send legal letters\nthreatening court action and demanding payment.",
+      "start_seconds": 628.36,
+      "duration_seconds": 4.94
+    },
+    {
+      "index": 224,
+      "text": "And legally, they are in the right.",
+      "start_seconds": 633.3,
+      "duration_seconds": 2.38
+    },
+    {
+      "index": 225,
+      "text": "They're using strong-arm tactics\nand they're in it for the money—",
+      "start_seconds": 635.68,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 226,
+      "text": "and in some cases,\nthey are threatening someone",
+      "start_seconds": 638.36,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 227,
+      "text": "who has absolutely no idea\nabout copyright,",
+      "start_seconds": 640.7,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 228,
+      "text": "and genuinely thinks that\nstuff on the web is free to take.",
+      "start_seconds": 643.66,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 229,
+      "text": "There are lots of threads online\nwith people going,",
+      "start_seconds": 646.54,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 230,
+      "text": "\"Agh, what's— what's happening?\nI didn't know, how do I make this go away?\"",
+      "start_seconds": 649.18,
+      "duration_seconds": 3.7
+    },
+    {
+      "index": 231,
+      "text": "To which the answer is: pay up.",
+      "start_seconds": 652.88,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 232,
+      "text": "Photography is an art,\nand an expensive one,",
+      "start_seconds": 655.56,
+      "duration_seconds": 2.5
+    },
+    {
+      "index": 233,
+      "text": "and yeah, until we live in magical\npost-scarcity Star Trek space communism,",
+      "start_seconds": 658.06,
+      "duration_seconds": 3.82
+    },
+    {
+      "index": 234,
+      "text": "you shouldn't just be able to rip off\na photographer's copyrighted work and use it.",
+      "start_seconds": 661.88,
+      "duration_seconds": 5.36
+    },
+    {
+      "index": 235,
+      "text": "Except, that's what the Internet does.\nA lot.",
+      "start_seconds": 667.24,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 236,
+      "text": "Heck, I used to do it.",
+      "start_seconds": 670.64,
+      "duration_seconds": 1.18
+    },
+    {
+      "index": 237,
+      "text": "It's gone from the Internet now,\nfor obvious reasons,",
+      "start_seconds": 671.82,
+      "duration_seconds": 1.82
+    },
+    {
+      "index": 238,
+      "text": "but when I was younger,\nI unashamedly took images",
+      "start_seconds": 673.64,
+      "duration_seconds": 3.38
+    },
+    {
+      "index": 239,
+      "text": "and other stuff from the web\nand repurposed it,",
+      "start_seconds": 677.02,
+      "duration_seconds": 2.18
+    },
+    {
+      "index": 240,
+      "text": "because I knew hardly anyone would see it,\neven fewer people would care,",
+      "start_seconds": 679.2,
+      "duration_seconds": 3.88
+    },
+    {
+      "index": 241,
+      "text": "and the worst case scenario\nwas that I'd get a cease-and-desist letter.",
+      "start_seconds": 683.08,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 242,
+      "text": "and if that happened,\nI might be able to cry 'censorship'",
+      "start_seconds": 687.4,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 243,
+      "text": "and get some publicity out of it.",
+      "start_seconds": 689.84,
+      "duration_seconds": 1.82
+    },
+    {
+      "index": 244,
+      "text": "I've grown up since then,",
+      "start_seconds": 691.66,
+      "duration_seconds": 1.56
+    },
+    {
+      "index": 245,
+      "text": "but there are a whole new wave of kids\nwho have that same philosophy.",
+      "start_seconds": 693.22,
+      "duration_seconds": 4.36
+    },
+    {
+      "index": 246,
+      "text": "\"No copyright infringement intended\",\nthey'll say.",
+      "start_seconds": 697.58,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 247,
+      "text": "\"I own nothing,\nall rights to the copyright owners\",",
+      "start_seconds": 700.34,
+      "duration_seconds": 2.02
+    },
+    {
+      "index": 248,
+      "text": "or \"this is transformative\nunder fair use\",",
+      "start_seconds": 702.36,
+      "duration_seconds": 2.54
+    },
+    {
+      "index": 249,
+      "text": "as if just claiming that is some\nmagic incantation that will ward off lawyers,",
+      "start_seconds": 704.9,
+      "duration_seconds": 4.82
+    },
+    {
+      "index": 250,
+      "text": "like waving a cross at vampires.",
+      "start_seconds": 709.72,
+      "duration_seconds": 1.98
+    },
+    {
+      "index": 251,
+      "text": "[with accent] I want to sue you now!",
+      "start_seconds": 711.7,
+      "duration_seconds": 1.7
+    },
+    {
+      "index": 252,
+      "text": "No copyright infringement intended!\nNo copyright infringement intended!",
+      "start_seconds": 713.4,
+      "duration_seconds": 5.72
+    },
+    {
+      "index": 253,
+      "text": "[hisses]",
+      "start_seconds": 719.12,
+      "duration_seconds": 1.22
+    },
+    {
+      "index": 254,
+      "text": "András Arató, from Hungary, posed for\nsome stock photography a few years ago.",
+      "start_seconds": 720.34,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 255,
+      "text": "He doesn't have rights over his face\nor image in any of these photos,",
+      "start_seconds": 724.42,
+      "duration_seconds": 3.32
+    },
+    {
+      "index": 256,
+      "text": "he signed those away\nas part of the photography contract.",
+      "start_seconds": 727.74,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 257,
+      "text": "And while there is a discussion\nto be had about personality rights",
+      "start_seconds": 730.08,
+      "duration_seconds": 3.86
+    },
+    {
+      "index": 258,
+      "text": "and the ethics of taking some random person's face\nand using it without context,",
+      "start_seconds": 733.94,
+      "duration_seconds": 4.58
+    },
+    {
+      "index": 259,
+      "text": "that's not relevant here.\nWhat is relevant is the copyright on that photo.",
+      "start_seconds": 738.52,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 260,
+      "text": "If you're criticising or commenting\non the photo itself,",
+      "start_seconds": 743.08,
+      "duration_seconds": 2.6
+    },
+    {
+      "index": 261,
+      "text": "if you're judging the composition,\nthe camerawork, or…",
+      "start_seconds": 745.68,
+      "duration_seconds": 3.66
+    },
+    {
+      "index": 262,
+      "text": "yes, the incredibly awkward expression",
+      "start_seconds": 749.34,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 263,
+      "text": "that meant he gained\nthe nickname \"Hide the Pain Harold\"",
+      "start_seconds": 751.68,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 264,
+      "text": "and became one of the most-recognised figures\nin the nerdy underbelly of the Internet,",
+      "start_seconds": 754.68,
+      "duration_seconds": 3.82
+    },
+    {
+      "index": 265,
+      "text": "then yes, that may well be acceptable.",
+      "start_seconds": 758.5,
+      "duration_seconds": 2.6
+    },
+    {
+      "index": 266,
+      "text": "But if you're just using those pictures\nas a stock image",
+      "start_seconds": 761.1,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 267,
+      "text": "to make a point about anything else,",
+      "start_seconds": 764.74,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 268,
+      "text": "then you'd better have a license\nor you're exposing yourself to a lot of legal liability.",
+      "start_seconds": 767.32,
+      "duration_seconds": 4.74
+    },
+    {
+      "index": 269,
+      "text": "When big publications talk about\nthe \"distracted boyfriend\" picture, they license it.",
+      "start_seconds": 772.06,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 270,
+      "text": "There is no exception, under law, for:\n\"I just put it in my video as a quick joke!\"",
+      "start_seconds": 776.46,
+      "duration_seconds": 4.06
+    },
+    {
+      "index": 271,
+      "text": "I licensed all those photos\nfrom a company called Shutterstock,",
+      "start_seconds": 780.52,
+      "duration_seconds": 2.6
+    },
+    {
+      "index": 272,
+      "text": "here's the license agreement.",
+      "start_seconds": 783.12,
+      "duration_seconds": 1.74
+    },
+    {
+      "index": 273,
+      "text": "Actually, I got a bundle deal of image credits\nfrom them because it was cheaper,",
+      "start_seconds": 784.86,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 274,
+      "text": "and I had some of those credits left over,",
+      "start_seconds": 789.02,
+      "duration_seconds": 1.98
+    },
+    {
+      "index": 275,
+      "text": "so please now enjoy\na few inexplicable stock photos",
+      "start_seconds": 791.0,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 276,
+      "text": "that I also now have\nthe legal right to use.",
+      "start_seconds": 794.3,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 277,
+      "text": "Anyway, the photographer who took\nthat original \"distracted boyfriend\" picture",
+      "start_seconds": 804.3,
+      "duration_seconds": 3.18
+    },
+    {
+      "index": 278,
+      "text": "was asked how he felt about his work\nbeing used everywhere without permission.",
+      "start_seconds": 807.48,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 279,
+      "text": "And he said: \"They're just a group of people\ndoing it in good faith.",
+      "start_seconds": 812.04,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 280,
+      "text": "\"We are not going to take any action,\nexcept for the extreme cases",
+      "start_seconds": 815.68,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 281,
+      "text": "in which this good faith doesn't exist.\"",
+      "start_seconds": 819.12,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 282,
+      "text": "That is an act of generosity\non his part.",
+      "start_seconds": 822.76,
+      "duration_seconds": 2.52
+    },
+    {
+      "index": 283,
+      "text": "He would be entirely within his rights\nto hire a service like Pixsy,",
+      "start_seconds": 825.28,
+      "duration_seconds": 3.26
+    },
+    {
+      "index": 284,
+      "text": "let them play the bad guys,\nand rake in a lot of money,",
+      "start_seconds": 828.54,
+      "duration_seconds": 2.82
+    },
+    {
+      "index": 285,
+      "text": "and if you think that's wrong,\nthen talk to a professional photographer.",
+      "start_seconds": 831.36,
+      "duration_seconds": 3.48
+    },
+    {
+      "index": 286,
+      "text": "Ask them how they earn their living,\nand how much their equipment costs,",
+      "start_seconds": 834.84,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 287,
+      "text": "and how they'd feel about it.",
+      "start_seconds": 837.86,
+      "duration_seconds": 2.28
+    },
+    {
+      "index": 288,
+      "text": "Now as I record this, Pixsy doesn't appear\nto have automated systems",
+      "start_seconds": 840.14,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 289,
+      "text": "hunting through YouTube videos to find\nunlicensed images and send out legal threats,",
+      "start_seconds": 844.3,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 290,
+      "text": "but… they could. Pretty easily.",
+      "start_seconds": 848.46,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 291,
+      "text": "Maybe those claims could be\ndefended in court with enough money,",
+      "start_seconds": 851.46,
+      "duration_seconds": 2.9
+    },
+    {
+      "index": 292,
+      "text": "but in the current system,\nmost people would be forced to fold,",
+      "start_seconds": 854.36,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 293,
+      "text": "and pay a license fee,\nand give up.",
+      "start_seconds": 857.72,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 294,
+      "text": "And viral-video licensing companies\nlike Jukin Media",
+      "start_seconds": 859.98,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 295,
+      "text": "do already search through YouTube for\nunlicensed use of the video clips they own,",
+      "start_seconds": 863.04,
+      "duration_seconds": 3.5
+    },
+    {
+      "index": 296,
+      "text": "and while as a company they are vilified\nby the creator community,",
+      "start_seconds": 866.54,
+      "duration_seconds": 3.46
+    },
+    {
+      "index": 297,
+      "text": "they've, um… they've got a point.",
+      "start_seconds": 870.0,
+      "duration_seconds": 2.52
+    },
+    {
+      "index": 298,
+      "text": "Creators have the right to determine\nhow their work is being used,",
+      "start_seconds": 872.52,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 299,
+      "text": "and taking someone else's\ncopyrighted photos or videos,",
+      "start_seconds": 875.24,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 300,
+      "text": "and using them commercially,\nwithout permission, without criticism,",
+      "start_seconds": 878.36,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 301,
+      "text": "is not fair use under the law.",
+      "start_seconds": 881.28,
+      "duration_seconds": 2.04
+    },
+    {
+      "index": 302,
+      "text": "Even if loads of other people\nhave already used them.",
+      "start_seconds": 883.32,
+      "duration_seconds": 2.1
+    },
+    {
+      "index": 303,
+      "text": "Even if you add some words on top of them.\nEven if you mash them up with three other things.",
+      "start_seconds": 885.42,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 304,
+      "text": "Are you 100% sure that you are transforming\nor criticising the original,",
+      "start_seconds": 889.06,
+      "duration_seconds": 4.6
+    },
+    {
+      "index": 305,
+      "text": "not just using it?",
+      "start_seconds": 893.66,
+      "duration_seconds": 1.2
+    },
+    {
+      "index": 306,
+      "text": "And are you 100% sure\nthat a court would agree with you?",
+      "start_seconds": 894.86,
+      "duration_seconds": 3.38
+    },
+    {
+      "index": 307,
+      "text": "And just to repeat:\nI'm not saying this is how it should be.",
+      "start_seconds": 898.24,
+      "duration_seconds": 2.18
+    },
+    {
+      "index": 308,
+      "text": "I'm saying: this is how it is.",
+      "start_seconds": 900.42,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 309,
+      "text": "But that's pictures and videos.\nWhat about bits of pop culture?",
+      "start_seconds": 903.48,
+      "duration_seconds": 3.54
+    },
+    {
+      "index": 310,
+      "text": "At the end of 2019, Giphy,\na GIF-aggregation site, briefly removed…",
+      "start_seconds": 907.02,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 311,
+      "text": "Actually, hold on.\nPeople will complain.",
+      "start_seconds": 911.26,
+      "duration_seconds": 1.6
+    },
+    {
+      "index": 312,
+      "text": "I'm pronouncing it /ɡɪf/ because Giphy,\nthe site I'm talking about, pronounces it /ɡɪf/.",
+      "start_seconds": 912.86,
+      "duration_seconds": 3.32
+    },
+    {
+      "index": 313,
+      "text": "And besides, the real problem\nis that they're not actually GIFs,",
+      "start_seconds": 916.18,
+      "duration_seconds": 2.08
+    },
+    {
+      "index": 314,
+      "text": "they're short video files\nin other formats.",
+      "start_seconds": 918.26,
+      "duration_seconds": 1.52
+    },
+    {
+      "index": 315,
+      "text": "GIF is a really specific descriptor\nfor a data format.",
+      "start_seconds": 919.78,
+      "duration_seconds": 2.28
+    },
+    {
+      "index": 316,
+      "text": "Short looping videos are not GIFs,\nbut apparently now they are!",
+      "start_seconds": 922.06,
+      "duration_seconds": 3.08
+    },
+    {
+      "index": 317,
+      "text": "It's like how \"emoji\" now refers to\nany small image.",
+      "start_seconds": 925.14,
+      "duration_seconds": 1.98
+    },
+    {
+      "index": 318,
+      "text": "I'm still grumpy about all of this.\nDon't @ me. Anyway.",
+      "start_seconds": 927.12,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 319,
+      "text": "At the end of 2019, Giphy briefly removed\nits many, many GIFs",
+      "start_seconds": 929.7,
+      "duration_seconds": 3.5
+    },
+    {
+      "index": 320,
+      "text": "of The Child from The Mandalorian,",
+      "start_seconds": 933.2,
+      "duration_seconds": 1.7
+    },
+    {
+      "index": 321,
+      "text": "a creature designed to be so adorable\nthat I can only assume",
+      "start_seconds": 934.9,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 322,
+      "text": "the design came directly from\nDisney's merchandising team.",
+      "start_seconds": 937.24,
+      "duration_seconds": 3.48
+    },
+    {
+      "index": 323,
+      "text": "Those GIFs were removed\nbecause of what Giphy described as",
+      "start_seconds": 940.72,
+      "duration_seconds": 2.94
+    },
+    {
+      "index": 324,
+      "text": "\"confusion about certain content\".",
+      "start_seconds": 943.66,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 325,
+      "text": "I'd guess they got a legal letter\nfrom someone at Disney,",
+      "start_seconds": 946.7,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 326,
+      "text": "before Disney realised\nwhat a PR disaster it would be",
+      "start_seconds": 948.96,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 327,
+      "text": "to stop the Internet having\nimmediate access to Baby Yoda.",
+      "start_seconds": 951.54,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 328,
+      "text": "But the Guardian article about that brief takedown\nhas a really interesting final line:",
+      "start_seconds": 954.98,
+      "duration_seconds": 5.4
+    },
+    {
+      "index": 329,
+      "text": "\"Images in GIFs are widely understood\nto fall under the 'fair use' exception.\"",
+      "start_seconds": 960.38,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 330,
+      "text": "Notice how that's phrased:\n\"Widely understood.\"",
+      "start_seconds": 965.9,
+      "duration_seconds": 2.82
+    },
+    {
+      "index": 331,
+      "text": "There has never been a court case about this.\nAre GIFs fair use?",
+      "start_seconds": 968.72,
+      "duration_seconds": 3.94
+    },
+    {
+      "index": 332,
+      "text": "I actually think that, if some company\ngot a bee in their bonnet,",
+      "start_seconds": 973.66,
+      "duration_seconds": 2.02
+    },
+    {
+      "index": 333,
+      "text": "the same way they did about Napster\ntwenty years ago,",
+      "start_seconds": 975.68,
+      "duration_seconds": 2.28
+    },
+    {
+      "index": 334,
+      "text": "and if they insisted on litigating\nall the way to court,",
+      "start_seconds": 977.96,
+      "duration_seconds": 3.38
+    },
+    {
+      "index": 335,
+      "text": "it is entirely possible\nthat a judge would go,",
+      "start_seconds": 981.34,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 336,
+      "text": "\"No, GIFs aren't a parody, they're not criticism,\nthey're not transformative, they're not fair use.",
+      "start_seconds": 983.98,
+      "duration_seconds": 4.34
+    },
+    {
+      "index": 337,
+      "text": "\"Giphy's entire product, the GIF economy,\nis based on systematic copyright infringement.",
+      "start_seconds": 988.32,
+      "duration_seconds": 4.12
+    },
+    {
+      "index": 338,
+      "text": "\"Pay the money, shut it down.\"",
+      "start_seconds": 992.44,
+      "duration_seconds": 2.02
+    },
+    {
+      "index": 339,
+      "text": "In practice, of course,\nit wouldn't get that far.",
+      "start_seconds": 994.46,
+      "duration_seconds": 2.0
+    },
+    {
+      "index": 340,
+      "text": "Giphy would accept a cease-and-desist\nand take down what was complained about.",
+      "start_seconds": 996.46,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 341,
+      "text": "It's just easier,\nbecause remember,",
+      "start_seconds": 999.5,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 342,
+      "text": "they're not an individual creator\nor a small site.",
+      "start_seconds": 1001.72,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 343,
+      "text": "Giphy has an enormous office\nin New York",
+      "start_seconds": 1004.58,
+      "duration_seconds": 2.36
+    },
+    {
+      "index": 344,
+      "text": "with catered lunches and arcade games\nfor more than 100 employees…",
+      "start_seconds": 1006.94,
+      "duration_seconds": 4.2
+    },
+    {
+      "index": 345,
+      "text": "based on a business model that is\narguably copyright infringement.",
+      "start_seconds": 1011.14,
+      "duration_seconds": 3.66
+    },
+    {
+      "index": 346,
+      "text": "I am amazed that no big media corporations\nhave looked at their money and gone…",
+      "start_seconds": 1014.8,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 347,
+      "text": "\"We can sue them for that!\"",
+      "start_seconds": 1019.12,
+      "duration_seconds": 1.84
+    },
+    {
+      "index": 348,
+      "text": "In the same way, uploading\nvideo game footage to YouTube",
+      "start_seconds": 1021.62,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 349,
+      "text": "is \"widely understood\" to be okay,\nbut that's questionable.",
+      "start_seconds": 1024.64,
+      "duration_seconds": 4.58
+    },
+    {
+      "index": 350,
+      "text": "Maybe if it's something like Minecraft,\nwhere there's a lot of original work, it could be.",
+      "start_seconds": 1029.22,
+      "duration_seconds": 5.06
+    },
+    {
+      "index": 351,
+      "text": "And besides, the license agreement\nthat you accept when playing Minecraft",
+      "start_seconds": 1034.28,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 352,
+      "text": "allows streaming\nand most YouTube videos.",
+      "start_seconds": 1038.28,
+      "duration_seconds": 2.62
+    },
+    {
+      "index": 353,
+      "text": "But if it's just a video of cutscenes,",
+      "start_seconds": 1040.9,
+      "duration_seconds": 2.38
+    },
+    {
+      "index": 354,
+      "text": "or following roughly the same\nsequence of events",
+      "start_seconds": 1043.28,
+      "duration_seconds": 1.8
+    },
+    {
+      "index": 355,
+      "text": "that every player would follow,",
+      "start_seconds": 1045.08,
+      "duration_seconds": 2.12
+    },
+    {
+      "index": 356,
+      "text": "it's a bit like putting up a video\nof you watching a TV show.",
+      "start_seconds": 1047.2,
+      "duration_seconds": 3.38
+    },
+    {
+      "index": 357,
+      "text": "We've seen companies decide\nin the past that…",
+      "start_seconds": 1050.58,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 358,
+      "text": "actually, they don't want\nvideos of their games online.",
+      "start_seconds": 1053.26,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 359,
+      "text": "It is very easy to make the argument\nthat online streaming of games affects sales.",
+      "start_seconds": 1056.28,
+      "duration_seconds": 4.62
+    },
+    {
+      "index": 360,
+      "text": "And the impact on sales\nis a key component",
+      "start_seconds": 1060.9,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 361,
+      "text": "in determining whether something\nis fair use.",
+      "start_seconds": 1063.12,
+      "duration_seconds": 1.96
+    },
+    {
+      "index": 362,
+      "text": "Sure, the games get some exposure,\nbut exposure doesn't pay the rent.",
+      "start_seconds": 1065.08,
+      "duration_seconds": 3.72
+    },
+    {
+      "index": 363,
+      "text": "I didn't buy Untitled Goose Game\nand experience the beautiful artwork",
+      "start_seconds": 1068.8,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 364,
+      "text": "and immaculately-timed\ncomic setpieces myself.",
+      "start_seconds": 1072.2,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 365,
+      "text": "I skipped through a couple of videos\nso I could get the jokes,",
+      "start_seconds": 1074.78,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 366,
+      "text": "and then I moved on.",
+      "start_seconds": 1076.98,
+      "duration_seconds": 1.64
+    },
+    {
+      "index": 367,
+      "text": "I didn't buy Superliminal either.",
+      "start_seconds": 1078.62,
+      "duration_seconds": 1.7
+    },
+    {
+      "index": 368,
+      "text": "I just watched a video of someone\nplaying it to get how it works,",
+      "start_seconds": 1080.32,
+      "duration_seconds": 3.8
+    },
+    {
+      "index": 369,
+      "text": "skipped forward to see how it ends,\nand then I got on with my life.",
+      "start_seconds": 1084.12,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 370,
+      "text": "And I'm glad I did,\nthe game mechanics are clever…",
+      "start_seconds": 1086.84,
+      "duration_seconds": 2.48
+    },
+    {
+      "index": 371,
+      "text": "but the ending is unsatisfying.",
+      "start_seconds": 1089.32,
+      "duration_seconds": 2.08
+    },
+    {
+      "index": 372,
+      "text": "Or maybe I just think that\nbecause I watched someone else play it.",
+      "start_seconds": 1091.4,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 373,
+      "text": "And that someone else, who provided\na substitute for the original product,",
+      "start_seconds": 1094.7,
+      "duration_seconds": 4.46
+    },
+    {
+      "index": 374,
+      "text": "made money off that, either from\nadvertising or streaming donations.",
+      "start_seconds": 1099.16,
+      "duration_seconds": 4.18
+    },
+    {
+      "index": 375,
+      "text": "Now, video game streaming\nmight be fair use",
+      "start_seconds": 1103.34,
+      "duration_seconds": 2.52
+    },
+    {
+      "index": 376,
+      "text": "if you've got someone constantly criticising\nand reviewing the work as they play it.",
+      "start_seconds": 1105.86,
+      "duration_seconds": 4.38
+    },
+    {
+      "index": 377,
+      "text": "Not just talking about it, or not just\nrepeating what they're saying in the game,",
+      "start_seconds": 1110.24,
+      "duration_seconds": 4.32
+    },
+    {
+      "index": 378,
+      "text": "or saying hi to the chat,\nlike actively criticising.",
+      "start_seconds": 1114.56,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 379,
+      "text": "Maybe.\nIt would be up to a judge to decide,",
+      "start_seconds": 1117.62,
+      "duration_seconds": 2.12
+    },
+    {
+      "index": 380,
+      "text": "and no-one wants any case like that\nto get to court,",
+      "start_seconds": 1119.74,
+      "duration_seconds": 1.64
+    },
+    {
+      "index": 381,
+      "text": "because somehow\nwe have an entire industry",
+      "start_seconds": 1121.38,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 382,
+      "text": "based around something that is\nvery possibly copyright infringement,",
+      "start_seconds": 1123.96,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 383,
+      "text": "but which most video game publishers\nare just going along with.",
+      "start_seconds": 1126.96,
+      "duration_seconds": 3.46
+    },
+    {
+      "index": 384,
+      "text": "Perhaps because they genuinely think\nit's a good thing,",
+      "start_seconds": 1130.42,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 385,
+      "text": "or perhaps… because they've seen\nthe backlash that happens",
+      "start_seconds": 1132.62,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 386,
+      "text": "when horrible gamer children are suddenly\ndenied something they think is their right.",
+      "start_seconds": 1135.58,
+      "duration_seconds": 5.14
+    },
+    {
+      "index": 387,
+      "text": "Like our friend in the corner.",
+      "start_seconds": 1140.72,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 388,
+      "text": "Hey, this is transformative.\nThis is definitely fair use.",
+      "start_seconds": 1143.12,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 389,
+      "text": "Would you do this\nto a Marvel movie, though?",
+      "start_seconds": 1146.52,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 390,
+      "text": "No, mate. They'd sue me for\nevery penny I've got.",
+      "start_seconds": 1148.74,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 391,
+      "text": "♪ In the not-too-distant future,\nnext Sunday A.D. ♪",
+      "start_seconds": 1152.221,
+      "duration_seconds": 5.939
+    },
+    {
+      "index": 392,
+      "text": "In 1988, KTMA-TV in Minneapolis",
+      "start_seconds": 1158.16,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 393,
+      "text": "aired the first episode of\nMystery Science Theater 3000,",
+      "start_seconds": 1161.22,
+      "duration_seconds": 4.06
+    },
+    {
+      "index": 394,
+      "text": "which was basically a reaction channel.",
+      "start_seconds": 1165.28,
+      "duration_seconds": 1.98
+    },
+    {
+      "index": 395,
+      "text": "A host, along with a cast of puppet robots,",
+      "start_seconds": 1167.26,
+      "duration_seconds": 1.82
+    },
+    {
+      "index": 396,
+      "text": "would watch a full-length movie,\nusually an old science fiction piece.",
+      "start_seconds": 1169.08,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 397,
+      "text": "They'd be in silhouette, as if they were\nin the row of cinema seats in front of you,",
+      "start_seconds": 1172.14,
+      "duration_seconds": 3.34
+    },
+    {
+      "index": 398,
+      "text": "constantly cracking jokes about\nwhatever was on screen.",
+      "start_seconds": 1175.48,
+      "duration_seconds": 3.1
+    },
+    {
+      "index": 399,
+      "text": "It's tightly written, scripted with\njoke after joke after joke,",
+      "start_seconds": 1178.58,
+      "duration_seconds": 2.9
+    },
+    {
+      "index": 400,
+      "text": "although the skits that\nsurround the movie",
+      "start_seconds": 1181.48,
+      "duration_seconds": 2.46
+    },
+    {
+      "index": 401,
+      "text": "are often so laden with in-jokes\nand character shtick",
+      "start_seconds": 1183.94,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 402,
+      "text": "that new viewers who don't know\nthe show and the cast can be completely lost.",
+      "start_seconds": 1186.62,
+      "duration_seconds": 4.44
+    },
+    {
+      "index": 403,
+      "text": "Like I said:\nit's basically a reaction channel.",
+      "start_seconds": 1191.06,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 404,
+      "text": "Time magazine listed Mystery Science Theater as\none of the 100 greatest TV shows of all time.",
+      "start_seconds": 1193.5,
+      "duration_seconds": 5.0
+    },
+    {
+      "index": 405,
+      "text": "A Kickstarter brought it back in 2016,",
+      "start_seconds": 1198.5,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 406,
+      "text": "and then Netflix brought it back\nfor another couple of seasons.",
+      "start_seconds": 1200.76,
+      "duration_seconds": 3.18
+    },
+    {
+      "index": 407,
+      "text": "Mystery Science Theater was absolutely criticism\nand review and absolutely transformative.",
+      "start_seconds": 1203.94,
+      "duration_seconds": 6.1
+    },
+    {
+      "index": 408,
+      "text": "But they still licensed the movies.",
+      "start_seconds": 1210.04,
+      "duration_seconds": 2.48
+    },
+    {
+      "index": 409,
+      "text": "Anything that wasn't in the public domain,\nthey negotiated and paid for,",
+      "start_seconds": 1212.52,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 410,
+      "text": "because… yeah.",
+      "start_seconds": 1215.72,
+      "duration_seconds": 1.18
+    },
+    {
+      "index": 411,
+      "text": "Playing out someone else's entire movie,\njust with wisecracks over it…",
+      "start_seconds": 1216.9,
+      "duration_seconds": 4.44
+    },
+    {
+      "index": 412,
+      "text": "probably not fair use.",
+      "start_seconds": 1221.34,
+      "duration_seconds": 1.44
+    },
+    {
+      "index": 413,
+      "text": "And even if it was, a studio would've\nprobably sued them at some point anyway,",
+      "start_seconds": 1222.78,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 414,
+      "text": "and they'd have had to defend the case\nand spend the money to defend the case.",
+      "start_seconds": 1225.48,
+      "duration_seconds": 3.96
+    },
+    {
+      "index": 415,
+      "text": "Now, there have been YouTube commentary channels\nwho have defended lawsuits",
+      "start_seconds": 1229.44,
+      "duration_seconds": 4.38
+    },
+    {
+      "index": 416,
+      "text": "where fair use and fair dealing\nseem clear.",
+      "start_seconds": 1233.82,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 417,
+      "text": "H3H3, an often-controversial\nreaction and commentary channel,",
+      "start_seconds": 1236.52,
+      "duration_seconds": 3.24
+    },
+    {
+      "index": 418,
+      "text": "won a very expensive lawsuit that was\nbrought by someone they criticised.",
+      "start_seconds": 1239.76,
+      "duration_seconds": 3.78
+    },
+    {
+      "index": 419,
+      "text": "They were very happy about the result,",
+      "start_seconds": 1243.54,
+      "duration_seconds": 1.66
+    },
+    {
+      "index": 420,
+      "text": "and they shared that with their fans",
+      "start_seconds": 1245.2,
+      "duration_seconds": 1.54
+    },
+    {
+      "index": 421,
+      "text": "in a way that pretty much sums up\nwhy their style…",
+      "start_seconds": 1246.74,
+      "duration_seconds": 4.1
+    },
+    {
+      "index": 422,
+      "text": "isn't for everyone.",
+      "start_seconds": 1250.84,
+      "duration_seconds": 1.42
+    },
+    {
+      "index": 423,
+      "text": "Good job, Hila. \n Good job.",
+      "start_seconds": 1252.26,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 424,
+      "text": "[choking noises]",
+      "start_seconds": 1254.48,
+      "duration_seconds": 2.84
+    },
+    {
+      "index": 425,
+      "text": "[screams]",
+      "start_seconds": 1257.32,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 426,
+      "text": "The court even noted\nthat their video was transformative",
+      "start_seconds": 1259.58,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 427,
+      "text": "because it \"responds to and\ntransforms the video from a skit",
+      "start_seconds": 1261.98,
+      "duration_seconds": 4.1
+    },
+    {
+      "index": 428,
+      "text": "\"into fodder for caustic, moment-by-moment\ncommentary and mockery.\"",
+      "start_seconds": 1266.08,
+      "duration_seconds": 4.58
+    },
+    {
+      "index": 429,
+      "text": "The judge's decision goes into\nthe balancing factors of fair use in depth,",
+      "start_seconds": 1270.66,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 430,
+      "text": "but the most important bit\nis a little bit further down:",
+      "start_seconds": 1274.82,
+      "duration_seconds": 4.14
+    },
+    {
+      "index": 431,
+      "text": "\"Some reaction videos … intersperse\nshort segments of another's work",
+      "start_seconds": 1278.96,
+      "duration_seconds": 4.02
+    },
+    {
+      "index": 432,
+      "text": "\"with criticism and commentary,",
+      "start_seconds": 1282.98,
+      "duration_seconds": 1.78
+    },
+    {
+      "index": 433,
+      "text": "\"while others are more akin to\na group viewing session without commentary.",
+      "start_seconds": 1284.76,
+      "duration_seconds": 3.82
+    },
+    {
+      "index": 434,
+      "text": "\"Accordingly, the Court is not ruling here\nthat all 'reaction videos' constitute fair use.\"",
+      "start_seconds": 1288.58,
+      "duration_seconds": 6.78
+    },
+    {
+      "index": 435,
+      "text": "It's clear that just playing a video and laughing at it\nisn't fair use. It's copyright infringement.",
+      "start_seconds": 1295.36,
+      "duration_seconds": 5.32
+    },
+    {
+      "index": 436,
+      "text": "The border of fair use is\nsomewhere in the grey area",
+      "start_seconds": 1300.68,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 437,
+      "text": "between lazy zero-effort reaction streamers\nand in-depth insightful criticism…",
+      "start_seconds": 1303.38,
+      "duration_seconds": 5.08
+    },
+    {
+      "index": 438,
+      "text": "but it's a fuzzy border,\nand right now, questions about it",
+      "start_seconds": 1308.46,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 439,
+      "text": "can only be settled on a case-by-case basis\nin an expensive courtroom,",
+      "start_seconds": 1311.1,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 440,
+      "text": "because, yeah, there is one thread\nthroughout all these examples:",
+      "start_seconds": 1313.98,
+      "duration_seconds": 3.56
+    },
+    {
+      "index": 441,
+      "text": "under the current system, it often\ndoesn't matter who's actually in the right.",
+      "start_seconds": 1317.54,
+      "duration_seconds": 3.94
+    },
+    {
+      "index": 442,
+      "text": "Even if the answer to\n\"Is it fair use?\" is clear,",
+      "start_seconds": 1321.48,
+      "duration_seconds": 2.52
+    },
+    {
+      "index": 443,
+      "text": "it's actually about whether\nyou can afford to defend a case.",
+      "start_seconds": 1324.0,
+      "duration_seconds": 1.92
+    },
+    {
+      "index": 444,
+      "text": "You could be 100% sure it's fair use…",
+      "start_seconds": 1325.92,
+      "duration_seconds": 3.7
+    },
+    {
+      "index": 445,
+      "text": "but unless you're prepared to spend the time\nand the money to actually fight that in court,",
+      "start_seconds": 1329.62,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 446,
+      "text": "it doesn't matter.",
+      "start_seconds": 1332.74,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 447,
+      "text": "Which brings us to\nhow YouTube worked around this.",
+      "start_seconds": 1335.6,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 448,
+      "text": "Back in 2006, YouTube made an arrangement\nwith the big music companies,",
+      "start_seconds": 1343.74,
+      "duration_seconds": 4.18
+    },
+    {
+      "index": 449,
+      "text": "so the big industry players wouldn't sue\nthis new platform out of existence.",
+      "start_seconds": 1347.92,
+      "duration_seconds": 4.06
+    },
+    {
+      "index": 450,
+      "text": "YouTube developed Content ID,\nwhich scans every video uploaded",
+      "start_seconds": 1351.98,
+      "duration_seconds": 4.14
+    },
+    {
+      "index": 451,
+      "text": "and checks it against an enormous database\nof copyrighted content.",
+      "start_seconds": 1356.12,
+      "duration_seconds": 3.96
+    },
+    {
+      "index": 452,
+      "text": "If there's a match, everything works\ncompletely outside the usual copyright system.",
+      "start_seconds": 1360.08,
+      "duration_seconds": 5.64
+    },
+    {
+      "index": 453,
+      "text": "All those worries about synchronisation licenses\nand publication rights,",
+      "start_seconds": 1365.72,
+      "duration_seconds": 4.22
+    },
+    {
+      "index": 454,
+      "text": "all that law, is effectively replaced\nwith two contracts:",
+      "start_seconds": 1369.94,
+      "duration_seconds": 3.5
+    },
+    {
+      "index": 455,
+      "text": "one that's private between YouTube\nand the big media companies,",
+      "start_seconds": 1373.44,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 456,
+      "text": "and one that's in the Terms of Service\nthat you agree to",
+      "start_seconds": 1376.24,
+      "duration_seconds": 2.62
+    },
+    {
+      "index": 457,
+      "text": "when you upload your bedroom-vlogger\nvideo to YouTube.",
+      "start_seconds": 1378.86,
+      "duration_seconds": 3.66
+    },
+    {
+      "index": 458,
+      "text": "There is a public list of the music tracks\nthat are in Content ID,",
+      "start_seconds": 1382.52,
+      "duration_seconds": 2.66
+    },
+    {
+      "index": 459,
+      "text": "including the current policies\nfrom the music companies.",
+      "start_seconds": 1385.18,
+      "duration_seconds": 2.22
+    },
+    {
+      "index": 460,
+      "text": "There's no list of the TV shows,\nor films, or other stuff that's in there.",
+      "start_seconds": 1387.4,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 461,
+      "text": "Mostly, the copyright owners\njust put adverts on the video.",
+      "start_seconds": 1390.84,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 462,
+      "text": "Sometimes, they do block it entirely, but…\nthose policies can change at any time,",
+      "start_seconds": 1394.14,
+      "duration_seconds": 4.52
+    },
+    {
+      "index": 463,
+      "text": "and if you do something\nthey particularly don't like,",
+      "start_seconds": 1398.66,
+      "duration_seconds": 2.6
+    },
+    {
+      "index": 464,
+      "text": "it doesn't make you immune\nfrom lawsuits,",
+      "start_seconds": 1401.26,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 465,
+      "text": "or from formal takedown notices\nunder a law called the DMCA.",
+      "start_seconds": 1403.16,
+      "duration_seconds": 3.96
+    },
+    {
+      "index": 466,
+      "text": "They're called \"copyright strikes\"\nby YouTube.",
+      "start_seconds": 1407.12,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 467,
+      "text": "Those are still an option\nfor copyright owners.",
+      "start_seconds": 1409.8,
+      "duration_seconds": 2.52
+    },
+    {
+      "index": 468,
+      "text": "It's just that with very, very few exceptions,\nthey'll take the money from ads instead.",
+      "start_seconds": 1412.32,
+      "duration_seconds": 5.52
+    },
+    {
+      "index": 469,
+      "text": "Content ID means that video creators,",
+      "start_seconds": 1417.84,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 470,
+      "text": "unless they're being so malicious\nas to attract serious attention,",
+      "start_seconds": 1420.24,
+      "duration_seconds": 3.86
+    },
+    {
+      "index": 471,
+      "text": "generally don't get sued\nand don't get DMCA takedowns.",
+      "start_seconds": 1424.1,
+      "duration_seconds": 2.78
+    },
+    {
+      "index": 472,
+      "text": "They don't have to negotiate a\nsynchronisation license for cover songs.",
+      "start_seconds": 1426.88,
+      "duration_seconds": 3.96
+    },
+    {
+      "index": 473,
+      "text": "Now, some companies — music labels, mostly —\nare also able to manually put Content ID claims",
+      "start_seconds": 1430.84,
+      "duration_seconds": 5.7
+    },
+    {
+      "index": 474,
+      "text": "on videos that\nthe automated systems miss.",
+      "start_seconds": 1436.54,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 475,
+      "text": "That is an avenue for abuse.",
+      "start_seconds": 1439.42,
+      "duration_seconds": 1.72
+    },
+    {
+      "index": 476,
+      "text": "And so is the manual appeals process\nthat's meant to kick in",
+      "start_seconds": 1441.14,
+      "duration_seconds": 2.74
+    },
+    {
+      "index": 477,
+      "text": "if the automated systems have flagged\nsomething that really is fair use,",
+      "start_seconds": 1443.88,
+      "duration_seconds": 3.66
+    },
+    {
+      "index": 478,
+      "text": "like a review, or a brief\nincidental snippet of a song",
+      "start_seconds": 1447.54,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 479,
+      "text": "that was playing somewhere\nas you walked by.",
+      "start_seconds": 1450.52,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 480,
+      "text": "Often, the appeals process does work…",
+      "start_seconds": 1453.24,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 481,
+      "text": "but give a corporation an inch,\nand they'll take a mile.",
+      "start_seconds": 1456.16,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 482,
+      "text": "Making decisions about fair use and copyright\nis meant to be handed over",
+      "start_seconds": 1458.5,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 483,
+      "text": "to experienced, trained people\nwho can give nuanced judgements…",
+      "start_seconds": 1462.14,
+      "duration_seconds": 4.08
+    },
+    {
+      "index": 484,
+      "text": "but from the stories\nthat have come out over the years,",
+      "start_seconds": 1466.22,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 485,
+      "text": "it looks like it's mostly subcontracted out\nto the lowest bidder,",
+      "start_seconds": 1468.12,
+      "duration_seconds": 3.56
+    },
+    {
+      "index": 486,
+      "text": "with enormous decision-making power\ngiven to people whose job is just to",
+      "start_seconds": 1471.68,
+      "duration_seconds": 4.58
+    },
+    {
+      "index": 487,
+      "text": "run through the backlog of appeals\nas quickly as possible and make snap decisions,",
+      "start_seconds": 1476.26,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 488,
+      "text": "knowing that very few people will\nactually be able to do anything about the result.",
+      "start_seconds": 1481.06,
+      "duration_seconds": 4.8
+    },
+    {
+      "index": 489,
+      "text": "I've been a victim of that in the past:",
+      "start_seconds": 1485.86,
+      "duration_seconds": 2.36
+    },
+    {
+      "index": 490,
+      "text": "A TV channel from Thailand\ntook one of my videos,",
+      "start_seconds": 1488.22,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 491,
+      "text": "played it out without permission\nin one of their big television shows,",
+      "start_seconds": 1491.08,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 492,
+      "text": "and then put that entire television show\ninto Content ID.",
+      "start_seconds": 1493.64,
+      "duration_seconds": 3.26
+    },
+    {
+      "index": 493,
+      "text": "I got a Content ID hit\non my original video from them,",
+      "start_seconds": 1496.9,
+      "duration_seconds": 3.42
+    },
+    {
+      "index": 494,
+      "text": "and that took a long time\nto sort out.",
+      "start_seconds": 1500.32,
+      "duration_seconds": 2.0
+    },
+    {
+      "index": 495,
+      "text": "And I never found out,\nin the end,",
+      "start_seconds": 1502.32,
+      "duration_seconds": 1.3
+    },
+    {
+      "index": 496,
+      "text": "whether that channel kept their access\nto Content ID or not,",
+      "start_seconds": 1503.62,
+      "duration_seconds": 2.46
+    },
+    {
+      "index": 497,
+      "text": "because, yes, companies that abuse it\nshould have it taken away from them.",
+      "start_seconds": 1506.08,
+      "duration_seconds": 3.96
+    },
+    {
+      "index": 498,
+      "text": "But, of course,\nif YouTube does that,",
+      "start_seconds": 1510.04,
+      "duration_seconds": 1.74
+    },
+    {
+      "index": 499,
+      "text": "then they fall back\nto the legal default position:",
+      "start_seconds": 1511.78,
+      "duration_seconds": 2.12
+    },
+    {
+      "index": 500,
+      "text": "DMCA takedowns or lawsuits,",
+      "start_seconds": 1513.9,
+      "duration_seconds": 1.84
+    },
+    {
+      "index": 501,
+      "text": "either against the creators\nor against YouTube itself.",
+      "start_seconds": 1515.74,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 502,
+      "text": "There are absolutely flaws in Content ID.\nI am not saying it's perfect.",
+      "start_seconds": 1519.04,
+      "duration_seconds": 4.26
+    },
+    {
+      "index": 503,
+      "text": "There are hundreds of cases\nthat we could talk about",
+      "start_seconds": 1523.3,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 504,
+      "text": "where the system didn't work,",
+      "start_seconds": 1525.5,
+      "duration_seconds": 1.84
+    },
+    {
+      "index": 505,
+      "text": "and thousands more\nthat never got enough publicity",
+      "start_seconds": 1527.34,
+      "duration_seconds": 1.94
+    },
+    {
+      "index": 506,
+      "text": "for the world to actually notice them.",
+      "start_seconds": 1529.28,
+      "duration_seconds": 1.66
+    },
+    {
+      "index": 507,
+      "text": "There are so many edge cases,",
+      "start_seconds": 1530.94,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 508,
+      "text": "like the people who got copyright claims\non white noise, just on the sound of static,",
+      "start_seconds": 1533.52,
+      "duration_seconds": 3.9
+    },
+    {
+      "index": 509,
+      "text": "because the system wasn't originally built\nto deal with white noise.",
+      "start_seconds": 1537.42,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 510,
+      "text": "Or the people who do in-depth\nmusic theory analysis of songs,",
+      "start_seconds": 1540.56,
+      "duration_seconds": 3.26
+    },
+    {
+      "index": 511,
+      "text": "very likely fair use,\nbut still getting manual Content ID claims.",
+      "start_seconds": 1543.82,
+      "duration_seconds": 4.6
+    },
+    {
+      "index": 512,
+      "text": "But I don't think Content ID is broken.",
+      "start_seconds": 1548.42,
+      "duration_seconds": 2.54
+    },
+    {
+      "index": 513,
+      "text": "It's a reasonable stopgap.\nIt works almost all the time.",
+      "start_seconds": 1550.96,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 514,
+      "text": "That video of a couple's first dance at a wedding,\nuploaded by the father of the bride:",
+      "start_seconds": 1553.94,
+      "duration_seconds": 3.8
+    },
+    {
+      "index": 515,
+      "text": "No, copyright law doesn't allow him\nto upload that to YouTube,",
+      "start_seconds": 1557.74,
+      "duration_seconds": 3.32
+    },
+    {
+      "index": 516,
+      "text": "not unless he's got\na synchronisation license.",
+      "start_seconds": 1561.06,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 517,
+      "text": "But Content ID just deals with it,\nand the video stays up.",
+      "start_seconds": 1563.76,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 518,
+      "text": "That excited fan video\nfrom the kid in the front row at a concert:",
+      "start_seconds": 1566.76,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 519,
+      "text": "No, not permitted under copyright law.",
+      "start_seconds": 1570.04,
+      "duration_seconds": 2.16
+    },
+    {
+      "index": 520,
+      "text": "Content ID deals with it.",
+      "start_seconds": 1572.2,
+      "duration_seconds": 1.66
+    },
+    {
+      "index": 521,
+      "text": "The teenager making a video\ncompiling all the romantic subtext",
+      "start_seconds": 1573.86,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 522,
+      "text": "between their two favourite characters\nin a show:",
+      "start_seconds": 1576.98,
+      "duration_seconds": 2.14
+    },
+    {
+      "index": 523,
+      "text": "No, not allowed.\nIt's not criticism or review.",
+      "start_seconds": 1579.12,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 524,
+      "text": "But Content ID deals with it,\nand the video stays up.",
+      "start_seconds": 1581.44,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 525,
+      "text": "Without Content ID, those videos would be\ntaken down by DMCA copyright strikes,",
+      "start_seconds": 1584.84,
+      "duration_seconds": 3.86
+    },
+    {
+      "index": 526,
+      "text": "and if someone protested,\nthe next step is a lawsuit.",
+      "start_seconds": 1588.7,
+      "duration_seconds": 3.32
+    },
+    {
+      "index": 527,
+      "text": "Maybe for the uploader,\nbut more likely,",
+      "start_seconds": 1592.02,
+      "duration_seconds": 1.56
+    },
+    {
+      "index": 528,
+      "text": "the same would happen\nas all those years ago:",
+      "start_seconds": 1593.58,
+      "duration_seconds": 2.24
+    },
+    {
+      "index": 529,
+      "text": "the big media companies\nwould go to YouTube and say:",
+      "start_seconds": 1595.82,
+      "duration_seconds": 2.52
+    },
+    {
+      "index": 530,
+      "text": "\"You're allowing this to happen.\nYou're making money off this.",
+      "start_seconds": 1598.34,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 531,
+      "text": "\"We're going to sue you\nout of existence.\"",
+      "start_seconds": 1601.4,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 532,
+      "text": "Sadly, it's not about what's fair,\nor what's just.",
+      "start_seconds": 1604.08,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 533,
+      "text": "It's about the arrangement that YouTube\nand the big media companies have come to.",
+      "start_seconds": 1606.84,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 534,
+      "text": "It's not ideal,\nbut under copyright law,",
+      "start_seconds": 1611.56,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 535,
+      "text": "current copyright law at least,\nI don't think there's a better option.",
+      "start_seconds": 1613.96,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 536,
+      "text": "And I don't want to sound\nlike the grumpy old man",
+      "start_seconds": 1617.16,
+      "duration_seconds": 2.5
+    },
+    {
+      "index": 537,
+      "text": "complaining about the kids these days,",
+      "start_seconds": 1619.66,
+      "duration_seconds": 1.52
+    },
+    {
+      "index": 538,
+      "text": "but yes, when I started on YouTube, 2006,\nthere was no monetisation option.",
+      "start_seconds": 1621.18,
+      "duration_seconds": 4.54
+    },
+    {
+      "index": 539,
+      "text": "Creators could not earn money\non-platform at all.",
+      "start_seconds": 1625.72,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 540,
+      "text": "And that was fine, because it was a miracle\nthat someone was offering to do",
+      "start_seconds": 1629.0,
+      "duration_seconds": 2.5
+    },
+    {
+      "index": 541,
+      "text": "the incredibly expensive and difficult job\nof hosting video for free!",
+      "start_seconds": 1631.5,
+      "duration_seconds": 4.46
+    },
+    {
+      "index": 542,
+      "text": "One of the reasons there aren't\nany serious competitors to YouTube",
+      "start_seconds": 1635.96,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 543,
+      "text": "is that it is ruinously expensive\nto run a video hosting site:",
+      "start_seconds": 1638.28,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 544,
+      "text": "you either have to be a subscription service\nor one of the world's largest advertising firms.",
+      "start_seconds": 1641.8,
+      "duration_seconds": 5.24
+    },
+    {
+      "index": 545,
+      "text": "A lot of folks,\nparticularly younger people,",
+      "start_seconds": 1647.04,
+      "duration_seconds": 1.92
+    },
+    {
+      "index": 546,
+      "text": "who have only joined YouTube\nin the last couple of years",
+      "start_seconds": 1648.96,
+      "duration_seconds": 3.46
+    },
+    {
+      "index": 547,
+      "text": "have a different baseline for this:",
+      "start_seconds": 1652.42,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 548,
+      "text": "They think that they have \"the right\" to upload\nlong compilations of their favourite videos",
+      "start_seconds": 1655.34,
+      "duration_seconds": 3.94
+    },
+    {
+      "index": 549,
+      "text": "with maybe a few words\nspoken between each clip,",
+      "start_seconds": 1659.28,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 550,
+      "text": "and make loads of money from it,",
+      "start_seconds": 1661.54,
+      "duration_seconds": 1.52
+    },
+    {
+      "index": 551,
+      "text": "that that is something\nthat they are entitled to do,",
+      "start_seconds": 1663.06,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 552,
+      "text": "and that any copyright owners who complain\nare censoring them and putting in false claims…",
+      "start_seconds": 1665.62,
+      "duration_seconds": 4.38
+    },
+    {
+      "index": 553,
+      "text": "Yeah. Okay, yes. I'm the grumpy old man\ncomplaining about the kids.",
+      "start_seconds": 1670.0,
+      "duration_seconds": 4.12
+    },
+    {
+      "index": 554,
+      "text": "But, under the current copyright system,\nthose kids are legally in the wrong.",
+      "start_seconds": 1674.12,
+      "duration_seconds": 5.18
+    },
+    {
+      "index": 555,
+      "text": "Maybe not morally.\nThat's a different question.",
+      "start_seconds": 1679.3,
+      "duration_seconds": 1.72
+    },
+    {
+      "index": 556,
+      "text": "But legally, they are in the wrong.",
+      "start_seconds": 1681.02,
+      "duration_seconds": 2.94
+    },
+    {
+      "index": 557,
+      "text": "There is an enormous distance",
+      "start_seconds": 1683.96,
+      "duration_seconds": 2.28
+    },
+    {
+      "index": 558,
+      "text": "between what the law says\nand what the world's actually doing,",
+      "start_seconds": 1686.24,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 559,
+      "text": "and that is where\nmost of this tension comes from.",
+      "start_seconds": 1689.6,
+      "duration_seconds": 3.52
+    },
+    {
+      "index": 560,
+      "text": "So. How do we fix it?",
+      "start_seconds": 1693.12,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 561,
+      "text": "We need three things.",
+      "start_seconds": 1706.42,
+      "duration_seconds": 1.4
+    },
+    {
+      "index": 562,
+      "text": "We need to update copyright law,",
+      "start_seconds": 1707.82,
+      "duration_seconds": 1.86
+    },
+    {
+      "index": 563,
+      "text": "we need a good small-claims court\nfor copyright,",
+      "start_seconds": 1709.68,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 564,
+      "text": "and we need to shorten\nhow long copyright lasts.",
+      "start_seconds": 1712.44,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 565,
+      "text": "So, first: updating the law.",
+      "start_seconds": 1715.36,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 566,
+      "text": "This is a big goal, but\nthe entirety of international copyright law",
+      "start_seconds": 1718.22,
+      "duration_seconds": 4.66
+    },
+    {
+      "index": 567,
+      "text": "needs to be rewritten\nto reflect what's fair in today's world.",
+      "start_seconds": 1722.88,
+      "duration_seconds": 3.46
+    },
+    {
+      "index": 568,
+      "text": "Everyone will have a different opinion\nof what that is.",
+      "start_seconds": 1726.34,
+      "duration_seconds": 2.66
+    },
+    {
+      "index": 569,
+      "text": "I'm actually fairly conservative on it.",
+      "start_seconds": 1729.0,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 570,
+      "text": "I'm not convinced that we should\nmassively widen the definition of fair use,",
+      "start_seconds": 1730.9,
+      "duration_seconds": 3.48
+    },
+    {
+      "index": 571,
+      "text": "because every bit of freedom\nyou give to individual creators",
+      "start_seconds": 1734.38,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 572,
+      "text": "also makes it easier for big companies\nto rip them off.",
+      "start_seconds": 1737.5,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 573,
+      "text": "But I'm not going to say\nwhere the line should be drawn.",
+      "start_seconds": 1740.5,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 574,
+      "text": "It is a job for consultation\nand conversation,",
+      "start_seconds": 1743.08,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 575,
+      "text": "where everyone is at the table,\nnot just the big publishers.",
+      "start_seconds": 1746.1,
+      "duration_seconds": 3.96
+    },
+    {
+      "index": 576,
+      "text": "And if completely rewriting\ninternational law seems unlikely,",
+      "start_seconds": 1750.06,
+      "duration_seconds": 5.12
+    },
+    {
+      "index": 577,
+      "text": "then it's still possible\nto push for changes.",
+      "start_seconds": 1755.18,
+      "duration_seconds": 2.36
+    },
+    {
+      "index": 578,
+      "text": "In 1990, one article by one judge\nswayed opinion among the US legal community,",
+      "start_seconds": 1757.54,
+      "duration_seconds": 4.98
+    },
+    {
+      "index": 579,
+      "text": "and helped change\nthe most important factor of fair use",
+      "start_seconds": 1762.52,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 580,
+      "text": "from whether it was commercial\nto whether it was transformative.",
+      "start_seconds": 1765.16,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 581,
+      "text": "It is entirely possible that\nnew publications like that",
+      "start_seconds": 1768.28,
+      "duration_seconds": 3.68
+    },
+    {
+      "index": 582,
+      "text": "could help improve things.",
+      "start_seconds": 1771.96,
+      "duration_seconds": 1.62
+    },
+    {
+      "index": 583,
+      "text": "The judge's conclusion in that article\nalso makes an excellent point:",
+      "start_seconds": 1773.58,
+      "duration_seconds": 3.54
+    },
+    {
+      "index": 584,
+      "text": "there should not be a clear\nand unambiguous definition of \"fair use\",",
+      "start_seconds": 1777.12,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 585,
+      "text": "what he calls a \"bright line standard\",\nunless we have a good standard.",
+      "start_seconds": 1781.28,
+      "duration_seconds": 4.58
+    },
+    {
+      "index": 586,
+      "text": "And we don't have one.",
+      "start_seconds": 1785.86,
+      "duration_seconds": 1.06
+    },
+    {
+      "index": 587,
+      "text": "The border of fair use has to be messy\nbecause people and creativity are messy.",
+      "start_seconds": 1786.92,
+      "duration_seconds": 4.72
+    },
+    {
+      "index": 588,
+      "text": "So if fair use is going to be messy,\nand if it will inevitably lead to conflict,",
+      "start_seconds": 1792.58,
+      "duration_seconds": 4.14
+    },
+    {
+      "index": 589,
+      "text": "let's make resolving that conflict\nquick, fair and accessible.",
+      "start_seconds": 1796.72,
+      "duration_seconds": 3.46
+    },
+    {
+      "index": 590,
+      "text": "This is already starting to happen\nin the United States, but badly.",
+      "start_seconds": 1800.18,
+      "duration_seconds": 3.84
+    },
+    {
+      "index": 591,
+      "text": "The UK has one of the world's friendliest\ncopyright regimes for individual creators.",
+      "start_seconds": 1804.02,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 592,
+      "text": "We have the\nIntellectual Property Enterprise Court,",
+      "start_seconds": 1807.66,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 593,
+      "text": "which is mainly based here,\nat the Royal Courts of Justice in London,",
+      "start_seconds": 1810.72,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 594,
+      "text": "and it's a specific court\nto deal with cases",
+      "start_seconds": 1814.12,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 595,
+      "text": "about copyrights, and patents,\nand trademarks.",
+      "start_seconds": 1816.46,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 596,
+      "text": "And that court has a small claims track.",
+      "start_seconds": 1819.02,
+      "duration_seconds": 2.82
+    },
+    {
+      "index": 597,
+      "text": "If you're an individual photographer\nor video maker,",
+      "start_seconds": 1821.84,
+      "duration_seconds": 2.12
+    },
+    {
+      "index": 598,
+      "text": "you can do the research,\nfile the right forms, follow the right procedures,",
+      "start_seconds": 1823.96,
+      "duration_seconds": 2.9
+    },
+    {
+      "index": 599,
+      "text": "and issue a claim\nas a \"litigant in person\",",
+      "start_seconds": 1826.86,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 600,
+      "text": "which is the fancy British term for\n\"without a lawyer\".",
+      "start_seconds": 1829.9,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 601,
+      "text": "I've done it, because a major company\nripped off one of my videos.",
+      "start_seconds": 1832.76,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 602,
+      "text": "This court is designed to be\nmore friendly for individuals:",
+      "start_seconds": 1835.68,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 603,
+      "text": "the procedures are more relaxed,\nit's almost like mediation rather than a court…",
+      "start_seconds": 1838.12,
+      "duration_seconds": 4.1
+    },
+    {
+      "index": 604,
+      "text": "except that,\nif all negotiations fail,",
+      "start_seconds": 1842.22,
+      "duration_seconds": 1.94
+    },
+    {
+      "index": 605,
+      "text": "then there is a judge\nissuing a legal order at the end of it.",
+      "start_seconds": 1844.16,
+      "duration_seconds": 3.16
+    },
+    {
+      "index": 606,
+      "text": "It is stressful. It is hard work.\nYou need to get all the details right.",
+      "start_seconds": 1847.32,
+      "duration_seconds": 2.24
+    },
+    {
+      "index": 607,
+      "text": "You should probably get a lawyer\nif you're gonna do it,",
+      "start_seconds": 1849.56,
+      "duration_seconds": 1.68
+    },
+    {
+      "index": 608,
+      "text": "but if your job is basically\nreading hundreds of pages of nerdy detail",
+      "start_seconds": 1851.24,
+      "duration_seconds": 4.24
+    },
+    {
+      "index": 609,
+      "text": "and summarising it into something\nthe world can understand,",
+      "start_seconds": 1855.48,
+      "duration_seconds": 2.02
+    },
+    {
+      "index": 610,
+      "text": "then, yeah, it can be done.",
+      "start_seconds": 1857.5,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 611,
+      "text": "It is really nerve-wracking.",
+      "start_seconds": 1860.26,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 612,
+      "text": "Like, most of the people\nwho walk into the admin building",
+      "start_seconds": 1862.52,
+      "duration_seconds": 2.6
+    },
+    {
+      "index": 613,
+      "text": "of one of the biggest courts in the country,\nwithout a lawyer,",
+      "start_seconds": 1865.12,
+      "duration_seconds": 2.5
+    },
+    {
+      "index": 614,
+      "text": "to try and file a claim…",
+      "start_seconds": 1867.62,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 615,
+      "text": "They don't have the best grip on reality,\nbut all of them think they do.",
+      "start_seconds": 1869.52,
+      "duration_seconds": 3.32
+    },
+    {
+      "index": 616,
+      "text": "And there I was,\nwalking in, no lawyer,",
+      "start_seconds": 1872.84,
+      "duration_seconds": 2.66
+    },
+    {
+      "index": 617,
+      "text": "thinking I had a case,\nthinking I had a grip on reality.",
+      "start_seconds": 1875.5,
+      "duration_seconds": 2.26
+    },
+    {
+      "index": 618,
+      "text": "Statistically, the odds weren't in my favour,\nbut I filed successfully.",
+      "start_seconds": 1877.76,
+      "duration_seconds": 3.82
+    },
+    {
+      "index": 619,
+      "text": "And the company settled with me,\nthey paid me to drop the claim,",
+      "start_seconds": 1881.58,
+      "duration_seconds": 2.94
+    },
+    {
+      "index": 620,
+      "text": "because they were in the wrong,\nand they knew they were in the wrong,",
+      "start_seconds": 1884.52,
+      "duration_seconds": 3.1
+    },
+    {
+      "index": 621,
+      "text": "and they knew I could actually get it to a judge\nin exchange for a bit of work",
+      "start_seconds": 1887.62,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 622,
+      "text": "and a court fee of just over £100.",
+      "start_seconds": 1890.58,
+      "duration_seconds": 2.72
+    },
+    {
+      "index": 623,
+      "text": "There is a plan to do something like that\nin the United States.",
+      "start_seconds": 1893.3,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 624,
+      "text": "At the time of recording, the Copyright Alternative\nIn Small Claims Enforcement Act,",
+      "start_seconds": 1895.98,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 625,
+      "text": "the CASE Act,\nis passing through government.",
+      "start_seconds": 1900.14,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 626,
+      "text": "Unfortunately, it has massive flaws:",
+      "start_seconds": 1902.82,
+      "duration_seconds": 2.04
+    },
+    {
+      "index": 627,
+      "text": "using the new small-claims track\nis voluntary for both parties,",
+      "start_seconds": 1904.86,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 628,
+      "text": "which means that\nif you want to sue a big company,",
+      "start_seconds": 1907.84,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 629,
+      "text": "that company can just choose\nto opt-out",
+      "start_seconds": 1910.54,
+      "duration_seconds": 2.14
+    },
+    {
+      "index": 630,
+      "text": "and require you to\ntake the expensive path.",
+      "start_seconds": 1912.68,
+      "duration_seconds": 2.46
+    },
+    {
+      "index": 631,
+      "text": "And to quote an explainer:",
+      "start_seconds": 1915.14,
+      "duration_seconds": 1.38
+    },
+    {
+      "index": 632,
+      "text": "\"If the losing party does not comply\nwith the judgment,",
+      "start_seconds": 1916.52,
+      "duration_seconds": 3.22
+    },
+    {
+      "index": 633,
+      "text": "\"the prevailing party can bring an action\nin federal court to enforce it.\"",
+      "start_seconds": 1919.74,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 634,
+      "text": "So if you actually want the judgment\nto be effective,",
+      "start_seconds": 1923.38,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 635,
+      "text": "you may have to take\nthe expensive path anyway.",
+      "start_seconds": 1926.26,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 636,
+      "text": "In short, all the power is still with\nthe people who have money.",
+      "start_seconds": 1928.94,
+      "duration_seconds": 4.68
+    },
+    {
+      "index": 637,
+      "text": "Oh, and it means that it's now much,\nmuch cheaper for big companies",
+      "start_seconds": 1933.62,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 638,
+      "text": "to try and enforce unfair claims\nagainst large numbers of individuals:",
+      "start_seconds": 1936.98,
+      "duration_seconds": 3.48
+    },
+    {
+      "index": 639,
+      "text": "it's a so-called 'default judgment mill'.",
+      "start_seconds": 1940.46,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 640,
+      "text": "The CASE Act is not a fix.",
+      "start_seconds": 1943.16,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 641,
+      "text": "It's a step\nsort-of in the right direction,",
+      "start_seconds": 1945.06,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 642,
+      "text": "but it's not great,\nand it may well lead to more problems.",
+      "start_seconds": 1947.5,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 643,
+      "text": "There's also a wider problem\ndealing with this across international borders,",
+      "start_seconds": 1950.2,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 644,
+      "text": "but that's a separate issue.",
+      "start_seconds": 1953.12,
+      "duration_seconds": 1.88
+    },
+    {
+      "index": 645,
+      "text": "Having a working small-claims process\nin the United States",
+      "start_seconds": 1955.0,
+      "duration_seconds": 3.74
+    },
+    {
+      "index": 646,
+      "text": "would help address the massive imbalance\nbetween the rights of individuals",
+      "start_seconds": 1958.74,
+      "duration_seconds": 3.56
+    },
+    {
+      "index": 647,
+      "text": "and the rights of huge corporations,",
+      "start_seconds": 1962.3,
+      "duration_seconds": 1.92
+    },
+    {
+      "index": 648,
+      "text": "at least on this platform,\non YouTube.",
+      "start_seconds": 1964.22,
+      "duration_seconds": 2.1
+    },
+    {
+      "index": 649,
+      "text": "And even if that's just in the US:\nfrom there, the world will follow.",
+      "start_seconds": 1966.32,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 650,
+      "text": "So then finally:\nwe shorten how long copyright lasts.",
+      "start_seconds": 1971.2,
+      "duration_seconds": 4.12
+    },
+    {
+      "index": 651,
+      "text": "Under current US law,\nif a modern work has an individual author,",
+      "start_seconds": 1975.76,
+      "duration_seconds": 3.62
+    },
+    {
+      "index": 652,
+      "text": "then its copyright generally lasts\nuntil death plus 70 years.",
+      "start_seconds": 1979.38,
+      "duration_seconds": 4.46
+    },
+    {
+      "index": 653,
+      "text": "For works by a corporation,\nit's 95 years from publication.",
+      "start_seconds": 1983.84,
+      "duration_seconds": 3.26
+    },
+    {
+      "index": 654,
+      "text": "There are a huge number of\ncomplicated factors for older works",
+      "start_seconds": 1987.1,
+      "duration_seconds": 2.32
+    },
+    {
+      "index": 655,
+      "text": "because of the many, many changes\nto the law over the decades,",
+      "start_seconds": 1989.42,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 656,
+      "text": "but that's a decent rule of thumb.",
+      "start_seconds": 1992.22,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 657,
+      "text": "And… that's too long.",
+      "start_seconds": 1994.56,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 658,
+      "text": "Singer-songwriter turned politician\nSonny Bono,",
+      "start_seconds": 1997.42,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 659,
+      "text": "the person who the Copyright Term\nExtension Act of 1998 was named after:",
+      "start_seconds": 1999.76,
+      "duration_seconds": 4.88
+    },
+    {
+      "index": 660,
+      "text": "He believed that copyright should be forever.",
+      "start_seconds": 2004.64,
+      "duration_seconds": 2.12
+    },
+    {
+      "index": 661,
+      "text": "That the great-great-great-great-\ngreat-great-great-great-",
+      "start_seconds": 2006.76,
+      "duration_seconds": 1.62
+    },
+    {
+      "index": 662,
+      "text": "great-great-great-great-\ngreat-grandchildren of Shakespeare",
+      "start_seconds": 2008.38,
+      "duration_seconds": 2.56
+    },
+    {
+      "index": 663,
+      "text": "should still be able to charge licensing fees\nfor adapting Shakespeare's work —",
+      "start_seconds": 2010.94,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 664,
+      "text": "or more likely, those rights would've been sold\nto a corporation at some point,",
+      "start_seconds": 2014.24,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 665,
+      "text": "and \"Shakespeare Intellectual Property Ltd.\"",
+      "start_seconds": 2017.52,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 666,
+      "text": "would now be able to collect\nlicense fees into eternity.",
+      "start_seconds": 2020.82,
+      "duration_seconds": 3.64
+    },
+    {
+      "index": 667,
+      "text": "I think that opinion is so ridiculous\nas to be indefensible.",
+      "start_seconds": 2024.46,
+      "duration_seconds": 5.46
+    },
+    {
+      "index": 668,
+      "text": "If copyright lasted forever,\nif nothing ever entered the public domain,",
+      "start_seconds": 2029.92,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 669,
+      "text": "then yeah, someone\nwould still have the final say",
+      "start_seconds": 2032.5,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 670,
+      "text": "on how Shakespeare\ncould be adapted or performed.",
+      "start_seconds": 2034.7,
+      "duration_seconds": 3.16
+    },
+    {
+      "index": 671,
+      "text": "Perhaps you could perform it\nhowever you wanted,",
+      "start_seconds": 2037.86,
+      "duration_seconds": 1.92
+    },
+    {
+      "index": 672,
+      "text": "but only by paying\nan enormous license fee.",
+      "start_seconds": 2039.78,
+      "duration_seconds": 2.08
+    },
+    {
+      "index": 673,
+      "text": "Little community theatres like this?\nPriced out.",
+      "start_seconds": 2041.86,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 674,
+      "text": "Or perhaps someone would want to defend\nthe Shakespeare Brand Guidelines,",
+      "start_seconds": 2045.26,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 675,
+      "text": "and insist that all adaptations\nbe entirely faithful to the original text.",
+      "start_seconds": 2048.18,
+      "duration_seconds": 3.92
+    },
+    {
+      "index": 676,
+      "text": "So, no Baz Luhrmann Romeo + Juliet \nwithout permission.",
+      "start_seconds": 2052.1,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 677,
+      "text": "No 10 Things I Hate About You \nwithout permission.",
+      "start_seconds": 2054.96,
+      "duration_seconds": 2.58
+    },
+    {
+      "index": 678,
+      "text": "The Lion King?",
+      "start_seconds": 2057.54,
+      "duration_seconds": 2.0
+    },
+    {
+      "index": 679,
+      "text": "Very close to Hamlet, that.\nYou want to avoid that lawsuit.",
+      "start_seconds": 2059.54,
+      "duration_seconds": 3.12
+    },
+    {
+      "index": 680,
+      "text": "Making a reference to how\n\"all the world's a stage\"?",
+      "start_seconds": 2062.66,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 681,
+      "text": "Pay up. Needs a license.",
+      "start_seconds": 2065.68,
+      "duration_seconds": 1.68
+    },
+    {
+      "index": 682,
+      "text": "And if you think that's ridiculous,",
+      "start_seconds": 2067.36,
+      "duration_seconds": 1.58
+    },
+    {
+      "index": 683,
+      "text": "find any book that quotes\none copyrighted song lyric,",
+      "start_seconds": 2068.94,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 684,
+      "text": "maybe to introduce a chapter:",
+      "start_seconds": 2071.9,
+      "duration_seconds": 1.52
+    },
+    {
+      "index": 685,
+      "text": "there will be an acknowledgement\nsomewhere",
+      "start_seconds": 2073.42,
+      "duration_seconds": 2.66
+    },
+    {
+      "index": 686,
+      "text": "that they've got permission\nfrom the copyright holder.",
+      "start_seconds": 2076.08,
+      "duration_seconds": 2.66
+    },
+    {
+      "index": 687,
+      "text": "The point of copyright is to allow people\nto profit from their creative work.",
+      "start_seconds": 2078.74,
+      "duration_seconds": 3.94
+    },
+    {
+      "index": 688,
+      "text": "I am not against copyright.\nI rely on copyright to earn a living.",
+      "start_seconds": 2082.68,
+      "duration_seconds": 3.72
+    },
+    {
+      "index": 689,
+      "text": "But the works that fall into the public domain\nare vital for creativity.",
+      "start_seconds": 2086.4,
+      "duration_seconds": 4.52
+    },
+    {
+      "index": 690,
+      "text": "And patents only last twenty years!",
+      "start_seconds": 2090.92,
+      "duration_seconds": 2.24
+    },
+    {
+      "index": 691,
+      "text": "Twenty years before your patent expires,",
+      "start_seconds": 2093.16,
+      "duration_seconds": 1.5
+    },
+    {
+      "index": 692,
+      "text": "and anyone can take your actual,\nphysical, real-world invention",
+      "start_seconds": 2094.66,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 693,
+      "text": "and just churn out cheap copies for everyone.",
+      "start_seconds": 2097.06,
+      "duration_seconds": 2.14
+    },
+    {
+      "index": 694,
+      "text": "If you invent something that literally\nchanges the world, great!",
+      "start_seconds": 2099.2,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 695,
+      "text": "You get twenty years\nto make all the money you can,",
+      "start_seconds": 2102.48,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 696,
+      "text": "and after that, you will be out-competed",
+      "start_seconds": 2105.34,
+      "duration_seconds": 2.24
+    },
+    {
+      "index": 697,
+      "text": "by other people who can do it\nbetter and cheaper.",
+      "start_seconds": 2107.58,
+      "duration_seconds": 2.38
+    },
+    {
+      "index": 698,
+      "text": "But write a song?\nYou get until you're dead!",
+      "start_seconds": 2109.96,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 699,
+      "text": "Plus your descendants get\nanother seventy years.",
+      "start_seconds": 2113.24,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 700,
+      "text": "That is ridiculous!",
+      "start_seconds": 2116.22,
+      "duration_seconds": 1.74
+    },
+    {
+      "index": 701,
+      "text": "And meanwhile,\nall the \"orphaned works\",",
+      "start_seconds": 2117.96,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 702,
+      "text": "the obscure things where no-one can\ntrack down the copyright holder anymore",
+      "start_seconds": 2120.3,
+      "duration_seconds": 2.6
+    },
+    {
+      "index": 703,
+      "text": "to ask for a license…",
+      "start_seconds": 2122.9,
+      "duration_seconds": 1.56
+    },
+    {
+      "index": 704,
+      "text": "Well, they can't be archived,\nthey can't be copied.",
+      "start_seconds": 2124.46,
+      "duration_seconds": 2.14
+    },
+    {
+      "index": 705,
+      "text": "They often can't be preserved at all,",
+      "start_seconds": 2126.6,
+      "duration_seconds": 1.96
+    },
+    {
+      "index": 706,
+      "text": "just because no-one knows\nwho to ask for permission.",
+      "start_seconds": 2128.56,
+      "duration_seconds": 2.84
+    },
+    {
+      "index": 707,
+      "text": "The longer copyright is,\nthe worse that problem gets.",
+      "start_seconds": 2131.4,
+      "duration_seconds": 3.04
+    },
+    {
+      "index": 708,
+      "text": "And I know, a twenty-year copyright term\nthat matches patents",
+      "start_seconds": 2134.44,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 709,
+      "text": "would never get through modern politics.",
+      "start_seconds": 2137.46,
+      "duration_seconds": 1.94
+    },
+    {
+      "index": 710,
+      "text": "When you have enormous corporations",
+      "start_seconds": 2139.4,
+      "duration_seconds": 1.72
+    },
+    {
+      "index": 711,
+      "text": "that earn billions from\ntheir copyrighted back catalogue,",
+      "start_seconds": 2141.12,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 712,
+      "text": "it is trivial for them to spend\na fraction of that",
+      "start_seconds": 2144.26,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 713,
+      "text": "on lobbying to make sure\ncopyright doesn't get reduced.",
+      "start_seconds": 2147.4,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 714,
+      "text": "I would like it to be twenty years,\nI would campaign for twenty years,",
+      "start_seconds": 2150.2,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 715,
+      "text": "but… I also know\nthat it's not going to happen.",
+      "start_seconds": 2153.96,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 716,
+      "text": "And, to be fair, it does feel like",
+      "start_seconds": 2156.6,
+      "duration_seconds": 1.74
+    },
+    {
+      "index": 717,
+      "text": "the people who made the songs\nof the '80s and '90s,",
+      "start_seconds": 2158.34,
+      "duration_seconds": 1.94
+    },
+    {
+      "index": 718,
+      "text": "the songs that are still being listened to\nin this current nostalgia cycle,",
+      "start_seconds": 2160.28,
+      "duration_seconds": 4.44
+    },
+    {
+      "index": 719,
+      "text": "they should probably be able to make\nsome money from that.",
+      "start_seconds": 2164.72,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 720,
+      "text": "So, I would suggest 50 years.",
+      "start_seconds": 2166.92,
+      "duration_seconds": 3.16
+    },
+    {
+      "index": 721,
+      "text": "It's an easy number, it allows\na couple of nostalgia cycles to happen,",
+      "start_seconds": 2170.08,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 722,
+      "text": "and it would mean that right now,\nthe '60s would be public domain,",
+      "start_seconds": 2172.84,
+      "duration_seconds": 4.44
+    },
+    {
+      "index": 723,
+      "text": "and the '70s would be on their way.",
+      "start_seconds": 2177.28,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 724,
+      "text": "The decades that are no longer\npop-culture nostalgia, but history.",
+      "start_seconds": 2179.18,
+      "duration_seconds": 4.86
+    },
+    {
+      "index": 725,
+      "text": "Pachelbel, Chopin, Beethoven: they should\nalready be joined in the public domain",
+      "start_seconds": 2184.04,
+      "duration_seconds": 3.86
+    },
+    {
+      "index": 726,
+      "text": "by Dylan and Mitchell\nand Hendrix and Cline.",
+      "start_seconds": 2187.9,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 727,
+      "text": "Shakespeare and Shelley —\neither Shelley —",
+      "start_seconds": 2190.54,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 728,
+      "text": "they should be joined by Lee and Heller\nand Orwell and countless others,",
+      "start_seconds": 2193.24,
+      "duration_seconds": 3.76
+    },
+    {
+      "index": 729,
+      "text": "including the works that\nno-one can trace the owner of,",
+      "start_seconds": 2197.0,
+      "duration_seconds": 2.38
+    },
+    {
+      "index": 730,
+      "text": "because after 50 years, you shouldn't\nneed to trace the owner of a work.",
+      "start_seconds": 2199.38,
+      "duration_seconds": 4.06
+    },
+    {
+      "index": 731,
+      "text": "You should just be able to use it.",
+      "start_seconds": 2203.44,
+      "duration_seconds": 2.88
+    },
+    {
+      "index": 732,
+      "text": "Anyone should be able to make\na James Bond movie by now.",
+      "start_seconds": 2206.32,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 733,
+      "text": "'Cause they'd probably do a better job.",
+      "start_seconds": 2209.52,
+      "duration_seconds": 2.1
+    },
+    {
+      "index": 734,
+      "text": "Yes, the people who have already made\nludicrous amounts of money",
+      "start_seconds": 2211.62,
+      "duration_seconds": 4.42
+    },
+    {
+      "index": 735,
+      "text": "would not be able to make\nas much anymore, sure.",
+      "start_seconds": 2216.04,
+      "duration_seconds": 3.62
+    },
+    {
+      "index": 736,
+      "text": "But the artists' work, the thing they're\nsupposed to actually care about,",
+      "start_seconds": 2219.66,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 737,
+      "text": "could be enjoyed and built on by everyone.",
+      "start_seconds": 2222.96,
+      "duration_seconds": 2.6
+    },
+    {
+      "index": 738,
+      "text": "And the few artists from back then\nwho are still popular",
+      "start_seconds": 2225.56,
+      "duration_seconds": 2.62
+    },
+    {
+      "index": 739,
+      "text": "will be absolutely fine,",
+      "start_seconds": 2228.18,
+      "duration_seconds": 1.54
+    },
+    {
+      "index": 740,
+      "text": "continuing to make money from\ntheir world tours, and merchandise,",
+      "start_seconds": 2229.72,
+      "duration_seconds": 2.92
+    },
+    {
+      "index": 741,
+      "text": "and public appearances, and newer albums.",
+      "start_seconds": 2232.64,
+      "duration_seconds": 2.52
+    },
+    {
+      "index": 742,
+      "text": "And an entire new generation\nwould get exposed to music and writing and art",
+      "start_seconds": 2235.16,
+      "duration_seconds": 4.84
+    },
+    {
+      "index": 743,
+      "text": "that might otherwise be forgotten about.",
+      "start_seconds": 2240.0,
+      "duration_seconds": 2.62
+    },
+    {
+      "index": 744,
+      "text": "A shorter copyright term would badly affect\nperhaps a few hundred people in the world:",
+      "start_seconds": 2242.62,
+      "duration_seconds": 4.62
+    },
+    {
+      "index": 745,
+      "text": "the folks who created one hit song,\nor one incredible book",
+      "start_seconds": 2247.24,
+      "duration_seconds": 3.36
+    },
+    {
+      "index": 746,
+      "text": "that is still bringing them money\ndecades later,",
+      "start_seconds": 2250.6,
+      "duration_seconds": 2.34
+    },
+    {
+      "index": 747,
+      "text": "and who are now relying on that money\nas their only source of income.",
+      "start_seconds": 2252.94,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 748,
+      "text": "It's not many people, but yes, the very,\nvery, very few who fit into that category,",
+      "start_seconds": 2256.34,
+      "duration_seconds": 5.76
+    },
+    {
+      "index": 749,
+      "text": "it'll suck for them.",
+      "start_seconds": 2262.1,
+      "duration_seconds": 1.32
+    },
+    {
+      "index": 750,
+      "text": "If royalties were their pension scheme —\nI mean, that's bad financial planning,",
+      "start_seconds": 2263.42,
+      "duration_seconds": 2.94
+    },
+    {
+      "index": 751,
+      "text": "but if they were thinking that\nthe one song they made in '64",
+      "start_seconds": 2266.36,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 752,
+      "text": "will get them through their retirement,",
+      "start_seconds": 2269.38,
+      "duration_seconds": 2.38
+    },
+    {
+      "index": 753,
+      "text": "yeah, it's gonna be a shock.",
+      "start_seconds": 2271.76,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 754,
+      "text": "I do not believe that\nthat's a strong enough argument",
+      "start_seconds": 2273.66,
+      "duration_seconds": 2.52
+    },
+    {
+      "index": 755,
+      "text": "to justify locking up\nall that creativity,",
+      "start_seconds": 2276.18,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 756,
+      "text": "all that potential for the entire world,\nfor that long.",
+      "start_seconds": 2278.94,
+      "duration_seconds": 3.6
+    },
+    {
+      "index": 757,
+      "text": "No-one's going to stop creating",
+      "start_seconds": 2282.54,
+      "duration_seconds": 1.34
+    },
+    {
+      "index": 758,
+      "text": "because they only get 50 years'\nor 20 years' copyright.",
+      "start_seconds": 2283.88,
+      "duration_seconds": 2.38
+    },
+    {
+      "index": 759,
+      "text": "Songwriters, and authors, and filmmakers,\nand choreographers, and YouTube creators:",
+      "start_seconds": 2286.26,
+      "duration_seconds": 3.1
+    },
+    {
+      "index": 760,
+      "text": "we make things because we can.",
+      "start_seconds": 2289.36,
+      "duration_seconds": 2.44
+    },
+    {
+      "index": 761,
+      "text": "Because we have ideas\nand we want to show them to the world.",
+      "start_seconds": 2291.8,
+      "duration_seconds": 2.54
+    },
+    {
+      "index": 762,
+      "text": "Not because we're thinking that\nour grandchildren might, one day,",
+      "start_seconds": 2294.34,
+      "duration_seconds": 4.16
+    },
+    {
+      "index": 763,
+      "text": "have a chance of getting a trickle of money\nfrom some future copyright license.",
+      "start_seconds": 2298.5,
+      "duration_seconds": 4.3
+    },
+    {
+      "index": 764,
+      "text": "So, when I say that YouTube's\ncopyright system isn't broken, I mean it.",
+      "start_seconds": 2302.8,
+      "duration_seconds": 5.0
+    },
+    {
+      "index": 765,
+      "text": "It's a reasonable patch,\na bit of duct tape",
+      "start_seconds": 2307.8,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 766,
+      "text": "holding together a system\nthat's somehow still just about working,",
+      "start_seconds": 2310.8,
+      "duration_seconds": 2.98
+    },
+    {
+      "index": 767,
+      "text": "despite being completely unsuited\nfor the modern world.",
+      "start_seconds": 2313.78,
+      "duration_seconds": 3.24
+    },
+    {
+      "index": 768,
+      "text": "Yes, occasionally it goes wrong.",
+      "start_seconds": 2317.02,
+      "duration_seconds": 1.6
+    },
+    {
+      "index": 769,
+      "text": "When that happens, it should be fixed\nquickly and transparently.",
+      "start_seconds": 2318.62,
+      "duration_seconds": 3.08
+    },
+    {
+      "index": 770,
+      "text": "But the long-term solution\nis not to apply another patch,",
+      "start_seconds": 2321.7,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 771,
+      "text": "on another patch, on another patch,\non another patch.",
+      "start_seconds": 2325.1,
+      "duration_seconds": 2.1
+    },
+    {
+      "index": 772,
+      "text": "The solution is to fix the system\nthat it's trying to work around.",
+      "start_seconds": 2327.2,
+      "duration_seconds": 3.94
+    },
+    {
+      "index": 773,
+      "text": "Because that's the problem.",
+      "start_seconds": 2331.14,
+      "duration_seconds": 1.66
+    },
+    {
+      "index": 774,
+      "text": "YouTube's copyright system isn't broken.",
+      "start_seconds": 2332.8,
+      "duration_seconds": 2.86
+    },
+    {
+      "index": 775,
+      "text": "The world's is.",
+      "start_seconds": 2335.66,
+      "duration_seconds": 1.8
+    },
+    {
+      "index": 776,
+      "text": "Alright, that's it. Remember to like,\ncomment—",
+      "start_seconds": 2337.46,
+      "duration_seconds": 1.92
+    },
+    {
+      "index": 777,
+      "text": "oh come on!",
+      "start_seconds": 2339.38,
+      "duration_seconds": 1.28
+    },
+    {
+      "index": 778,
+      "text": "Over on Nebula, I've got a new series.\nHere's the trailer.",
+      "start_seconds": 2340.66,
+      "duration_seconds": 3.06
+    },
+    {
+      "index": 779,
+      "text": "I invited five people to play some games.",
+      "start_seconds": 2349.02,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 780,
+      "text": "I trust no one.\nNone of us are trustworthy.",
+      "start_seconds": 2351.66,
+      "duration_seconds": 2.0
+    },
+    {
+      "index": 781,
+      "text": "…in an environment designed to\nslowly break their team apart.",
+      "start_seconds": 2353.66,
+      "duration_seconds": 3.02
+    },
+    {
+      "index": 782,
+      "text": "This is real money!",
+      "start_seconds": 2356.68,
+      "duration_seconds": 1.64
+    },
+    {
+      "index": 783,
+      "text": "But all they knew\nis they'd be sat around a table",
+      "start_seconds": 2358.32,
+      "duration_seconds": 2.66
+    },
+    {
+      "index": 784,
+      "text": "trying to win real cash: $10,000.",
+      "start_seconds": 2360.98,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 785,
+      "text": "The vibe's changed\nafter that theft.",
+      "start_seconds": 2364.12,
+      "duration_seconds": 2.08
+    },
+    {
+      "index": 786,
+      "text": "This is a show about trust,\nabout loyalty,",
+      "start_seconds": 2366.2,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 787,
+      "text": "and about Money.",
+      "start_seconds": 2369.64,
+      "duration_seconds": 1.08
+    },
+    {
+      "index": 788,
+      "text": "Tom wants the chaos.\n(all laugh)",
+      "start_seconds": 2370.72,
+      "duration_seconds": 2.04
+    },
+    {
+      "index": 789,
+      "text": "Nebula is a home for new, in-depth\nand experimental content,",
+      "start_seconds": 2373.76,
+      "duration_seconds": 2.96
+    },
+    {
+      "index": 790,
+      "text": "and collaborations from\nsome education video creators",
+      "start_seconds": 2376.72,
+      "duration_seconds": 2.18
+    },
+    {
+      "index": 791,
+      "text": "that you may well have heard of.",
+      "start_seconds": 2378.9,
+      "duration_seconds": 1.72
+    },
+    {
+      "index": 792,
+      "text": "And you can get it for free\nwhen you join CuriosityStream,",
+      "start_seconds": 2380.62,
+      "duration_seconds": 2.62
+    },
+    {
+      "index": 793,
+      "text": "a subscription streaming service\nwith thousands of",
+      "start_seconds": 2383.24,
+      "duration_seconds": 2.9
+    },
+    {
+      "index": 794,
+      "text": "big-budget, professional documentaries\nand nonfiction titles.",
+      "start_seconds": 2386.14,
+      "duration_seconds": 3.4
+    },
+    {
+      "index": 795,
+      "text": "CuriosityStream is $2.99/month\nor $19.99/year,",
+      "start_seconds": 2389.54,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 796,
+      "text": "it includes access to Nebula,\nincluding my new series,",
+      "start_seconds": 2392.68,
+      "duration_seconds": 2.62
+    },
+    {
+      "index": 797,
+      "text": "and you can get a 30-day free trial by going to\ncuriositystream.com/tomscott",
+      "start_seconds": 2395.3,
+      "duration_seconds": 4.78
+    },
+    {
+      "index": 798,
+      "text": "Is he even allowed to mix\nadvertising and content like that?",
+      "start_seconds": 2401.54,
+      "duration_seconds": 2.7
+    },
+    {
+      "index": 799,
+      "text": "That is a whole other video.",
+      "start_seconds": 2404.24,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 800,
+      "text": "[Caption+ by JS*\nhttps://caption.plus]",
+      "start_seconds": 2407.0,
+      "duration_seconds": 3.0
+    },
+    {
+      "index": 801,
+      "text": "So if fair use is going to be messy,",
+      "start_seconds": 2410.8,
+      "duration_seconds": 2.16
+    },
+    {
+      "index": 802,
+      "text": "and if some of it will\ninevitably lead to disputes,",
+      "start_seconds": 2412.96,
+      "duration_seconds": 3.14
+    },
+    {
+      "index": 803,
+      "text": "let's make that process quick…",
+      "start_seconds": 2416.1,
+      "duration_seconds": 1.7
+    },
+    {
+      "index": 804,
+      "text": "I said dis-PUTES.\nI didn't say DIS-putes, I said dis-PUTES.",
+      "start_seconds": 2417.8,
+      "duration_seconds": 2.76
+    },
+    {
+      "index": 805,
+      "text": "I said the verb, not the noun.",
+      "start_seconds": 2420.56,
+      "duration_seconds": 1.6
+    },
+    {
+      "index": 806,
+      "text": "It's an important distinction.\nCan we try that again?",
+      "start_seconds": 2422.16,
+      "duration_seconds": 3.44
+    },
+    {
+      "index": 807,
+      "text": "…will inevitably lead to disputes,",
+      "start_seconds": 2425.6,
+      "duration_seconds": 1.94
+    },
+    {
+      "index": 808,
+      "text": "let's make that process quick,\nfair, and accessible.",
+      "start_seconds": 2427.54,
+      "duration_seconds": 3.24
+    },
+    {
+      "index": 809,
+      "text": "I still said, DIS-putes.",
+      "start_seconds": 2430.78,
+      "duration_seconds": 1.86
+    },
+    {
+      "index": 810,
+      "text": "…inevitably lead to disputes—\ninevitably lead to disputes—",
+      "start_seconds": 2432.64,
+      "duration_seconds": 3.3
+    },
+    {
+      "index": 811,
+      "text": "…inevitably lead to disputes—",
+      "start_seconds": 2435.94,
+      "duration_seconds": 1.62
+    },
+    {
+      "index": 812,
+      "text": "let's make a—\nDIS-putes!",
+      "start_seconds": 2437.56,
+      "duration_seconds": 1.9
+    },
+    {
+      "index": 813,
+      "text": "So if fair use is going to be messy,\nand if it will inevitably lead to conflict…",
+      "start_seconds": 2440.78,
+      "duration_seconds": 4.06
+    },
+    {
+      "index": 814,
+      "text": "Maroon 5's Memories \nis an infuriating composition",
+      "start_seconds": 2448.58,
+      "duration_seconds": 2.28
+    },
+    {
+      "index": 815,
+      "text": "that uses the start of the melody of\nCanon in D but never resolves it",
+      "start_seconds": 2450.86,
+      "duration_seconds": 2.02
+    },
+    {
+      "index": 816,
+      "text": "which means it has the same\nstuck-in-your-head effect as the jiun-gle from—",
+      "start_seconds": 2452.88,
+      "duration_seconds": 2.1
+    },
+    {
+      "index": 817,
+      "text": "[stammers]",
+      "start_seconds": 2454.98,
+      "duration_seconds": 1.24
+    },
+    {
+      "index": 818,
+      "text": "Nope. Worth a try.\nLet's go back!",
+      "start_seconds": 2456.22,
+      "duration_seconds": 2.42
+    },
+    {
+      "index": 819,
+      "text": "[vocal warm-ups]",
+      "start_seconds": 2462.2,
+      "duration_seconds": 4.0
+    },
+    {
+      "index": 820,
+      "text": "Alright, how're we doing?",
+      "start_seconds": 2467.62,
+      "duration_seconds": 0.82
+    },
+    {
+      "index": 821,
+      "text": "Yeah, I got that on camera.\nThat's good.",
+      "start_seconds": 2468.44,
+      "duration_seconds": 1.2
+    },
+    {
+      "index": 822,
+      "text": "Good.",
+      "start_seconds": 2469.64,
+      "duration_seconds": 0.8
+    },
+    {
+      "index": 823,
+      "text": "Every week, there seems to be\nin-a-new headline about—",
+      "start_seconds": 2474.12,
+      "duration_seconds": 2.68
+    },
+    {
+      "index": 824,
+      "text": "There seems to be—\n[stammers]",
+      "start_seconds": 2476.8,
+      "duration_seconds": 3.58
+    },
+    {
+      "index": 825,
+      "text": "We bought that license\nin good faith from a…",
+      "start_seconds": 2484.1,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 826,
+      "text": "What'd it say?\n\"Oh I'm sorry, we had no idea.\"",
+      "start_seconds": 2486.9,
+      "duration_seconds": 2.48
+    },
+    {
+      "index": 827,
+      "text": "Let's try it again, take…",
+      "start_seconds": 2489.38,
+      "duration_seconds": 2.3
+    },
+    {
+      "index": 828,
+      "text": "eight, or is that seven now?",
+      "start_seconds": 2491.68,
+      "duration_seconds": 2.04
+    },
+    {
+      "index": 829,
+      "text": "[screams]",
+      "start_seconds": 2498.0,
+      "duration_seconds": 1.0
+    },
+    {
+      "index": 830,
+      "text": "[screams]",
+      "start_seconds": 2500.5,
+      "duration_seconds": 0.75
+    },
+    {
+      "index": 831,
+      "text": "[low scream]",
+      "start_seconds": 2502.66,
+      "duration_seconds": 1.28
+    },
+    {
+      "index": 832,
+      "text": "[faint yell]",
+      "start_seconds": 2505.5,
+      "duration_seconds": 0.75
+    },
+    {
+      "index": 833,
+      "text": "[yelps]",
+      "start_seconds": 2507.18,
+      "duration_seconds": 1.18
+    },
+    {
+      "index": 834,
+      "text": "[long scream]",
+      "start_seconds": 2509.52,
+      "duration_seconds": 3.94
+    },
+    {
+      "index": 835,
+      "text": "Ooh sorry.",
+      "start_seconds": 2515.46,
+      "duration_seconds": 1.52
+    },
+    {
+      "index": 836,
+      "text": "…mainly based here,\nin the Royal Courts of Justice.",
+      "start_seconds": 2520.7,
+      "duration_seconds": 2.4
+    },
+    {
+      "index": 837,
+      "text": "No, I saw you walk into that…",
+      "start_seconds": 2523.1,
+      "duration_seconds": 1.6
+    },
+    {
+      "index": 838,
+      "text": "[strained] Yep!",
+      "start_seconds": 2524.7,
+      "duration_seconds": 1.04
+    },
+    {
+      "index": 839,
+      "text": "[groans] It's fine!",
+      "start_seconds": 2527.04,
+      "duration_seconds": 1.36
+    },
+    {
+      "index": 840,
+      "text": "All right, that's it, I'm out of battery\nand out of patience. We are done.",
+      "start_seconds": 2542.2,
+      "duration_seconds": 2.5
+    }
+  ]
+}

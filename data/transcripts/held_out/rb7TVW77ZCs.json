@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "video_id": "rb7TVW77ZCs",
+  "acquired_at": "2026-10-20T04:49:32.380401+00:00",
+  "source": {
+    "library": "supadata-native",
+    "version": "v1-http-2026-10-19",
+    "request": {
+      "lang": "en",
+      "mode": "native",
+      "text": false
+    },
+    "credentials_used": "backend_api_key_only",
+    "manual_sponsor_annotations_used_as_input": false
+  },
+  "transcript": {
+    "language": "English",
+    "language_code": "en",
+    "caption_type": "unknown",
+    "is_generated": null,
+    "provider": "supadata-native",
+    "provider_version": "v1-http-2026-10-19"
+  },
+  "timing": {
+    "source_unit": "milliseconds",
+    "normalized_unit": "seconds",
+    "duration_available": true,
+    "duration_is_exact_promotion_boundary": false
+  },
+  "completeness": {
+    "snippet_count": 77,
+    "first_start_seconds": 7.09,
+    "last_start_seconds": 257.898,
+    "independently_verified": false,
+    "note": "Provider cue list was nonempty; video duration/truncation requires independent verification."
+  },
+  "snippets": [
+    {
+      "index": 0,
+      "text": "In 1796, the scientist Edward Jenner",
+      "start_seconds": 7.09,
+      "duration_seconds": 3.351
+    },
+    {
+      "index": 1,
+      "text": "injected material from a cowpox virus\ninto an eight-year-old boy",
+      "start_seconds": 10.441,
+      "duration_seconds": 4.67
+    },
+    {
+      "index": 2,
+      "text": "with a hunch that this would provide\nthe protection needed",
+      "start_seconds": 15.111,
+      "duration_seconds": 2.767
+    },
+    {
+      "index": 3,
+      "text": "to save people from deadly outbreaks\nof the related smallpox virus.",
+      "start_seconds": 17.878,
+      "duration_seconds": 5.365
+    },
+    {
+      "index": 4,
+      "text": "It was a success.",
+      "start_seconds": 23.243,
+      "duration_seconds": 1.647
+    },
+    {
+      "index": 5,
+      "text": "The eight-year-old was inoculated\nagainst the disease",
+      "start_seconds": 24.89,
+      "duration_seconds": 2.729
+    },
+    {
+      "index": 6,
+      "text": "and this became the first ever vaccine.",
+      "start_seconds": 27.619,
+      "duration_seconds": 3.311
+    },
+    {
+      "index": 7,
+      "text": "But why did it work?",
+      "start_seconds": 30.93,
+      "duration_seconds": 1.793
+    },
+    {
+      "index": 8,
+      "text": "To understand how vaccines function,",
+      "start_seconds": 32.723,
+      "duration_seconds": 1.934
+    },
+    {
+      "index": 9,
+      "text": "we need to know how the immune system\ndefends us against contagious diseases",
+      "start_seconds": 34.657,
+      "duration_seconds": 4.461
+    },
+    {
+      "index": 10,
+      "text": "in the first place.",
+      "start_seconds": 39.118,
+      "duration_seconds": 1.797
+    },
+    {
+      "index": 11,
+      "text": "When foreign microbes invade us,",
+      "start_seconds": 40.915,
+      "duration_seconds": 2.156
+    },
+    {
+      "index": 12,
+      "text": "the immune system triggers\na series of responses",
+      "start_seconds": 43.071,
+      "duration_seconds": 3.053
+    },
+    {
+      "index": 13,
+      "text": "in an attempt to identify\nand remove them from our bodies.",
+      "start_seconds": 46.124,
+      "duration_seconds": 3.632
+    },
+    {
+      "index": 14,
+      "text": "The signs that this immune\nresponse is working",
+      "start_seconds": 49.756,
+      "duration_seconds": 3.05
+    },
+    {
+      "index": 15,
+      "text": "are the coughing, sneezing,\ninflammation and fever we experience,",
+      "start_seconds": 52.806,
+      "duration_seconds": 4.694
+    },
+    {
+      "index": 16,
+      "text": "which work to trap, deter and rid the body\nof threatening things, like bacteria.",
+      "start_seconds": 57.5,
+      "duration_seconds": 5.914
+    },
+    {
+      "index": 17,
+      "text": "These innate immune responses\nalso trigger our second line of defense,",
+      "start_seconds": 63.414,
+      "duration_seconds": 4.41
+    },
+    {
+      "index": 18,
+      "text": "called adaptive immunity.",
+      "start_seconds": 67.824,
+      "duration_seconds": 2.374
+    },
+    {
+      "index": 19,
+      "text": "Special cells called B cells and T cells\nare recruited to fight microbes,",
+      "start_seconds": 70.198,
+      "duration_seconds": 4.915
+    },
+    {
+      "index": 20,
+      "text": "and also record information about them,",
+      "start_seconds": 75.113,
+      "duration_seconds": 3.218
+    },
+    {
+      "index": 21,
+      "text": "creating a memory of what\nthe invaders look like,",
+      "start_seconds": 78.331,
+      "duration_seconds": 3.148
+    },
+    {
+      "index": 22,
+      "text": "and how best to fight them.",
+      "start_seconds": 81.479,
+      "duration_seconds": 2.568
+    },
+    {
+      "index": 23,
+      "text": "This know-how becomes handy",
+      "start_seconds": 84.047,
+      "duration_seconds": 1.893
+    },
+    {
+      "index": 24,
+      "text": "if the same pathogen\ninvades the body again.",
+      "start_seconds": 85.94,
+      "duration_seconds": 3.532
+    },
+    {
+      "index": 25,
+      "text": "But despite this smart response,\nthere's still a risk involved.",
+      "start_seconds": 89.472,
+      "duration_seconds": 4.048
+    },
+    {
+      "index": 26,
+      "text": "The body takes time to learn\nhow to respond to pathogens",
+      "start_seconds": 93.52,
+      "duration_seconds": 3.176
+    },
+    {
+      "index": 27,
+      "text": "and to build up these defenses.",
+      "start_seconds": 96.696,
+      "duration_seconds": 2.061
+    },
+    {
+      "index": 28,
+      "text": "And even then,",
+      "start_seconds": 98.757,
+      "duration_seconds": 1.0
+    },
+    {
+      "index": 29,
+      "text": "if a body is too weak or young\nto fight back when it's invaded,",
+      "start_seconds": 99.767,
+      "duration_seconds": 3.412
+    },
+    {
+      "index": 30,
+      "text": "it might face very serious risk\nif the pathogen is particularly severe.",
+      "start_seconds": 103.189,
+      "duration_seconds": 5.692
+    },
+    {
+      "index": 31,
+      "text": "But what if we could prepare\nthe body's immune response,",
+      "start_seconds": 108.881,
+      "duration_seconds": 3.052
+    },
+    {
+      "index": 32,
+      "text": "readying it before someone even got ill?",
+      "start_seconds": 111.933,
+      "duration_seconds": 3.147
+    },
+    {
+      "index": 33,
+      "text": "This is where vaccines come in.",
+      "start_seconds": 115.08,
+      "duration_seconds": 2.411
+    },
+    {
+      "index": 34,
+      "text": "Using the same principles\nthat the body uses to defend itself,",
+      "start_seconds": 117.491,
+      "duration_seconds": 3.507
+    },
+    {
+      "index": 35,
+      "text": "scientists use vaccines to trigger\nthe body's adaptive immune system,",
+      "start_seconds": 120.998,
+      "duration_seconds": 4.977
+    },
+    {
+      "index": 36,
+      "text": "without exposing humans\nto the full strength disease.",
+      "start_seconds": 125.975,
+      "duration_seconds": 3.706
+    },
+    {
+      "index": 37,
+      "text": "This has resulted in many vaccines,\nwhich each work uniquely,",
+      "start_seconds": 129.681,
+      "duration_seconds": 3.878
+    },
+    {
+      "index": 38,
+      "text": "separated into many different types.",
+      "start_seconds": 133.559,
+      "duration_seconds": 2.508
+    },
+    {
+      "index": 39,
+      "text": "First, we have live attenuated vaccines.",
+      "start_seconds": 136.067,
+      "duration_seconds": 3.702
+    },
+    {
+      "index": 40,
+      "text": "These are made of the pathogen itself\nbut a much weaker and tamer version.",
+      "start_seconds": 139.769,
+      "duration_seconds": 4.979
+    },
+    {
+      "index": 41,
+      "text": "Next, we have inactive vaccines,\nin which the pathogens have been killed.",
+      "start_seconds": 144.748,
+      "duration_seconds": 4.751
+    },
+    {
+      "index": 42,
+      "text": "The weakening and inactivation\nin both types of vaccine",
+      "start_seconds": 149.499,
+      "duration_seconds": 3.029
+    },
+    {
+      "index": 43,
+      "text": "ensures that pathogens don't develop\ninto the full blown disease.",
+      "start_seconds": 152.528,
+      "duration_seconds": 3.91
+    },
+    {
+      "index": 44,
+      "text": "But just like a disease,\nthey trigger an immune response,",
+      "start_seconds": 156.438,
+      "duration_seconds": 3.86
+    },
+    {
+      "index": 45,
+      "text": "teaching the body to recognize an attack",
+      "start_seconds": 160.298,
+      "duration_seconds": 2.154
+    },
+    {
+      "index": 46,
+      "text": "by making a profile\nof pathogens in preparation.",
+      "start_seconds": 162.452,
+      "duration_seconds": 3.796
+    },
+    {
+      "index": 47,
+      "text": "The downside is that live attenuated\nvaccines can be difficult to make,",
+      "start_seconds": 166.248,
+      "duration_seconds": 4.801
+    },
+    {
+      "index": 48,
+      "text": "and because they're live\nand quite powerful,",
+      "start_seconds": 171.049,
+      "duration_seconds": 2.2
+    },
+    {
+      "index": 49,
+      "text": "people with weaker immune systems\ncan't have them,",
+      "start_seconds": 173.249,
+      "duration_seconds": 3.34
+    },
+    {
+      "index": 50,
+      "text": "while inactive vaccines\ndon't create long-lasting immunity.",
+      "start_seconds": 176.589,
+      "duration_seconds": 4.374
+    },
+    {
+      "index": 51,
+      "text": "Another type, the subunit vaccine,",
+      "start_seconds": 180.963,
+      "duration_seconds": 2.827
+    },
+    {
+      "index": 52,
+      "text": "is only made from one part\nof the pathogen, called an antigen,",
+      "start_seconds": 183.79,
+      "duration_seconds": 4.243
+    },
+    {
+      "index": 53,
+      "text": "the ingredient that actually triggers\nthe immune response.",
+      "start_seconds": 188.033,
+      "duration_seconds": 3.536
+    },
+    {
+      "index": 54,
+      "text": "By even further isolating\nspecific components of antigens,",
+      "start_seconds": 191.569,
+      "duration_seconds": 3.377
+    },
+    {
+      "index": 55,
+      "text": "like proteins or polysaccharides,",
+      "start_seconds": 194.946,
+      "duration_seconds": 2.437
+    },
+    {
+      "index": 56,
+      "text": "these vaccines can prompt\nspecific responses.",
+      "start_seconds": 197.383,
+      "duration_seconds": 4.37
+    },
+    {
+      "index": 57,
+      "text": "Scientists are now building\na whole new range of vaccines",
+      "start_seconds": 201.753,
+      "duration_seconds": 3.918
+    },
+    {
+      "index": 58,
+      "text": "called DNA vaccines.",
+      "start_seconds": 205.671,
+      "duration_seconds": 1.5
+    },
+    {
+      "index": 59,
+      "text": "For this variety, they isolate the very\ngenes that make the specific antigens",
+      "start_seconds": 207.171,
+      "duration_seconds": 4.858
+    },
+    {
+      "index": 60,
+      "text": "the body needs to trigger its immune\nresponse to specific pathogens.",
+      "start_seconds": 212.029,
+      "duration_seconds": 4.537
+    },
+    {
+      "index": 61,
+      "text": "When injected into the human body,",
+      "start_seconds": 216.566,
+      "duration_seconds": 2.154
+    },
+    {
+      "index": 62,
+      "text": "those genes instruct cells\nin the body to make the antigens.",
+      "start_seconds": 218.72,
+      "duration_seconds": 3.818
+    },
+    {
+      "index": 63,
+      "text": "This causes a stronger immune response,",
+      "start_seconds": 222.538,
+      "duration_seconds": 2.442
+    },
+    {
+      "index": 64,
+      "text": "and prepares the body\nfor any future threats,",
+      "start_seconds": 224.98,
+      "duration_seconds": 2.932
+    },
+    {
+      "index": 65,
+      "text": "and because the vaccine only includes\nspecific genetic material,",
+      "start_seconds": 227.912,
+      "duration_seconds": 3.47
+    },
+    {
+      "index": 66,
+      "text": "it doesn't contain any other ingredients\nfrom the rest of the pathogen",
+      "start_seconds": 231.382,
+      "duration_seconds": 3.622
+    },
+    {
+      "index": 67,
+      "text": "that could develop into the disease\nand harm the patient.",
+      "start_seconds": 235.004,
+      "duration_seconds": 3.601
+    },
+    {
+      "index": 68,
+      "text": "If these vaccines become a success,",
+      "start_seconds": 238.605,
+      "duration_seconds": 2.276
+    },
+    {
+      "index": 69,
+      "text": "we might be able to build\nmore effective treatments",
+      "start_seconds": 240.881,
+      "duration_seconds": 2.634
+    },
+    {
+      "index": 70,
+      "text": "for invasive pathogens in years to come.",
+      "start_seconds": 243.515,
+      "duration_seconds": 2.637
+    },
+    {
+      "index": 71,
+      "text": "Just like Edward Jenner's\namazing discovery",
+      "start_seconds": 246.152,
+      "duration_seconds": 2.218
+    },
+    {
+      "index": 72,
+      "text": "spurred on modern medicine\nall those decades ago,",
+      "start_seconds": 248.37,
+      "duration_seconds": 3.286
+    },
+    {
+      "index": 73,
+      "text": "continuing the development of vaccines",
+      "start_seconds": 251.656,
+      "duration_seconds": 2.029
+    },
+    {
+      "index": 74,
+      "text": "might even allow us\nto treat diseases like HIV,",
+      "start_seconds": 253.685,
+      "duration_seconds": 3.209
+    },
+    {
+      "index": 75,
+      "text": "malaria,",
+      "start_seconds": 256.894,
+      "duration_seconds": 1.0
+    },
+    {
+      "index": 76,
+      "text": "or Ebola, one day.",
+      "start_seconds": 257.898,
+      "duration_seconds": 1.71
+    }
+  ]
+}

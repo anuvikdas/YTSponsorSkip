@@ -1,0 +1,903 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "/Users/anuvikdas/Downloads/SponsorSkip Manual 14 Transcript Collection.docx",
+    "filename": "SponsorSkip Manual 14 Transcript Collection.docx",
+    "sha256": "15d88d1af0aad45603d53e2b9c7a52785ab0b908c259a33b5d2728c7a864e821",
+    "size_bytes": 133726,
+    "modified_at": "2026-10-07T20:37:59.092375+00:00",
+    "preserved_unchanged": true
+  },
+  "scope": {
+    "expected_reviewed_tune_videos": 14,
+    "held_out_included": false,
+    "partial_reviews_included": false,
+    "manual_sponsor_annotations_used_as_input": false
+  },
+  "coverage": {
+    "sections_found": 14,
+    "usable_transcripts": 14,
+    "missing_video_ids": [],
+    "duplicate_video_ids": [],
+    "unexpected_video_ids": [],
+    "section_errors": [],
+    "total_snippets": 2567,
+    "caption_types": {
+      "generated": 6,
+      "manual": 6,
+      "unknown": 2
+    }
+  },
+  "timing_policy": {
+    "source_contains_start_times_only": true,
+    "source_durations_fabricated": false,
+    "analysis_durations_derived": true,
+    "non_terminal": "next distinct source start minus current start",
+    "terminal": "per-video median positive consecutive start delta",
+    "effect": "detector windows and predicted end boundaries use approximate analysis spans; they can extend through silence and boundary error includes this timing uncertainty"
+  },
+  "videos": [
+    {
+      "video_id": "094y1Z2wpJg",
+      "title": "The Simplest Math Problem No One Can Solve — Collatz Conjecture",
+      "status": "complete",
+      "status_raw": "Complete",
+      "source_format": "alternating_start_and_text_paragraphs",
+      "caption_type": "generated",
+      "caption_type_reported": "generated",
+      "caption_type_conflict": null,
+      "snippet_count": 492,
+      "first_start_seconds": 0,
+      "last_start_seconds": 1326,
+      "duplicate_start_count": 1,
+      "suspicious_gap_count": 1,
+      "suspicious_gaps": [
+        {
+          "after_index": 240,
+          "start_seconds": 637.0,
+          "next_start_seconds": 649.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        }
+      ],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 0
+    },
+    {
+      "video_id": "bHIhgxav9LY",
+      "title": "The Biggest Misconception About Electricity",
+      "status": "complete",
+      "status_raw": "Complete",
+      "source_format": "alternating_start_and_text_paragraphs",
+      "caption_type": "manual",
+      "caption_type_reported": "manual",
+      "caption_type_conflict": null,
+      "snippet_count": 374,
+      "first_start_seconds": 0,
+      "last_start_seconds": 885,
+      "duplicate_start_count": 3,
+      "suspicious_gap_count": 0,
+      "suspicious_gaps": [],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 0
+    },
+    {
+      "video_id": "iWeu2dxHRDg",
+      "title": "Car Thieves vs the Almost Final GlitterBomb 5.0",
+      "status": "complete",
+      "status_raw": "Complete",
+      "source_format": "embedded_start_human_timestamp_and_text",
+      "caption_type": "manual",
+      "caption_type_reported": "manual",
+      "caption_type_conflict": null,
+      "snippet_count": 159,
+      "first_start_seconds": 0,
+      "last_start_seconds": 1098,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 14,
+      "suspicious_gaps": [
+        {
+          "after_index": 44,
+          "start_seconds": 287.0,
+          "next_start_seconds": 298.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 46,
+          "start_seconds": 304.0,
+          "next_start_seconds": 315.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 56,
+          "start_seconds": 371.0,
+          "next_start_seconds": 383.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 60,
+          "start_seconds": 396.0,
+          "next_start_seconds": 410.0,
+          "gap_seconds": 14.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 64,
+          "start_seconds": 427.0,
+          "next_start_seconds": 441.0,
+          "gap_seconds": 14.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 78,
+          "start_seconds": 526.0,
+          "next_start_seconds": 538.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 82,
+          "start_seconds": 555.0,
+          "next_start_seconds": 571.0,
+          "gap_seconds": 16.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 84,
+          "start_seconds": 574.0,
+          "next_start_seconds": 589.0,
+          "gap_seconds": 15.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 104,
+          "start_seconds": 706.0,
+          "next_start_seconds": 718.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 105,
+          "start_seconds": 718.0,
+          "next_start_seconds": 732.0,
+          "gap_seconds": 14.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 116,
+          "start_seconds": 801.0,
+          "next_start_seconds": 813.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 117,
+          "start_seconds": 813.0,
+          "next_start_seconds": 835.0,
+          "gap_seconds": 22.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 127,
+          "start_seconds": 882.0,
+          "next_start_seconds": 893.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 134,
+          "start_seconds": 927.0,
+          "next_start_seconds": 939.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        }
+      ],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 8
+    },
+    {
+      "video_id": "DTvS9lvRxZ8",
+      "title": "Backyard Squirrel Maze 2.0 — The Walnut Heist",
+      "status": "complete",
+      "status_raw": "Complete",
+      "source_format": "embedded_start_human_timestamp_and_text",
+      "caption_type": "manual",
+      "caption_type_reported": "manual",
+      "caption_type_conflict": null,
+      "snippet_count": 128,
+      "first_start_seconds": 0,
+      "last_start_seconds": 995,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 21,
+      "suspicious_gaps": [
+        {
+          "after_index": 4,
+          "start_seconds": 25.0,
+          "next_start_seconds": 36.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 7,
+          "start_seconds": 50.0,
+          "next_start_seconds": 65.0,
+          "gap_seconds": 15.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 32,
+          "start_seconds": 233.0,
+          "next_start_seconds": 245.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 33,
+          "start_seconds": 245.0,
+          "next_start_seconds": 257.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 34,
+          "start_seconds": 257.0,
+          "next_start_seconds": 269.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 44,
+          "start_seconds": 336.0,
+          "next_start_seconds": 348.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 46,
+          "start_seconds": 354.0,
+          "next_start_seconds": 365.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 59,
+          "start_seconds": 450.0,
+          "next_start_seconds": 463.0,
+          "gap_seconds": 13.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 63,
+          "start_seconds": 478.0,
+          "next_start_seconds": 492.0,
+          "gap_seconds": 14.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 65,
+          "start_seconds": 499.0,
+          "next_start_seconds": 510.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 72,
+          "start_seconds": 554.0,
+          "next_start_seconds": 565.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 75,
+          "start_seconds": 578.0,
+          "next_start_seconds": 589.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 90,
+          "start_seconds": 670.0,
+          "next_start_seconds": 689.0,
+          "gap_seconds": 19.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 91,
+          "start_seconds": 689.0,
+          "next_start_seconds": 730.0,
+          "gap_seconds": 41.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 92,
+          "start_seconds": 730.0,
+          "next_start_seconds": 742.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 93,
+          "start_seconds": 742.0,
+          "next_start_seconds": 757.0,
+          "gap_seconds": 15.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 95,
+          "start_seconds": 766.0,
+          "next_start_seconds": 777.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 113,
+          "start_seconds": 891.0,
+          "next_start_seconds": 906.0,
+          "gap_seconds": 15.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 115,
+          "start_seconds": 910.0,
+          "next_start_seconds": 921.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 117,
+          "start_seconds": 922.0,
+          "next_start_seconds": 934.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 120,
+          "start_seconds": 948.0,
+          "next_start_seconds": 959.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        }
+      ],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 8
+    },
+    {
+      "video_id": "I9hJ_Rux9y0",
+      "title": "How To Make Friends",
+      "status": "complete",
+      "status_raw": "Complete",
+      "source_format": "alternating_start_and_text_paragraphs",
+      "caption_type": "generated",
+      "caption_type_reported": "generated",
+      "caption_type_conflict": null,
+      "snippet_count": 150,
+      "first_start_seconds": 6,
+      "last_start_seconds": 710,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 0,
+      "suspicious_gaps": [],
+      "warning_count": 1,
+      "warnings": [
+        {
+          "code": "UNTIMESTAMPED_TRANSCRIPT_TEXT",
+          "block_index": 2068,
+          "text": "Friends make life good. They provide the  scaffolding that makes it not just bearable  "
+        }
+      ],
+      "excluded_non_transcript_line_count": 1
+    },
+    {
+      "video_id": "lXfEK8G8CUI",
+      "title": "How The Immune System ACTUALLY Works — IMMUNE",
+      "status": "complete",
+      "status_raw": "Completed",
+      "source_format": "alternating_start_and_text_paragraphs",
+      "caption_type": "manual",
+      "caption_type_reported": "manual",
+      "caption_type_conflict": null,
+      "snippet_count": 157,
+      "first_start_seconds": 0,
+      "last_start_seconds": 633,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 1,
+      "suspicious_gaps": [
+        {
+          "after_index": 14,
+          "start_seconds": 57.0,
+          "next_start_seconds": 71.0,
+          "gap_seconds": 14.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        }
+      ],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 0
+    },
+    {
+      "video_id": "-lErGZZgUbY",
+      "title": "My Framework Investment Should NOT Have Worked Out",
+      "status": "complete",
+      "status_raw": "Completed",
+      "source_format": "embedded_start_human_timestamp_and_text",
+      "caption_type": "generated",
+      "caption_type_reported": "generated",
+      "caption_type_conflict": null,
+      "snippet_count": 130,
+      "first_start_seconds": 0,
+      "last_start_seconds": 1054,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 3,
+      "suspicious_gaps": [
+        {
+          "after_index": 8,
+          "start_seconds": 66.0,
+          "next_start_seconds": 83.0,
+          "gap_seconds": 17.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 65,
+          "start_seconds": 530.0,
+          "next_start_seconds": 541.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 75,
+          "start_seconds": 613.0,
+          "next_start_seconds": 624.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        }
+      ],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 7
+    },
+    {
+      "video_id": "MRtg6A1f2Ko",
+      "title": "iPhone 16/16 Pro Review: Times Have Changed!",
+      "status": "complete",
+      "status_raw": "Completed",
+      "source_format": "embedded_start_human_timestamp_and_text",
+      "caption_type": "manual",
+      "caption_type_reported": "manual",
+      "caption_type_conflict": null,
+      "snippet_count": 184,
+      "first_start_seconds": 0,
+      "last_start_seconds": 1235,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 19,
+      "suspicious_gaps": [
+        {
+          "after_index": 1,
+          "start_seconds": 9.0,
+          "next_start_seconds": 21.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 24,
+          "start_seconds": 152.0,
+          "next_start_seconds": 163.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 27,
+          "start_seconds": 173.0,
+          "next_start_seconds": 186.0,
+          "gap_seconds": 13.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 37,
+          "start_seconds": 251.0,
+          "next_start_seconds": 263.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 38,
+          "start_seconds": 263.0,
+          "next_start_seconds": 274.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 41,
+          "start_seconds": 287.0,
+          "next_start_seconds": 298.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 63,
+          "start_seconds": 413.0,
+          "next_start_seconds": 424.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 78,
+          "start_seconds": 512.0,
+          "next_start_seconds": 523.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 79,
+          "start_seconds": 523.0,
+          "next_start_seconds": 535.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 94,
+          "start_seconds": 620.0,
+          "next_start_seconds": 632.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 100,
+          "start_seconds": 651.0,
+          "next_start_seconds": 662.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 104,
+          "start_seconds": 684.0,
+          "next_start_seconds": 697.0,
+          "gap_seconds": 13.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 125,
+          "start_seconds": 820.0,
+          "next_start_seconds": 831.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 136,
+          "start_seconds": 892.0,
+          "next_start_seconds": 904.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 137,
+          "start_seconds": 904.0,
+          "next_start_seconds": 915.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 143,
+          "start_seconds": 954.0,
+          "next_start_seconds": 965.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 154,
+          "start_seconds": 1029.0,
+          "next_start_seconds": 1040.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 156,
+          "start_seconds": 1044.0,
+          "next_start_seconds": 1059.0,
+          "gap_seconds": 15.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 179,
+          "start_seconds": 1205.0,
+          "next_start_seconds": 1216.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        }
+      ],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 6
+    },
+    {
+      "video_id": "9lx11dy9J30",
+      "title": "iPhone 16/Pro Impressions: The Great Separation!",
+      "status": "complete",
+      "status_raw": "Competed",
+      "source_format": "embedded_start_human_timestamp_and_text",
+      "caption_type": "generated",
+      "caption_type_reported": "generated",
+      "caption_type_conflict": null,
+      "snippet_count": 122,
+      "first_start_seconds": 4,
+      "last_start_seconds": 968,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 0,
+      "suspicious_gaps": [],
+      "warning_count": 1,
+      "warnings": [
+        {
+          "code": "STATUS_TYPO_NORMALIZED",
+          "reported_status": "Competed"
+        }
+      ],
+      "excluded_non_transcript_line_count": 9
+    },
+    {
+      "video_id": "Sew4rctKghY",
+      "title": "Why billions of people won’t eat pork (or why we don’t know)",
+      "status": "complete",
+      "status_raw": "Completed",
+      "source_format": "embedded_start_human_timestamp_and_text",
+      "caption_type": "unknown",
+      "caption_type_reported": "unknown",
+      "caption_type_conflict": null,
+      "snippet_count": 91,
+      "first_start_seconds": 0,
+      "last_start_seconds": 784,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 22,
+      "suspicious_gaps": [
+        {
+          "after_index": 1,
+          "start_seconds": 8.0,
+          "next_start_seconds": 20.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 5,
+          "start_seconds": 47.0,
+          "next_start_seconds": 60.0,
+          "gap_seconds": 13.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 6,
+          "start_seconds": 60.0,
+          "next_start_seconds": 73.0,
+          "gap_seconds": 13.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 7,
+          "start_seconds": 73.0,
+          "next_start_seconds": 86.0,
+          "gap_seconds": 13.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 8,
+          "start_seconds": 86.0,
+          "next_start_seconds": 97.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 15,
+          "start_seconds": 138.0,
+          "next_start_seconds": 150.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 18,
+          "start_seconds": 164.0,
+          "next_start_seconds": 175.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 21,
+          "start_seconds": 187.0,
+          "next_start_seconds": 198.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 24,
+          "start_seconds": 215.0,
+          "next_start_seconds": 226.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 42,
+          "start_seconds": 359.0,
+          "next_start_seconds": 374.0,
+          "gap_seconds": 15.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 45,
+          "start_seconds": 386.0,
+          "next_start_seconds": 397.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 47,
+          "start_seconds": 403.0,
+          "next_start_seconds": 414.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 48,
+          "start_seconds": 414.0,
+          "next_start_seconds": 429.0,
+          "gap_seconds": 15.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 52,
+          "start_seconds": 444.0,
+          "next_start_seconds": 456.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 55,
+          "start_seconds": 471.0,
+          "next_start_seconds": 482.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 56,
+          "start_seconds": 482.0,
+          "next_start_seconds": 493.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 57,
+          "start_seconds": 493.0,
+          "next_start_seconds": 504.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 59,
+          "start_seconds": 514.0,
+          "next_start_seconds": 525.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 61,
+          "start_seconds": 535.0,
+          "next_start_seconds": 548.0,
+          "gap_seconds": 13.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 62,
+          "start_seconds": 548.0,
+          "next_start_seconds": 559.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 83,
+          "start_seconds": 713.0,
+          "next_start_seconds": 724.0,
+          "gap_seconds": 11.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        },
+        {
+          "after_index": 89,
+          "start_seconds": 772.0,
+          "next_start_seconds": 784.0,
+          "gap_seconds": 12.0,
+          "interpretation": "could be legitimate silence or omitted cues; not classified automatically"
+        }
+      ],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 8
+    },
+    {
+      "video_id": "O7sQBfpQCvU",
+      "title": "Ice cream made with a pan, a spoon and a freezer",
+      "status": "complete",
+      "status_raw": "Completed",
+      "source_format": "alternating_start_and_text_paragraphs",
+      "caption_type": "manual",
+      "caption_type_reported": "manual",
+      "caption_type_conflict": null,
+      "snippet_count": 150,
+      "first_start_seconds": 0,
+      "last_start_seconds": 613,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 0,
+      "suspicious_gaps": [],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 0
+    },
+    {
+      "video_id": "U3aXWizDbQ4",
+      "title": "C in 100 Seconds",
+      "status": "complete",
+      "status_raw": "Completed",
+      "source_format": "alternating_start_and_text_paragraphs",
+      "caption_type": "generated",
+      "caption_type_reported": "generated",
+      "caption_type_conflict": null,
+      "snippet_count": 72,
+      "first_start_seconds": 0,
+      "last_start_seconds": 143,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 0,
+      "suspicious_gaps": [],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 4
+    },
+    {
+      "video_id": "x7X9w_GIm1s",
+      "title": "Python in 100 Seconds",
+      "status": "complete",
+      "status_raw": "Completed",
+      "source_format": "alternating_start_and_text_paragraphs",
+      "caption_type": "generated",
+      "caption_type_reported": "generated",
+      "caption_type_conflict": null,
+      "snippet_count": 72,
+      "first_start_seconds": 0,
+      "last_start_seconds": 141,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 0,
+      "suspicious_gaps": [],
+      "warning_count": 0,
+      "warnings": [],
+      "excluded_non_transcript_line_count": 4
+    },
+    {
+      "video_id": "aircAruvnKk",
+      "title": "But what is a neural network? | Deep learning chapter 1",
+      "status": "complete",
+      "status_raw": "Completed",
+      "source_format": "alternating_start_and_text_paragraphs",
+      "caption_type": "unknown",
+      "caption_type_reported": "generated",
+      "caption_type_conflict": {
+        "reported_in_document": "generated",
+        "prior_project_evidence": "manual",
+        "resolution": "unknown"
+      },
+      "snippet_count": 286,
+      "first_start_seconds": 4,
+      "last_start_seconds": 1105,
+      "duplicate_start_count": 0,
+      "suspicious_gap_count": 0,
+      "suspicious_gaps": [],
+      "warning_count": 1,
+      "warnings": [
+        {
+          "code": "CAPTION_TYPE_CONFLICT",
+          "reported_in_document": "generated",
+          "prior_project_evidence": "manual",
+          "resolution": "unknown"
+        }
+      ],
+      "excluded_non_transcript_line_count": 11
+    }
+  ]
+}

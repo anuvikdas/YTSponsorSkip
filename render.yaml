@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ytsponsorskip-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: YTSS_ENVIRONMENT
+        value: render-free
+      - key: YTSS_ALLOWED_ORIGINS_CSV
+        value: http://localhost
+      - key: YTSS_CACHE_TTL_SECONDS
+        value: "900"
+      - key: YTSS_REQUEST_LIMIT_PER_MINUTE
+        value: "60"
