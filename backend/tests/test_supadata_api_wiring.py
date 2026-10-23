@@ -52,6 +52,7 @@ async def test_selected_provider_contract_cache_and_budget(monkeypatch, tmp_path
         SUPADATA_API_KEY="test-only-secret",
         request_timeout_seconds=30,
         trial_budget_path=tmp_path / "trial.sqlite3",
+        native_cache_directory=tmp_path / "native",
         trial_attempt_limit=3,
     )
     app = create_app(settings=settings)

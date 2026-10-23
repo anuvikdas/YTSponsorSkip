@@ -8,6 +8,7 @@ class FakeVideo {
   constructor(currentTime = 0, paused = false) {
     this._currentTime = currentTime;
     this.paused = paused;
+    this.duration = 10000;
     this.seeking = false;
     this.listeners = new Map();
   }
@@ -82,6 +83,25 @@ test("normal playback skips at the interval start", () => {
   video.tick(10);
   assert.equal(video.currentTime, 20);
   assert.equal(skips.length, 1);
+});
+
+test("malformed, unordered and nonnumeric intervals fail closed", () => {
+  for (const intervals of [[null], [{startSeconds:"10",endSeconds:20}],
+    [{startSeconds:10,endSeconds:20},{startSeconds:5,endSeconds:8}]]) {
+    const {controller,video}=setup({currentTime:12});
+    controller.setIntervals({videoId:"video-a",requestId:"request-a",intervals});
+    assert.equal(controller.snapshot().intervalCount,0);assert.equal(video.currentTime,12);
+  }
+});
+
+test("metadata arrival permits a valid seek; unknown duration and a throwing seek fail closed", () => {
+  const {controller,video,skips}=setup({currentTime:12});
+  video.duration=NaN;setInterval(controller);assert.equal(video.currentTime,12);
+  video.duration=100;video.emit("loadedmetadata");assert.equal(video.currentTime,20);
+  Object.defineProperty(video,"currentTime",{get:()=>12,set(){throw new Error("not seekable");}});
+  assert.equal(controller.undoLastSkip(),false);
+  video.tick(30);controller.beginVideo("video-a","request-a");setInterval(controller);
+  assert.equal(controller.snapshot().hasUndo,false);assert.equal(skips.length,1);
 });
 
 test("late intervals skip remaining time while paused without changing pause state", () => {

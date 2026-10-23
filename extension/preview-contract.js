@@ -9,14 +9,21 @@ function validatePreviewResponse(body, expected) {
     typeof body.transcript_provider !== "string" ||
     !Array.isArray(body.intervals)
   ) return null;
+  if (expected.detectorVersion && body.detector_version !== expected.detectorVersion) return null;
+  if (expected.experimental && (
+    body.mode !== "conservative" || !body.detector_version.startsWith("contextual-v1-sha256:") ||
+    typeof body.language_code !== "string" || !/^en(?:-|$)/i.test(body.language_code)
+  )) return null;
   const intervals = [];
+  let previousStart = -1;
   for (const item of body.intervals) {
     const start = item?.start_seconds;
     const end = item?.end_seconds;
     if (
       typeof start !== "number" || !Number.isFinite(start) || start < 0 ||
-      typeof end !== "number" || !Number.isFinite(end) || end <= start
+      typeof end !== "number" || !Number.isFinite(end) || end <= start || start < previousStart
     ) return null;
+    previousStart = start;
     intervals.push({
       startSeconds: start,
       endSeconds: end,
@@ -35,6 +42,8 @@ function validatePreviewResponse(body, expected) {
     intervals,
     transcriptCacheHit: body.transcript_cache_hit === true,
     detectionCacheHit: body.detection_cache_hit === true,
+    transcriptDiskCacheHit: body.transcript_disk_cache_hit === true,
+    nativeBudget: body.native_budget || null,
     totalLatencyMs: body.total_latency_ms
   };
 }

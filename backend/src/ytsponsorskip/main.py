@@ -14,6 +14,7 @@ from ytsponsorskip.config import Settings, get_settings
 from ytsponsorskip.detection_service import DetectionService
 from ytsponsorskip.detector import Sensitivity
 from ytsponsorskip.domain import FailureCode, TranscriptAcquisitionError
+from ytsponsorskip.providers.native_demo import NativeDemoBudget, PersistentNativeProvider
 from ytsponsorskip.providers.saved import SavedTuneTranscriptProvider
 from ytsponsorskip.providers.supadata import SupadataTranscriptProvider
 from ytsponsorskip.providers.youtube import YouTubeTranscriptProvider
@@ -64,6 +65,7 @@ def create_app(
     detection_service: DetectionService | None = None,
 ) -> FastAPI:
     settings = settings or get_settings()
+    native_budget = NativeDemoBudget(settings.trial_budget_path, settings.native_cache_directory)
     owns_service = transcript_service is None
     if transcript_service is None:
         budget = TrialBudget(
@@ -83,6 +85,12 @@ def create_app(
                 max_polls=settings.trial_poll_limit,
                 trial_budget=budget,
                 enforce_free_credits=True,
+            )
+            provider = PersistentNativeProvider(
+                provider,
+                native_budget,
+                directory=settings.native_cache_directory,
+                secret=settings.supadata_api_key.get_secret_value(),
             )
         else:
             provider = BudgetedTranscriptProvider(
@@ -110,19 +118,24 @@ def create_app(
             )
             if settings.supadata_api_key is not None:
                 detection_sources["supadata"] = TranscriptService(
-                    SupadataTranscriptProvider(
-                        settings.supadata_api_key.get_secret_value(),
-                        total_timeout_seconds=settings.request_timeout_seconds,
-                        per_request_timeout_seconds=settings.request_timeout_seconds,
-                        max_polls=settings.trial_poll_limit,
-                        trial_budget=budget
-                        if owns_service
-                        else TrialBudget(
-                            settings.trial_budget_path,
-                            limit=settings.trial_attempt_limit,
+                    PersistentNativeProvider(
+                        SupadataTranscriptProvider(
+                            settings.supadata_api_key.get_secret_value(),
+                            total_timeout_seconds=settings.request_timeout_seconds,
+                            per_request_timeout_seconds=settings.request_timeout_seconds,
                             max_polls=settings.trial_poll_limit,
+                            trial_budget=budget
+                            if owns_service
+                            else TrialBudget(
+                                settings.trial_budget_path,
+                                limit=settings.trial_attempt_limit,
+                                max_polls=settings.trial_poll_limit,
+                            ),
+                            enforce_free_credits=True,
                         ),
-                        enforce_free_credits=True,
+                        native_budget,
+                        directory=settings.native_cache_directory,
+                        secret=settings.supadata_api_key.get_secret_value(),
                     ),
                     max_concurrent=settings.max_concurrent_acquisitions,
                     timeout_seconds=settings.request_timeout_seconds,
@@ -229,6 +242,14 @@ def create_app(
     async def health() -> HealthResponse:
         return HealthResponse(status="ok", environment=settings.environment)
 
+    @app.get("/api/v1/demo-status")
+    async def demo_status() -> dict:
+        return {
+            "detector_variant": settings.detector_variant,
+            "detector_version": detection_service.detector_version,
+            **native_budget.snapshot(),
+        }
+
     @app.get(
         "/api/v1/transcripts/{video_id}",
         response_model=AcquisitionResponse,
@@ -307,6 +328,7 @@ def create_app(
         ],
         mode: Annotated[Sensitivity, Query()],
         source: Annotated[Literal["saved", "supadata"], Query()],
+        expected_detector_version: Annotated[str | None, Query(max_length=80)] = None,
     ) -> DetectionResponse:
         supplied_id = request.headers.get("x-request-id", "")
         if not REQUEST_ID_PATTERN.fullmatch(supplied_id):
@@ -315,6 +337,15 @@ def create_app(
                 status_code=422,
                 code="INVALID_REQUEST",
                 message="A valid X-Request-ID header is required for detection.",
+                retryable=False,
+            )
+        if (
+            expected_detector_version
+            and expected_detector_version != detection_service.detector_version
+        ):
+            raise TranscriptAcquisitionError(
+                FailureCode.PROVIDER_ERROR,
+                "Detector changed; reload the current video.",
                 retryable=False,
             )
         started = time.perf_counter()
@@ -362,12 +393,14 @@ def create_app(
             intervals=intervals,
             window_count=outcome.detection.window_count,
             transcript_cache_hit=outcome.acquisition.cache_hit,
+            transcript_disk_cache_hit=transcript.provider == "supadata-native-saved",
             transcript_coalesced=outcome.acquisition.coalesced,
             detection_cache_hit=outcome.detection_cache_hit,
             detection_coalesced=outcome.detection_coalesced,
             provider_latency_ms=outcome.acquisition.provider_latency_ms,
             detection_latency_ms=outcome.detection_latency_ms,
             total_latency_ms=(time.perf_counter() - started) * 1000,
+            native_budget=native_budget.snapshot(),
         )
 
     return app

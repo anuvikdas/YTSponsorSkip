@@ -3,14 +3,32 @@ let currentRequestId = null;
 let currentConfigurationKey = null;
 let refreshGeneration = 0;
 let previewActive = false;
+let experimentalActive = false;
+let activeSource = null;
+let activeSensitivity = null;
 let lastUrl = location.href;
 let notificationTimer = null;
 let developmentFixtureTimer = null;
 let browserProbeTimer = null;
+let observedVideo = null;
+let validatedDetectorVersion = null;
+let detectorVerifiedAt = 0;
+
+function videoIsLive() {
+  const video = document.querySelector("video");
+  const badge = document.querySelector(".ytp-live-badge");
+  // YouTube keeps a hidden Live button on prerecorded videos too.
+  const style = badge ? getComputedStyle(badge) : null;
+  return video?.duration === Infinity || Boolean(badge && !badge.disabled &&
+    style.display !== "none" && style.visibility !== "hidden" && badge.offsetParent !== null);
+}
 
 const playbackController = new PlaybackController({
   onSkip: showSkipNotification,
-  onUndo: showUndoNotification
+  onUndo: showUndoNotification,
+  canSeek: () => videoIdFromLocation() === currentVideoId &&
+    !document.querySelector(".ad-showing, .ad-interrupting") && !videoIsLive() &&
+    (!experimentalActive || (validatedDetectorVersion && Date.now() - detectorVerifiedAt < 15000))
 });
 
 function videoIdFromLocation() {
@@ -31,6 +49,7 @@ async function checkForVideoChange() {
     currentRequestId = null;
     currentConfigurationKey = null;
     previewActive = false;
+    experimentalActive = false;
     clearTimeout(developmentFixtureTimer);
     clearTimeout(browserProbeTimer);
     playbackController.beginVideo(videoId, null);
@@ -41,20 +60,27 @@ async function checkForVideoChange() {
   if (generation !== refreshGeneration || videoId !== currentVideoId) return;
   const configurationKey = JSON.stringify([
     settings.enabled, settings.previewDetectedPromotions, settings.previewTranscriptSource,
+    settings.experimentalAutoSkip, settings.detectorVariant,
     settings.sensitivity, settings.developmentFixtures, settings.developmentBrowserAcquisition,
-    settings.backendUrl
+    settings.backendUrl, videoIsLive()
   ]);
   if (configurationKey === currentConfigurationKey) return;
   currentConfigurationKey = configurationKey;
   currentRequestId = videoId ? makeRequestId(videoId) : null;
   previewActive = settings.previewDetectedPromotions === true;
+  experimentalActive = settings.enabled && settings.experimentalAutoSkip === true && !previewActive &&
+    !settings.developmentFixtures && !settings.developmentBrowserAcquisition &&
+    settings.sensitivity === "conservative" && settings.detectorVariant === "contextual_v1";
+  activeSource = settings.previewTranscriptSource;
+  activeSensitivity = settings.sensitivity;
   clearTimeout(developmentFixtureTimer);
   clearTimeout(browserProbeTimer);
   playbackController.beginVideo(currentVideoId, currentRequestId);
+  validatedDetectorVersion = null;
   attachCurrentVideo();
   removeNotification();
   beginAcquisition(videoId, currentRequestId, settings);
-  if (videoId && !previewActive && !settings.developmentBrowserAcquisition) {
+  if (videoId && !previewActive && !experimentalActive && !settings.developmentBrowserAcquisition) {
     scheduleDevelopmentFixture(videoId, currentRequestId, settings);
   }
 }
@@ -67,9 +93,11 @@ function beginAcquisition(videoId, requestId, settings) {
   const browserProbe = settings.developmentBrowserAcquisition === true;
   const fixture = settings.developmentFixtures === true;
   const preview = settings.previewDetectedPromotions === true;
-  const acquisitionMode = preview && (browserProbe || fixture) ? "conflict"
-    : preview ? "preview" : browserProbe ? "browser-probe"
-      : fixture ? "manual-fixture" : "backend";
+  const auto = settings.experimentalAutoSkip === true;
+  const acquisitionMode = !settings.enabled ? "disabled" : videoIsLive() ? "unsupported"
+    : (preview && auto) || ((preview || auto) && (browserProbe || fixture)) ? "conflict"
+      : auto ? "experimental" : preview ? "preview" : browserProbe ? "browser-probe"
+        : fixture ? "manual-fixture" : "disabled";
   chrome.runtime.sendMessage({
     type: "video-changed",
     videoId,
@@ -79,7 +107,7 @@ function beginAcquisition(videoId, requestId, settings) {
     sensitivity: settings.sensitivity,
     backendUrl: settings.backendUrl
   });
-  if (!browserProbe || preview || !settings.enabled) return;
+  if (!browserProbe || preview || auto || !settings.enabled) return;
   document.dispatchEvent(
     new CustomEvent("ytss-browser-transcript-request", {
       detail: { videoId, requestId }
@@ -130,9 +158,10 @@ async function showSkipNotification(event) {
     event.source === "manual-tune-fixture"
       ? "Skipped a manual development fixture"
       : "Skipped a promotional interval";
-  await showNotification(`${label} (${seconds}s).`, {
+  await showNotification(`${experimentalActive ? "Experimental: " : ""}${label} (${seconds}s).`, {
     actionLabel: "Undo",
-    action: () => playbackController.undoLastSkip()
+    action: () => playbackController.undoLastSkip(),
+    videoId: event.videoId, requestId: event.requestId
   });
 }
 
@@ -140,9 +169,12 @@ async function showUndoNotification() {
   await showNotification("Skip undone. This interval is suppressed until you leave it.");
 }
 
-async function showNotification(text, { actionLabel = null, action = null } = {}) {
+async function showNotification(text, { actionLabel = null, action = null,
+  videoId = currentVideoId, requestId = currentRequestId } = {}) {
   const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
-  if (!settings.showNotifications) return;
+  if (videoId !== currentVideoId || requestId !== currentRequestId) return;
+  // An automatic skip always offers Undo, even when optional status notices are off.
+  if (!settings.showNotifications && !action) return;
 
   removeNotification();
   const notice = document.createElement("div");
@@ -188,13 +220,20 @@ async function showNotification(text, { actionLabel = null, action = null } = {}
 }
 
 function attachCurrentVideo() {
-  playbackController.attachVideo(document.querySelector("video"));
+  const video = document.querySelector("video");
+  if (observedVideo !== video) {
+    observedVideo?.removeEventListener("durationchange", checkForVideoChange);
+    observedVideo = video;
+    video?.addEventListener("durationchange", checkForVideoChange);
+  }
+  playbackController.attachVideo(video);
 }
 
 async function scheduleDevelopmentFixture(videoId, requestId, settings) {
   if (
     !settings.enabled ||
     settings.previewDetectedPromotions ||
+    settings.experimentalAutoSkip ||
     !settings.developmentFixtures ||
     videoId !== currentVideoId ||
     requestId !== currentRequestId
@@ -213,18 +252,55 @@ async function scheduleDevelopmentFixture(videoId, requestId, settings) {
   }, DEVELOPMENT_FIXTURE_DELAY_MS);
 }
 
-chrome.runtime.onMessage.addListener((message) => {
+chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
+  if (message.type === "undo-last-skip") {
+    const current = message.videoId === currentVideoId && message.requestId === currentRequestId;
+    sendResponse?.({ undone: Boolean(current && experimentalActive && playbackController.undoLastSkip()) });
+    return;
+  }
   if (message.type === "acquisition-status") {
     const state = message.state;
     if (state.videoId !== currentVideoId || state.requestId !== currentRequestId) return;
-    if (state.status === "unavailable" && !previewActive) showUnavailable(state);
+    if (state.status === "unavailable" && !previewActive) {
+      playbackController.beginVideo(currentVideoId, currentRequestId);
+      showUnavailable(state);
+    }
     return;
   }
   if (message.type === "promotion-intervals") {
     if (previewActive) return;
+    if (message.source !== "manual-tune-fixture" && (
+      !experimentalActive || message.mode !== "conservative" ||
+      message.transcriptSource !== activeSource || activeSensitivity !== "conservative" ||
+      !message.detectorVersion?.startsWith("contextual-v1-sha256:")
+    )) return;
+    if (experimentalActive) {
+      validatedDetectorVersion = message.detectorVersion;
+      detectorVerifiedAt = Date.now();
+    }
     playbackController.setIntervals(message);
   }
 });
+
+// Read-only health/version checks never request another transcript. Fail closed until reload
+// if the backend is restarted with a different detector, or cannot be revalidated.
+async function verifyActiveDetector() {
+  if (!experimentalActive || !validatedDetectorVersion) return;
+  const videoId = currentVideoId, requestId = currentRequestId;
+  const detectorVersion = validatedDetectorVersion;
+  let result;
+  try {
+    result = await chrome.runtime.sendMessage({type:"verify-detector", detectorVersion});
+  } catch (_) { result = null; }
+  if (videoId !== currentVideoId || requestId !== currentRequestId || !experimentalActive) return;
+  if (result?.valid) { detectorVerifiedAt = Date.now(); return; }
+  experimentalActive = false;
+  validatedDetectorVersion = null;
+  playbackController.beginVideo(videoId, requestId);
+  removeNotification();
+  chrome.runtime.sendMessage({type:"detector-invalidated", videoId, requestId});
+}
+setInterval(verifyActiveDetector, 10000);
 
 document.addEventListener("yt-navigate-finish", checkForVideoChange);
 window.addEventListener("popstate", checkForVideoChange);
@@ -233,6 +309,7 @@ chrome.storage.onChanged.addListener((changes, area) => {
     currentRequestId = null;
     currentConfigurationKey = null;
     previewActive = false;
+    experimentalActive = false;
     clearTimeout(developmentFixtureTimer);
     clearTimeout(browserProbeTimer);
     playbackController.beginVideo(currentVideoId, null);

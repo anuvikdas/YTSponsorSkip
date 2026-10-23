@@ -14,6 +14,11 @@
 
       <form id="settings-form">
         <label class="toggle-row">
+          <span><strong>Experimental automatic skipping</strong>
+            <small>Off by default. Uses contextual Conservative predictions on supported English prerecorded videos. Predictions can be wrong. Every skip offers Undo.</small></span>
+          <input id="experimental-auto-skip" type="checkbox">
+        </label>
+        <label class="toggle-row">
           <span>
             <strong>Preview detected promotions</strong>
             <small>Off by default. Shows predictions only; it never seeks or skips.</small>
@@ -22,7 +27,7 @@
         </label>
 
         <label class="stacked" for="preview-transcript-source">
-          <strong>Preview transcript source</strong>
+          <strong>Transcript source for preview or experimental skipping</strong>
           <select id="preview-transcript-source">
             <option value="saved">Saved reviewed-tune transcript (no API request)</option>
             <option value="supadata">Supadata native captions (uses free credits)</option>
@@ -30,12 +35,12 @@
           <small>Only the 14 reviewed tune videos are available in saved mode. Supadata requires a local backend key and consumes a trial attempt on a cache miss.</small>
         </label>
 
-        <p class="preview-warning">Preview only — automatic skipping off, regardless of the switch below.</p>
+        <p class="preview-warning">Choose preview or experimental skipping. Experimental skipping uses Conservative only. Playback continues while detection runs.</p>
 
         <label class="toggle-row">
           <span>
-            <strong>Enable existing manual-fixture playback tests</strong>
-            <small>Does not enable skipping from detector predictions. Transcript failures never stop playback.</small>
+            <strong>Enable extension</strong>
+            <small>Turning this off clears predictions and disables all skipping. Errors never stop playback.</small>
           </span>
           <input id="enabled" type="checkbox">
         </label>
@@ -61,7 +66,7 @@
         <label class="toggle-row">
           <span>
             <strong>Show status notifications</strong>
-            <small>Includes acquisition failures and future skip/undo messages.</small>
+            <small>Optional status messages. Experimental skips always show an Undo action.</small>
           </span>
           <input id="show-notifications" type="checkbox">
         </label>

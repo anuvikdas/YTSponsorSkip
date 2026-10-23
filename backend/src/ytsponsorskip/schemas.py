@@ -83,9 +83,11 @@ class DetectionResponse(StrictModel):
     intervals: list[DetectedIntervalResponse]
     window_count: int = Field(ge=0)
     transcript_cache_hit: bool
+    transcript_disk_cache_hit: bool = False
     transcript_coalesced: bool
     detection_cache_hit: bool
     detection_coalesced: bool
     provider_latency_ms: float | None = Field(ge=0, default=None)
     detection_latency_ms: float | None = Field(ge=0, default=None)
     total_latency_ms: float = Field(ge=0)
+    native_budget: dict | None = None

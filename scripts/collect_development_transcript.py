@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from supadata_probe import account_credits, require_free_credit, safe_value  # noqa: E402
 from ytsponsorskip.config import Settings  # noqa: E402
 from ytsponsorskip.domain import TranscriptAcquisitionError  # noqa: E402
+from ytsponsorskip.providers.native_demo import NativeDemoBudget  # noqa: E402
 from ytsponsorskip.providers.supadata import (  # noqa: E402
     SupadataProbeError,
     SupadataTranscriptProvider,
@@ -66,6 +67,7 @@ def collect(video_id: str) -> dict:
     )
     before = account_credits(provider._session, secret)
     require_free_credit(before)
+    NativeDemoBudget(settings.trial_budget_path, OUTPUT).reserve(video_id)
     acquired_at = datetime.now(UTC).isoformat()
     # Reserve the campaign attempt before network I/O. An interrupted request still counts.
     record_path.write_text(

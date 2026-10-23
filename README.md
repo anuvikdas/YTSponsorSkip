@@ -1,6 +1,11 @@
 # YTSponsorSkip
 
-YTSponsorSkip is an experimental Chrome extension for detecting and skipping creator-integrated promotional interruptions in YouTube videos. The current milestone includes transcript acquisition, a detector-independent playback controller, an improved offline deterministic detector, and a disabled development-only browser acquisition probe. Detector predictions are not connected to playback yet.
+YTSponsorSkip is an experimental Chrome extension for detecting and skipping creator-integrated promotional interruptions in YouTube videos. Default-off experimental automatic skipping now connects contextual Conservative predictions to playback and Undo. Preview-only and saved-transcript demonstrations remain available; the development browser acquisition probe remains disabled.
+
+Start with the [experimental demo handoff](docs/experimental-demo-handoff-2026-10-22.md): exact
+backend/Chrome setup, measured HTTP results, the **three remaining native acquisition attempts**,
+and the outstanding manual Chrome acceptance checklist. Automatic skipping is an explicit opt-in,
+not a claim of reliable detection.
 
 ## Current components
 
@@ -26,11 +31,11 @@ preflight and a persistent attempt budget.
 
 The opt-in contextual detector development checkpoint is documented in
 [the contextual comparison](docs/contextual-development-2026-10-20.md). The frozen rules remain
-the default, predictions remain preview-only, and the saved development transcript is Git-ignored.
+the backend default unless explicitly selected, and saved development transcripts are Git-ignored.
 
 The [2026-10-22 recruiting checkpoint](docs/recruiting-demo-checkpoint-2026-10-22.md) contains the
 exact contextual Chrome setup and the completed local semantic comparison. Contextual Conservative
-remains selected for a limited saved-input preview; the tested semantic baseline failed its
+remains selected for the limited experimental demo; the tested semantic baseline failed its
 predeclared recall gates. The confirmed Veritasium interval is evaluated separately from fully
 reviewed videos. A [bounded hosted comparison](docs/hosted-intent-comparison-proposal-2026-10-22.md)
 is proposed but has not been executed.
@@ -41,14 +46,16 @@ Open [the local review page](data/reviews/tune-2026-10-11/index.html) directly i
 is needed. It compares both modes on all 14 reviewed tune videos, with timestamped excerpts and
 annotation questions. See [findings and reproduction commands](docs/offline-error-review.md) and
 the [proposed $0 semantic experiment](docs/next-detection-experiment.md). Detector predictions remain
-disconnected from playback; the browser acquisition experiment is unchanged.
+disconnected from playback unless experimental skipping is explicitly enabled; the browser
+acquisition experiment is unchanged.
 
 ## Local backend
 
 ```bash
 /opt/homebrew/bin/python3.12 -m venv .venv
 .venv/bin/python -m pip install -e '.[dev]'
-.venv/bin/uvicorn ytsponsorskip.main:app --reload
+YTSS_DETECTOR_VARIANT=contextual_v1 YTSS_REQUEST_TIMEOUT_SECONDS=30 \
+  .venv/bin/uvicorn ytsponsorskip.main:app --app-dir backend/src --host 127.0.0.1 --port 8000
 ```
 
 Open `http://127.0.0.1:8000/docs` for FastAPI's generated OpenAPI UI or check:
@@ -94,8 +101,10 @@ The acquisition corpus records confirmed caption availability at the time it was
 3. Choose **Load unpacked** and select the `extension/` directory.
 4. Start the local backend and open a standard YouTube watch page.
 5. Open **Settings**, leave the backend URL as `http://127.0.0.1:8000`, and save.
-6. For playback testing, expand **Development**, enable **Use manual playback fixtures**, and save.
-7. Follow `docs/chrome-test-checklist.md`.
+6. For actual detector-driven skipping, follow the default-off **Experimental automatic skipping**
+   setup in [the current handoff](docs/experimental-demo-handoff-2026-10-22.md). Keep manual fixtures
+   and browser probe off. Choose Saved for repeatability or Supadata for budgeted native acquisition.
+7. For separate legacy manual-fixture testing, use `docs/chrome-test-checklist.md`.
 
 The development fixtures are user-supplied `tune` labels, disabled by default, and visibly identified as manual fixtures. They exercise skipping and Undo without claiming detector output. If acquisition fails, YouTube playback continues; fixture playback remains independently testable.
 
@@ -113,7 +122,8 @@ Backend settings use the `YTSS_` prefix:
 | `YTSS_CACHE_MAX_ENTRIES` | `128` | In-memory LRU capacity |
 | `YTSS_REQUEST_LIMIT_PER_MINUTE` | `60` | Single-process API limit |
 | `YTSS_API_TOKEN` | unset | Optional bearer token for experiments |
-| `YTSS_DETECTOR_VARIANT` | `frozen_rules` | `contextual_v1` opt-in preview comparison |
+| `YTSS_DETECTOR_VARIANT` | `frozen_rules` | Select `contextual_v1` for experimental skipping |
+| `YTSS_NATIVE_CACHE_DIRECTORY` | `results/development-transcripts` | Ignored persistent native transcript reuse |
 
 The cache, rate limiter, and in-flight request registry are intentionally process-local. This is sufficient for one free Render instance; scaling to multiple processes would require a shared design or acceptance of per-process limits.
 
@@ -184,8 +194,9 @@ spans. They must not be interpreted as source-supplied caption or promotion boun
   --output data/evaluation/tune-rules-3c35ceb.json
 ```
 
-This remains tune-set development evidence. `held_out` labels have not been evaluated and the
-result is not connected to playback.
+This is the historical tune-only result. Later work used eight formerly held-out videos as
+development evidence; do not treat those as independent validation. The original frozen report
+is preserved. See the latest handoff for playback connection and its separate correctness checks.
 
 ## API behavior
 
@@ -193,7 +204,10 @@ The local preview milestone is documented in [docs/local-preview-milestone.md](d
 The extension's disabled-by-default **Preview detected promotions** setting calls
 `GET /api/v1/detections/{video_id}?mode=conservative|aggressive&source=saved|supadata` with a
 validated `X-Request-ID`. Saved mode is the development default and does not acquire captions;
-Supadata is explicit and budgeted. Both use the same unchanged detector. Predictions are shown
-in the popup only and cannot trigger playback skips.
+Supadata is explicit and budgeted. Both use the selected detector. Preview never seeks; the separate
+default-off experimental setting permits validated contextual Conservative predictions to skip,
+with notifications and Undo. `GET /api/v1/demo-status` exposes the active version and remaining
+native allowance without an acquisition. A supplied `expected_detector_version` rejects stale
+detector requests before acquisition.
 
 `GET /api/v1/transcripts/{video_id}?languages=en` returns a typed transcript document. Stable error responses distinguish unavailable captions, invalid input, upstream changes, timeouts, and IP/request blocking. Original snippet `text`, `start_seconds`, and `duration_seconds` are preserved; caption duration is display timing, not a detected promotional boundary.

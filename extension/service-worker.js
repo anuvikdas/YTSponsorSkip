@@ -56,12 +56,20 @@ async function notifyCurrentRequest(tabId, state, controller) {
   }
 }
 
-chrome.runtime.onMessage.addListener((message, sender) => {
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (!sender.tab?.id) {
     return undefined;
   }
 
   const tabId = sender.tab.id;
+  if (message.type === "verify-detector") {
+    verifyDetectorVersion(message.detectorVersion).then(sendResponse, () => sendResponse({valid:false}));
+    return true;
+  }
+  if (message.type === "detector-invalidated") {
+    invalidateDetector(tabId, message);
+    return undefined;
+  }
   if (message.type === "video-cleared") {
     cancelTabRequest(tabId);
     chrome.storage.session.remove(transcriptKey(tabId));
@@ -83,8 +91,9 @@ chrome.runtime.onMessage.addListener((message, sender) => {
       startedAtMs: Date.now(),
       timeoutId: null
     });
-    if (!message.videoId) {
-      notifyCurrentRequest(tabId, { status: "unsupported", videoId: null }, controller);
+    if (!message.videoId || message.acquisitionMode === "unsupported") {
+      notifyCurrentRequest(tabId, { status: "unsupported", videoId: message.videoId,
+        requestId: message.requestId }, controller);
       clearCurrentRequest(tabId, controller);
     } else if (message.acquisitionMode === "conflict") {
       notifyCurrentRequest(tabId, {
@@ -92,7 +101,11 @@ chrome.runtime.onMessage.addListener((message, sender) => {
         reason: "CONFLICTING_EXPERIMENT_SETTINGS"
       }, controller);
       clearCurrentRequest(tabId, controller);
-    } else if (message.acquisitionMode === "preview") {
+    } else if (message.acquisitionMode === "disabled") {
+      notifyCurrentRequest(tabId, { status: "disabled", videoId: message.videoId,
+        requestId: message.requestId }, controller);
+      clearCurrentRequest(tabId, controller);
+    } else if (["preview", "experimental"].includes(message.acquisitionMode)) {
       acquirePreview(tabId, message, controller);
     } else if (message.acquisitionMode === "manual-fixture") {
       notifyCurrentRequest(tabId, {
@@ -112,13 +125,51 @@ chrome.runtime.onMessage.addListener((message, sender) => {
   return undefined;
 });
 
+async function verifyDetectorVersion(expected) {
+  const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
+  const origin = localBackendUrl(settings.backendUrl);
+  if (!origin || !settings.enabled || !settings.experimentalAutoSkip) return {valid:false};
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 5000);
+  try {
+    const response = await fetch(new URL("/api/v1/demo-status", origin), {signal:controller.signal});
+    const status = await response.json();
+    return {valid:response.ok && status.detector_variant === "contextual_v1" &&
+      status.detector_version === expected};
+  } finally { clearTimeout(timeout); }
+}
+
+async function invalidateDetector(tabId, message) {
+  const generation = generationsByTab.get(tabId);
+  const stored = await chrome.storage.session.get(stateKey(tabId));
+  const state = stored[stateKey(tabId)];
+  if (generation !== generationsByTab.get(tabId) ||
+      state?.videoId !== message.videoId || state?.requestId !== message.requestId) return;
+  cancelTabRequest(tabId);
+  const next = {...state,status:"unavailable",reason:"DETECTOR_REVALIDATION_FAILED",intervals:[]};
+  await saveState(tabId, next);
+  try { await chrome.tabs.sendMessage(tabId, {type:"acquisition-status",state:next}); }
+  catch (_) { /* Navigation can remove the content script. */ }
+}
+
 async function acquirePreview(tabId, message, controller) {
   const { videoId, requestId } = message;
+  const experimental = message.acquisitionMode === "experimental";
+  let nativeBudget = null;
+  const timeoutId = setTimeout(async () => {
+    await notifyCurrentRequest(tabId, { status: "unavailable", videoId, requestId,
+      reason: "DETECTION_TIMEOUT", nativeBudget }, controller);
+    clearCurrentRequest(tabId, controller);
+    controller.abort();
+  }, 35000);
+  requestMetadataByTab.get(tabId).timeoutId = timeoutId;
   try {
     const settings = await chrome.storage.sync.get(DEFAULT_SETTINGS);
     if (!isCurrentRequest(tabId, controller)) return;
     if (
-      settings.previewDetectedPromotions !== true ||
+      !settings.enabled ||
+      (experimental ? settings.experimentalAutoSkip !== true || settings.previewDetectedPromotions
+        : settings.previewDetectedPromotions !== true || settings.experimentalAutoSkip) ||
       settings.developmentFixtures || settings.developmentBrowserAcquisition ||
       settings.previewTranscriptSource !== message.previewSource ||
       settings.sensitivity !== message.sensitivity
@@ -137,6 +188,11 @@ async function acquirePreview(tabId, message, controller) {
     }
     const source = settings.previewTranscriptSource;
     const mode = settings.sensitivity;
+    if (experimental && (mode !== "conservative" || settings.detectorVariant !== "contextual_v1")) {
+      await notifyCurrentRequest(tabId, {status: "unavailable", videoId, requestId,
+        reason: "CONTEXTUAL_CONSERVATIVE_REQUIRED"}, controller);
+      return;
+    }
     if (!["saved", "supadata"].includes(source) ||
         !["conservative", "aggressive"].includes(mode)) {
       await notifyCurrentRequest(tabId, {
@@ -148,31 +204,68 @@ async function acquirePreview(tabId, message, controller) {
       status: "loading", videoId, requestId, mode, source
     }, controller);
     if (!isCurrentRequest(tabId, controller)) return;
+    let expectedVersion = null;
+    if (experimental) {
+      const statusResponse = await fetch(new URL("/api/v1/demo-status", origin), {
+        signal: controller.signal
+      });
+      const status = await statusResponse.json();
+      nativeBudget = status;
+      if (!isCurrentRequest(tabId, controller)) return;
+      if (!statusResponse.ok || status.detector_variant !== "contextual_v1" ||
+          !status.detector_version?.startsWith("contextual-v1-sha256:")) {
+        await notifyCurrentRequest(tabId, {status: "unavailable", videoId, requestId, nativeBudget,
+          reason: "CONTEXTUAL_BACKEND_REQUIRED"}, controller);
+        return;
+      }
+      expectedVersion = status.detector_version;
+    }
     const url = new URL(`/api/v1/detections/${videoId}`, origin);
     url.searchParams.set("mode", mode);
     url.searchParams.set("source", source);
+    if (expectedVersion) url.searchParams.set("expected_detector_version", expectedVersion);
     const response = await fetch(url, {
       signal: controller.signal,
       headers: { "X-Request-ID": requestId }
     });
     const body = await response.json();
     if (!isCurrentRequest(tabId, controller)) return;
+    const latest = await chrome.storage.sync.get(DEFAULT_SETTINGS);
+    if (!isCurrentRequest(tabId, controller) || !latest.enabled ||
+        latest.experimentalAutoSkip !== settings.experimentalAutoSkip ||
+        latest.previewDetectedPromotions !== settings.previewDetectedPromotions ||
+        latest.previewTranscriptSource !== source || latest.sensitivity !== mode ||
+        latest.detectorVariant !== settings.detectorVariant) return;
     if (!response.ok) {
+      if (experimental) {
+        const budgetResponse = await fetch(new URL("/api/v1/demo-status", origin), {
+          signal: controller.signal
+        });
+        nativeBudget = await budgetResponse.json();
+      }
       await notifyCurrentRequest(tabId, {
-        status: "unavailable", videoId, requestId, mode, source,
+        status: "unavailable", videoId, requestId, mode, source, nativeBudget,
         reason: body?.error?.code || `HTTP_${response.status}`
       }, controller);
       return;
     }
-    const state = validatePreviewResponse(body, { videoId, requestId, mode, source });
+    const state = validatePreviewResponse(body, { videoId, requestId, mode, source,
+      experimental, detectorVersion: expectedVersion });
     await notifyCurrentRequest(tabId, state || {
       status: "unavailable", videoId, requestId, mode, source,
       reason: "INVALID_DETECTION_RESPONSE"
     }, controller);
+    if (experimental && state && isCurrentRequest(tabId, controller)) {
+      await chrome.tabs.sendMessage(tabId, {
+        type: "promotion-intervals", videoId, requestId, mode,
+        transcriptSource: source, detectorVersion: state.detectorVersion,
+        source: "experimental-contextual-detector", intervals: state.intervals
+      });
+    }
   } catch (error) {
     if (error.name !== "AbortError") {
       await notifyCurrentRequest(tabId, {
-        status: "unavailable", videoId, requestId, reason: "BACKEND_UNREACHABLE"
+        status: "unavailable", videoId, requestId, nativeBudget, reason: "BACKEND_UNREACHABLE"
       }, controller);
     }
   } finally {

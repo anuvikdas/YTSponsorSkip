@@ -81,20 +81,15 @@ async def test_contextual_variant_is_opt_in_and_retains_preview_contract():
         async with AsyncClient(
             transport=ASGITransport(app=baseline_app), base_url="http://test"
         ) as client:
-            old = await client.get(
-                path("I9hJ_Rux9y0"), headers={"X-Request-ID": "baseline"}
-            )
+            old = await client.get(path("I9hJ_Rux9y0"), headers={"X-Request-ID": "baseline"})
         async with AsyncClient(
             transport=ASGITransport(app=changed_app), base_url="http://test"
         ) as client:
-            new = await client.get(
-                path("I9hJ_Rux9y0"), headers={"X-Request-ID": "contextual"}
-            )
+            new = await client.get(path("I9hJ_Rux9y0"), headers={"X-Request-ID": "contextual"})
         assert old.status_code == new.status_code == 200
         assert old.json()["intervals"] == []
         new_ranges = [
-            (item["start_seconds"], item["end_seconds"])
-            for item in new.json()["intervals"]
+            (item["start_seconds"], item["end_seconds"]) for item in new.json()["intervals"]
         ]
         assert new_ranges == [(683, 715)]
         assert new.json()["intervals"][0]["auto_skip_eligible"] is True
@@ -102,6 +97,31 @@ async def test_contextual_variant_is_opt_in_and_retains_preview_contract():
     finally:
         baseline.close()
         changed.close()
+
+
+@pytest.mark.asyncio
+async def test_demo_status_and_version_mismatch_do_not_acquire(tmp_path):
+    provider = SlowSavedProvider()
+    app, detection = saved_app(
+        provider,
+        detector_variant="contextual_v1",
+        trial_budget_path=tmp_path / "ledger.sqlite3",
+        native_cache_directory=tmp_path / "native",
+    )
+    try:
+        async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+            status = (await client.get("/api/v1/demo-status")).json()
+            response = await client.get(
+                path("I9hJ_Rux9y0") + "&expected_detector_version=rules-old",
+                headers={"X-Request-ID": "version-mismatch"},
+            )
+        assert status["detector_variant"] == "contextual_v1"
+        assert status["detector_version"] == detection.detector_version
+        assert status["native_attempts_remaining"] == 5
+        assert response.status_code == 503
+        assert provider.calls == 0
+    finally:
+        detection.close()
 
 
 @pytest.mark.asyncio
@@ -287,6 +307,7 @@ async def test_mocked_supadata_detection_path_cache_and_budget(monkeypatch, tmp_
         SUPADATA_API_KEY="test-only-key",
         request_timeout_seconds=30,
         trial_budget_path=tmp_path / "trial.sqlite3",
+        native_cache_directory=tmp_path / "native",
         trial_attempt_limit=3,
         request_limit_per_minute=100,
     )

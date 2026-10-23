@@ -2,10 +2,12 @@
 const MINIMUM_AUTO_SKIP_DURATION_SECONDS = 3;
 
 class PlaybackController {
-  constructor({ onSkip = () => {}, onUndo = () => {}, seekToleranceSeconds = 0.35 } = {}) {
+  constructor({ onSkip = () => {}, onUndo = () => {}, seekToleranceSeconds = 0.35,
+    canSeek = () => true } = {}) {
     this.onSkip = onSkip;
     this.onUndo = onUndo;
     this.seekToleranceSeconds = seekToleranceSeconds;
+    this.canSeek = canSeek;
     this.video = null;
     this.videoId = null;
     this.requestId = null;
@@ -28,6 +30,8 @@ class PlaybackController {
     if (!this.video) return;
     this.video.addEventListener("timeupdate", this.handleTimeUpdate);
     this.video.addEventListener("playing", this.handleTimeUpdate);
+    this.video.addEventListener("loadedmetadata", this.handleTimeUpdate);
+    this.video.addEventListener("durationchange", this.handleTimeUpdate);
     this.video.addEventListener("seeking", this.handleSeeking);
     this.video.addEventListener("seeked", this.handleSeeked);
     this.evaluatePlayback("video-attached");
@@ -37,6 +41,8 @@ class PlaybackController {
     if (!this.video) return;
     this.video.removeEventListener("timeupdate", this.handleTimeUpdate);
     this.video.removeEventListener("playing", this.handleTimeUpdate);
+    this.video.removeEventListener("loadedmetadata", this.handleTimeUpdate);
+    this.video.removeEventListener("durationchange", this.handleTimeUpdate);
     this.video.removeEventListener("seeking", this.handleSeeking);
     this.video.removeEventListener("seeked", this.handleSeeked);
     this.video = null;
@@ -74,6 +80,12 @@ class PlaybackController {
   }
 
   normalizeIntervals(intervals, source) {
+    // Fail closed on malformed or unordered input, rather than coercing strings into times.
+    if (!Array.isArray(intervals) || intervals.some((item, index) =>
+      !item || typeof item.startSeconds !== "number" || !Number.isFinite(item.startSeconds) ||
+      typeof item.endSeconds !== "number" || !Number.isFinite(item.endSeconds) ||
+      item.startSeconds < 0 || item.endSeconds <= item.startSeconds ||
+      (index > 0 && item.startSeconds < intervals[index - 1].startSeconds))) return [];
     const sorted = (Array.isArray(intervals) ? intervals : [])
       .map((interval) => ({
         startSeconds: Number(interval.startSeconds),
@@ -151,19 +163,21 @@ class PlaybackController {
   }
 
   evaluatePlayback(reason) {
-    if (!this.video || this.video.seeking || this.userSeeking || this.internalSeek) return false;
+    if (!this.video || this.video.seeking || this.userSeeking || this.internalSeek ||
+        !this.canSeek()) return false;
+    const duration = this.video.duration;
+    if (!Number.isFinite(duration) || duration <= 0) return false;
     const currentTime = Number(this.video.currentTime);
-    if (!Number.isFinite(currentTime)) return false;
+    if (!Number.isFinite(currentTime) || currentTime < 0 || currentTime > duration) return false;
     this.releaseSuppression(currentTime);
     const interval = this.intervals.find((candidate) => this.contains(candidate, currentTime));
-    if (!interval || this.suppressedIntervalIds.has(interval.id)) return false;
+    if (!interval || interval.endSeconds > duration || this.suppressedIntervalIds.has(interval.id)) return false;
     if (interval.endSeconds <= currentTime) return false;
-    this.skipInterval(interval, currentTime, reason);
-    return true;
+    return this.skipInterval(interval, currentTime, reason);
   }
 
   skipInterval(interval, preSkipTime, reason) {
-    if (!this.video) return;
+    if (!this.video) return false;
     this.undoRecord = {
       videoId: this.videoId,
       requestId: this.requestId,
@@ -176,7 +190,8 @@ class PlaybackController {
       observed: false,
       reason: "automatic-skip"
     };
-    this.video.currentTime = interval.endSeconds;
+    try { this.video.currentTime = interval.endSeconds; }
+    catch (_) { this.internalSeek = null; this.undoRecord = null; return false; }
     this.onSkip({
       videoId: this.videoId,
       requestId: this.requestId,
@@ -187,12 +202,15 @@ class PlaybackController {
       preSkipTime,
       reason
     });
+    return true;
   }
 
   undoLastSkip() {
     if (!this.video || !this.undoRecord) return false;
     const record = this.undoRecord;
     if (record.videoId !== this.videoId || record.requestId !== this.requestId) return false;
+    if (!this.canSeek() || !Number.isFinite(this.video.duration) ||
+        record.preSkipTime < 0 || record.preSkipTime > this.video.duration) return false;
     this.suppressedIntervalIds.add(record.intervalId);
     this.internalSeek = {
       targetSeconds: record.preSkipTime,
@@ -200,7 +218,8 @@ class PlaybackController {
       reason: "undo"
     };
     this.undoRecord = null;
-    this.video.currentTime = record.preSkipTime;
+    try { this.video.currentTime = record.preSkipTime; }
+    catch (_) { this.internalSeek = null; return false; }
     this.onUndo({
       videoId: this.videoId,
       requestId: this.requestId,
