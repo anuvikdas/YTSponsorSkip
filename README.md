@@ -28,6 +28,13 @@ The opt-in contextual detector development checkpoint is documented in
 [the contextual comparison](docs/contextual-development-2026-10-20.md). The frozen rules remain
 the default, predictions remain preview-only, and the saved development transcript is Git-ignored.
 
+The [2026-10-22 recruiting checkpoint](docs/recruiting-demo-checkpoint-2026-10-22.md) contains the
+exact contextual Chrome setup and the completed local semantic comparison. Contextual Conservative
+remains selected for a limited saved-input preview; the tested semantic baseline failed its
+predeclared recall gates. The confirmed Veritasium interval is evaluated separately from fully
+reviewed videos. A [bounded hosted comparison](docs/hosted-intent-comparison-proposal-2026-10-22.md)
+is proposed but has not been executed.
+
 ## Offline detector review
 
 Open [the local review page](data/reviews/tune-2026-10-11/index.html) directly in Chrome; no backend
