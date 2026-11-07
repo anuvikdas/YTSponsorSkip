@@ -1,213 +1,65 @@
 # YTSponsorSkip
 
-YTSponsorSkip is an experimental Chrome extension for detecting and skipping creator-integrated promotional interruptions in YouTube videos. Default-off experimental automatic skipping now connects contextual Conservative predictions to playback and Undo. Preview-only and saved-transcript demonstrations remain available; the development browser acquisition probe remains disabled.
+YTSponsorSkip is an experimental Chrome extension that uses YouTube captions to find sponsor reads and creator-owned promotions. It can preview timestamped predictions or, with experimental auto-skip enabled, skip the predicted interval and offer Undo. Playback starts immediately while detection runs. If captions or predictions are unavailable, playback continues normally.
 
-Start with the [experimental demo handoff](docs/experimental-demo-handoff-2026-10-22.md): exact
-backend/Chrome setup, measured HTTP results, the **three remaining native acquisition attempts**,
-and the outstanding manual Chrome acceptance checklist. Automatic skipping is an explicit opt-in,
-not a claim of reliable detection.
+**Status:** Local Manifest V3 prototype. The saved-transcript demo needs no API key or hosted backend. Detector-driven skipping is off by default. Automated tests cover the playback flow, and the manual Chrome acceptance checklist is still pending.
 
-## Current components
+## Try the saved-transcript demo
 
-- `backend/`: Python 3.12 FastAPI service with a replaceable `TranscriptProvider`
-- `extension/`: unpacked Manifest V3 Chrome extension with packaged settings and acquisition status
-- `extension/playback-controller.js`: interval playback, seeking policy, and Undo
-- `scripts/run_acquisition_experiment.py`: repeatable local/cloud acquisition measurement
-- `scripts/import_validation_workbook.py`: repeatable manual-label normalization and validation
-- `scripts/import_manual_transcripts.py`: deterministic DOCX transcript import with source/derived
-  timing separated
-- `scripts/evaluate_detector.py`: saved-transcript inventory and tune-only detector evaluation
-- `scripts/build_error_review.py`: standalone HTML/Markdown error review from saved tune results
-- `scripts/compare_detectors.py`: reproducible local rules and recorded-output comparisons (no model calls)
-- `tools/transcript-acquisition-node/`: isolated, pinned Node acquisition probes (not backend code)
-- `data/acquisition_corpus.csv`: initial acquisition corpus (not a detection evaluation set)
-- `data/validation/`: normalized user-supplied manual annotations
-
-The bounded alternative caption acquisition probe is documented in
-[Supadata native-caption probe](docs/supadata-probe.md). It uses the project-root ignored `.env`,
-free credits, native captions only, and two prespecified videos. Supadata is not yet selected as
-the default FastAPI provider; local live preview can select it explicitly, with Free-credit
-preflight and a persistent attempt budget.
-
-The opt-in contextual detector development checkpoint is documented in
-[the contextual comparison](docs/contextual-development-2026-10-20.md). The frozen rules remain
-the backend default unless explicitly selected, and saved development transcripts are Git-ignored.
-
-The [2026-10-22 recruiting checkpoint](docs/recruiting-demo-checkpoint-2026-10-22.md) contains the
-exact contextual Chrome setup and the completed local semantic comparison. Contextual Conservative
-remains selected for the limited experimental demo; the tested semantic baseline failed its
-predeclared recall gates. The confirmed Veritasium interval is evaluated separately from fully
-reviewed videos. A [bounded hosted comparison](docs/hosted-intent-comparison-proposal-2026-10-22.md)
-is proposed but has not been executed.
-
-## Offline detector review
-
-Open [the local review page](data/reviews/tune-2026-10-11/index.html) directly in Chrome; no backend
-is needed. It compares both modes on all 14 reviewed tune videos, with timestamped excerpts and
-annotation questions. See [findings and reproduction commands](docs/offline-error-review.md) and
-the [proposed $0 semantic experiment](docs/next-detection-experiment.md). Detector predictions remain
-disconnected from playback unless experimental skipping is explicitly enabled; the browser
-acquisition experiment is unchanged.
-
-## Local backend
+From the repository root, with **Python 3.12** and desktop Chrome:
 
 ```bash
-/opt/homebrew/bin/python3.12 -m venv .venv
+python3.12 -m venv .venv
 .venv/bin/python -m pip install -e '.[dev]'
-YTSS_DETECTOR_VARIANT=contextual_v1 YTSS_REQUEST_TIMEOUT_SECONDS=30 \
-  .venv/bin/uvicorn ytsponsorskip.main:app --app-dir backend/src --host 127.0.0.1 --port 8000
+YTSS_DETECTOR_VARIANT=contextual_v1 \
+  .venv/bin/python -m uvicorn ytsponsorskip.main:app --host 127.0.0.1 --port 8000
 ```
 
-Open `http://127.0.0.1:8000/docs` for FastAPI's generated OpenAPI UI or check:
+1. At `chrome://extensions`, enable **Developer mode**, select **Load unpacked**, and choose `extension/`.
+2. In the extension settings, enable **Enable extension** and **Experimental automatic skipping**. Select **Saved reviewed-tune transcript** and keep the backend URL at `http://127.0.0.1:8000`. Leave manual fixtures and the browser caption probe off. Save.
+3. Open [How To Make Friends at 11:20](https://www.youtube.com/watch?v=I9hJ_Rux9y0&t=680s). The backend predicts **11:23–11:55**. Play into the interval from before 11:23 to exercise the skip, then click **Undo** to return to the pre-skip position.
+4. In the same tab, navigate to [C in 100 Seconds](https://www.youtube.com/watch?v=U3aXWizDbQ4). The previous interval and Undo state should clear, and the popup should report zero detections.
+
+To inspect predictions during normal playback, enable **Preview detected promotions** in place of experimental skipping. To check the API independently of Chrome:
 
 ```bash
-curl http://127.0.0.1:8000/health
-curl 'http://127.0.0.1:8000/api/v1/transcripts/dQw4w9WgXcQ?languages=en'
+curl 'http://127.0.0.1:8000/api/v1/detections/I9hJ_Rux9y0?mode=conservative&source=saved'
 ```
 
-Run tests:
+See the [demo handoff](docs/experimental-demo-handoff-2026-10-22.md) for the full acceptance checklist and optional native-caption setup.
+
+## How it works
+
+1. **Acquire captions.** The extension service worker calls a typed FastAPI endpoint. A replaceable transcript provider reads checked-in cues or, in the optional local Supadata experiment, retrieves native English captions. The transcript service coalesces duplicate in-flight requests and bounds concurrency. Successful results go into a process-local TTL/LRU cache. The optional provider also reuses successful acquisitions from disk and tracks its trial budget in SQLite.
+2. **Detect intervals.** The contextual rules look for a commercial relationship and pitch evidence across neighboring cues, then map predictions back to source timestamps. The prediction cache keys results by transcript identity, detector version, and sensitivity. The backend defaults to frozen rules unless the contextual variant is selected explicitly.
+3. **Protect playback.** The extension checks video, request, and detector identities before using a result. The playback controller validates seek targets and skips only eligible merged intervals longer than three seconds. It respects deliberate user seeks, avoids rewinding when a late result has already passed, and prevents an immediate re-skip after Undo.
+
+Start with the [transcript service](backend/src/ytsponsorskip/service.py), [contextual detector](backend/src/ytsponsorskip/contextual_detector.py), or [playback controller](extension/playback-controller.js).
+
+## What the evaluation showed
+
+The Conservative policy prioritizes avoiding incorrect skips. On **22 reviewed development videos**, contextual rules reduced missed promotional time by **32 seconds** compared with frozen rules, with the same **36.52 seconds** of incorrect predictions.
+
+| Conservative detector | Incorrect predicted time | Missed promotional time | Negative videos with a prediction | Matched intervals |
+| --- | ---: | ---: | ---: | ---: |
+| Frozen rules | 36.52 s | 240.96 s | 1/9 | 11/14 |
+| Contextual rules | 36.52 s | 208.96 s | 1/9 | 12/14 |
+
+These are development results. Eight of those videos were originally held out, then inspected during development. On the [original frozen held-out run](docs/heldout-evaluation-2026-10-20.md), the frozen detector missed **128.96 of 176** annotated promotional seconds and flagged **one of six** negative videos. In the later development comparison, the MiniLM prototype produced zero eligible intervals and failed its recall gates, so the demo uses contextual rules. See the [comparison and error cases](docs/recruiting-demo-checkpoint-2026-10-22.md).
+
+Caption acquisition can dominate response time. In one [local native-caption smoke test](docs/experimental-demo-handoff-2026-10-22.md#measured-softwareacquisition-evidence-not-chrome-acceptance), the client measured **1.67 s** for the request, of which **1.64 s** was provider time and **30.31 ms** was detector time. This was a single request. Broad acquisition reliability and the current detector’s accuracy on a fresh test set remain open.
+
+## Verify and explore
+
+With the Python environment above and Node.js installed, run from the repository root:
 
 ```bash
-.venv/bin/pytest
-.venv/bin/ruff check .
+.venv/bin/pytest -q
+.venv/bin/ruff check backend scripts
 node --test extension/tests/*.test.js
 ```
 
-## Acquisition experiment
-
-Start the API with its default in-memory cache enabled:
-
-```bash
-.venv/bin/uvicorn ytsponsorskip.main:app --host 127.0.0.1 --port 8000
-```
-
-Then run:
-
-```bash
-.venv/bin/python scripts/run_acquisition_experiment.py \
-  --environment local \
-  --attempts 2 \
-  --output results/local.json
-```
-
-The first pass measures uncached acquisition. The second pass measures successful cache hits; failures are intentionally not cached. The report separates eligibility, caption type, expected negatives, end-to-end latency, upstream provider latency, cache behavior, snippet timing granularity, overlap count, and normalized failure reasons.
-
-The acquisition corpus records confirmed caption availability at the time it was curated. That denominator is distinct from the negative cases and from the future manually labeled detection set.
-
-## Load the Chrome extension
-
-1. Open `chrome://extensions`.
-2. Enable **Developer mode**.
-3. Choose **Load unpacked** and select the `extension/` directory.
-4. Start the local backend and open a standard YouTube watch page.
-5. Open **Settings**, leave the backend URL as `http://127.0.0.1:8000`, and save.
-6. For actual detector-driven skipping, follow the default-off **Experimental automatic skipping**
-   setup in [the current handoff](docs/experimental-demo-handoff-2026-10-22.md). Keep manual fixtures
-   and browser probe off. Choose Saved for repeatability or Supadata for budgeted native acquisition.
-7. For separate legacy manual-fixture testing, use `docs/chrome-test-checklist.md`.
-
-The development fixtures are user-supplied `tune` labels, disabled by default, and visibly identified as manual fixtures. They exercise skipping and Undo without claiming detector output. If acquisition fails, YouTube playback continues; fixture playback remains independently testable.
-
-## Configuration
-
-Backend settings use the `YTSS_` prefix:
-
-| Variable | Default | Purpose |
-| --- | --- | --- |
-| `YTSS_ENVIRONMENT` | `local` | Environment label in health output |
-| `YTSS_ALLOWED_ORIGINS_CSV` | `http://localhost` | Comma-separated CORS allowlist |
-| `YTSS_REQUEST_TIMEOUT_SECONDS` | `10` | Upstream connect/read timeout |
-| `YTSS_MAX_CONCURRENT_ACQUISITIONS` | `4` | Maximum simultaneous provider calls |
-| `YTSS_CACHE_TTL_SECONDS` | `900` | In-memory successful-result TTL; `0` disables |
-| `YTSS_CACHE_MAX_ENTRIES` | `128` | In-memory LRU capacity |
-| `YTSS_REQUEST_LIMIT_PER_MINUTE` | `60` | Single-process API limit |
-| `YTSS_API_TOKEN` | unset | Optional bearer token for experiments |
-| `YTSS_DETECTOR_VARIANT` | `frozen_rules` | Select `contextual_v1` for experimental skipping |
-| `YTSS_NATIVE_CACHE_DIRECTORY` | `results/development-transcripts` | Ignored persistent native transcript reuse |
-
-The cache, rate limiter, and in-flight request registry are intentionally process-local. This is sufficient for one free Render instance; scaling to multiple processes would require a shared design or acceptance of per-process limits.
-
-## Render experiment
-
-`render.yaml` and `Dockerfile` define a single free web service. Connect the repository in Render, select the blueprint, and verify that the service remains on the **Free** plan before creating it. No database, custom domain, or proxy is required.
-
-Run the same corpus against the assigned `onrender.com` URL:
-
-```bash
-.venv/bin/python scripts/run_acquisition_experiment.py \
-  --base-url https://YOUR-SERVICE.onrender.com \
-  --environment render-free \
-  --attempts 2 \
-  --output results/render-free.json
-```
-
-Do not warm the service before the first attempt if measuring cold-start latency. Compare `end_to_end_latency_ms` with `provider_latency_ms`: a large first-request difference indicates cold start, while `IP_BLOCKED` or `REQUEST_BLOCKED` indicates transcript acquisition failure.
-
-## Detection labeling template
-
-`data/labeling_template.xlsx` contains CSV-compatible **Videos** and **Segments** sheets. See `docs/labeling-format.md` before labeling or importing data. Acquisition outcomes are evidence about caption retrieval, not promotion labels.
-
-The imported validation set is documented in `docs/validation-import-report.md`. Held-out and partial-review rows are excluded from development playback fixtures and must remain outside detector tuning.
-
-The rules baseline is documented in `docs/detector-baseline.md`. The 14-video manual transcript
-import is documented in `docs/manual-transcript-import-report.md`; the preserved unchanged-detector
-tune result is in `docs/detector-tune-report.md`. Render's bounded follow-up is in
-`docs/render-small-experiment.md`.
-
-The bounded alternative-library investigation is in `docs/node-acquisition-experiment.md`. Neither
-Node package passed the two-video gate, so neither was added to deployment. The exact 14-video
-manual collection checklist and normalized JSON contract are in
-`docs/tune-transcript-collection.md`.
-
-The automatic-acquisition evidence, current vendor costs, and weighted decision framework are in
-`docs/acquisition-options-decision.md`. The $0 browser-context probe is now implemented behind an
-off-by-default development flag; its architecture and still-unrun Chrome protocol are in
-`docs/browser-acquisition-probe.md`. No managed account or paid service was added.
-
-The tune-only detector iteration and before/after metrics are in
-`docs/detector-tune-iteration.md`. The strategy comparison and current official model/API facts are
-in `docs/detection-strategy-decision.md`. A provider-neutral, disabled model-assisted contract,
-cost model, and failure policy are in `docs/model-assisted-detector-design.md`; no model provider
-SDK or inference path is installed.
-
-## Reproduce the manual tune baseline
-
-```bash
-.venv/bin/python scripts/import_manual_transcripts.py \
-  "/Users/anuvikdas/Downloads/SponsorSkip Manual 14 Transcript Collection.docx"
-
-.venv/bin/python scripts/evaluate_detector.py \
-  --source-dir data/transcripts/tune \
-  --detector-commit 0d065eccc10952ac3f1c2a416a0b7e4929e39026 \
-  --output data/evaluation/tune-baseline-0d065ec.json
-```
-
-The imported files preserve source starts and mark all constructed durations as derived analysis
-spans. They must not be interpreted as source-supplied caption or promotion boundaries.
-
-## Reproduce the improved tune-only detector result
-
-```bash
-.venv/bin/python scripts/evaluate_detector.py \
-  --source-dir data/transcripts/tune \
-  --detector-commit 3c35ceb02c84d1facd025ec8d012e09d592a6e00 \
-  --output data/evaluation/tune-rules-3c35ceb.json
-```
-
-This is the historical tune-only result. Later work used eight formerly held-out videos as
-development evidence; do not treat those as independent validation. The original frozen report
-is preserved. See the latest handoff for playback connection and its separate correctness checks.
-
-## API behavior
-
-The local preview milestone is documented in [docs/local-preview-milestone.md](docs/local-preview-milestone.md).
-The extension's disabled-by-default **Preview detected promotions** setting calls
-`GET /api/v1/detections/{video_id}?mode=conservative|aggressive&source=saved|supadata` with a
-validated `X-Request-ID`. Saved mode is the development default and does not acquire captions;
-Supadata is explicit and budgeted. Both use the selected detector. Preview never seeks; the separate
-default-off experimental setting permits validated contextual Conservative predictions to skip,
-with notifications and Undo. `GET /api/v1/demo-status` exposes the active version and remaining
-native allowance without an acquisition. A supplied `expected_detector_version` rejects stale
-detector requests before acquisition.
-
-`GET /api/v1/transcripts/{video_id}?languages=en` returns a typed transcript document. Stable error responses distinguish unavailable captions, invalid input, upstream changes, timeouts, and IP/request blocking. Original snippet `text`, `start_seconds`, and `duration_seconds` are preserved; caption duration is display timing, not a detected promotional boundary.
+- [Playback flow tests](extension/tests/experimental-flow.test.js) cover late responses, navigation, user seeks, Undo, and failure handling.
+- [Offline error review](docs/offline-error-review.md) explains the labeling, timing metrics, and commands for reproducing the historical tune comparison.
+- [Acquisition study](docs/acquisition-study.md) and [Render experiment](docs/render-small-experiment.md) document provider and deployment tradeoffs separately from detector accuracy.
+- [OpenAPI UI](http://127.0.0.1:8000/docs) is available while the local server is running. See [backend settings](backend/src/ytsponsorskip/config.py) for defaults and [`.env.example`](.env.example) for optional native-provider setup.
